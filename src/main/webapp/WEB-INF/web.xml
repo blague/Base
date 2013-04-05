@@ -63,6 +63,18 @@
         <url-pattern>*.shtml</url-pattern>
     </servlet-mapping>
 
+
+    <!--h2 web console-->
+    <servlet>
+        <servlet-name>H2Console</servlet-name>
+        <servlet-class>org.h2.server.web.WebServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>H2Console</servlet-name>
+        <url-pattern>/h2-console/*</url-pattern>
+    </servlet-mapping>
+
     <!-- 欢迎页面 -->
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
