@@ -1,1202 +1,1467 @@
-﻿CREATE TABLE  AirportCode(ID INT IDENTITY  PRIMARY KEY, NAME VARCHAR(50),ThreeCode VARCHAR(5),FourCode VARCHAR(5),AirportName  VARCHAR(255),EnName  VARCHAR(100));
-
-
-insert into AirportCode VALUES(null,'阿克苏','AKU','ZWAK','阿克苏机场','AKSU');
-insert into AirportCode VALUES(null,'阿勒泰','AAT','ZWAT','阿勒泰机场','ALTAY');
-insert into AirportCode VALUES(null,'安康','AKA','ZLAK','安康机场','ANKANG');
-insert into AirportCode VALUES(null,'安庆','AQG','ZSAQ','安庆(天柱山）机场','ANQING');
-insert into AirportCode VALUES(null,'鞍山','AOG','ZYAS','鞍山机场','ANSHAN');
-insert into AirportCode VALUES(null,'保山','BSD','ZPBS','保山云瑞机场','BAOSHAN');
-insert into AirportCode VALUES(null,'包头','BAV','ZBOW','包头二里半机场','BAOTOU');
-insert into AirportCode VALUES(null,'昌都','BPX','ZUBD','西藏昌都邦达机场','CHAMDO');
-insert into AirportCode VALUES(null,'北海','BHY','ZGBH','北海福城机场','BEIHAI');
-insert into AirportCode VALUES(null,'北京','PEK','ZBAA','北京首都机场','BEIJING');
-insert into AirportCode VALUES(null,'蚌埠','BFU','ZSBB','蚌埠机场','BENGBU');
-insert into AirportCode VALUES(null,'长春','CGQ','ZYCC','长春龙嘉国际机场','CHANGCHUN');
-insert into AirportCode VALUES(null,'常德','CGD','ZGCD','常德桃花源(斗姆湖)机场','CHANGDE');
-insert into AirportCode VALUES(null,'长沙','CSX','ZGHA','长沙黄花机场','CHANGSHA');
-insert into AirportCode VALUES(null,'长治','CIH','ZBCZ','长治王村机场','CHANGZHI');
-insert into AirportCode VALUES(null,'常州','CZX','ZSCG','常州奔牛机场','CHANGZHOU');
-insert into AirportCode VALUES(null,'朝阳','CHG','ZYCY','辽宁朝阳机场','CHAOYANG');
-insert into AirportCode VALUES(null,'成都','CTU','ZUUU','成都双流机场','CHENGDU');
-insert into AirportCode VALUES(null,'赤峰','CIF','ZBCF','赤峰玉龙机场','CHIFENG');
-insert into AirportCode VALUES(null,'重庆','CKG','ZUCK','重庆江北机场','CHONGQING');
-insert into AirportCode VALUES(null,'达州','DAX','ZUDX','达州(河市)机场','DAZHOU');
-insert into AirportCode VALUES(null,'迪庆','DIG','ZPDQ','迪庆香格里拉机场','DIQING');
-insert into AirportCode VALUES(null,'大连','DLC','ZYTL','大连国际机场','DALIAN');
-insert into AirportCode VALUES(null,'大理','DLU','ZPDL','大理荒草坝机场','DALIXIAGUAN');
-insert into AirportCode VALUES(null,'丹东','DDG','ZYDD','丹东浪头机场','DANDONG');
-insert into AirportCode VALUES(null,'大同','DAT','ZBDT','大同云冈机场','DATONG');
-insert into AirportCode VALUES(null,'张家界','DYG','ZGDY','张家界荷花机场','ZHANGJIAJIE');
-insert into AirportCode VALUES(null,'敦煌','DNH','ZLDH','敦煌机场','DUNHUANG');
-insert into AirportCode VALUES(null,'恩施','ENH','ZHES','恩施机场','ENSHI');
-insert into AirportCode VALUES(null,'克拉科夫','KRK','EPKK','克拉科夫机场','KRAKOW');
-insert into AirportCode VALUES(null,'富蕴','FYN','ZWFY','富蕴机场','FUYUN');
-insert into AirportCode VALUES(null,'锦州','JNZ','ZYJZ','锦州小岭子机场','JINZHOU');
-insert into AirportCode VALUES(null,'赣州','KOW','ZSGZ','赣州黄金机场','GANZHOU');
-insert into AirportCode VALUES(null,'格尔木','GOQ','ZLGM','格尔木机场','GOLMUD');
-insert into AirportCode VALUES(null,'广汉','GHN','ZUGH','广汉机场','GUANGHAN');
-insert into AirportCode VALUES(null,'广州','CAN','ZGGG','广州白云机场','GUANGZHOU');
-insert into AirportCode VALUES(null,'桂林','KWL','ZGKL','桂林两江机场','GUILIN');
-insert into AirportCode VALUES(null,'贵阳','KWE','ZUGY','贵阳龙洞堡机场','GUIYANG');
-insert into AirportCode VALUES(null,'哈尔滨','HRB','ZYHB','哈尔滨太平机场','HARBIN');
-insert into AirportCode VALUES(null,'海口','HAK','ZJHK','海口美兰机场','HAIKOU');
-insert into AirportCode VALUES(null,'海拉尔','HLD','ZBLA','内蒙古海拉尔东山机场','HAILAR');
-insert into AirportCode VALUES(null,'哈密','HMI','ZWHM','哈密机场','HAMI');
-insert into AirportCode VALUES(null,'杭州','HGH','ZSHC','杭州萧山机场','HANGZHOU');
-insert into AirportCode VALUES(null,'汉中','HZG','ZLHZ','汉中西关机场','HANZHONG');
-insert into AirportCode VALUES(null,'合肥','HFE','ZSOF','合肥骆岗机场','HEFEI');
-insert into AirportCode VALUES(null,'黑河','HEK','ZYHE','黑河机场','HEIHE');
-insert into AirportCode VALUES(null,'衡阳','HNY','ZGHY','衡阳东江机场','HENGYANG');
-insert into AirportCode VALUES(null,'和田','HTN','ZWTN','和田机场','HETIAN');
-insert into AirportCode VALUES(null,'香港','HKG','VHHH','香港赤?角国际机场','HONG KONG');
-insert into AirportCode VALUES(null,'黄山','TXN','ZSTX','黄山屯溪机场','HUANGSHAN');
-insert into AirportCode VALUES(null,'台州','HYN','ZSLQ','台州路桥（原黄岩路桥）机场','TAIZHOU');
-insert into AirportCode VALUES(null,'呼和浩特','HET','ZBHH','呼和浩特白塔国际机场','HOHHOT');
-insert into AirportCode VALUES(null,'佳木斯','JMU','ZYJM','佳木斯机场','JIAMUSI');
-insert into AirportCode VALUES(null,'嘉峪关','JGN','ZLJQ','嘉峪关机场','JIAYUGUAN');
-insert into AirportCode VALUES(null,'吉林','JIL','ZYJL','吉林二台子机场','JILIN');
-insert into AirportCode VALUES(null,'济南','TNA','ZSJN','济南遥墙机场','JINAN');
-insert into AirportCode VALUES(null,'济宁','JNG','ZSJG','济宁机场','JINING');
-insert into AirportCode VALUES(null,'景德镇','JDZ','ZSJD','景德镇罗家机场','JINGDEZHEN');
-insert into AirportCode VALUES(null,'西双版纳','JHG','ZPJH','景洪(西双版纳)机场','JINGHONG');
-insert into AirportCode VALUES(null,'晋江','JJN','ZSQZ','泉州晋江机场','QUANZHOU');
-insert into AirportCode VALUES(null,'福州','FOC','ZSFZ','福州长乐机场','FUZHOU');
-insert into AirportCode VALUES(null,'酒泉','CHW','NNNN','酒泉机场','JIUQUAN');
-insert into AirportCode VALUES(null,'九江','JIU','ZSJJ','九江庐山机场','JIUJIANG');
-insert into AirportCode VALUES(null,'克拉玛依','KRY','ZWKM','克拉玛依机场','KARAMAY');
-insert into AirportCode VALUES(null,'喀什','KHG','ZWSH','喀什机场','KASHGAR');
-insert into AirportCode VALUES(null,'库尔勒','KRL','ZWKL','库尔勒机场','KORLA');
-insert into AirportCode VALUES(null,'昆明','KMG','ZPPP','昆明长水机场','KUNMING');
-insert into AirportCode VALUES(null,'库车','KCA','ZWKC','库车机场','KUQA');
-insert into AirportCode VALUES(null,'兰州','LHW','ZLLL','兰州机场','LANZHOU');
-insert into AirportCode VALUES(null,'临沧','LNJ','ZPLC','临沧机场','LINCANG');
-insert into AirportCode VALUES(null,'拉萨','LXA','ZULS','拉萨贡嘎机场','LHASA');
-insert into AirportCode VALUES(null,'连云港','LYG','ZSLG','连云港白塔埠机场','LIANYUNGANG');
-insert into AirportCode VALUES(null,'丽江','LJG','ZPLJ','丽江三义机场','LIJIANG');
-insert into AirportCode VALUES(null,'临沂','LYI','ZSLY','临沂沭埠岭机场','LINYI');
-insert into AirportCode VALUES(null,'柳州','LZH','ZGZH','柳州白莲机场','LIUZHOU');
-insert into AirportCode VALUES(null,'洛阳','LYA','ZHLY','洛阳机场','LUOYANG');
-insert into AirportCode VALUES(null,'泸州','LZO','ZULZ','泸州蓝田机场','LUZHOU');
-insert into AirportCode VALUES(null,'澳门','MFM','VMMC','澳门机场','MACAU');
-insert into AirportCode VALUES(null,'芒市','LUM','ZPMS','芒市机场','MANGSHI');
-insert into AirportCode VALUES(null,'梅县','MXZ','ZGMX','梅县机场','MEIXIAN');
-insert into AirportCode VALUES(null,'牡丹江','MDG','ZYMD','牡丹江海浪机场','MUDANJIANG');
-insert into AirportCode VALUES(null,'绵阳','MIG','ZUMY','绵阳南郊机场','MIANYANG');
-insert into AirportCode VALUES(null,'南昌','KHN','ZSCN','南昌昌北机场','NANCHANG');
-insert into AirportCode VALUES(null,'南充','NAO','ZUNC','南充高坪机场','NANCHONG');
-insert into AirportCode VALUES(null,'南京','NKG','ZSNJ','南京禄口机场','NANJING');
-insert into AirportCode VALUES(null,'南宁','NNG','ZGNN','南宁吴圩机场','NANNING');
-insert into AirportCode VALUES(null,'南通','NTG','ZSNT','南通兴东机场','NANTONG');
-insert into AirportCode VALUES(null,'南阳','NNY','ZHNY','南阳姜营机场','NANYANG');
-insert into AirportCode VALUES(null,'嫩江','NNN','ZBDY','嫩江机场','HEIHE');
-insert into AirportCode VALUES(null,'宁波','NGB','ZSNB','宁波栎社机场','NINGBO');
-insert into AirportCode VALUES(null,'且末','IQM','ZWCM','且末机场','QIEMO');
-insert into AirportCode VALUES(null,'青岛','TAO','ZSQD','青岛流亭机场','QINGDAO');
-insert into AirportCode VALUES(null,'庆阳','IQN','ZLQY','庆阳机场','QINGYANG');
-insert into AirportCode VALUES(null,'秦皇岛','SHP','ZBSH','秦皇岛山海关机场','QINHUANGDAO');
-insert into AirportCode VALUES(null,'齐齐哈尔','NDG','ZYQQ','齐齐哈尔三家子机场','QIQIHAER');
-insert into AirportCode VALUES(null,'衢州','JUZ','ZSJU','衢州机场','QUZHOU');
-insert into AirportCode VALUES(null,'三亚','SYX','ZJSY','三亚凤凰机场','SANYA');
-insert into AirportCode VALUES(null,'上海','SHA','ZSSS','上海虹桥机场','SHANGHAI');
-insert into AirportCode VALUES(null,'上海浦东','PVG','ZSPD','上海浦东机场','SHANGHAI');
-insert into AirportCode VALUES(null,'揭阳','SWA','ZGOW','揭阳潮汕机场','JIEYANG');
-insert into AirportCode VALUES(null,'沙市','SHS','ZHSS','荆州沙市机场','SHASHI');
-insert into AirportCode VALUES(null,'深圳','SZX','ZGSZ','深圳宝安机场','SHENZHEN');
-insert into AirportCode VALUES(null,'沈阳','SHE','ZYTX','沈阳桃仙机场','SHENYANG');
-insert into AirportCode VALUES(null,'石家庄','SJW','ZBSJ','石家庄正定机场','SHIJIAZHUANG');
-insert into AirportCode VALUES(null,'普洱','SYM','ZPSM','普洱(思茅)机场','PUER');
-insert into AirportCode VALUES(null,'苏州','SZV','ZSSZ','苏州机场','SUZHOU');
-insert into AirportCode VALUES(null,'塔城','TCG','ZWTC','塔城机场','TACHENG');
-insert into AirportCode VALUES(null,'太原','TYN','ZBYN','太原武宿机场','TAIYUAN');
-insert into AirportCode VALUES(null,'天津','TSN','ZBTJ','天津滨海机场','TIANJIN');
-insert into AirportCode VALUES(null,'通化','TNH','ZYTN','通化机场','TONGHUA');
-insert into AirportCode VALUES(null,'通辽','TGO','ZBTL','通辽机场','TONGLIAO');
-insert into AirportCode VALUES(null,'铜仁','TEN','ZUTR','铜仁凤凰机场','TONGREN');
-insert into AirportCode VALUES(null,'万州','WXN','ZUWX','重庆万州五桥机场','CHONGQING');
-insert into AirportCode VALUES(null,'潍坊','WEF','ZSWF','潍坊机场','WEIFANG');
-insert into AirportCode VALUES(null,'威海','WEH','ZSWH','威海文登大水泊机场','WEIHAI');
-insert into AirportCode VALUES(null,'温州','WNZ','ZSWZ','温州永强机场','WENZHOU');
-insert into AirportCode VALUES(null,'武汉','WUH','ZHHH','武汉天河机场','WUHAN');
-insert into AirportCode VALUES(null,'卡塔赫纳','CTG','','卡塔赫纳机场','CARTAGENA');
-insert into AirportCode VALUES(null,'乌兰浩特','HLH','ZBUL','乌兰浩特机场','ULANHOT');
-insert into AirportCode VALUES(null,'乌鲁木齐','URC','ZWWW','乌鲁木齐地窝堡机场','URUMQI');
-insert into AirportCode VALUES(null,'武夷山','WUS','ZSWY','武夷山机场','WUYISHAN');
-insert into AirportCode VALUES(null,'梧州','WUZ','ZGWZ','广西梧州长洲岛机场','WUZHOU');
-insert into AirportCode VALUES(null,'厦门','XMN','ZSAM','厦门高崎机场','XIAMEN');
-insert into AirportCode VALUES(null,'西安','XIY','ZLXY','西安咸阳机场','XIAN');
-insert into AirportCode VALUES(null,'襄阳','XFN','ZHXF','襄阳刘集机场','XIANGYANG');
-insert into AirportCode VALUES(null,'西昌','XIC','ZUXC','西昌青山机场','XICHANG');
-insert into AirportCode VALUES(null,'锡林浩特','XIL','ZBXH','锡林浩特机场','XILINHOT');
-insert into AirportCode VALUES(null,'西宁','XNN','ZLXN','西宁曹家堡机场','XINING');
-insert into AirportCode VALUES(null,'徐州','XUZ','ZSXZ','徐州观音机场','XUZHOU');
-insert into AirportCode VALUES(null,'延安','ENY','ZLYA','延安二十里铺机场','YANAN');
-insert into AirportCode VALUES(null,'延吉','YNJ','ZYYJ','延吉朝阳川机场','YANJI');
-insert into AirportCode VALUES(null,'烟台','YNT','ZSYT','烟台莱山机场','YANTAI');
-insert into AirportCode VALUES(null,'宜宾','YBP','ZUYB','宜宾(菜坝)机场','YIBIN');
-insert into AirportCode VALUES(null,'宜昌','YIH','ZHYC','宜昌三峡机场','YICHANG');
-insert into AirportCode VALUES(null,'银川','INC','ZLIC','银川河东机场','YINCHUAN');
-insert into AirportCode VALUES(null,'伊宁','YIN','ZWYN','伊宁机场','YINING');
-insert into AirportCode VALUES(null,'义乌','YIW','ZSYW','义乌机场','YIWU');
-insert into AirportCode VALUES(null,'榆林','UYN','ZLYL','榆林榆阳机场','YULIN');
-insert into AirportCode VALUES(null,'昭通','ZAT','ZPZT','昭通机场','ZHAOTONG');
-insert into AirportCode VALUES(null,'湛江','ZHA','ZGZJ','湛江机场','ZHANJIANG');
-insert into AirportCode VALUES(null,'郑州','CGO','ZHCC','郑州新郑机场','ZHENGZHOU');
-insert into AirportCode VALUES(null,'舟山','HSN','ZSZS','舟山普陀山朱家尖机场','ZHOUSHAN');
-insert into AirportCode VALUES(null,'珠海','ZUH','ZGSD','珠海金湾机场','ZHUHAI');
-insert into AirportCode VALUES(null,'遵义','ZYI','ZUZY','遵义新舟机场','ZUNYI');
-insert into AirportCode VALUES(null,'台北','TSA','RCSS','台北松山机场','TAIBEI');
-insert into AirportCode VALUES(null,'桃园','TPE','RCTP','台北桃园机场','TAIBEI');
-insert into AirportCode VALUES(null,'台南','TNN','RCNN','台南机场','TAINAN');
-insert into AirportCode VALUES(null,'高雄','KHH','RCKH','高雄机场','GAOXIONG');
-insert into AirportCode VALUES(null,'台东','TTG','RCFN','台东志航机场','TAIDONG');
-insert into AirportCode VALUES(null,'花莲','HUN','RCYU','花莲机场','HUALIAN');
-insert into AirportCode VALUES(null,'嘉义','CYI','RCKU','嘉义机场','JIAYI');
-insert into AirportCode VALUES(null,'黄金海岸','OOL','YBCG','黄金海岸机场','GOLD COAST');
-insert into AirportCode VALUES(null,'九寨沟','JZH','ZUJZ','九寨沟黄龙(九黄）机场','JIUZHAIGOU');
-insert into AirportCode VALUES(null,'无锡','WUX','ZSWX','无锡硕放机场','WUXI');
-insert into AirportCode VALUES(null,'北京南苑','NAY','ZBNY','北京南苑机场','BEIJING');
-insert into AirportCode VALUES(null,'那拉提','NLT','ZWNL','那拉提机场','NALATI');
-insert into AirportCode VALUES(null,'林芝','LZY','ZUNZ','林芝机场','NYINGCHI');
-insert into AirportCode VALUES(null,'乌海','WUA','ZBUH','乌海机场','WUHAI');
-insert into AirportCode VALUES(null,'攀枝花','PZI','ZUZH','攀枝花保安营机场','PANZHIHUA');
-insert into AirportCode VALUES(null,'满洲里','NZH','ZBMZ','呼伦贝尔满洲里西郊机场','MANZHOULI');
-insert into AirportCode VALUES(null,'康定','KGT','ZUKD','康定机场','KANGDING');
-insert into AirportCode VALUES(null,'怀化','HJJ','ZGCJ','怀化芷江机场','HUAIHUA');
-insert into AirportCode VALUES(null,'邯郸','HDG','ZBHD','河北邯郸机场机场','HANDAN');
-insert into AirportCode VALUES(null,'盐城','YNZ','ZSYN','江苏盐城南洋机场','YANCHENG');
-insert into AirportCode VALUES(null,'安顺','AVA','ZUAS','贵州安顺黄果树机场','ANSHUN');
-insert into AirportCode VALUES(null,'百色','AEB','ZGBS','广西百色(田阳)机场','BAISE');
-insert into AirportCode VALUES(null,'文山','WNH','ZPWS','云南文山普者黑机场','WENSHAN');
-insert into AirportCode VALUES(null,'玉树','YUS','ZLYS','青海玉树三江源(巴塘)机场','YUSHU');
-insert into AirportCode VALUES(null,'荔波','LLB','ZULB','荔波机场','LIBO');
-insert into AirportCode VALUES(null,'喀纳斯','KJI','ZWKN','新疆喀纳斯机场','BUERJIN');
-insert into AirportCode VALUES(null,'鄂尔多斯','DSN','ZBDS','鄂尔多斯伊金霍洛机场','ORDOS');
-insert into AirportCode VALUES(null,'黎平','HZH','ZUNP','贵州黎平机场','LIPING');
-insert into AirportCode VALUES(null,'漠河','OHE','ZYMH','漠河古莲机场','MOHE');
-insert into AirportCode VALUES(null,'长白山','NBS','ZYBS','长白山机场','CHANGBAISHAN');
-insert into AirportCode VALUES(null,'腾冲','TCZ','ZUTC','腾冲（驼峰）机场','TENGCHONG');
-insert into AirportCode VALUES(null,'中卫','ZHY','ZLZW','中卫(香山、沙坡头)机场','ZHONGWEI');
-insert into AirportCode VALUES(null,'运城','YCU','ZBYC','运城关公机场','YUNCHENG');
-insert into AirportCode VALUES(null,'东营','DOY','ZSDY','东营胜利机场','DONGYING');
-insert into AirportCode VALUES(null,'天水','THQ','ZLTS','甘肃天水机场','TIANSHUI');
-insert into AirportCode VALUES(null,'长海','CNI','ZYCH','长海（大长山岛）机场','DALIAN');
-insert into AirportCode VALUES(null,'兴义','ACX','ZUYI','兴义机场','XINGYI');
-insert into AirportCode VALUES(null,'首尔','ICN','RKSI','首尔仁川机场','SEOUL');
-insert into AirportCode VALUES(null,'济州岛','CJU','RKPC','济州机场','JEJU');
-insert into AirportCode VALUES(null,'釜山','PUS','RKPP','金海机场','BUSAN');
-insert into AirportCode VALUES(null,'大邱','TAE','RKTN','大邱机场','TAEGU');
-insert into AirportCode VALUES(null,'大阪','KIX','RJBB','关西机场','OSAKA');
-insert into AirportCode VALUES(null,'东京成田','NRT','RJAA','东京成田机场','TOKYO');
-insert into AirportCode VALUES(null,'名古屋','NGO','RJGG','名古屋中部/新特丽亚机场','NAGOYA');
-insert into AirportCode VALUES(null,'福冈','FUK','RJFF','福冈机场','FUKUOKA');
-insert into AirportCode VALUES(null,'马累','MLE','VRMM','马累机场','MALE');
-insert into AirportCode VALUES(null,'普吉岛','HKT','VTSP','普吉机场','PHUKET ISLAND');
-insert into AirportCode VALUES(null,'雅加达','CGK','WIII','雅加达 苏加诺-哈达机场','JAKARTA');
-insert into AirportCode VALUES(null,'孟买','BOM','VABB','孟买机场','BOMBAY');
-insert into AirportCode VALUES(null,'加尔各答','CCU','VECC','加尔各答机场','CALCUTTA');
-insert into AirportCode VALUES(null,'新德里','DEL','VIDP','德里机场','NEWDELHI');
-insert into AirportCode VALUES(null,'棉兰','MES','WIMM','棉兰机场','MEDAN');
-insert into AirportCode VALUES(null,'巴格达','BGW','ORBS','巴格达机场','IRAQ');
-insert into AirportCode VALUES(null,'德黑兰','THR','OIII','德黑兰机场','TEHRAN');
-insert into AirportCode VALUES(null,'特拉维夫','TLV','LLBG','特拉维夫机场','TEL AVIV');
-insert into AirportCode VALUES(null,'曼谷','BKK','VTBS','曼谷(素万那普)机场','BANGKOK');
-insert into AirportCode VALUES(null,'新加坡','SIN','WSSS','樟宜机场','SINGAPORE');
-insert into AirportCode VALUES(null,'罗马','FCO','LIRF','菲乌米奇诺机场','ROME');
-insert into AirportCode VALUES(null,'巴黎','CDG','LFPG','戴高乐机场','PARIS');
-insert into AirportCode VALUES(null,'曼彻斯特','MAN','EGCC','曼彻斯特机场','MANCHEST');
-insert into AirportCode VALUES(null,'布拉茨克','BTK','UIBB','布拉茨克机场','BRATSK');
-insert into AirportCode VALUES(null,'伊尔库茨克','IKT','UIII','伊尔库茨克机场','IRKUTSK');
-insert into AirportCode VALUES(null,'威尼斯','VCE','LIPZ','威尼斯机场','VENICE');
-insert into AirportCode VALUES(null,'米兰','MXP','LIMC','米兰马尔本萨机场','MILAN');
-insert into AirportCode VALUES(null,'那不勒斯','NAP','LIRN','那不勒斯机场','NAPLES');
-insert into AirportCode VALUES(null,'马德里','MAD','LEMD','马德里机场','MADRID');
-insert into AirportCode VALUES(null,'巴塞罗那','BCN','LEBL','巴塞罗那机场','BARCELONA');
-insert into AirportCode VALUES(null,'布达佩斯','BUD','LHBP','布达佩斯机场','BUDAPEST');
-insert into AirportCode VALUES(null,'奥克兰','AKL','NZAA','奥克兰机场','AUCKLAND');
-insert into AirportCode VALUES(null,'惠灵顿','WLG','NZWN','惠灵顿机场','WELLINGTON');
-insert into AirportCode VALUES(null,'雅典','ATH','WBSB','雅典机场','ATHENS');
-insert into AirportCode VALUES(null,'塔什干','TAS','UTTT','塔什干机场','TASHKENT');
-insert into AirportCode VALUES(null,'斯里巴加湾','BWN','WBSB','文莱机场','BANDAR SERI BEGAWAN');
-insert into AirportCode VALUES(null,'伊斯坦布尔','IST','LTBA','阿塔图尔克机场','ISTANBUL');
-insert into AirportCode VALUES(null,'喀土穆','KRT','HSSS','喀土穆机场','KHARTOUM');
-insert into AirportCode VALUES(null,'达喀尔','DKR','GOOY','达喀尔机场','DAKAR');
-insert into AirportCode VALUES(null,'乌兰巴托','ULN','ZMUB','乌兰巴托机场','ULANBUTOR');
-insert into AirportCode VALUES(null,'墨西哥','MEX','MMMX','墨西哥城机场','MEXICO');
-insert into AirportCode VALUES(null,'吉隆坡','KUL','WMKK','吉隆坡机场','KUALA LUMPUR');
-insert into AirportCode VALUES(null,'万象','VTE','VLVT','万象瓦岱机场','VIENTIANE');
-insert into AirportCode VALUES(null,'贝鲁特','BEY','OLBA','贝鲁特机场','BEIRUT');
-insert into AirportCode VALUES(null,'胡志明市','SGN','VVTS','胡志明市机场','HOCHIMINHCITY');
-insert into AirportCode VALUES(null,'苏瓦','SUV','NFNA','苏瓦那机场','SUVA');
-insert into AirportCode VALUES(null,'卢森堡','LUX','ELLX','卢森堡机场','LUXEMBOURG');
-insert into AirportCode VALUES(null,'科威特','KWI','OKBK','科威特机场','KUWAIT');
-insert into AirportCode VALUES(null,'金边','PNH','VDPP','金边机场','PHNOMPENH');
-insert into AirportCode VALUES(null,'渥太华','YOW','CYOW','渥太华机场','OTTAWA');
-insert into AirportCode VALUES(null,'清州','CJJ','RKTU','清州机场','CHUNGJU');
-insert into AirportCode VALUES(null,'温哥华','YVR','CYVR','温哥华机场','VANCOUVER');
-insert into AirportCode VALUES(null,'多伦多','YTZ','CYTZ','多伦多市中心机场','TORONTO');
-insert into AirportCode VALUES(null,'多伦多','YYZ','CYYZ','多伦多皮尔逊机场','TORONTO');
-insert into AirportCode VALUES(null,'蒙特利尔','YMQ','CYUL','蒙特利尔机场','MONTREAL');
-insert into AirportCode VALUES(null,'杜塞尔多夫','DUS','EDDL','杜塞尔多夫机场','DUSSELDORF');
-insert into AirportCode VALUES(null,'不来梅','BRE','EDDW','不来梅机场','BREMEN');
-insert into AirportCode VALUES(null,'柏林','TXL','EDDT','泰格尔机场','BERLIN');
-insert into AirportCode VALUES(null,'柏林','THF','EDDI','滕伯尔霍夫机场','BERLIN');
-insert into AirportCode VALUES(null,'法兰克福','FRA','EDDF','法兰克福机场','FRANKFURT');
-insert into AirportCode VALUES(null,'柏林','SXF','EDDB','舍讷费尔德机场','BERLIN');
-insert into AirportCode VALUES(null,'慕尼黑','MUC','EDDM','慕尼黑机场','MUNICH');
-insert into AirportCode VALUES(null,'科隆','CGN','EDDK','科隆机场','COLOGNE');
-insert into AirportCode VALUES(null,'汉堡','HAM','EDDH','汉堡机场','HAMBURG');
-insert into AirportCode VALUES(null,'莫斯科','SVO','UUEE','谢诺梅杰沃机场','MOSCOW');
-insert into AirportCode VALUES(null,'莫斯科','DME','UUDD','多莫杰多沃机场','MOSCOW');
-insert into AirportCode VALUES(null,'莫斯科','VKO','UUWW','伏努科沃机场','MOSCOW');
-insert into AirportCode VALUES(null,'圣彼得堡','LED','ULLI','圣彼得堡机场','SAINT PETERSBURG');
-insert into AirportCode VALUES(null,'赤塔','HTA','UIAA','赤塔机场','CHITA');
-insert into AirportCode VALUES(null,'哈巴罗夫斯克','KHV','UHHH','伯力机场','KHABAROVSK');
-insert into AirportCode VALUES(null,'哥本哈根','CPH','EKCH','哥本哈根机场','COPENHAGEN');
-insert into AirportCode VALUES(null,'平壤','FNJ','ZKPY','平壤机场','NIMES');
-insert into AirportCode VALUES(null,'华沙','WAW','EPWA','华沙萧邦机场','WARSAW');
-insert into AirportCode VALUES(null,'悉尼','SYD','YSSY','悉尼金斯福德?史密斯机场','SYDNEY');
-insert into AirportCode VALUES(null,'墨尔本','MEL','YMML','墨尔本机场','MELBOURNE');
-insert into AirportCode VALUES(null,'堪培拉','CBR','YSCB','堪培拉机场','CANBERRA');
-insert into AirportCode VALUES(null,'维也纳','VIE','LOWW','维也纳机场','VIENNA');
-insert into AirportCode VALUES(null,'都柏林','DUB','EIDW','都柏林机场','DUBLIN');
-insert into AirportCode VALUES(null,'亚的斯亚贝巴','ADD','HAAB','亚的斯亚贝巴机场','ADDIS ABABA');
-insert into AirportCode VALUES(null,'开罗','CAI','HECA','开罗机场','CAIRO');
-insert into AirportCode VALUES(null,'阿斯旺','ASW','HESN','阿斯旺机场','ASWAN');
-insert into AirportCode VALUES(null,'圣保罗','GRU','SBSP','圣保罗机场','SAO PAULO');
-insert into AirportCode VALUES(null,'巴西利亚','BSB','SBBR','巴西利亚机场','BRASíLIA');
-insert into AirportCode VALUES(null,'巴拿马城','PTY','MPMG','巴拿马城机场','PANAMACITY');
-insert into AirportCode VALUES(null,'伊斯兰堡','ISB','OPRN','伊斯兰堡机场','ISLAMABAD');
-insert into AirportCode VALUES(null,'卡拉奇','KHI','OPKC','卡拉奇机场','KARACHI');
-insert into AirportCode VALUES(null,'沙迦','SHJ','OMSJ','莎迦机场','SHARJAH');
-insert into AirportCode VALUES(null,'喀布尔','KBL','OAKB','喀布尔机场','KABUL');
-insert into AirportCode VALUES(null,'阿尔及尔','ALG','DAAG','阿尔及尔机场','ALGIERS');
-insert into AirportCode VALUES(null,'布鲁塞尔','BRU','EBBR','布鲁塞尔机场','BRUSSELS');
-insert into AirportCode VALUES(null,'鹿特丹','RTM','EHRD','鹿特丹机场','ROTTERDAM');
-insert into AirportCode VALUES(null,'日内瓦','GVA','LSGG','日内瓦机场','GENEVA');
-insert into AirportCode VALUES(null,'斯德哥尔摩','ARN','ESSA','斯德哥尔摩机场','STOCKHOLM');
-insert into AirportCode VALUES(null,'突尼斯','TUN','DTTA','突尼斯机场','TUNIS');
-insert into AirportCode VALUES(null,'加拉加斯','CCS','SVFM','加拉加斯机场','CARACAS');
-insert into AirportCode VALUES(null,'危地马拉城','GUA','MGGT','危地马拉城机场','GUATEMALACITY');
-insert into AirportCode VALUES(null,'大马士革','DAM','OSDI','大马士革机场','DAMASCUS');
-insert into AirportCode VALUES(null,'里昂','LYS','LFLL','里昂机场','LYON');
-insert into AirportCode VALUES(null,'圣地亚哥','SCL','SCEL','圣地亚哥机场','SANTIAGO');
-insert into AirportCode VALUES(null,'哥德堡','GOT','ESGP','哥德堡机场','GOTHENBURG');
-insert into AirportCode VALUES(null,'仙台','SDJ','FAYP','仙台机场','SANDAI');
-insert into AirportCode VALUES(null,'千岁','CTS','RJCJ','千岁机场','CHITOSE');
-insert into AirportCode VALUES(null,'里斯本','LIS','RJSS','里斯本机场','LISBON');
-insert into AirportCode VALUES(null,'奥斯陆','OSL','ENGM','奥斯陆机场','OSLO');
-insert into AirportCode VALUES(null,'拉各斯','LOS','DNMM','拉各斯机场','LAGOS');
-insert into AirportCode VALUES(null,'拉巴特','RBA','GMME','拉巴特机场','RABAT');
-insert into AirportCode VALUES(null,'开普敦','CPT','FAYP','开普顿机场','CAPE TOWN');
-insert into AirportCode VALUES(null,'约翰内斯堡','JNB','FAJS','约翰内斯堡机场','JOHANNESBURG');
-insert into AirportCode VALUES(null,'休斯顿','HOU','KHOU','休斯顿机场','HOUSTON');
-insert into AirportCode VALUES(null,'檀香山','HNL','PHNL','檀香山机场','HONOLULU');
-insert into AirportCode VALUES(null,'芝加哥','ORD','KORD','芝加哥机场','CHICAGO');
-insert into AirportCode VALUES(null,'纽约','JFK','KJFK','肯尼迪机场','NEW YORK');
-insert into AirportCode VALUES(null,'波士顿','BOS','KBOS','波士顿机场','BOSTON');
-insert into AirportCode VALUES(null,'洛杉矶','LAX','KLAX','洛杉矶机场','LOS ANGELES');
-insert into AirportCode VALUES(null,'华盛顿','WAS','KWAS','华盛顿机场','WASHINGTON');
-insert into AirportCode VALUES(null,'底特律','DTT','KDTT','底特律机场','DETROIT');
-insert into AirportCode VALUES(null,'迈阿密','MIA','KMIA','迈阿密机场','MIAMI');
-insert into AirportCode VALUES(null,'费城','PHL','KPHL','费城机场','PHILADELPHIA');
-insert into AirportCode VALUES(null,'西雅图','SEA','KSEA','西雅图机场','SEATTLE');
-insert into AirportCode VALUES(null,'旧金山','SFO','KSFO','旧金山机场','SAN FRANCISCO');
-insert into AirportCode VALUES(null,'索非亚','SOF','LBSF','索非亚机场','SOFIA');
-insert into AirportCode VALUES(null,'阿姆斯特丹','AMS','EHAM','荷兰阿姆斯特丹斯史基浦(西霍普)机场','AMSTERDAM');
-insert into AirportCode VALUES(null,'阿拉木图','ALA','UAAA','阿拉木图机场','ALMAATA');
-insert into AirportCode VALUES(null,'马尼拉','MNL','RPLL','马尼拉机场','MANILA');
-insert into AirportCode VALUES(null,'赫尔辛基','HEL','EFHK','赫尔辛基机场','HELSINKI');
-insert into AirportCode VALUES(null,'波哥大','BOG','SKBO','波哥大机场','BOGOTA');
-insert into AirportCode VALUES(null,'利马','LIM','LIMA','利马机场','LIMA');
-insert into AirportCode VALUES(null,'达卡','DAC','VGZR','齐亚机场','DACCA');
-insert into AirportCode VALUES(null,'长滩','LGB','KLGB','长滩机场','LONGBEACH');
-insert into AirportCode VALUES(null,'伦敦','LHR','EGLL','伦敦希思罗机场','LONDON');
-insert into AirportCode VALUES(null,'实里达','XSP','WSSL','实里达机场','SELETAR');
-insert into AirportCode VALUES(null,'丹佛','DEN','KDEN','丹佛机场','DENVER');
-insert into AirportCode VALUES(null,'加德满都','KTM','VNKT','加德满都机场','KATHMANDU');
-insert into AirportCode VALUES(null,'登巴萨','DPS','WADD','巴厘岛机场','DENPASAR');
-insert into AirportCode VALUES(null,'龙岩','LCX','ZSLO','福建龙岩冠豸山机场','LONGYAN');
-insert into AirportCode VALUES(null,'加利福尼亚州','BLH','KBLH','加利福尼亚布莱斯机场','CALIFORNIA');
-insert into AirportCode VALUES(null,'希拉本德','BDN','KBDN','希拉本德机场','GILA BEND');
-insert into AirportCode VALUES(null,'巴吞鲁日','BTR','KBTR','巴吞鲁日(瑞安)机场','BATON ROUGE');
-insert into AirportCode VALUES(null,'曼谷','DMK','VTBD','廊曼机场','BANGKOK');
-insert into AirportCode VALUES(null,'苏黎世','ZRH','LSZH','苏黎世机场','ZURICH');
-insert into AirportCode VALUES(null,'利物浦','LPL','EGGP','利物浦约翰列侬机场','LIVERPOOL');
-insert into AirportCode VALUES(null,'伯明翰','BHX','EGBB','伯明翰机场','BIRMINGHAM');
-insert into AirportCode VALUES(null,'科伦坡','CMB','VCBI','班达拉奈克机场','COLOMBO');
-insert into AirportCode VALUES(null,'仰光','RGN','VYYY','仰光机场','YANGON');
-insert into AirportCode VALUES(null,'古德伊尔','GYR','KGYR','菲尼克斯古德伊尔机场','GOODYEAR');
-insert into AirportCode VALUES(null,'Pinal','MZJ','KMZJ','皮纳尔飞机坟场机场','PINAL COUNTY');
-insert into AirportCode VALUES(null,'圣马丁','SXM','TNCM','朱利安娜公主机场','ST. MAARTEN');
-insert into AirportCode VALUES(null,'Ryan Field','RYN','KRYN','Ryan Field机场','RYAN FIELD');
-insert into AirportCode VALUES(null,'大庆','DQA','ZYDQ','大庆萨尔图机场','DAQING');
-insert into AirportCode VALUES(null,'布宜诺斯艾利斯','BUE','','布宜诺斯艾利斯机场','BUENOS AIRES');
-insert into AirportCode VALUES(null,'古晋','KCH','','古晋机场','KUCHING');
-insert into AirportCode VALUES(null,'沙巴','BKI','','沙巴机场','SABAH');
-insert into AirportCode VALUES(null,'槟城','PEN','','槟城机场','PENANG');
-insert into AirportCode VALUES(null,'印第安纳波利斯','IND','KIND','印第安纳波利斯机场','INDIANAPOLIS');
-insert into AirportCode VALUES(null,'维斯特切斯特郡','HPN','','维斯特切斯特郡机场','WESTCHESTER COUNTY');
-insert into AirportCode VALUES(null,'盐湖城','SLC','','盐湖城机场','SALT LAKE CITY');
-insert into AirportCode VALUES(null,'俄克拉荷马城','OKC','','俄克拉荷马城机场','WILL ROGERS');
-insert into AirportCode VALUES(null,'斯波坎','GEG','','斯波坎机场','SPOKANE');
-insert into AirportCode VALUES(null,'圣迭戈','SAN','','圣迭戈机场','SAN DIEGO');
-insert into AirportCode VALUES(null,'圣安东尼奥','SAT','','圣安东尼奥机场','SAN ANTONIO');
-insert into AirportCode VALUES(null,'休斯敦','IAH','','休斯敦机场','GEORGE BUSH');
-insert into AirportCode VALUES(null,'孟菲斯','MEM','KMEM','孟菲斯机场','MEMPHIS');
-insert into AirportCode VALUES(null,'拉斯维加斯','LAS','KLAS','拉斯维加斯麦卡伦国际机场机场','MCCARRAN');
-insert into AirportCode VALUES(null,'里士满','RIC','','里士满机场','RICHMOND');
-insert into AirportCode VALUES(null,'莫林','MLI','','莫林机场','QUAD-CITY');
-insert into AirportCode VALUES(null,'考爱岛','LIH','','考爱岛机场','KAUAI ISLAND');
-insert into AirportCode VALUES(null,'堪萨斯城','MCI','','堪萨斯城机场','KANSAS CITY');
-insert into AirportCode VALUES(null,'哈里斯堡','MDT','','哈里斯堡机场','HARRISBURG SKYPORT');
-insert into AirportCode VALUES(null,'得梅因','DSM','','得梅因机场','DES MOINES');
-insert into AirportCode VALUES(null,'列克星敦','LEX','','列克星敦机场','ORLANDO');
-insert into AirportCode VALUES(null,'奥兰多','MCO','KMCO','奥兰多机场','AOKELAN');
-insert into AirportCode VALUES(null,'杰克逊维尔','JAX','KJAX','杰克逊维尔机场','JACKSONVILLE');
-insert into AirportCode VALUES(null,'布法罗','BUF','KBUF','布法罗机场','BUFFALO');
-insert into AirportCode VALUES(null,'亚特兰大','ATL','KATL','亚特兰大机场','ATLANTA');
-insert into AirportCode VALUES(null,'圣路易斯','STL','','圣路易斯机场','SAINT LOUIS');
-insert into AirportCode VALUES(null,'波特兰','PDX','','波特兰机场','PORTLAND');
-insert into AirportCode VALUES(null,'曼德勒','MDL','VYMD','曼德勒机场','曼德勒');
-insert into AirportCode VALUES(null,'波尔图','OPO','','波尔图机场','PORTO');
-insert into AirportCode VALUES(null,'冲绳','OKA','ROAH','那霸机场','OKINAWA');
-insert into AirportCode VALUES(null,'东京','TYO','','东京机场','TOKYO');
-insert into AirportCode VALUES(null,'札幌','SPK','','札幌机场','SAPPORO');
-insert into AirportCode VALUES(null,'塞班','SPN','PGSN','塞班机场','NORTHERN MARIANA ISLANDS');
-insert into AirportCode VALUES(null,'伯尔尼','BRN','LSZB','伯尔尼机场','BERNE');
-insert into AirportCode VALUES(null,'苏梅岛','USM','VTSM','苏梅岛机场','KOH SAMUI');
-insert into AirportCode VALUES(null,'基辅','IEV','','基辅机场','KIEV');
-insert into AirportCode VALUES(null,'基督城','CHC','','基督城机场','CHRISTCHURCH');
-insert into AirportCode VALUES(null,'耶路撒冷','JRS','','耶路撒冷机场','JERUSALEM');
-insert into AirportCode VALUES(null,'都灵','TRN','','都灵机场','TURIN');
-insert into AirportCode VALUES(null,'罗马','ROM','','罗马机场','ROME');
-insert into AirportCode VALUES(null,'佛罗伦萨','FLR','','佛罗伦萨机场','FLORENCE');
-insert into AirportCode VALUES(null,'班加罗尔','BLR','','班加罗尔机场','BANGALORE');
-insert into AirportCode VALUES(null,'泗水','SUB','WARR','朱安达泗水机场','SURABAYA');
-insert into AirportCode VALUES(null,'爱丁堡','EDI','','爱丁堡机场','EDINBURGH');
-insert into AirportCode VALUES(null,'利兹','LBA','','利兹机场','LEEDS');
-insert into AirportCode VALUES(null,'格拉斯哥','GLA','','格拉斯哥机场','GLASGOW');
-insert into AirportCode VALUES(null,'安曼','AMM','OJAI','安曼阿莉娅王后机场','AMMAN');
-insert into AirportCode VALUES(null,'河内','HAN','','河内机场','HANOI');
-insert into AirportCode VALUES(null,'多哈','DOH','OTBD','多哈机场','DOH');
-insert into AirportCode VALUES(null,'布拉格','PRG','','布拉格机场','PRAGUE');
-insert into AirportCode VALUES(null,'温尼伯','YWG','CYWG','温尼伯机场','DELINE');
-insert into AirportCode VALUES(null,'维多利亚','YYJ','CYYJ','维多利亚机场','VICTORIA');
-insert into AirportCode VALUES(null,'魁北克','YQB','CYQB','魁北克城机场','QUEBEC');
-insert into AirportCode VALUES(null,'暹粒','REP','VDSR','暹粒吴哥机场','ANGKOR WAT');
-insert into AirportCode VALUES(null,'暹粒','REP','VDSR','暹粒吴哥机场','ANGKOR WAT');
-insert into AirportCode VALUES(null,'全州','CHN','','全州机场','JEONJU');
-insert into AirportCode VALUES(null,'宿雾','CEB','','宿雾机场','CEBU');
-insert into AirportCode VALUES(null,'巴黎','PAR','','巴黎机场','PARIS');
-insert into AirportCode VALUES(null,'符拉迪沃斯托克','VVO','UHWW','符拉迪沃斯托克机场','VLADIVOSTOK');
-insert into AirportCode VALUES(null,'莫斯科','MOW','','莫斯科机场','MOSCOW');
-insert into AirportCode VALUES(null,'纽伦堡','NUE','EDDN','纽伦堡机场','NUREMBERG');
-insert into AirportCode VALUES(null,'迪拜','DXB','OMDB','迪拜机场','DUBAI');
-insert into AirportCode VALUES(null,'阿布扎比','AUH','','阿布扎比机场','ABU DHABI');
-insert into AirportCode VALUES(null,'亚历山大','ALY','','亚历山大机场','ALEXANDRIA');
-insert into AirportCode VALUES(null,'阿德莱德','ADL','YPAD','阿德莱德机场','ADELAIDE');
-insert into AirportCode VALUES(null,'珀斯','PER','YPPH','珀斯机场','PERTH');
-insert into AirportCode VALUES(null,'布里斯班','BNE','YBBN','布里斯班机场','BRISBANE');
-insert into AirportCode VALUES(null,'达尔文','DRW','YPDN','达尔文机场','DARWIN');
-insert into AirportCode VALUES(null,'鸡西','JXA','ZYJX','鸡西兴凯湖机场','JIXI');
-insert into AirportCode VALUES(null,'永州','LLF','ZGLG','湖南永州零陵机场','YONGZHOU');
-insert into AirportCode VALUES(null,'韶关','HSC','','韶关机场','SHAOGUAN');
-insert into AirportCode VALUES(null,'井冈山','JGS','ZSGS','井冈山机场','JINGGANGSHAN');
-insert into AirportCode VALUES(null,'阜阳','FUG','ZSFY','阜阳西关机场','FUYANG');
-insert into AirportCode VALUES(null,'凯恩斯','CNS','YBCS','凯恩斯机场','CAIRNS');
-insert into AirportCode VALUES(null,'蓬塔卡纳','PUJ','MDPC','蓬塔卡纳机场','PUNTA CA NA');
-insert into AirportCode VALUES(null,'二连浩特','ERL','ZBER','二连浩特赛乌苏国际机场','ERLIANHOT');
-insert into AirportCode VALUES(null,'广元','GYS','ZUGU','广元机场','GUANGYUAN');
-insert into AirportCode VALUES(null,'佛山','FUO','ZGFS','佛山沙堤机场','FOSHAN');
-insert into AirportCode VALUES(null,'吉安','KNC','ZSJA','吉安机场','JIAN');
-insert into AirportCode VALUES(null,'博韦','BVA','LFOB','博韦蒂耶机场','BEAUVAIS');
-insert into AirportCode VALUES(null,'伊春','LDS','ZYLD','伊春林都机场','YICHUN');
-insert into AirportCode VALUES(null,'安卡拉','ANK','','安卡拉(首都)机场','ANKARA');
-insert into AirportCode VALUES(null,'安卡拉','ESB','LTAC','安卡拉埃森博阿机场','ANKARA');
-insert into AirportCode VALUES(null,'吐鲁番','TLQ','ZWTL','吐鲁番交河机场','TULUFAN');
-insert into AirportCode VALUES(null,'东京羽田','HND','RJTT','东京羽田国际机场','TOKYO');
-insert into AirportCode VALUES(null,'达拉斯','DFW','KDFW','达拉斯沃尔斯堡机场','DALLAS');
-insert into AirportCode VALUES(null,'固原','GYU','ZLGY','宁夏固原六盘山机场','GUYUAN');
-insert into AirportCode VALUES(null,'金门','KNH','RCBS','尚义机场','JINMEN');
-insert into AirportCode VALUES(null,'马公','MZG','RCQC','马公机场','PENGHU');
-insert into AirportCode VALUES(null,'金浦','GMP','RKSS','首尔金浦国际机场','SEOUL');
-insert into AirportCode VALUES(null,'墨尔本','AVV','YMAV','爱华隆机场','MELBOURNE');
-insert into AirportCode VALUES(null,'马拉加','AGP','LEMG','马拉加机场','MALAGA');
-insert into AirportCode VALUES(null,'奥什','OSS','UAFO','奥什机场','OSH STATE');
-insert into AirportCode VALUES(null,'奥尔代斯','ADY','FAAL','奥尔代斯机场','ALLDAYS');
-insert into AirportCode VALUES(null,'萨凡纳','SAV','KSAV','萨凡纳机场','SAVANNAH');
-insert into AirportCode VALUES(null,'扬斯顿','YNG','KYNG','扬斯顿机场','YOUNGSTOWN-WARREN REGIONAL');
-insert into AirportCode VALUES(null,'台中','RMQ','RCMQ','台中清泉岗机场','TAIZHONG');
-insert into AirportCode VALUES(null,'屏东','PIF','RCDC','屏东机场','PINGDONG');
-insert into AirportCode VALUES(null,'恒春','HCN','RCKW','恒春五里亭机场','PINGDONG');
-insert into AirportCode VALUES(null,'邢台','XNT','ZBXT','邢台褡裢机场','SHAHE');
-insert into AirportCode VALUES(null,'兴城','XEN','ZYXC','兴城机场','HULUDAO');
-insert into AirportCode VALUES(null,'安阳','AYN','ZHAY','安阳北郊机场','ANYANG');
-insert into AirportCode VALUES(null,'北竿','MFK','RCMT','北竿机场','北竿');
-insert into AirportCode VALUES(null,'连江','LZN','RCFG','南竿机场','LIANJIANG NANGAN');
-insert into AirportCode VALUES(null,'七美','CMJ','RCCM','七美机场','QIMEI');
-insert into AirportCode VALUES(null,'多森','DHN','KDHN','多森机场','DOTHAN');
-insert into AirportCode VALUES(null,'亨茨维尔','HSV','KHSV','亨茨维尔机场','HUNTSVILLE');
-insert into AirportCode VALUES(null,'莫比尔','MOB','KMOB','莫比尔机场','MOBILE');
-insert into AirportCode VALUES(null,'蒙哥马利','MGM','KMGM','蒙哥马利机场','MONTGOMERY');
-insert into AirportCode VALUES(null,'阿拉巴马','MSL','KMSL','阿拉巴马西北机场','ALABAMA');
-insert into AirportCode VALUES(null,'安克雷奇','ANC','PANC','泰德?史蒂文斯安克雷奇机场','ANCHORAGE');
-insert into AirportCode VALUES(null,'巴黎','ORY','LFPO','巴黎－奥利机场','PARIS');
-insert into AirportCode VALUES(null,'巴塞尔','BSL','LFSB','巴塞尔米卢斯弗赖堡机场','BASEL');
-insert into AirportCode VALUES(null,'图卢兹','TLS','LFBO','图卢兹布拉尼亚克机场','TOULOUSE');
-insert into AirportCode VALUES(null,'斯特拉斯堡','SXB','LFST','斯特拉斯堡机场','STRASBOURG');
-insert into AirportCode VALUES(null,'尼斯','NCE','LFMN','尼斯蓝色海岸机场','NICE');
-insert into AirportCode VALUES(null,'马赛','MRS','LFML','马赛普罗旺斯机场','MARSEILLES');
-insert into AirportCode VALUES(null,'木浦','MWX','RKJB','务安机场','MUAN');
-insert into AirportCode VALUES(null,'纽卡斯尔','NCL','EGNT','纽卡斯尔机场','NEWCASTLE');
-insert into AirportCode VALUES(null,'里约热内卢','GIG','SBGL','里约热内卢 加利昂机场','RIODEJANEIRO');
-insert into AirportCode VALUES(null,'累西腓','REC','SBRF','累西腓瓜拉拉皮斯吉尔贝托?弗雷雷机场','RECIFE');
-insert into AirportCode VALUES(null,'里约热内卢','SDU','SBRJ','圣杜蒙特机场','RIODEJANEIRO');
-insert into AirportCode VALUES(null,'马瑙斯','MAO','SBEG','马瑙斯爱德华多?戈梅斯机场','MANAUS');
-insert into AirportCode VALUES(null,'萨尔瓦多','SSA','SBSV','萨尔瓦多路易斯?爱德华多?马加良斯议员机场','SALVADOR');
-insert into AirportCode VALUES(null,'蓬莱','PNJ','ZSPL','蓬莱沙河口机场','YANTAI');
-insert into AirportCode VALUES(null,'坎大哈','KDH','OAKN','坎大哈机场','KANDAHAR');
-insert into AirportCode VALUES(null,'罗安达','LAD','FNLU','罗安达二月四日机场','LUANDA');
-insert into AirportCode VALUES(null,'乌斯怀亚','USH','SAWH','乌斯怀亚 马尔维纳斯机场','USHUAIA');
-insert into AirportCode VALUES(null,'布宜诺斯艾利斯','EZE','SAEZ','埃塞萨皮斯塔里尼部长机场','BUENOS AIRES');
-insert into AirportCode VALUES(null,'列日','LGG','EBLG','列日机场','LIEGE');
-insert into AirportCode VALUES(null,'沙尔勒鲁瓦','CRL','EBCI','沙尔勒鲁瓦 南布鲁塞尔机场','CHARLEROI');
-insert into AirportCode VALUES(null,'汉诺威','HAJ','EDDV','汉诺威 朗根哈根机场','HANNOVER');
-insert into AirportCode VALUES(null,'德累斯顿','DRS','EDDC','德累斯顿机场','DRESDEN');
-insert into AirportCode VALUES(null,'斯图加特','STR','EDDS','斯图加特机场','STUTTGART');
-insert into AirportCode VALUES(null,'金奈','MAA','VOMM','金奈机场','CHENNAI');
-insert into AirportCode VALUES(null,'特里凡得琅','TRV','VOTV','特里凡得琅机场','TRIVANDRUM');
-insert into AirportCode VALUES(null,'那格浦尔','NAG','VANP','索内格翁机场','NAGPUR');
-insert into AirportCode VALUES(null,'艾哈迈达巴德','AMD','VAAH','萨达尔?瓦拉巴伊?帕特尔机场','AHMEDABAD');
-insert into AirportCode VALUES(null,'函馆','HKD','RJCH','函馆机场','HAKODATE');
-insert into AirportCode VALUES(null,'广岛','HIJ','RJOA','广岛机场','HIROSHIMA');
-insert into AirportCode VALUES(null,'新泻','KIJ','RJSN','新泻机场','NIIGATA');
-insert into AirportCode VALUES(null,'高松','TAK','RJOT','高松机场','TAKAMATSU');
-insert into AirportCode VALUES(null,'钏路','KUH','RJCK','钏路机场','KUSHIRO');
-insert into AirportCode VALUES(null,'松山','MYJ','RJOM','日本松山机场','MATSUYAMA');
-insert into AirportCode VALUES(null,'福冈','KKJ','RJFR','北九州机场','FUKUOKA');
-insert into AirportCode VALUES(null,'长崎','NGS','RJFU','长崎机场','NAGASAKI');
-insert into AirportCode VALUES(null,'熊本','KMJ','RJFT','熊本机场','KUMAMOTO');
-insert into AirportCode VALUES(null,'大分','OIT','RJFO','大分机场','OITA');
-insert into AirportCode VALUES(null,'宫崎','KMI','RJFM','宫崎机场','MIYAZAKI');
-insert into AirportCode VALUES(null,'鹿儿岛','KOJ','RJFK','鹿儿岛机场','KAGOSHIMA');
-insert into AirportCode VALUES(null,'旭川','AKJ','RJEC','旭川机场','ASAHIKAWA');
-insert into AirportCode VALUES(null,'带广','OBO','RJCB','带广机场','OBIHIRO');
-insert into AirportCode VALUES(null,'秋田','AXT','RJSK','秋田机场','AKITA');
-insert into AirportCode VALUES(null,'山口','UBJ','RJDC','山口机场','YAMAGUCHI');
-insert into AirportCode VALUES(null,'乌隆他尼','UTH','VTUD','乌隆他尼机场','UDON THANI');
-insert into AirportCode VALUES(null,'芭堤雅','UTP','VTBU','乌打抛机场','PATTAYA');
-insert into AirportCode VALUES(null,'清迈','CNX','VTCC','清迈机场','CHIANG MAI');
-insert into AirportCode VALUES(null,'合艾','HDY','VTSS','合艾机场','HAT YAI');
-insert into AirportCode VALUES(null,'伊斯坦布尔','SAW','LTFJ','萨比哈?格克琴机场','ISTANBUL');
-insert into AirportCode VALUES(null,'洛美','LFW','DXXX','纳辛贝?埃亚德马机场','LOME');
-insert into AirportCode VALUES(null,'达曼','DMM','OEDF','法赫德国王机场','DAMMAM');
-insert into AirportCode VALUES(null,'利雅德','RUH','OERK','哈立德国王机场','RIYADH');
-insert into AirportCode VALUES(null,'吉达','JED','OEJN','阿卜杜勒-阿齐兹国王机场','JEDDAH');
-insert into AirportCode VALUES(null,'麦地那','MED','OEMA','穆罕默德?本?阿卜杜勒-阿齐兹亲王机场','MEDINA');
-insert into AirportCode VALUES(null,'姆马巴托','MBD','FAMM','姆马巴托机场','MMABATHO');
-insert into AirportCode VALUES(null,'加那利群岛','LPA','GCLP','大加那利机场','ISLAS CANARIAS');
-insert into AirportCode VALUES(null,'特内里费','TFN','GCXO','北特内里费机场','TENERIFE');
-insert into AirportCode VALUES(null,'明斯克','MSQ','UMMS','明斯克机场','MINSK');
-insert into AirportCode VALUES(null,'斯瓦尔巴群岛','LYR','ENSB','斯瓦尔巴朗伊尔机场','SVALBARD');
-insert into AirportCode VALUES(null,'萨尔茨堡','SZG','LOWS','萨尔茨堡机场','SALZBURG');
-insert into AirportCode VALUES(null,'杜阿拉','DLA','FKKD','杜阿拉机场','DOUALA');
-insert into AirportCode VALUES(null,'哈利法克斯','YHZ','CYHZ','哈利法克斯罗伯特?洛恩?斯坦菲尔德机场','HALIFAX');
-insert into AirportCode VALUES(null,'萨斯卡通','YXE','CYXE','萨斯卡通约翰?乔治?迪芬贝克机场','SASKATOON');
-insert into AirportCode VALUES(null,'怀特霍斯','YXY','CYXY','埃里克?尼尔森怀特霍斯机场','WHITEHORSE');
-insert into AirportCode VALUES(null,'哈密尔顿','YHM','CYHM','约翰?卡尔?芒罗哈密尔顿机场','HAMILTON');
-insert into AirportCode VALUES(null,'万锦','YKZ','CYKZ','巴顿维尔机场','MARKHAM');
-insert into AirportCode VALUES(null,'森讷堡','SGD','EKSB','森讷堡机场','SONDERBORG');
-insert into AirportCode VALUES(null,'辛代尔','CNL','EKSN','辛代尔机场','SINDAL');
-insert into AirportCode VALUES(null,'艾斯尤特','ATZ','HEAT','艾斯尤特机场','ASSIUT');
-insert into AirportCode VALUES(null,'卢克索','LXR','HELX','卢克索机场','LUXOR');
-insert into AirportCode VALUES(null,'沙姆沙伊赫','SSH','HESH','沙姆沙伊赫机场','SHARM EL-SHEIKH');
-insert into AirportCode VALUES(null,'古尔代盖','HRG','HEGN','古尔代盖机场','HURGHADA');
-insert into AirportCode VALUES(null,'阿克拉','ACC','DGAA','科托卡机场','ACCRA');
-insert into AirportCode VALUES(null,'凯夫拉维克','KEF','BIKF','凯夫拉维克机场','KEFLAVIK');
-insert into AirportCode VALUES(null,'万鸦老','MDC','WAMM','美娜多机场','MANADO');
-insert into AirportCode VALUES(null,'比什凯克','FRU','UAFM','马纳斯机场','BISHKEK');
-insert into AirportCode VALUES(null,'德黑兰','IKA','OIIE','伊玛目霍梅尼机场','TEHRAN');
-insert into AirportCode VALUES(null,'马什哈德','MHD','OIMM','马什哈德机场','MASHHAD');
-insert into AirportCode VALUES(null,'设拉子','SYZ','OISS','设拉子机场','SHIRAZ');
-insert into AirportCode VALUES(null,'卡塔尼亚','CTA','LICC','丰坦罗撒机场','CATANIA');
-insert into AirportCode VALUES(null,'班加西','BEN','HLLB','班加西贝尼纳机场','BENGHAZI');
-insert into AirportCode VALUES(null,'埃斯比约','EBJ','EKEB','埃斯比约机场','ESBJERG');
-insert into AirportCode VALUES(null,'拉合尔','LHE','OPLA','拉合尔机场','LAHORE');
-insert into AirportCode VALUES(null,'白沙瓦','PEW','OPPS','白沙瓦机场','PESHAWAR');
-insert into AirportCode VALUES(null,'新西伯利亚','OVB','UNNT','新西伯利亚机场','NOVOSIBIRSK TOLMACHEVO');
-insert into AirportCode VALUES(null,'阿里','NGQ','ZUAL','阿里昆莎机场','SHIQUANHE');
-insert into AirportCode VALUES(null,'伦敦','LGW','EGKK','盖特威克机场','LONDON');
-insert into AirportCode VALUES(null,'纳什维尔','BNA','KBNA','纳什维尔机场','NASHVILLE');
-insert into AirportCode VALUES(null,'塔尔萨','TUL','KTUL','塔尔萨机场','TULSA');
-insert into AirportCode VALUES(null,'芝加哥','MDW','KMDW','芝加哥中途机场','CHICAGO');
-insert into AirportCode VALUES(null,'劳德代尔堡','FLL','KFLL','劳德代尔堡－好莱坞机场','FORT LAUDERDALE');
-insert into AirportCode VALUES(null,'奥兰多','SFB','KSFB','奥兰多桑福德机场','AOKELAN');
-insert into AirportCode VALUES(null,'巴尔的摩','BWI','KBWI','古德?马歇尔机场','BALTIMORE');
-insert into AirportCode VALUES(null,'华盛顿','DCA','KDCA','罗纳德?里根机场','WASHINGTON');
-insert into AirportCode VALUES(null,'亚丁','SAH','OYSN','亚丁机场','ADEN');
-insert into AirportCode VALUES(null,'奥克兰','OAK','KOAK','加州奥克兰机场','OAKLAND');
-insert into AirportCode VALUES(null,'格拉斯哥','PIK','EGPK','普雷斯蒂克机场','GLASGOW');
-insert into AirportCode VALUES(null,'贝尔法斯特','BHD','EGAC','乔治?贝斯特贝尔法斯特机场','BELFAST');
-insert into AirportCode VALUES(null,'纽瓦克','EWR','KEWR','纽瓦克机场','NEWARK');
-insert into AirportCode VALUES(null,'巴戈特维尔','YBG','CYBG','巴戈特维尔机场','BAGOTVILLE');
-insert into AirportCode VALUES(null,'麋鹿湖','YAD','CYAD','麋鹿湖机场','MOOSE LAKE');
-insert into AirportCode VALUES(null,'弗朗西斯堡','YAG','CYAG','弗朗西斯堡机场','FORT FRANCES');
-insert into AirportCode VALUES(null,'拉格兰德','YGL','CYGL','拉格兰德机场','LAGRANDE');
-insert into AirportCode VALUES(null,'苏圣玛丽','YAM','CYAM','苏圣玛丽机场','SAULT STE. MARIE');
-insert into AirportCode VALUES(null,'哈利法克斯','YAW','CYAW','哈利法克斯机场','HALIFAX');
-insert into AirportCode VALUES(null,'图芬奴','YAZ','CYAZ','图芬奴机场','TOFINO');
-insert into AirportCode VALUES(null,'佩利湾','YBB','CYBB','佩利湾机场','PELLY BAY');
-insert into AirportCode VALUES(null,'贝科莫','YBC','CYBC','贝科莫机场','BAIE COMEAU');
-insert into AirportCode VALUES(null,'新威斯敏斯特','YBD','CYBD','新威斯敏斯特机场','NEW WESTMINSTER');
-insert into AirportCode VALUES(null,'铀城','YBE','CYBE','铀城机场','URANIUM CITY');
-insert into AirportCode VALUES(null,'邦尼维尔','YBF','CYBF','邦尼维尔机场','BONNYVILLE');
-insert into AirportCode VALUES(null,'贝克湖','YBK','CYBK','贝克湖机场','BAKER LAKE');
-insert into AirportCode VALUES(null,'博登','YBN','CYBN','博登直升机机场','BORDEN');
-insert into AirportCode VALUES(null,'茵斯布鲁克','INN','LOWI','茵斯布鲁克机场','INNSBRUCK');
-insert into AirportCode VALUES(null,'巴瑟斯特','BHS','YBTH','巴瑟斯特机场','BATHURST');
-insert into AirportCode VALUES(null,'卡地克兰','MPH','','卡地克兰机场','CATICLAN');
-insert into AirportCode VALUES(null,'神河','ZGI','CZGI','神河机场','GODS RIVER');
-insert into AirportCode VALUES(null,'基劳纳','YLW','CYLW','基劳纳机场','KELOWNA');
-insert into AirportCode VALUES(null,'圣约翰','YSJ','CYSJ','圣约翰机场','SAINT JOHN');
-insert into AirportCode VALUES(null,'乔治皇子','YXS','CYXS','乔治皇子城机场','PRINCE GEORGE');
-insert into AirportCode VALUES(null,'萨德伯里','YSB','CYSB','萨德伯里机场','SUDBURY');
-insert into AirportCode VALUES(null,'凯恩岛','YPR','CYPR','鲁珀特王子港机场','CANE ISLAND');
-insert into AirportCode VALUES(null,'丘吉尔','YYQ','CYYQ','丘吉尔机场','CHURCHILL');
-insert into AirportCode VALUES(null,'北湾','YYB','CYYB','北湾机场','NORTH BAY');
-insert into AirportCode VALUES(null,'温莎','YQG','CYQG','温莎机场','WINDSOR');
-insert into AirportCode VALUES(null,'基奇纳','YKF','','基奇纳机场','KITCHENER');
-insert into AirportCode VALUES(null,'唐山','TVS','ZBSN','唐山三女河机场','TANGSHAN');
-insert into AirportCode VALUES(null,'盖尔达耶','GHA','DAUG','盖尔达耶机场','GHARDAIA');
-insert into AirportCode VALUES(null,'图古尔特','TGR','DAUK','图古尔特机场','TOUGGOURT');
-insert into AirportCode VALUES(null,'瓦德','ELU','DAUO','盖马尔机场','-');
-insert into AirportCode VALUES(null,'牧之原','FSZ','RJNS','静冈机场','MANGROVE');
-insert into AirportCode VALUES(null,'大阪伊丹','ITM','RJOO','伊丹机场','OSAKA');
-insert into AirportCode VALUES(null,'淮安','HIA','ZSSH','淮安涟水机场','HUAIAN');
-insert into AirportCode VALUES(null,'巴厘巴板','BPN','WALL','巴厘巴板机场','BALIKPAPAN');
-insert into AirportCode VALUES(null,'莱比锡','AOC','EDAC','莱比锡阿尔滕堡机场','LEIPZIG');
-insert into AirportCode VALUES(null,'马德堡','CSO','EDBC','马德堡科赫施泰特机场','MAGDEBURG');
-insert into AirportCode VALUES(null,'艾福特','ERF','EDDE','艾福特机场','ERFURT');
-insert into AirportCode VALUES(null,'莱比锡','LEJ','EDDP','莱比锡哈勒机场','LEIPZIG');
-insert into AirportCode VALUES(null,'萨尔布鲁根','SCN','EDDR','萨尔布吕肯机场','SAARBRUCKEN');
-insert into AirportCode VALUES(null,'埃格尔斯巴赫','QEF','EDFE','埃格尔斯巴赫机场','EGELSBACH');
-insert into AirportCode VALUES(null,'法兰克福','HHN','EDFH','法兰克福哈恩机场','FRANKFURT');
-insert into AirportCode VALUES(null,'曼海姆','MHG','EDFM','曼海姆市机场','MANNHEIM');
-insert into AirportCode VALUES(null,'布尔巴赫','SGE','EDGS','Siegerland机场','BURBACH');
-insert into AirportCode VALUES(null,'汉堡','XFW','EDHI','Hamburg Finkenwerder机场','HAMBURG');
-insert into AirportCode VALUES(null,'叙尔特岛','GWT','EDXW','叙尔特岛机场','SYLT');
-insert into AirportCode VALUES(null,'奥勒松','AES','ENAL','奥勒松机场','ALESUND');
-insert into AirportCode VALUES(null,'Rygge','RYG','ENRY','Rygge机场','RYGGE');
-insert into AirportCode VALUES(null,'海于格松','HAU','ENHD','海于格松机场','HAUGESUND');
-insert into AirportCode VALUES(null,'克里斯蒂安桑','KRS','ENCN','克里斯蒂安桑机场','KRISTIANSAND');
-insert into AirportCode VALUES(null,'勒罗斯','RRS','ENRO','Roeros机场','ROROS');
-insert into AirportCode VALUES(null,'卡普斯卡辛','YYU','CYYU','卡普斯卡辛机场','KAPUSKASING');
-insert into AirportCode VALUES(null,'哈迪港','YZT','CYZT','波特哈迪机场','HARDY');
-insert into AirportCode VALUES(null,'博乐','BPL','ZWBL','新疆博乐机场','BOLE');
-insert into AirportCode VALUES(null,'法鲁','ZFA','CZFA','法鲁机场','FARO');
-insert into AirportCode VALUES(null,'厄尔顿','YXR','CYXR','厄尔顿机场','EARLTON');
-insert into AirportCode VALUES(null,'贝伦斯里弗','YBV','CYBV','贝伦斯河机场','BERENS RIVER');
-insert into AirportCode VALUES(null,'切特温德','YCQ','CYCQ','切特温德机场','CHETWYND');
-insert into AirportCode VALUES(null,'萨菲尔德','YSD','CYSD','萨菲尔德机场','SUFFIELD');
-insert into AirportCode VALUES(null,'波拉图克','YPC','CYPC','波拉图克机场','PAULATUK');
-insert into AirportCode VALUES(null,'卡尔维','CLY','CYSN','圣凯瑟琳机场','CALVER');
-insert into AirportCode VALUES(null,'伊武吉维克','YIK','CYIK','伊武吉维克机场','IVUJIVIK');
-insert into AirportCode VALUES(null,'里格利','YWY','CYWY','里格利机场','WRIGLEY');
-insert into AirportCode VALUES(null,'谢弗维尔','YKL','CYKL','谢弗维尔机场','SCHEFFERVILLE');
-insert into AirportCode VALUES(null,'切斯特菲尔德因莱特','YCS','CYCS','切斯特菲尔德因莱特机场','CHESTERFIELD INLET');
-insert into AirportCode VALUES(null,'惠尔科夫','YXN','CYXN','惠尔科夫机场','WHALE COVE');
-insert into AirportCode VALUES(null,'布苏安加','USU','RPVV','布苏安加机场','BUSUANGA');
-insert into AirportCode VALUES(null,'Havre ST. Pierre','YGV','CYGV','Havre ST. Pierre机场','HAVRE ST. PIERRE');
-insert into AirportCode VALUES(null,'纳塔什昆','YNA','CYNA','纳塔什昆机场','NATASHQUAN');
-insert into AirportCode VALUES(null,'瑟佛罗里达基斯','YSP','CYSP','瑟佛罗里达基斯马拉松机场','THE FLORIDA KEYS');
-insert into AirportCode VALUES(null,'约克顿','YQV','CYQV','约克顿机场','YORKTON');
-insert into AirportCode VALUES(null,'利亚德堡','YJF','CYJF','利亚德堡机场','FORT LIARD');
-insert into AirportCode VALUES(null,'挪威豪斯','YNE','CYNE','挪威豪斯机场','NORWAY HOUSE');
-insert into AirportCode VALUES(null,'埃德森','YET','CYET','埃德森机场','EDSON');
-insert into AirportCode VALUES(null,'桑德斯皮特','YZP','CYZP','桑德斯皮特机场','SANDSPIT');
-insert into AirportCode VALUES(null,'Kimmirut','YLC','CYLC','今米鲁特机场','KIMMIRUT');
-insert into AirportCode VALUES(null,'茨林','YZW','CYZW','茨林机场','TESLIN');
-insert into AirportCode VALUES(null,'奈恩','YDP','CYDP','奈恩机场','NAIN');
-insert into AirportCode VALUES(null,'大特劳特湖','YTL','CYTL','大特劳特湖机场','BIG TROUT');
-insert into AirportCode VALUES(null,'波蒂奇拉普大草原','YPG','CYPG','波蒂奇拉普大草原机场','PORTAGE LA PRARIE');
-insert into AirportCode VALUES(null,'穆瑟尼','YMO','CYMO','穆瑟尼机场','MOOSONEE');
-insert into AirportCode VALUES(null,'克内尔','YQZ','CYQZ','克内尔机场','QUESNEL');
-insert into AirportCode VALUES(null,'福特雷索卢申','YFR','CYFR','福特雷索卢申机场','FORT RESOLUTION');
-insert into AirportCode VALUES(null,'马库维克','YMN','CYFT','马库维克机场','MAKKOVIK');
-insert into AirportCode VALUES(null,'派内贝','YKG','CYAS','派内贝机场','KANGIRSUK');
-insert into AirportCode VALUES(null,'坎贝尔','YBL','CYBL','坎贝尔河机场','CAMPBELL');
-insert into AirportCode VALUES(null,'布兰登','YBR','CYBR','布兰登机场','BRANDON');
-insert into AirportCode VALUES(null,'布朗萨布隆','YBX','CYBX','布朗萨布隆机场','BLANC SABLON');
-insert into AirportCode VALUES(null,'剑桥湾','YCB','CYCB','剑桥湾机场','CAMBRIDGE BAY');
-insert into AirportCode VALUES(null,'纳奈莫','YCD','CYCD','纳奈莫机场','NANAIMO');
-insert into AirportCode VALUES(null,'库格卢克图克','YCO','CYCO','库格卢克图克机场','KUGLUKTUK');
-insert into AirportCode VALUES(null,'克莱德','YCY','CYCY','克莱德河机场','CLYDE');
-insert into AirportCode VALUES(null,'道森','YDA','CYDA','道森城市机场','DAWSON');
-insert into AirportCode VALUES(null,'多芬','YDN','CYDN','多芬机场','DAUPHIN');
-insert into AirportCode VALUES(null,'丘吉尔','ZUM','CZUM','丘吉尔瀑布机场','CHURCHILL');
-insert into AirportCode VALUES(null,'斯图尔特','ZST','CZST','斯图尔特机场','STEWART');
-insert into AirportCode VALUES(null,'平彻克里克','WPC','CZPC','平彻克里克机场','PINCHER CREEK');
-insert into AirportCode VALUES(null,'马塞特','ZMT','CZMT','马塞特机场','MASSET');
-insert into AirportCode VALUES(null,'Tasiujaq','YTQ','CYTQ','Tasiujaq机场','TASIUJAQ');
-insert into AirportCode VALUES(null,'汤普森','YTH','CYTH','汤普森机场','THOMPSON');
-insert into AirportCode VALUES(null,'莱斯布里奇','YQL','CYQL','莱斯布里奇郡立机场','LETHBRIDGE');
-insert into AirportCode VALUES(null,'凯诺拉','YQK','CYQK','凯诺拉机场','KENORA');
-insert into AirportCode VALUES(null,'雷普尔斯湾','YUT','CYUT','雷普尔斯湾机场','REPULSE BAY');
-insert into AirportCode VALUES(null,'霍尔海滩','YUX','CYUX','霍尔海滩机场','HALL BEACH');
-insert into AirportCode VALUES(null,'鲁安','YUY','CYUY','鲁安诺兰达机场','ROUYN');
-insert into AirportCode VALUES(null,'威廉斯湖','YWL','CYWL','威廉斯湖机场','WILLIANS LAKE');
-insert into AirportCode VALUES(null,'克兰布鲁克','YXC','CYXC','克兰布鲁克卡纳迪丁罗基斯机场','CRANBROOK');
-insert into AirportCode VALUES(null,'梅迪辛哈特','YXH','CYXH','梅迪辛哈特机场','MEDICINE HAT');
-insert into AirportCode VALUES(null,'福特圣约翰','YXJ','CYXJ','福特圣约翰机场','FORT ST.JOHN');
-insert into AirportCode VALUES(null,'苏卢考特','YXL','CYXL','苏卢考特机场','SIOUX LOOKOUT');
-insert into AirportCode VALUES(null,'德瑞司','YXT','CYXT','德瑞司机场','TERRACE');
-insert into AirportCode VALUES(null,'安大略','YXU','CYXU','加拿大伦敦机场','ONTARIO');
-insert into AirportCode VALUES(null,'安大略','YRL','CYRL','安大略红湖机场','ONTARIO');
-insert into AirportCode VALUES(null,'艾伯特王子城','YPA','CYPA','艾伯特王子城机场','PRINCE ALBERT');
-insert into AirportCode VALUES(null,'和平河','YPE','CYPE','和平河机场','PEACE RIVER');
-insert into AirportCode VALUES(null,'皮克尔','YPL','CYPL','皮克尔机场','PICKLE');
-insert into AirportCode VALUES(null,'彼得博勒','YPQ','CYPQ','彼得博勒机场','PETERBOROUGH');
-insert into AirportCode VALUES(null,'鲍威尔河','YPW','CYPW','鲍威尔河机场','POWELL RIVER');
-insert into AirportCode VALUES(null,'Povungnituk','YPX','CYPX','Povungnituk机场','POVUNGNITUK');
-insert into AirportCode VALUES(null,'福特奇佩恩','YPY','CYPY','福特奇佩恩机场','FORT CHIPEWYAN');
-insert into AirportCode VALUES(null,'怀特科特','YZU','CYZU','怀特科特机场','WHITECOURT');
-insert into AirportCode VALUES(null,'瓦勒多','YVO','CYVO','瓦勒多机场','VAL D.OR');
-insert into AirportCode VALUES(null,'冷湖','YOD','CYOD','冷湖空军基地机场','COLD LAKE');
-insert into AirportCode VALUES(null,'卡蒂','YOA','CYOA','卡蒂机场','EKATI');
-insert into AirportCode VALUES(null,'德赖登','YHD','CYHD','德赖登机场','DRYDEN');
-insert into AirportCode VALUES(null,'霍普','YHE','CYHE','霍普机场','HOPE');
-insert into AirportCode VALUES(null,'巴瑟斯特','ZBF','CZBF','加拿大巴瑟斯特机场','BATHURST');
-insert into AirportCode VALUES(null,'科勒尔港','YZS','CYZS','科勒尔港机场','CORAL HARBOUR');
-insert into AirportCode VALUES(null,'艾伯塔','YZH','CYZH','艾伯塔奴湖机场','ALBERTA');
-insert into AirportCode VALUES(null,'耶洛奈夫','YZF','CYZF','耶洛奈夫机场','YELLOWKNIFE');
-insert into AirportCode VALUES(null,'蒙若利','YYY','CYYY','蒙若利机场','MONT JOLI');
-insert into AirportCode VALUES(null,'圣约翰斯','YYT','CYYT','圣约翰斯机场','ST JOHN.S');
-insert into AirportCode VALUES(null,'塔克托亚图克','YUB','CYUB','塔克托亚图克机场','TUKTOYAKTUK');
-insert into AirportCode VALUES(null,'蒂明斯','YTS','CYTS','蒂明斯机场','TIMMINS');
-insert into AirportCode VALUES(null,'阿帕拉契科拉','AAF','KAAF','阿帕拉契科拉机场','APALACHICOLA');
-insert into AirportCode VALUES(null,'阿伦敦','ABE','KABE','阿伦敦机场','LEHIGH VALLEY');
-insert into AirportCode VALUES(null,'阿比林','ABI','KABI','阿比林机场','ABILENE');
-insert into AirportCode VALUES(null,'伯纳利欧','ABQ','KABQ','阿尔伯克基机场','BERNALILLO');
-insert into AirportCode VALUES(null,'布朗','ABR','KABR','美国阿伯丁机场','BROWN');
-insert into AirportCode VALUES(null,'岱斯','ABZ','EGPD','阿伯丁机场','DYCE');
-insert into AirportCode VALUES(null,'楠塔基特','ACK','KACK','楠塔基特机场','NANTUCKET');
-insert into AirportCode VALUES(null,'瓦科','ACT','KACT','瓦科地区机场','WACO TEXAS');
-insert into AirportCode VALUES(null,'加利福尼亚州','ACV','KACV','阿克塔机场','CALIFORNIA');
-insert into AirportCode VALUES(null,'波姆那','ACY','KACY','大西洋城机场','BOMUNA');
-insert into AirportCode VALUES(null,'塔兰特','AFW','KAFW','Fort Worth Alliance机场','TARRANT');
-insert into AirportCode VALUES(null,'匹兹堡','AGC','KAGC','Allegheny County机场','PITTSBURGH PENNSYLVANIA');
-insert into AirportCode VALUES(null,'乔治亚州','AGS','KAGS','Augusta Regional机场','GEORGIA');
-insert into AirportCode VALUES(null,'纽约','ALB','KALB','奥尔巴尼机场','NEW YORK');
-insert into AirportCode VALUES(null,'艾丽斯','ALI','KALI','艾丽斯机场','ALICE');
-insert into AirportCode VALUES(null,'奥尔顿','ALN','KALN','奥尔顿机场','ALTON');
-insert into AirportCode VALUES(null,'滑铁卢','ALO','KALO','滑铁卢地区机场','WATERLOO');
-insert into AirportCode VALUES(null,'瓦拉瓦拉','ALW','KALW','瓦拉瓦拉机场','WALLA WALLA');
-insert into AirportCode VALUES(null,'阿马里洛','AMA','KAMA','阿马里洛机场','AMARILLO TEXAS');
-insert into AirportCode VALUES(null,'安妮斯顿','ANB','KANB','安妮斯顿梅特勒波利滕机场','ANNISTON');
-insert into AirportCode VALUES(null,'安德森','AND','KAND','安德森机场','ANDERSON');
-insert into AirportCode VALUES(null,'阿尔皮纳','APN','KAPN','阿尔皮纳机场','ALPENA MICHIGAN');
-insert into AirportCode VALUES(null,'沃特敦','ART','KART','沃特敦机场','WATERTOWN');
-insert into AirportCode VALUES(null,'沃特敦','ATY','KATY','沃特敦地区机场','WATERTOWN');
-insert into AirportCode VALUES(null,'奥斯汀','AUS','KAUS','奥斯汀贝格斯特罗姆机场','AUSTIN TEXAS');
-insert into AirportCode VALUES(null,'阿什维尔','AVL','KAVL','阿什维尔机场','ASHEVILLE');
-insert into AirportCode VALUES(null,'Pittston Township','AVP','KAVP','威尔克斯-巴里机场','PITTSTON TOWNSHIP');
-insert into AirportCode VALUES(null,'亚历山德里亚','AXN','KAXN','亚历山德里亚机场','ALEXANDRIA');
-insert into AirportCode VALUES(null,'卡拉马祖','AZO','KAZO','卡拉马祖/巴特尔克里克机场','KALAMAZOO');
-insert into AirportCode VALUES(null,'伍兹湖县','BDE','KBDE','巴德特BAUDETTE机场','LAKE OF THE WOODS COUNTY');
-insert into AirportCode VALUES(null,'布里奇波特','BDR','KBDR','布里奇波特机场','BRIDGEPORT CONNECTICUT');
-insert into AirportCode VALUES(null,'布拉德福德','BFD','KBFD','布拉德福德机场','BRADFORD');
-insert into AirportCode VALUES(null,'西雅图','BFI','KBFI','波音场国王郡立机场','SEATTLE');
-insert into AirportCode VALUES(null,'贝克斯菲尔德','BFL','KBFL','梅多斯场机场','BAKERSFIELD CALIFORNIA');
-insert into AirportCode VALUES(null,'莫比尔','BFM','KBFM','Mobile Downtown机场','MOBILE');
-insert into AirportCode VALUES(null,'缅因','BGM','KBGM','Greater Binghamton机场','MAINE');
-insert into AirportCode VALUES(null,'班戈','BGR','KBGR','班戈机场','BANGOR');
-insert into AirportCode VALUES(null,'伯明翰','BHM','KBHM','伯明翰舒特尔斯沃思机场','BIRMINGHAM');
-insert into AirportCode VALUES(null,'比林斯','BIL','KBIL','比林斯机场','BILLINGS');
-insert into AirportCode VALUES(null,'俾斯麦','BIS','KBIS','俾斯麦机场','BISMARCK NORTH DAKOTA');
-insert into AirportCode VALUES(null,'杰弗科','BJC','KBJC','杰弗科机场','JEFFCO');
-insert into AirportCode VALUES(null,'贝克县','BKE','KBKE','贝克机场','BAKER COUNTY');
-insert into AirportCode VALUES(null,'克利夫兰','BKL','KBKL','克利夫兰伯克莱克夫兰特机场','CLEVELAND');
-insert into AirportCode VALUES(null,'贝灵汉','BLI','KBLI','贝灵汉机场','BELLINGHAM WASHINGTON');
-insert into AirportCode VALUES(null,'博伊西','BOI','KBOI','博伊西机场','BOISE IDAHO');
-insert into AirportCode VALUES(null,'柏林顿','BTV','KBTV','柏林顿机场','BURLINGTON');
-insert into AirportCode VALUES(null,'柏林顿','BRL','KBRL','伯灵顿机场','BURLINGTON');
-insert into AirportCode VALUES(null,'布朗斯维尔','BRO','KBRO','布朗斯维尔南帕德雷岛机场','BROWNSVILLE TEXAS');
-insert into AirportCode VALUES(null,'比尤特','BTM','KBTM','比尤特贝尔穆尼机场','BUTTE MONTANA');
-insert into AirportCode VALUES(null,'卡尔霍恩','BTL','KBTL','WK凯洛格机场','CALHOUN');
-insert into AirportCode VALUES(null,'埃塞克斯','BVY','KBVY','贝弗利机场','ESSEX COUNTY');
-insert into AirportCode VALUES(null,'哥伦比亚','CAE','KCAE','哥伦比亚梅特勒波利滕机场','COLUMBIA');
-insert into AirportCode VALUES(null,'斯塔克','CAK','KCAK','阿克伦坎顿机场','STARK');
-insert into AirportCode VALUES(null,'锡达城','CDC','KCDC','锡达城机场','CEDAR CITY');
-insert into AirportCode VALUES(null,'斯普林菲尔德','CEF','KCEF','韦斯托弗机场','SPRINGFIELD');
-insert into AirportCode VALUES(null,'克雷斯特维','CEW','KCEW','鲍勃赛克斯机场','CRESTVIEW');
-insert into AirportCode VALUES(null,'开普吉拉多','CGI','KCGI','开普吉拉多机场','CAPE GIRARDEAU');
-insert into AirportCode VALUES(null,'查塔努加','CHA','KCHA','Lovell Field机场','CHATTANOOGA');
-insert into AirportCode VALUES(null,'夏洛茨维尔','CHO','KCHO','夏洛茨维尔阿尔伯马尔机场','CHARLOTTESVILLE');
-insert into AirportCode VALUES(null,'查尔斯顿','CHS','KCHS','查尔斯顿AFB机场','CHARLESTON');
-insert into AirportCode VALUES(null,'锡达拉皮兹','CID','KCID','锡达拉皮兹机场','CEDAR RAPIDS IOWA');
-insert into AirportCode VALUES(null,'密歇根','CIU','KCIU','奇普瓦郡立机场','MICHIGAN');
-insert into AirportCode VALUES(null,'布里奇波特','CKB','KCKB','North Central West Virginia机场','BRIDGEPORT CONNECTICUT');
-insert into AirportCode VALUES(null,'克利夫兰','CLE','KCLE','Cleveland Hopkins机场','CLEVELAND');
-insert into AirportCode VALUES(null,'布拉索斯','CLL','KCLL','Easterwood Field机场','BRAZOS COUNTY');
-insert into AirportCode VALUES(null,'安吉利斯港','CLM','KCLM','William R. Fairchild机场','PORT ANGELES');
-insert into AirportCode VALUES(null,'夏洛特','CLT','KCLT','夏洛特/道格拉斯机场','CHARLOTTE');
-insert into AirportCode VALUES(null,'弗雷德里克顿','YFC','CYFC','弗雷德里克顿机场','FREDERICTON');
-insert into AirportCode VALUES(null,'米苏拉','MSO','KMSO','米苏拉机场','MISSOULA');
-insert into AirportCode VALUES(null,'明尼阿波利斯','MSP','KMSP','明尼阿波利斯―圣保罗机场','MINNEAPOLIS');
-insert into AirportCode VALUES(null,'马塞纳','MSS','KMSS','马塞纳机场','MASSENA');
-insert into AirportCode VALUES(null,'新奥尔良','MSY','KMSY','新奥尔良机场','NEW ORLEANS LOUISIANA');
-insert into AirportCode VALUES(null,'马里兰','MTN','KMTN','马丁州立机场','MARYLAND');
-insert into AirportCode VALUES(null,'Moses Lake','MWH','KMWH','格兰特郡立机场','MOSES LAKE');
-insert into AirportCode VALUES(null,'默特尔比奇','MYR','KMYR','默特尔比奇机场','MYRTLE BEACH');
-insert into AirportCode VALUES(null,'茨城','IBR','RJAH','茨城机场','BARAKI');
-insert into AirportCode VALUES(null,'奥尔德尼','ACI','EGJA','奥尔德尼机场','ALDERNEY');
-insert into AirportCode VALUES(null,'格恩济','GCI','EGJB','格恩济机场','GUERNSEY');
-insert into AirportCode VALUES(null,'泽西','JER','EGJJ','泽西机场','JERSEY');
-insert into AirportCode VALUES(null,'肖勒姆','ESH','EGKA','肖勒姆由海机场','SHOREHAM');
-insert into AirportCode VALUES(null,'格洛斯特','GLO','EGBJ','格洛斯特机场','GLOUCESTER');
-insert into AirportCode VALUES(null,'坎贝尔镇','CAL','EGEC','坎贝尔镇机场','CAMPBELTOWN');
-insert into AirportCode VALUES(null,'加的夫','CWL','EGFF','加的夫机场','CARDIFF');
-insert into AirportCode VALUES(null,'布里斯托尔','BRS','EGGD','布里斯托尔机场','BRISTOL');
-insert into AirportCode VALUES(null,'伦敦','LTN','EGGW','伦敦卢顿机场','LONDON');
-insert into AirportCode VALUES(null,'菲尼克斯','DVT','KDVT','凤凰城鹿谷/菲尼克斯迪尔山谷机场','PHOENIX');
-insert into AirportCode VALUES(null,'罗萨里奥','ROS','SAAR','罗萨里奥机场','ROSARIO');
-insert into AirportCode VALUES(null,'加斯佩','YGP','CYGP','加斯佩机场','GASPE');
-insert into AirportCode VALUES(null,'杰拉尔顿','YGQ','CYGQ','杰拉尔顿机场','GERALDTON');
-insert into AirportCode VALUES(null,'麦迪兰群岛','YGR','CYGR','麦迪兰群岛机场','ILES DE LA MADELEINE');
-insert into AirportCode VALUES(null,'伊格卢利克','YGT','CYGT','伊格卢利克机场','IGLOOLIK');
-insert into AirportCode VALUES(null,'库朱阿拉普','YGW','CYGW','库朱阿拉普机场','KUUJJUARAPIK');
-insert into AirportCode VALUES(null,'古拉木','YGX','CYGX','古拉木机场','GILLAM');
-insert into AirportCode VALUES(null,'穆斯乔','YMJ','CYMJ','穆斯乔机场','MOOSE JAW');
-insert into AirportCode VALUES(null,'祺布嘎莫','YMT','CYMT','祺布嘎莫机场','CHIBOUGAMAU');
-insert into AirportCode VALUES(null,'埃德蒙顿','YXD','CYXD','埃德蒙顿市中心机场','EDMONTON');
-insert into AirportCode VALUES(null,'南安普敦','SOU','EGHI','南安普敦机场','SOUTHAMPTON');
-insert into AirportCode VALUES(null,'伦敦','STN','EGSS','伦敦斯坦斯特德机场','LONDON');
-insert into AirportCode VALUES(null,'蒙彼利埃','MPL','LFMT','蒙彼利埃地中海机场','MONTPELLIER');
-insert into AirportCode VALUES(null,'第比利斯','TBS','UGTB','第比利斯机场','TBILISI');
-insert into AirportCode VALUES(null,'埃尔果累阿','ELG','DAUE','埃尔果累阿机场','ALGERIA');
-insert into AirportCode VALUES(null,'哈西迈萨乌德','HME','DAUH','哈西迈萨乌德机场','HASSI MESSAOUD');
-insert into AirportCode VALUES(null,'因萨拉赫','INZ','DAUI','因萨拉赫机场','IN SALAH');
-insert into AirportCode VALUES(null,'艾格瓦特','LOO','DAUL','艾格瓦特机场','LAGHOUAT');
-insert into AirportCode VALUES(null,'提米蒙','TMX','DAUT','提米蒙机场','TIMIMOUN');
-insert into AirportCode VALUES(null,'科托努','COO','DBBB','科托努机场','COTONOU');
-insert into AirportCode VALUES(null,'瓦加杜古','OUA','DFFD','瓦加杜古机场','OUAGADOUGOU');
-insert into AirportCode VALUES(null,'博博迪乌拉索','BOY','DFOO','BOBO DIOULASSO机场','BOBO DIOULASSO');
-insert into AirportCode VALUES(null,'库马西','KMS','DGSI','库马西机场','KUMASI');
-insert into AirportCode VALUES(null,'阿布贾','ABV','DNAA','阿布贾机场','ABUJA');
-insert into AirportCode VALUES(null,'泰贝萨','TEE','DABS','泰贝萨机场','TEBESSA');
-insert into AirportCode VALUES(null,'康斯坦丁','CZL','DABC','CONSTANTINE MOHAMED BOUDIAF机场','CONSTANTINE');
-insert into AirportCode VALUES(null,'安纳巴','AAE','DABB','安纳巴机场','ANNABA');
-insert into AirportCode VALUES(null,'因阿迈纳斯','IAM','DAUZ','因阿迈纳斯机场','IN AMENAS');
-insert into AirportCode VALUES(null,'扎里亚','ZAR','DNZA','扎里亚机场','ZARIA');
-insert into AirportCode VALUES(null,'马拉迪','MFQ','DRRM','马拉迪机场','MARADI');
-insert into AirportCode VALUES(null,'尼亚美','NIM','DRRN','尼亚美机场','NIAMEY');
-insert into AirportCode VALUES(null,'阿加德兹','AJY','DRZA','阿加德兹机场','AGADES');
-insert into AirportCode VALUES(null,'津德尔','ZND','DRZR','津德尔机场','ZINDER');
-insert into AirportCode VALUES(null,'塔巴卡','TBJ','DTKA','塔巴卡机场','TABARKA');
-insert into AirportCode VALUES(null,'莫纳斯提尔','MIR','DTMB','莫纳斯提尔机场','MONASTIR');
-insert into AirportCode VALUES(null,'加夫萨','GAF','DTTF','加夫萨机场','GAFSA');
-insert into AirportCode VALUES(null,'加贝斯','GAE','DTTG','加贝斯机场','GABES');
-insert into AirportCode VALUES(null,'杰尔巴','DJE','DTTJ','梅利塔机场','DJERBA');
-insert into AirportCode VALUES(null,'斯法克斯','SFA','DTTX','斯法克斯Thyna机场','SFAX');
-insert into AirportCode VALUES(null,'托泽尔','TOE','DTTZ','托泽尔机场','TOZEUR');
-insert into AirportCode VALUES(null,'安特卫普','ANR','EBAW','安特卫普机场','ANRWERP');
-insert into AirportCode VALUES(null,'奥斯坦德','OST','EBOS','奥斯坦德机场','OSTEND');
-insert into AirportCode VALUES(null,'赫林斯多夫','HDF','EDAH','赫林斯多夫机场','HERINGSDORF');
-insert into AirportCode VALUES(null,'蒙斯特','FMO','EDDG','蒙斯特机场','MUENSTER');
-insert into AirportCode VALUES(null,'基尔','KEL','EDHK','基尔机场','KIEL');
-insert into AirportCode VALUES(null,'乌兰乌德','UUD','UIUU','乌兰乌德机场','ULAN-UDE');
-insert into AirportCode VALUES(null,'阿尔汉格尔斯克','ARH','ULAA','阿尔汉格尔斯克机场','ARKHANGELSK');
-insert into AirportCode VALUES(null,'AMDERMA','AMV','ULDD','AMDERMA机场','AMDERMA');
-insert into AirportCode VALUES(null,'摩尔曼斯科','MMK','ULMM','摩尔曼斯科机场','MURMANSK');
-insert into AirportCode VALUES(null,'瓜拉丁加奴','TGG','WMKN','瓜拉丁加奴机场','KUALA TERENGGANU');
-insert into AirportCode VALUES(null,'奥兰','ORN','DAOO','艾塞尼亚机场','ORAN');
-insert into AirportCode VALUES(null,'特莱姆森','TLM','DAON','特莱姆森机场','TLEMCEN');
-insert into AirportCode VALUES(null,'廷杜夫','TIN','DAOF','廷杜夫机场','TINDOUF');
-insert into AirportCode VALUES(null,'提亚雷特','TID','DAOB','提亚雷特机场','TIARET');
-insert into AirportCode VALUES(null,'因盖扎姆','INF','DATG','因盖扎姆机场','IN GUEZZAM');
-insert into AirportCode VALUES(null,'安托法加斯塔','ANF','SCFA','CERRO MORENO机场','ANTOFAGASTA');
-insert into AirportCode VALUES(null,'洛斯安赫莱斯','LSQ','SCGE','洛斯安赫莱斯机场','LOS ANGELES');
-insert into AirportCode VALUES(null,'沙普洛','YLD','CYLD','沙普洛机场','CHAPLEAU');
-insert into AirportCode VALUES(null,'梅多莱克','YLJ','CYLJ','梅多莱克机场','MEADOW LAKE');
-insert into AirportCode VALUES(null,'劳埃德明斯特','YLL','CYLL','劳埃德明斯特机场','LLOYDMINSTER');
-insert into AirportCode VALUES(null,'艾乐特','YLT','CYLT','艾乐特机场','ALERT');
-insert into AirportCode VALUES(null,'坎吉克斯瓦尔','XGR','CYLU','坎吉克斯瓦尔机场','KANGIQSUALUJJUAQ');
-insert into AirportCode VALUES(null,'马克马里堡','YMM','CYMM','马克马里堡机场','FORT MCMURRAY');
-insert into AirportCode VALUES(null,'乌苗奥','YUD','CYMU','乌苗奥机场','UMIUJAG');
-insert into AirportCode VALUES(null,'蒙特利尔','YMX','CYMX','米拉贝尔机场','MONTREAL');
-insert into AirportCode VALUES(null,'韦明吉','YNC','CYNC','韦明吉机场','WEMINDJI');
-insert into AirportCode VALUES(null,'加蒂诺','YND','CYND','加蒂诺机场','GATINEAU');
-insert into AirportCode VALUES(null,'格林伍德','YZX','CYZX','格林伍德机场','GREENWOOD');
-insert into AirportCode VALUES(null,'七岛港','YZV','CYZV','七岛港机场','SEPT-ILES');
-insert into AirportCode VALUES(null,'古斯贝','YYR','CYYR','古斯贝机场','GOOSE BAY');
-insert into AirportCode VALUES(null,'斯威夫特卡伦特','YYN','CYYN','斯威夫特卡伦特机场','SWIFT CURRENT');
-insert into AirportCode VALUES(null,'TALOYOAK','YYH','CYYH','TALOYOAK机场','TALOYOAK');
-insert into AirportCode VALUES(null,'夏洛特城','YYG','CYYG','夏洛特城机场','CHARLOTTETOWN');
-insert into AirportCode VALUES(null,'彭蒂科顿','YYF','CYYF','彭蒂科顿机场','PENTICTON');
-insert into AirportCode VALUES(null,'纳尔逊堡','YYE','CYYE','纳尔逊堡机场','FORT NELSON');
-insert into AirportCode VALUES(null,'史密瑟斯','YYD','CYYD','史密瑟斯机场','SMITHERS');
-insert into AirportCode VALUES(null,'卡尔加里','YYC','CYYC','CALGARY机场','CALGARY');
-insert into AirportCode VALUES(null,'沃瓦','YXZ','CYXZ','沃瓦机场','WAWA');
-insert into AirportCode VALUES(null,'阿伯兹福德','YXX','CYXX','阿伯兹福德机场','ABBOTSFORD');
-insert into AirportCode VALUES(null,'卑尔根','BGO','ENBR','卑尔根机场','BERGEN');
-insert into AirportCode VALUES(null,'克拉斯诺亚尔斯克','KJA','UNKL','克拉斯诺亚尔斯克机场','KRASNOYARSK KRAI');
-insert into AirportCode VALUES(null,'坎佩切','CPE','MMCP','坎佩切机场','CAMPECHE');
-insert into AirportCode VALUES(null,'华雷斯','CJS','MMCS','华雷斯机场','CIUDAD JUAREZ');
-insert into AirportCode VALUES(null,'奇琴伊查','CZA','MMCT','奇琴伊查机场','CHICHEN ITZA');
-insert into AirportCode VALUES(null,'奇瓦瓦','CUU','MMCU','奇瓦瓦机场','CHIHUAHUA');
-insert into AirportCode VALUES(null,'维多利亚城','CVM','MMCV','维多利亚城机场','CIUDAD VICTORIA');
-insert into AirportCode VALUES(null,'克拉克','CRK','RPLC','克拉克机场','MANILA');
-insert into AirportCode VALUES(null,'普拉塔港','POP','MDPP','Puerto PLata Gregorio Luperon机场','PUERTO PLATA');
-insert into AirportCode VALUES(null,'圣多明各','SDQ','MDSD','LAS AMERICAS机场','SANTO DOMINGO');
-insert into AirportCode VALUES(null,'圣地亚哥','STI','MDST','SANTIAGO MUNICIPAL机场','SANTIAGO');
-insert into AirportCode VALUES(null,'阿卡普尔科','ACA','MMAA','阿卡普尔科机场','ACAPULCO');
-insert into AirportCode VALUES(null,'蒙特哥贝','MBJ','MKJS','SANGSTER机场','MONTEGO BAY');
-insert into AirportCode VALUES(null,'蒙特雷','MTY','MMMY','墨西哥蒙特雷机场','MONTERREY');
-insert into AirportCode VALUES(null,'阿瓜斯卡连特斯','AGU','MMAS','阿瓜斯卡连特斯机场','AGUASCALIENTES');
-insert into AirportCode VALUES(null,'HUATULCO','HUX','MMBT','HUATULCO机场','HUATULCO');
-insert into AirportCode VALUES(null,'魁那伐克','CVJ','MMCB','魁那伐克机场','CUERNAVACA');
-insert into AirportCode VALUES(null,'卡门城','CME','MMCE','卡门城机场','CIUDAD DEL CARMEN');
-insert into AirportCode VALUES(null,'切图马尔','CTM','MMCM','切图马尔机场','CHETUMAL');
-insert into AirportCode VALUES(null,'科苏梅尔','CZM','MMCZ','科苏梅尔机场','COZUMEL');
-insert into AirportCode VALUES(null,'科利马','CLQ','MMIA','科利马机场','COLIMA');
-insert into AirportCode VALUES(null,'冲绳','ISG','ROIG','石垣机场','OKINAWA');
-insert into AirportCode VALUES(null,'巴拉奥纳','BRX','MDBH','巴拉奥纳机场','BARAHONA');
-insert into AirportCode VALUES(null,'隆德里纳','LDB','SBLO','隆德里纳机场','LONDRINA');
-insert into AirportCode VALUES(null,'马恩河畔沙隆','XCR','LFOK','瓦特里机场','CHALONS SUR MARNE');
-insert into AirportCode VALUES(null,'佐贺','HSG','RJFS','佐贺机场','ZUOHE');
-insert into AirportCode VALUES(null,'埃弗里特','PAE','KPAE','埃弗雷特潘恩机场','EVERETT');
-insert into AirportCode VALUES(null,'恩德培','EBB','HUEN','恩德培机场','ENTEBBE');
-insert into AirportCode VALUES(null,'彼得罗巴甫洛夫斯克','PKC','UHPP','彼得罗巴甫洛夫斯克机场','PETROPAVLOVSK-KAMCHATSKY');
-insert into AirportCode VALUES(null,'热那亚','GOA','LIMJ','热那亚―西塞斯特里克里斯托弗?哥伦布机场','JANUA');
-insert into AirportCode VALUES(null,'阿斯塔纳','TSE','UACC','阿斯塔纳机场','ASTANA');
-insert into AirportCode VALUES(null,'卡拉干达','KGF','UAKK','卡拉干达机场','KARAGANDA');
-insert into AirportCode VALUES(null,'佩韦克','PWE','UHMP','佩韦克机场','PEVEK');
-insert into AirportCode VALUES(null,'南萨哈林斯克','UUS','UHSS','南萨哈林斯克机场','YUZHNO-SAKHALINSK');
-insert into AirportCode VALUES(null,'普斯科夫','PKV','ULOO','普斯科夫机场','PSKOV');
-insert into AirportCode VALUES(null,'沃洛格达','VGD','ULWW','沃洛格达机场','VOLOGDA');
-insert into AirportCode VALUES(null,'布雷斯特','BQT','UMBB','布雷斯特机场','BREST');
-insert into AirportCode VALUES(null,'戈梅尔','GME','UMGG','戈梅尔机场','GOMEL');
-insert into AirportCode VALUES(null,'维捷布斯克','VTB','UMII','维捷布斯克机场','VITEBSK');
-insert into AirportCode VALUES(null,'加里宁格勒','KGD','UMKK','加里宁格勒机场','KALININGRAD');
-insert into AirportCode VALUES(null,'格罗德诺','GNA','UMMG','格罗德诺机场','GRODNO');
-insert into AirportCode VALUES(null,'巴库','GYD','UBBB','巴库比纳机场','BAKU');
-insert into AirportCode VALUES(null,'别尔哥罗德','EGO','UUOB','别尔哥罗德机场','BELGOROD');
-insert into AirportCode VALUES(null,'沃罗涅什','VOZ','UUOO','沃罗涅什机场','VORONEZH');
-insert into AirportCode VALUES(null,'乌赫塔','UCT','UUYH','乌赫塔机场','UKHTA');
-insert into AirportCode VALUES(null,'乌辛斯克','USK','UUYS','乌辛斯克机场','USINSK');
-insert into AirportCode VALUES(null,'沃尔库塔','VKT','UUYW','沃尔库塔机场','VORKUTA');
-insert into AirportCode VALUES(null,'下诺夫哥罗德','GOJ','UWGG','下诺夫哥罗德机场','NIZHNIY NOVGOROD');
-insert into AirportCode VALUES(null,'蒂华纳','TIJ','MMTJ','蒂华纳-罗德里格斯机场','TIJUANA');
-insert into AirportCode VALUES(null,'特罗纳','TRH','UOTT','特罗纳机场','TRONA');
-insert into AirportCode VALUES(null,'华欣','HHQ','VTPH','华欣机场','HUA HIN');
-insert into AirportCode VALUES(null,'纽卡斯尔','NTL','YWLM','威廉斯敦机场','NEWCASTLE');
-insert into AirportCode VALUES(null,'埃德蒙顿','YEG','CYEG','埃德蒙顿机场','EDMONTON');
-insert into AirportCode VALUES(null,'诺福克岛','NLK','YSNF','诺福克岛机场','NORFOLK ISLAND');
-insert into AirportCode VALUES(null,'达博','DBO','YSDU','达博机场','DUBBO');
-insert into AirportCode VALUES(null,'圣诞岛','XCH','YPXM','圣诞岛机场','CHRISTMAS ISLAND');
-insert into AirportCode VALUES(null,'伍默拉','UMR','YPWR','伍默拉机场','WOOMERA');
-insert into AirportCode VALUES(null,'凯瑟琳','KTR','YPTN','廷德尔机场','KATHERINE');
-insert into AirportCode VALUES(null,'黑德兰港','PHE','YPPD','黑德兰港机场','PORT HEDLAND');
-insert into AirportCode VALUES(null,'利尔蒙斯','LEA','YPLM','利尔蒙斯机场','LEARMONTH');
-insert into AirportCode VALUES(null,'库努纳拉','KNX','YPKU','库努纳拉机场','KUNUNURRA');
-insert into AirportCode VALUES(null,'卡尔古利','KGI','YPKG','卡尔古利机场','KALGOORLIE');
-insert into AirportCode VALUES(null,'詹达科特','JAD','YPJT','詹达科特机场','JANDAKOT');
-insert into AirportCode VALUES(null,'柔佛州','JHB','WMKJ','士乃机场','JOHOR');
-insert into AirportCode VALUES(null,'戈夫','GOV','YPGV','戈夫机场','GOVE');
-insert into AirportCode VALUES(null,'科科斯岛','CCK','YPCC','科科斯岛机场','COCOS ISLANDS');
-insert into AirportCode VALUES(null,'朗塞斯顿','LST','YMLT','朗塞斯顿机场','LAUNCESTON');
-insert into AirportCode VALUES(null,'霍巴特','HBA','YMHB','霍巴特机场','HOBART');
-insert into AirportCode VALUES(null,'霍恩岛','HID','YHID','霍恩岛机场','HORN ISLAND');
-insert into AirportCode VALUES(null,'杰拉尔顿','GET','YGEL','杰拉尔敦机场','GERALDTON');
-insert into AirportCode VALUES(null,'班顿杜','FDU','FZBO','班顿杜机场','BANDUNDU');
-insert into AirportCode VALUES(null,'海霍','HEH','VYHH','茵莱湖机场','HEHO');
-insert into AirportCode VALUES(null,'良乌','NYU','VYNU','良乌机场','NYAUNG-U');
-insert into AirportCode VALUES(null,'布哈拉','BHK','UTSB','布哈拉机场','BUKHARA');
-insert into AirportCode VALUES(null,'布鲁姆','BME','YBRM','布鲁姆机场','BROOME');
-insert into AirportCode VALUES(null,'罗克汉普顿','ROK','YBRK','罗克汉普顿机场','ROCKHAMPTON');
-insert into AirportCode VALUES(null,'伦敦','LCY','EGLC','伦敦城市机场','LONDON');
-insert into AirportCode VALUES(null,'金沙萨','FIH','FZAA','金沙萨恩吉利机场','KINSHASA');
-insert into AirportCode VALUES(null,'卢本巴希','FBM','FZQA','卢本巴希机场','LUBUMBASHI');
-insert into AirportCode VALUES(null,'卡萨布兰卡','CMN','GMMN','默罕默德V机场','CASABLANCA');
-insert into AirportCode VALUES(null,'阿什哈巴德','ASB','UTAA','阿什哈巴德机场','ASHGABAT');
-insert into AirportCode VALUES(null,'黔江','JIQ','ZUQJ','黔江舟白机场','ZHOUBAI');
-insert into AirportCode VALUES(null,'承德','CEH','','承德机场','CHENGDE');
-insert into AirportCode VALUES(null,'塔拉哈西','TLH','KTLH','塔拉哈西机场','TALLAHASSEE');
-insert into AirportCode VALUES(null,'杜尚别','DYU','UTDD','杜尚别机场','DUSHANBE');
-insert into AirportCode VALUES(null,'叶卡捷琳堡','SVX','USSS','叶卡捷琳堡/科利佐沃机场机场','YEKATERINBURG');
-insert into AirportCode VALUES(null,'海德拉巴','HYD','VOHY','海德拉巴机场','HYDERABAD');
-insert into AirportCode VALUES(null,'伊兹密尔','ADB','LTBJ','伊兹密尔Adnan Menderes机场','IZMIR');
-insert into AirportCode VALUES(null,'基辅','KBP','UKBB','波里斯珀尔机场','KIEV');
-insert into AirportCode VALUES(null,'雅加达','JKT','','雅加达机场','JAKARTA');
-insert into AirportCode VALUES(null,'莫雷利亚','MLM','MMMM','莫雷利亚机场','MORELIA');
-insert into AirportCode VALUES(null,'维多利亚','SEZ','FSIA','塞舌尔机场','VICTORIA');
-insert into AirportCode VALUES(null,'纽约','LGA','KLGA','拉瓜迪亚机场','NEW YORK');
-insert into AirportCode VALUES(null,'克林顿县','CWI','','克林顿机场','CLINTON IOWA');
-insert into AirportCode VALUES(null,'岘港','DAD','VVDN','岘港机场','DA NANG');
-insert into AirportCode VALUES(null,'马塔兰','AMI','WADA','Selaparang机场','MATARAM');
-insert into AirportCode VALUES(null,'利斯莫尔','LSY','YLIS','利斯莫尔机场','LISMORE');
-insert into AirportCode VALUES(null,'阿尔山','YIE','ZBES','阿尔山伊尔施机场','ARXAN');
-insert into AirportCode VALUES(null,'托卢','TLU','SKTL','托卢机场','TOLU');
-insert into AirportCode VALUES(null,'富山','TOY','RJNT','富山机场','FUSHAN');
-insert into AirportCode VALUES(null,'楠普拉','APL','FQNP','楠普拉机场','NAMPULA');
-insert into AirportCode VALUES(null,'巴东','PDG','WIPT','达滨机场','PADANG');
-insert into AirportCode VALUES(null,'日喀则','RKZ','ZURK','日喀则和平机场','RIKAZE');
-insert into AirportCode VALUES(null,'德班','DUR','FADN','德班机场','DURBAN');
-insert into AirportCode VALUES(null,'布雷西亚','VBS','LIPO','Brescia Montichiari机场','BRESCIA');
-insert into AirportCode VALUES(null,'利伯维尔','LBV','FOOL','利伯维尔莱昂姆巴机场','LIBREVILIE');
-insert into AirportCode VALUES(null,'内罗毕','NBO','HKJK','内罗毕乔莫?肯雅塔机场','NAIROBI');
-insert into AirportCode VALUES(null,'米兰','LIN','LIML','米兰利纳特机场','MILAN');
-insert into AirportCode VALUES(null,'拉纳卡','LCA','LCLK','拉纳卡机场','LARNACA');
-insert into AirportCode VALUES(null,'林肯','LNK','KLNK','林肯机场','LINCOLN');
-insert into AirportCode VALUES(null,'达累斯萨拉姆','DAR','HTDA','尼雷尔机场','DAR ES SALAAM');
-insert into AirportCode VALUES(null,'底特律','DTW','KDTW','底特律都会韦恩县机场','DETROIT');
-insert into AirportCode VALUES(null,'哈拉雷','HRE','FVHA','哈拉雷机场','HARARE');
-insert into AirportCode VALUES(null,'拉巴斯','LPB','SLLP','EL ALTO机场','LA PAZ');
-insert into AirportCode VALUES(null,'圣何塞','SJO','MROC','胡安 圣玛利亚机场','SAN JOSE');
-insert into AirportCode VALUES(null,'圣何塞','SJC','KSJC','诺曼?米内塔圣何塞机场','SAN JOSE');
-insert into AirportCode VALUES(null,'圣萨尔瓦多','SAL','MSLP','圣萨尔瓦多 科马拉帕机场','SAN SALVADOR');
-insert into AirportCode VALUES(null,'费耶特维尔','FYV','KFAY','费耶特维尔机场','FAYETTEVILLE, ARKANSAS');
-insert into AirportCode VALUES(null,'奥兰多','ORL','','赫登机场','AOKELAN');
-insert into AirportCode VALUES(null,'冈山','OKJ','RJOB','冈山机场','OKAYAMA PREFECTURE');
-insert into AirportCode VALUES(null,'南迪','NAN','NFFN','南迪机场','NADI');
-insert into AirportCode VALUES(null,'伊瓜苏','IGR','SARI','伊瓜苏机场','IGUAZU');
-insert into AirportCode VALUES(null,'纽约','ISP','KISP','长岛机场','NEW YORK');
-insert into AirportCode VALUES(null,'哈特福德县','BDL','KBDL','哈特福德机场','HARTFORD COUNTY, CONNECTICUT');
-insert into AirportCode VALUES(null,'内尔斯普雷特','MQP','FAKN','克鲁格姆普马兰加国际机场机场','NELSPRUIT');
-insert into AirportCode VALUES(null,'斯普利特','SPU','LDSP','斯普利特机场机场','SPLIT');
-insert into AirportCode VALUES(null,'韦恩堡','FWA','KFWA','韦恩堡巴尔机场','FORTWAYNE');
-insert into AirportCode VALUES(null,'金昌','JIC','ZLJC','金昌机场','JINCHANG');
-insert into AirportCode VALUES(null,'拉瓦格','LAO','','拉瓦格机场','LAOAG');
-insert into AirportCode VALUES(null,'莫尔兹比港','POM','AYPY','莫尔兹比港机场','PORT MORESBY');
-insert into AirportCode VALUES(null,'华盛顿','IAD','KIAD','华盛顿杜勒斯机场','WASHINGTON');
-insert into AirportCode VALUES(null,'卡利亚里','CAG','LIEE','卡利亚里机场','CAGLIARI');
-insert into AirportCode VALUES(null,'罗马','CIA','LIRA','罗马钱皮诺机场','ROME');
-insert into AirportCode VALUES(null,'帕罗','PBH','VQPR','帕罗机场','PARO');
-insert into AirportCode VALUES(null,'维尔纽斯','VNO','EYVI','维尔纽斯机场','VILNIUS');
-insert into AirportCode VALUES(null,'太子港国际','PAP','MTPP','太子港国际机场','PORT-AU-PRINCE');
-insert into AirportCode VALUES(null,'兰卡威','LGK','WMKL','浮罗交怡机场','LANGKAWI');
-insert into AirportCode VALUES(null,'马耳他','MLA','LMML','马耳他机场','MALTA');
-insert into AirportCode VALUES(null,'卡利博','KLO','RPVK','卡利博机场','KALIBO');
-insert into AirportCode VALUES(null,'张掖','YZY','ZLZY','张掖机场','ZHANGYE');
-insert into AirportCode VALUES(null,'斗湖','TWU','WBKW','斗湖机场','TAWAU');
-insert into AirportCode VALUES(null,'黎牙实比','LGP','','黎牙实比机场','LEGASPI');
-insert into AirportCode VALUES(null,'塔比拉兰','TAG','','塔比拉兰机场','TAGBILARAN');
-insert into AirportCode VALUES(null,'阿洛岛','ARD','','阿洛岛机场','ALOR ISLAND');
-insert into AirportCode VALUES(null,'古邦','KOE','','古邦机场','KUPANG');
-insert into AirportCode VALUES(null,'卢萨卡','LUN','FLLS','卢萨卡机场','LUSAKA');
-insert into AirportCode VALUES(null,'皇后镇','ZQN','NZQN','皇后镇机场','QUEENSTOWN');
-insert into AirportCode VALUES(null,'扬州','YTY','ZSYA','扬州泰州机场','YANGZHOU');
-insert into AirportCode VALUES(null,'巴彦淖尔','RLK','ZBYZ','巴彦淖尔天吉泰机场','BAYAN NUR');
-insert into AirportCode VALUES(null,'特罗姆瑟','TOS','','特罗姆瑟机场','TROMSO');
-insert into AirportCode VALUES(null,'朗勃拉邦','LPQ','','朗勃拉邦机场','LUANG PRABANG');
-insert into AirportCode VALUES(null,'小松','KMQ','RJNK','小松机场','KOMATSU');
-insert into AirportCode VALUES(null,'布加勒斯特','OTP','LROP','布加勒斯特奥托佩尼机场','BUCHAREST');
-insert into AirportCode VALUES(null,'库里蒂巴','CWB','SBCT','库里蒂巴机场','CURITIBA');
-insert into AirportCode VALUES(null,'普罗维登斯','PVD','KPVD','普罗维登斯机场','PROVIDENCE');
-insert into AirportCode VALUES(null,'马普托','MPM','FQMA','马普托机场','MAPUTO');
-insert into AirportCode VALUES(null,'哈瓦那','HAV','','哈瓦那何塞马蒂机场','HAVANA');
-insert into AirportCode VALUES(null,'毛里求斯','MRU','FIMP','毛里求斯机场','MAURITIUS');
-insert into AirportCode VALUES(null,'菲尼克斯','PHX','KPHX','菲尼克斯天港机场','PHOENIX');
-insert into AirportCode VALUES(null,'维罗纳','VRN','','维罗纳机场','VERONA');
-insert into AirportCode VALUES(null,'关岛','GUM','PGUM','关岛机场','GUAM');
-insert into AirportCode VALUES(null,'胡占德','LBD','UTDL','胡占德机场','KHUDZHAND');
-insert into AirportCode VALUES(null,'胡占德','LBD','UTDL','胡占德机场','KHUDZHAND');
-insert into AirportCode VALUES(null,'里加','RIX','EVRA','里加机场','RIGA');
-insert into AirportCode VALUES(null,'布拉戈维申斯克','BQS','UHBB','布拉戈维申斯克机场','BLAGOVESCHENSK');
-insert into AirportCode VALUES(null,'雅库茨克','YKS','','雅库茨克机场','YAKUTSK');
-insert into AirportCode VALUES(null,'奥伦堡','REN','UWOO','奥伦堡机场','ORENBURG');
-insert into AirportCode VALUES(null,'巴林','BAH','OBBI','巴林机场','MOURINHO HA LA');
-insert into AirportCode VALUES(null,'诺维奇','NWI','EGSH','诺维奇机场','NORWICH');
-insert into AirportCode VALUES(null,'布雷加港','LMQ','HLMB','布雷加港机场','MARSA EL BREGA');
-insert into AirportCode VALUES(null,'弗里敦','FNA','','弗里敦机场','FREETOWN');
-insert into AirportCode VALUES(null,'巴士拉','BSR','ORMM','巴士拉机场','BASRA');
-insert into AirportCode VALUES(null,'关丹','KUA','WMKD','关丹机场','KUANTAN');
-insert into AirportCode VALUES(null,'里奥格兰德','RGA','SAWE','里奥格兰德机场','RIO GRANDE');
-insert into AirportCode VALUES(null,'清莱','CEI','VTCT','清莱机场','CHIANAG RAI');
-insert into AirportCode VALUES(null,'普林塞萨港','PPS','RPVP','普林塞萨港机场','PUERTO PRINCESA');
-insert into AirportCode VALUES(null,'万纶','URT','','万纶机场','SURAT THANI');
-insert into AirportCode VALUES(null,'毕尔巴鄂','BIO','LEBB','毕尔巴鄂机场','BILBAO');
-insert into AirportCode VALUES(null,'比亚里茨','BIQ','LFBZ','比亚里茨-安格雷机场','BIARRITZ');
-insert into AirportCode VALUES(null,'科钦','COK','VOCI','科钦机场','KOCHI');
-insert into AirportCode VALUES(null,'柏林','BER','EDDB','柏林勃兰登堡机场','BERLIN');
-insert into AirportCode VALUES(null,'温得和克','WDH','FYWH','温得和克卢格哈威机场','WINDHOEK');
-insert into AirportCode VALUES(null,'台东','TTT','RCFN','台东丰年机场','TAIDONG');
-insert into AirportCode VALUES(null,'布拉柴维尔','BZV','FCBB','布拉柴维尔马亚机场','BRAZZAVILLE');
-insert into AirportCode VALUES(null,'马斯喀特','MCT','OOMS','马斯喀特机场','MUSCAT');
-insert into AirportCode VALUES(null,'巴马科','BAM','GABS','巴马科机场','BAMAKO');
-insert into AirportCode VALUES(null,'三宝垄','SRG','WARS','三宝垄艾哈迈德亚尼机场','SEMARANG');
-insert into AirportCode VALUES(null,'斯德哥尔摩','NYO','','斯德哥尔摩史卡夫斯塔机场','STOCKHOLM');
-insert into AirportCode VALUES(null,'辛辛那提','CVG','KCVG','辛辛那提机场','CINCINNATI');
-insert into AirportCode VALUES(null,'巴淡岛','BTH','WIKB','巴淡岛机场','BATAM');
-insert into AirportCode VALUES(null,'Tucson','TUS','KTUS','图森机场','TUCSON');
-insert into AirportCode VALUES(null,'马略卡岛帕尔马','PMI','LEPA','马略卡岛帕尔马机场','PALMA DE MALLORCA');
-insert into AirportCode VALUES(null,'匹兹堡','PIT','KPIT','匹兹堡机场','PITTSBURGH PENNSYLVANIA');
-insert into AirportCode VALUES(null,'科纳','KOA','PHKO','科纳机场','KONA');
-insert into AirportCode VALUES(null,'圣塔安那','SNA','','圣塔安那橙郡县机场','SANTA ANA');
-insert into AirportCode VALUES(null,'卡胡卢伊','OGG','','卡胡卢伊机场','KAHULUI');
-insert into AirportCode VALUES(null,'甲米','KBV','VTSG','甲米机场','KRABI');
-insert into AirportCode VALUES(null,'青森','AOJ','RJSA','青森机场','AOMORI');
-insert into AirportCode VALUES(null,'基多','UIO','SEQU','基多机场','QUITO');
-insert into AirportCode VALUES(null,'麦迪逊','MSN','KMSN','麦迪逊机场','MADISON');
-insert into AirportCode VALUES(null,'圣芭芭拉','SBA','KSBA','圣芭芭拉机场','SANTA BARBARA');
-insert into AirportCode VALUES(null,'Springfield-Branson National','SGF','KSG','斯普林菲尔德机场','SPRINGFIELD');
-insert into AirportCode VALUES(null,'Springfield-Branson National','SGF','KSG','斯普林菲尔德机场','SPRINGFIELD');
-insert into AirportCode VALUES(null,'路易斯维尔','SDF','KSDF','路易斯维尔机场','LOUISVILLE');
-insert into AirportCode VALUES(null,'Shimkent','CIT','','什姆肯特机场','SHIMKEN');
-insert into AirportCode VALUES(null,'博罗尼亚','BLQ','LIPE','博罗尼亚机场','BOLOGNA');
-insert into AirportCode VALUES(null,'浦那','PNQ','VAPO','浦那机场','PUNE');
-insert into AirportCode VALUES(null,'韩国襄阳','YNY','RKNY','韩国襄阳机场','YANGYANG');
-insert into AirportCode VALUES(null,'维萨卡帕特南','VTZ','','维萨卡帕特南机场','VISHAKHAPATNAM');
-insert into AirportCode VALUES(null,'博兹曼','BZN','KBZN','博兹曼贝尔格莱德机场','BOZEMAN');
-insert into AirportCode VALUES(null,'吉隆坡','SZB','WMSA','吉隆坡苏丹阿卜杜尔机场','KUALA LUMPUR');
-insert into AirportCode VALUES(null,'拉默齐亚','SUF','LICA','拉默齐亚机场','LAMEZIA TERME');
-insert into AirportCode VALUES(null,'哥达巴鲁','KBR','','哥达巴鲁机场','KOTA BHARU');
-insert into AirportCode VALUES(null,'斋浦尔','JAI','VIJP','斋浦尔机场','JAIPUR');
-insert into AirportCode VALUES(null,'瓦拉纳西','VNS','VIBN','瓦拉纳西机场','VARANASI');
-insert into AirportCode VALUES(null,'皮乌拉','PIU','SPUR','皮乌拉机场','PIURA');
-insert into AirportCode VALUES(null,'圣托里尼','JTR','','圣托里尼机场','SANTORINI');
-insert into AirportCode VALUES(null,'杜马格特','DGT','RPVD','杜马格特机场','DUMAGUETE');
-insert into AirportCode VALUES(null,'雷克亚未克','RKV','BIRK','雷克亚未克机场','REYKJAVIK');
-insert into AirportCode VALUES(null,'加格达奇','JGD','','加格达奇机场','加格达奇');
-insert into AirportCode VALUES(null,'苏福尔斯','FSD','KFSD','苏福尔斯机场','SIOUX FALLS');
-insert into AirportCode VALUES(null,'布莱克布斯','BBS','','布莱克布斯机场','BLACKBUSH');
-insert into AirportCode VALUES(null,'法戈','FAR','KFAR','法戈赫克机场','FARGO');
-insert into AirportCode VALUES(null,'鄂木斯克','OMS','UNOO','鄂木斯克机场','OMSK');
-insert into AirportCode VALUES(null,'尤金','EUG','KEUG','尤金机场','EUGENE');
-insert into AirportCode VALUES(null,'罗阿诺克','ROA','KROA','罗阿诺克机场','罗阿诺克');
-insert into AirportCode VALUES(null,'坦帕','TPA','','坦帕机场','TAMPA');
-insert into AirportCode VALUES(null,'罗利达勒姆','RDU','KRDU','罗利达勒姆机场','RALEIGH DURHAM');
-insert into AirportCode VALUES(null,'圣保罗','CGH','SBSP','圣保罗孔戈尼亚斯机场','SAO PAULO');
-insert into AirportCode VALUES(null,'哥伦布','CSG','KCSG','哥伦布机场','COLUMBUS');
-insert into AirportCode VALUES(null,'萨克拉门托','SMF','KSMF','萨克拉门托机场','SACRAMENTO');
-insert into AirportCode VALUES(null,'弗卢里亚诺波利斯','FLN','','弗卢里亚诺波利斯机场','FLORIANOPOLIS');
-insert into AirportCode VALUES(null,'塔林','TLL','EETN','伦纳特?梅里塔林机场','TALLINN');
-insert into AirportCode VALUES(null,'阿达纳','ADA','LTAF','阿达纳机场','ADANA');
-insert into AirportCode VALUES(null,'基韦斯德','EYW','','基韦斯德机场','KEY WEST');
-insert into AirportCode VALUES(null,'埃阿坎','ECN','LCEN','埃阿坎机场','ERCAN');
-insert into AirportCode VALUES(null,'圣塞瓦斯蒂安','EAS','','圣塞瓦斯蒂安机场','SAN SEBASTIAN');
-insert into AirportCode VALUES(null,'卡尔斯巴德','CNM','','卡尔斯巴德机场','CARLSBAD');
-insert into AirportCode VALUES(null,'布宜诺斯艾利斯','AEP','SABE','布宜诺斯艾利斯霍尔赫纽贝里机场','BUENOS AIRES');
-insert into AirportCode VALUES(null,'阿斯彭','ASE','KASE','阿斯彭机场','ASPEN');
-insert into AirportCode VALUES(null,'开塞利','ASR','LTAU','开塞利机场','KAYSERI');
-insert into AirportCode VALUES(null,'希洛','ITO','PHTO','希洛机场','HILO');
-insert into AirportCode VALUES(null,'希洛','ITO','PHTO','希洛机场','HILO');
-insert into AirportCode VALUES(null,'科珀斯克里斯蒂','CRP','','科珀斯克里斯蒂机场','CORPUS CHRISTI');
-insert into AirportCode VALUES(null,'佳特土','KDM','','佳特土机场','KAADEDHDHOO');
-insert into AirportCode VALUES(null,'拉皮德城','RAP','','拉皮德城机场','RAPID CITY');
-insert into AirportCode VALUES(null,'蒙特雷','MRY','','蒙特雷机场','MONTEREY');
-insert into AirportCode VALUES(null,'亨德森','HNZ','','亨德森机场','HENDERSON');
-insert into AirportCode VALUES(null,'顺化','HUI','VVPB','顺化富牌机场','HUE');
-insert into AirportCode VALUES(null,'埃尔?帕索','ELP','','埃尔?帕索机场','EL PASO');
-insert into AirportCode VALUES(null,'博卡拉','PKR','VNPK','博卡拉机场','POKHARA');
-insert into AirportCode VALUES(null,'扎金索斯','ZTH','LGZA','扎金索斯机场','ZAKINTHOS');
-insert into AirportCode VALUES(null,'盖恩斯维尔','GNV','KGNV','盖恩斯维尔机场','GAINESVILLE');
-insert into AirportCode VALUES(null,'克雷塔罗','QRO','XXXX','克雷塔罗机场','QUERETARO');
-insert into AirportCode VALUES(null,'海旁','LOP','WADL','海旁机场','PRAYA');
-insert into AirportCode VALUES(null,'拉奈','LNY','PHNY','拉奈机场','LANAI CITY');
-insert into AirportCode VALUES(null,'塔韦乌尼岛','TVU','','塔韦乌尼岛机场','TAVEUNI ISLAND');
-insert into AirportCode VALUES(null,'格连吉克','GDZ','','格连吉克机场','GELENDZIK');
-insert into AirportCode VALUES(null,'坎昆','CUN','MMUN','坎昆机场','CANCUN');
-insert into AirportCode VALUES(null,'路易斯?穆尼奥斯?马林','SJU','TJSJ','路易斯?穆尼奥斯?马林机场','SAN JUAN');
-insert into AirportCode VALUES(null,'贝洛奥里藏特','PLU','SBBH','贝洛奥里藏特机场','BELO HORIZONT');
-insert into AirportCode VALUES(null,'贝洛奥里藏特','CNF','SBCF','坦克雷多内维斯机场','BELO HORIZONT');
-insert into AirportCode VALUES(null,'瓦拉德','VRA','','瓦拉德机场','VARADERO');
-insert into AirportCode VALUES(null,'乌贝兰迪亚','UDI','SBUL','乌贝兰迪亚机场','UBERLANDIA');
-insert into AirportCode VALUES(null,'圣保罗','VCP','','坎皮纳斯机场','SAO PAULO');
-insert into AirportCode VALUES(null,'阿拉卡茹','AJU','SBAR','阿拉卡茹机场','ARACAJU');
-insert into AirportCode VALUES(null,'梅肯','MCN','KMCN','梅肯机场','MACON');
-insert into AirportCode VALUES(null,'朱巴','JUB','HSSJ','朱巴机场','JUBA');
-insert into AirportCode VALUES(null,'汕头','','ZGOW','揭阳机场','JIEYANG');
-insert into AirportCode VALUES(null,'复活节岛','IPC','SCI','复活节岛马塔维里机场','EASTER ISLAND');
-insert into AirportCode VALUES(null,'鸟取','YGJ','RJOH','鸟取机场','YONAGO');
-insert into AirportCode VALUES(null,'帕皮提','PPT','NTAA','帕皮提机场','PAPEETE');
-insert into AirportCode VALUES(null,'芽庄','CXR','','芽庄金兰机场','NHA TRANG');
-insert into AirportCode VALUES(null,'埃因霍温','EIN','','埃因霍温机场','EINDHOVEN');
-insert into AirportCode VALUES(null,'雪城','SYR','KSYR','雪城汉考克机场','SYRACUSE');
-insert into AirportCode VALUES(null,'大叻','DLI','VVDL','大叻莲姜机场','DALAT');
-insert into AirportCode VALUES(null,'美里','MYY','WBGR','美里机场','MIRI');
-insert into AirportCode VALUES(null,'里贾纳','YQR','CYQR','里贾纳机场','REGINA');
-insert into AirportCode VALUES(null,'阿比让','ABJ','DIAP','阿比让机场','ABIDJAN');
-insert into AirportCode VALUES(null,'伊瓜苏瀑布','IGU','SBFI','伊瓜苏瀑布机场','IGUAZU FALLS');
-insert into AirportCode VALUES(null,'龙讷比','RNB','','龙讷比机场','RONNEBY');
-insert into AirportCode VALUES(null,'亚罗士打','AOR','WMKA','AOR机场','ALOR SETAR');
-insert into AirportCode VALUES(null,'乌戎潘当','UPG','WAAA','乌戎潘当机场','UJUNG PANDANG');
-insert into AirportCode VALUES(null,'荣市','VII','','荣市机场','VINH CITY');
-insert into AirportCode VALUES(null,'克拉斯诺达','KRR','URKK','克拉斯诺达机场','KRASNODAR');
-insert into AirportCode VALUES(null,'乞力马扎罗','JRO','HTKJ','乞力马扎罗机场','KILIMANJARO');
-insert into AirportCode VALUES(null,'彭萨科拉','PNS','KPNS','彭萨科拉机场','PENSACOLA');
-insert into AirportCode VALUES(null,'昌迪加尔','IXC','','昌迪加尔机场','CHANDIGARH');
-insert into AirportCode VALUES(null,'日惹','JOG','WARJ','日惹机场','YOGYAKARTA');
-insert into AirportCode VALUES(null,'卢武克','LUW','WAMW','卢武克机场','LUWUK');
-insert into AirportCode VALUES(null,'伊拉克利翁','HER','','伊拉克利翁机场','HERAKLION');
-insert into AirportCode VALUES(null,'山打根','SDK','WBKS','山打根机场','SANDAKAN');
-insert into AirportCode VALUES(null,'布加斯','BOJ','','布加斯机场','BOURGAS');
-insert into AirportCode VALUES(null,'阿特劳','GUW','UATG','阿特劳机场','ATYRAU');
-insert into AirportCode VALUES(null,'利文斯通','LVI','FLLI','利文斯通机场','LIVINGSTONE');
-insert into AirportCode VALUES(null,'蒙巴萨','MBA','HKMO','蒙巴萨机场','MOMBASA');
-insert into AirportCode VALUES(null,'的里雅斯特','TRS','LIPQ','的里雅斯特机场','TRIESTE');
-insert into AirportCode VALUES(null,'普拉森西亚','PLJ','','普拉森西亚机场','PLACENCIA');
-insert into AirportCode VALUES(null,'彭世洛','PHS','VTPP','彭世洛机场','PHITSANULOK');
-insert into AirportCode VALUES(null,'艾尔斯岩','AYQ','','康内尔兰机场','AYERS ROCK');
-insert into AirportCode VALUES(null,'艾因','AAN','OMAL','艾因机场','AL AIN');
-insert into AirportCode VALUES(null,'斯塔特大学','SCE','KUNV','斯塔特大学机场','STATE COLLEGE');
-insert into AirportCode VALUES(null,'科罗尔','ROR','PTRO','科罗尔机场','KOROR');
-insert into AirportCode VALUES(null,'莫罗尼','HAH','FMCH','莫罗尼机场','MORONI');
-insert into AirportCode VALUES(null,'高知','KCZ','RJOK','高知机场','KOCHI');
-insert into AirportCode VALUES(null,'诗巫','SBW','WBGS','诗巫机场','SIBU');
-insert into AirportCode VALUES(null,'塞萨洛尼基','SKG','LGTS','塞萨洛尼基机场','THESSALONIKI');
-insert into AirportCode VALUES(null,'万隆','BDO','WICC','万隆机场','BANDUNG');
-insert into AirportCode VALUES(null,'富国岛','PQC','VVPQ','富国岛机场','PHU QUOC');
-insert into AirportCode VALUES(null,'罗切斯特','ROC','KROC','罗切斯特机场','ROCHESTE');
-insert into AirportCode VALUES(null,'小石城','LIT','KLIT','小石城机场','LITTLE ROCK');
-insert into AirportCode VALUES(null,'德岛','TKS','RJOS','德岛机场','TOKUSHIMA');
-insert into AirportCode VALUES(null,'女满别','MMB','RJCM','女满别机场','MEMANBETSU');
-insert into AirportCode VALUES(null,'西棕榈滩','PBI','KPBI','西棕榈滩机场','WEST PALM BEACH');
-insert into AirportCode VALUES(null,'林雪平','LPI','','林雪平机场','LINKOEPING');
-insert into AirportCode VALUES(null,'汤斯维尔','TSV','YBTL','汤斯维尔机场','TOWNSVILLE');
-insert into AirportCode VALUES(null,'恩贾梅纳','NDJ','FTTJ','恩贾梅纳机场','NDJAMENA');
-insert into AirportCode VALUES(null,'艾丽斯斯普林斯','ASP','','艾丽斯斯普林斯机场','ALICE SPRINGS');
-insert into AirportCode VALUES(null,'昆岛','VCS','','昆岛机场','CON DAO');
-insert into AirportCode VALUES(null,'密尔沃基','MKE','KMKE','密尔沃基诺若机场','MILWAUKEE');
-insert into AirportCode VALUES(null,'塔那那利佛','TNR','FMMI','塔那那利佛机场','ANTANANARIV');
-insert into AirportCode VALUES(null,'诺克斯维尔','TYS','KTYS','诺克斯维尔机场','KNOXVILLE');
-insert into AirportCode VALUES(null,'大溪城','GRR','','大溪城机场','GRAND RAPIDS');
-insert into AirportCode VALUES(null,'圣丹尼斯','RUN','','圣丹尼斯机场','SAINT DENIS REUNION');
-insert into AirportCode VALUES(null,'布隆方丹','BFN','FABL','布隆方丹机场','BLOEMFONTEIN');
-insert into AirportCode VALUES(null,'阿雷格里港','POA','SBPA','阿雷格里港机场','PORTO ALEGRE');
-insert into AirportCode VALUES(null,'弗雷斯诺','FAT','KFAT','弗雷斯诺机场','FRESNO');
-insert into AirportCode VALUES(null,'桑给巴尔','ZNZ','HTZA','桑给巴尔机场','ZANZIBA');
-insert into AirportCode VALUES(null,'亚松森','ASU','SGAS','亚松森机场','ASUNCION');
-insert into AirportCode VALUES(null,'汉考克','CMX','KCMX','汉考克机场','HANCOCK');
-insert into AirportCode VALUES(null,'海防','HPH','VVCI','海防机场','HAIPHONG');
-insert into AirportCode VALUES(null,'芽庄','NHA','VVNT','芽庄机场','NHA TRANG');
-insert into AirportCode VALUES(null,'麦卡伦','MFE','KMFE','麦卡伦机场','MCALLEN');
-insert into AirportCode VALUES(null,'格拉纳达','GRX','','格拉纳达机场','GRANADA');
-insert into AirportCode VALUES(null,'阿克套','SCO','UATE','阿克套机场','AKTAU');
-insert into AirportCode VALUES(null,'克莱蒙费朗','CFE','','克莱蒙费朗机场','CLERMONT-FERRAND');
-insert into AirportCode VALUES(null,'哥伦布','CMH','KCMH','哥伦布港机场','COLUMBUS');
-insert into AirportCode VALUES(null,'萨马拉','KUF','UWWW','萨马拉机场','SAMARA');
-insert into AirportCode VALUES(null,'热浪岛','RDN','','热浪岛机场','REDANG ISLAND');
-insert into AirportCode VALUES(null,'莱城','LAE','','莱城机场','LAE');
-insert into AirportCode VALUES(null,'科比亚波','CPO','SCHA','科比亚波机场','COPIAPO');
-insert into AirportCode VALUES(null,'萨尔瓦多','ESR','','萨尔瓦多机场','萨尔瓦多');
-insert into AirportCode VALUES(null,'归仁','UIH','VVQN','归仁机场','QUI NHON');
-insert into AirportCode VALUES(null,'顿涅茨克','DOK','UKCC','顿涅茨克机场','DONETSK');
-insert into AirportCode VALUES(null,'什里夫波特','SHV','KSHV','什里夫波特机场','SHREVEPORT');
-insert into AirportCode VALUES(null,'迪比克','DBQ','KDBQ','迪比克机场','DUBUQUE');
-insert into AirportCode VALUES(null,'卡拉特哈','KTA','','卡拉特哈机场','KARRATHA');
-insert into AirportCode VALUES(null,'丽水','RSU','RKJY','丽水机场','YEOSU');
-insert into AirportCode VALUES(null,'巨港','PLM','WIPP','巨港机场','PALEMBANG');
-insert into AirportCode VALUES(null,'贝加莫','BGY','LIME','贝加莫机场','BERGAMO');
-insert into AirportCode VALUES(null,'瓦伦西亚','VLC','LEVC','瓦伦西亚机场','VALENCIA');
-insert into AirportCode VALUES(null,'穆龙达瓦','MOQ','FMMV','穆龙达瓦机场','MORONDAVA');
-insert into AirportCode VALUES(null,'梅里达','MID','MMMD','梅里达机场','MERIDA');
-insert into AirportCode VALUES(null,'圣马丽亚','SMX','','圣马丽亚机场','SANTA MARIA');
-insert into AirportCode VALUES(null,'安科纳','AOI','LIPY','安科纳机场','ANCONA');
-insert into AirportCode VALUES(null,'下瓦尔托夫斯克','NJC','','下瓦尔托夫斯克机场','NIZHNEVARTOVSK');
-insert into AirportCode VALUES(null,'棕榈泉','PSP','KPSP','Palm Springs机场','PALM SPRINGS');
-insert into AirportCode VALUES(null,'雷德蒙德','RDM','KRDM','雷德蒙德机场','REDMOND');
-insert into AirportCode VALUES(null,'伊萨卡','ITH','KITH','伊萨卡机场','ITHACA');
-insert into AirportCode VALUES(null,'普罗瑟派恩','PPP','','普罗瑟派恩机场','PROSERPINE');
-insert into AirportCode VALUES(null,'蒙特利尔','YUL','CYUL','蒙特利尔特鲁多机场','MONTREAL');
+CREATE USER IF NOT EXISTS SA SALT 'd2461ad7905f0cd5' HASH 'ebc5d3ec61e2cf73bac0b3f011185e73e7ae8b3ff83813b74140f224f148b036' ADMIN;
+CREATE SEQUENCE PUBLIC.SYSTEM_SEQUENCE_BCD567A6_F608_495C_91D7_1283580B3A6A START WITH 1200 BELONGS_TO_TABLE;
+CREATE SEQUENCE PUBLIC.SYSTEM_SEQUENCE_7F2845FF_3DF9_4803_A054_18619B04FFBE START WITH 208 BELONGS_TO_TABLE;
+CREATE CACHED TABLE PUBLIC.AIRPORTCODE(
+    ID INT DEFAULT (NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_BCD567A6_F608_495C_91D7_1283580B3A6A) NOT NULL NULL_TO_DEFAULT SEQUENCE PUBLIC.SYSTEM_SEQUENCE_BCD567A6_F608_495C_91D7_1283580B3A6A,
+    NAME VARCHAR(50),
+    THREECODE VARCHAR(5),
+    FOURCODE VARCHAR(5),
+    AIRPORTNAME VARCHAR(255),
+    ENNAME VARCHAR(100),
+    COUNTY INT,
+    CONTINENT INT
+);
+ALTER TABLE PUBLIC.AIRPORTCODE ADD CONSTRAINT PUBLIC.CONSTRAINT_4 PRIMARY KEY(ID);
+-- 1194 +/- SELECT COUNT(*) FROM PUBLIC.AIRPORTCODE;
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(1, STRINGDECODE('\u963f\u514b\u82cf'), 'AKU', 'ZWAK', STRINGDECODE('\u963f\u514b\u82cf\u673a\u573a'), 'AKSU', NULL, NULL),
+(2, STRINGDECODE('\u963f\u52d2\u6cf0'), 'AAT', 'ZWAT', STRINGDECODE('\u963f\u52d2\u6cf0\u673a\u573a'), 'ALTAY', NULL, NULL),
+(3, STRINGDECODE('\u5b89\u5eb7'), 'AKA', 'ZLAK', STRINGDECODE('\u5b89\u5eb7\u673a\u573a'), 'ANKANG', NULL, NULL),
+(4, STRINGDECODE('\u5b89\u5e86'), 'AQG', 'ZSAQ', STRINGDECODE('\u5b89\u5e86(\u5929\u67f1\u5c71\uff09\u673a\u573a'), 'ANQING', NULL, NULL),
+(5, STRINGDECODE('\u978d\u5c71'), 'AOG', 'ZYAS', STRINGDECODE('\u978d\u5c71\u673a\u573a'), 'ANSHAN', NULL, NULL),
+(6, STRINGDECODE('\u4fdd\u5c71'), 'BSD', 'ZPBS', STRINGDECODE('\u4fdd\u5c71\u4e91\u745e\u673a\u573a'), 'BAOSHAN', NULL, NULL),
+(7, STRINGDECODE('\u5305\u5934'), 'BAV', 'ZBOW', STRINGDECODE('\u5305\u5934\u4e8c\u91cc\u534a\u673a\u573a'), 'BAOTOU', NULL, NULL),
+(8, STRINGDECODE('\u660c\u90fd'), 'BPX', 'ZUBD', STRINGDECODE('\u897f\u85cf\u660c\u90fd\u90a6\u8fbe\u673a\u573a'), 'CHAMDO', NULL, NULL),
+(9, STRINGDECODE('\u5317\u6d77'), 'BHY', 'ZGBH', STRINGDECODE('\u5317\u6d77\u798f\u57ce\u673a\u573a'), 'BEIHAI', NULL, NULL),
+(10, STRINGDECODE('\u5317\u4eac'), 'PEK', 'ZBAA', STRINGDECODE('\u5317\u4eac\u9996\u90fd\u673a\u573a'), 'BEIJING', NULL, NULL),
+(11, STRINGDECODE('\u868c\u57e0'), 'BFU', 'ZSBB', STRINGDECODE('\u868c\u57e0\u673a\u573a'), 'BENGBU', NULL, NULL),
+(12, STRINGDECODE('\u957f\u6625'), 'CGQ', 'ZYCC', STRINGDECODE('\u957f\u6625\u9f99\u5609\u56fd\u9645\u673a\u573a'), 'CHANGCHUN', NULL, NULL),
+(13, STRINGDECODE('\u5e38\u5fb7'), 'CGD', 'ZGCD', STRINGDECODE('\u5e38\u5fb7\u6843\u82b1\u6e90(\u6597\u59c6\u6e56)\u673a\u573a'), 'CHANGDE', NULL, NULL),
+(14, STRINGDECODE('\u957f\u6c99'), 'CSX', 'ZGHA', STRINGDECODE('\u957f\u6c99\u9ec4\u82b1\u673a\u573a'), 'CHANGSHA', NULL, NULL),
+(15, STRINGDECODE('\u957f\u6cbb'), 'CIH', 'ZBCZ', STRINGDECODE('\u957f\u6cbb\u738b\u6751\u673a\u573a'), 'CHANGZHI', NULL, NULL),
+(16, STRINGDECODE('\u5e38\u5dde'), 'CZX', 'ZSCG', STRINGDECODE('\u5e38\u5dde\u5954\u725b\u673a\u573a'), 'CHANGZHOU', NULL, NULL),
+(17, STRINGDECODE('\u671d\u9633'), 'CHG', 'ZYCY', STRINGDECODE('\u8fbd\u5b81\u671d\u9633\u673a\u573a'), 'CHAOYANG', NULL, NULL),
+(18, STRINGDECODE('\u6210\u90fd'), 'CTU', 'ZUUU', STRINGDECODE('\u6210\u90fd\u53cc\u6d41\u673a\u573a'), 'CHENGDU', NULL, NULL),
+(19, STRINGDECODE('\u8d64\u5cf0'), 'CIF', 'ZBCF', STRINGDECODE('\u8d64\u5cf0\u7389\u9f99\u673a\u573a'), 'CHIFENG', NULL, NULL),
+(20, STRINGDECODE('\u91cd\u5e86'), 'CKG', 'ZUCK', STRINGDECODE('\u91cd\u5e86\u6c5f\u5317\u673a\u573a'), 'CHONGQING', NULL, NULL),
+(21, STRINGDECODE('\u8fbe\u5dde'), 'DAX', 'ZUDX', STRINGDECODE('\u8fbe\u5dde(\u6cb3\u5e02)\u673a\u573a'), 'DAZHOU', NULL, NULL),
+(22, STRINGDECODE('\u8fea\u5e86'), 'DIG', 'ZPDQ', STRINGDECODE('\u8fea\u5e86\u9999\u683c\u91cc\u62c9\u673a\u573a'), 'DIQING', NULL, NULL),
+(23, STRINGDECODE('\u5927\u8fde'), 'DLC', 'ZYTL', STRINGDECODE('\u5927\u8fde\u56fd\u9645\u673a\u573a'), 'DALIAN', NULL, NULL),
+(24, STRINGDECODE('\u5927\u7406'), 'DLU', 'ZPDL', STRINGDECODE('\u5927\u7406\u8352\u8349\u575d\u673a\u573a'), 'DALIXIAGUAN', NULL, NULL),
+(25, STRINGDECODE('\u4e39\u4e1c'), 'DDG', 'ZYDD', STRINGDECODE('\u4e39\u4e1c\u6d6a\u5934\u673a\u573a'), 'DANDONG', NULL, NULL),
+(26, STRINGDECODE('\u5927\u540c'), 'DAT', 'ZBDT', STRINGDECODE('\u5927\u540c\u4e91\u5188\u673a\u573a'), 'DATONG', NULL, NULL),
+(27, STRINGDECODE('\u5f20\u5bb6\u754c'), 'DYG', 'ZGDY', STRINGDECODE('\u5f20\u5bb6\u754c\u8377\u82b1\u673a\u573a'), 'ZHANGJIAJIE', NULL, NULL),
+(28, STRINGDECODE('\u6566\u714c'), 'DNH', 'ZLDH', STRINGDECODE('\u6566\u714c\u673a\u573a'), 'DUNHUANG', NULL, NULL),
+(29, STRINGDECODE('\u6069\u65bd'), 'ENH', 'ZHES', STRINGDECODE('\u6069\u65bd\u673a\u573a'), 'ENSHI', NULL, NULL),
+(30, STRINGDECODE('\u514b\u62c9\u79d1\u592b'), 'KRK', 'EPKK', STRINGDECODE('\u514b\u62c9\u79d1\u592b\u673a\u573a'), 'KRAKOW', NULL, NULL),
+(31, STRINGDECODE('\u5bcc\u8574'), 'FYN', 'ZWFY', STRINGDECODE('\u5bcc\u8574\u673a\u573a'), 'FUYUN', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(32, STRINGDECODE('\u9526\u5dde'), 'JNZ', 'ZYJZ', STRINGDECODE('\u9526\u5dde\u5c0f\u5cad\u5b50\u673a\u573a'), 'JINZHOU', NULL, NULL),
+(33, STRINGDECODE('\u8d63\u5dde'), 'KOW', 'ZSGZ', STRINGDECODE('\u8d63\u5dde\u9ec4\u91d1\u673a\u573a'), 'GANZHOU', NULL, NULL),
+(34, STRINGDECODE('\u683c\u5c14\u6728'), 'GOQ', 'ZLGM', STRINGDECODE('\u683c\u5c14\u6728\u673a\u573a'), 'GOLMUD', NULL, NULL),
+(35, STRINGDECODE('\u5e7f\u6c49'), 'GHN', 'ZUGH', STRINGDECODE('\u5e7f\u6c49\u673a\u573a'), 'GUANGHAN', NULL, NULL),
+(36, STRINGDECODE('\u5e7f\u5dde'), 'CAN', 'ZGGG', STRINGDECODE('\u5e7f\u5dde\u767d\u4e91\u673a\u573a'), 'GUANGZHOU', NULL, NULL),
+(37, STRINGDECODE('\u6842\u6797'), 'KWL', 'ZGKL', STRINGDECODE('\u6842\u6797\u4e24\u6c5f\u673a\u573a'), 'GUILIN', NULL, NULL),
+(38, STRINGDECODE('\u8d35\u9633'), 'KWE', 'ZUGY', STRINGDECODE('\u8d35\u9633\u9f99\u6d1e\u5821\u673a\u573a'), 'GUIYANG', NULL, NULL),
+(39, STRINGDECODE('\u54c8\u5c14\u6ee8'), 'HRB', 'ZYHB', STRINGDECODE('\u54c8\u5c14\u6ee8\u592a\u5e73\u673a\u573a'), 'HARBIN', NULL, NULL),
+(40, STRINGDECODE('\u6d77\u53e3'), 'HAK', 'ZJHK', STRINGDECODE('\u6d77\u53e3\u7f8e\u5170\u673a\u573a'), 'HAIKOU', NULL, NULL),
+(41, STRINGDECODE('\u6d77\u62c9\u5c14'), 'HLD', 'ZBLA', STRINGDECODE('\u5185\u8499\u53e4\u6d77\u62c9\u5c14\u4e1c\u5c71\u673a\u573a'), 'HAILAR', NULL, NULL),
+(42, STRINGDECODE('\u54c8\u5bc6'), 'HMI', 'ZWHM', STRINGDECODE('\u54c8\u5bc6\u673a\u573a'), 'HAMI', NULL, NULL),
+(43, STRINGDECODE('\u676d\u5dde'), 'HGH', 'ZSHC', STRINGDECODE('\u676d\u5dde\u8427\u5c71\u673a\u573a'), 'HANGZHOU', NULL, NULL),
+(44, STRINGDECODE('\u6c49\u4e2d'), 'HZG', 'ZLHZ', STRINGDECODE('\u6c49\u4e2d\u897f\u5173\u673a\u573a'), 'HANZHONG', NULL, NULL),
+(45, STRINGDECODE('\u5408\u80a5'), 'HFE', 'ZSOF', STRINGDECODE('\u5408\u80a5\u9a86\u5c97\u673a\u573a'), 'HEFEI', NULL, NULL),
+(46, STRINGDECODE('\u9ed1\u6cb3'), 'HEK', 'ZYHE', STRINGDECODE('\u9ed1\u6cb3\u673a\u573a'), 'HEIHE', NULL, NULL),
+(47, STRINGDECODE('\u8861\u9633'), 'HNY', 'ZGHY', STRINGDECODE('\u8861\u9633\u4e1c\u6c5f\u673a\u573a'), 'HENGYANG', NULL, NULL),
+(48, STRINGDECODE('\u548c\u7530'), 'HTN', 'ZWTN', STRINGDECODE('\u548c\u7530\u673a\u573a'), 'HETIAN', NULL, NULL),
+(49, STRINGDECODE('\u9999\u6e2f'), 'HKG', 'VHHH', STRINGDECODE('\u9999\u6e2f\u8d64?\u89d2\u56fd\u9645\u673a\u573a'), 'HONG KONG', NULL, NULL),
+(50, STRINGDECODE('\u9ec4\u5c71'), 'TXN', 'ZSTX', STRINGDECODE('\u9ec4\u5c71\u5c6f\u6eaa\u673a\u573a'), 'HUANGSHAN', NULL, NULL),
+(51, STRINGDECODE('\u53f0\u5dde'), 'HYN', 'ZSLQ', STRINGDECODE('\u53f0\u5dde\u8def\u6865\uff08\u539f\u9ec4\u5ca9\u8def\u6865\uff09\u673a\u573a'), 'TAIZHOU', NULL, NULL),
+(52, STRINGDECODE('\u547c\u548c\u6d69\u7279'), 'HET', 'ZBHH', STRINGDECODE('\u547c\u548c\u6d69\u7279\u767d\u5854\u56fd\u9645\u673a\u573a'), 'HOHHOT', NULL, NULL),
+(53, STRINGDECODE('\u4f73\u6728\u65af'), 'JMU', 'ZYJM', STRINGDECODE('\u4f73\u6728\u65af\u673a\u573a'), 'JIAMUSI', NULL, NULL),
+(54, STRINGDECODE('\u5609\u5cea\u5173'), 'JGN', 'ZLJQ', STRINGDECODE('\u5609\u5cea\u5173\u673a\u573a'), 'JIAYUGUAN', NULL, NULL),
+(55, STRINGDECODE('\u5409\u6797'), 'JIL', 'ZYJL', STRINGDECODE('\u5409\u6797\u4e8c\u53f0\u5b50\u673a\u573a'), 'JILIN', NULL, NULL),
+(56, STRINGDECODE('\u6d4e\u5357'), 'TNA', 'ZSJN', STRINGDECODE('\u6d4e\u5357\u9065\u5899\u673a\u573a'), 'JINAN', NULL, NULL),
+(57, STRINGDECODE('\u6d4e\u5b81'), 'JNG', 'ZSJG', STRINGDECODE('\u6d4e\u5b81\u673a\u573a'), 'JINING', NULL, NULL),
+(58, STRINGDECODE('\u666f\u5fb7\u9547'), 'JDZ', 'ZSJD', STRINGDECODE('\u666f\u5fb7\u9547\u7f57\u5bb6\u673a\u573a'), 'JINGDEZHEN', NULL, NULL),
+(59, STRINGDECODE('\u897f\u53cc\u7248\u7eb3'), 'JHG', 'ZPJH', STRINGDECODE('\u666f\u6d2a(\u897f\u53cc\u7248\u7eb3)\u673a\u573a'), 'JINGHONG', NULL, NULL),
+(60, STRINGDECODE('\u664b\u6c5f'), 'JJN', 'ZSQZ', STRINGDECODE('\u6cc9\u5dde\u664b\u6c5f\u673a\u573a'), 'QUANZHOU', NULL, NULL),
+(61, STRINGDECODE('\u798f\u5dde'), 'FOC', 'ZSFZ', STRINGDECODE('\u798f\u5dde\u957f\u4e50\u673a\u573a'), 'FUZHOU', NULL, NULL),
+(62, STRINGDECODE('\u9152\u6cc9'), 'CHW', 'NNNN', STRINGDECODE('\u9152\u6cc9\u673a\u573a'), 'JIUQUAN', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(63, STRINGDECODE('\u4e5d\u6c5f'), 'JIU', 'ZSJJ', STRINGDECODE('\u4e5d\u6c5f\u5e90\u5c71\u673a\u573a'), 'JIUJIANG', NULL, NULL),
+(64, STRINGDECODE('\u514b\u62c9\u739b\u4f9d'), 'KRY', 'ZWKM', STRINGDECODE('\u514b\u62c9\u739b\u4f9d\u673a\u573a'), 'KARAMAY', NULL, NULL),
+(65, STRINGDECODE('\u5580\u4ec0'), 'KHG', 'ZWSH', STRINGDECODE('\u5580\u4ec0\u673a\u573a'), 'KASHGAR', NULL, NULL),
+(66, STRINGDECODE('\u5e93\u5c14\u52d2'), 'KRL', 'ZWKL', STRINGDECODE('\u5e93\u5c14\u52d2\u673a\u573a'), 'KORLA', NULL, NULL),
+(67, STRINGDECODE('\u6606\u660e'), 'KMG', 'ZPPP', STRINGDECODE('\u6606\u660e\u957f\u6c34\u673a\u573a'), 'KUNMING', NULL, NULL),
+(68, STRINGDECODE('\u5e93\u8f66'), 'KCA', 'ZWKC', STRINGDECODE('\u5e93\u8f66\u673a\u573a'), 'KUQA', NULL, NULL),
+(69, STRINGDECODE('\u5170\u5dde'), 'LHW', 'ZLLL', STRINGDECODE('\u5170\u5dde\u673a\u573a'), 'LANZHOU', NULL, NULL),
+(70, STRINGDECODE('\u4e34\u6ca7'), 'LNJ', 'ZPLC', STRINGDECODE('\u4e34\u6ca7\u673a\u573a'), 'LINCANG', NULL, NULL),
+(71, STRINGDECODE('\u62c9\u8428'), 'LXA', 'ZULS', STRINGDECODE('\u62c9\u8428\u8d21\u560e\u673a\u573a'), 'LHASA', NULL, NULL),
+(72, STRINGDECODE('\u8fde\u4e91\u6e2f'), 'LYG', 'ZSLG', STRINGDECODE('\u8fde\u4e91\u6e2f\u767d\u5854\u57e0\u673a\u573a'), 'LIANYUNGANG', NULL, NULL),
+(73, STRINGDECODE('\u4e3d\u6c5f'), 'LJG', 'ZPLJ', STRINGDECODE('\u4e3d\u6c5f\u4e09\u4e49\u673a\u573a'), 'LIJIANG', NULL, NULL),
+(74, STRINGDECODE('\u4e34\u6c82'), 'LYI', 'ZSLY', STRINGDECODE('\u4e34\u6c82\u6cad\u57e0\u5cad\u673a\u573a'), 'LINYI', NULL, NULL),
+(75, STRINGDECODE('\u67f3\u5dde'), 'LZH', 'ZGZH', STRINGDECODE('\u67f3\u5dde\u767d\u83b2\u673a\u573a'), 'LIUZHOU', NULL, NULL),
+(76, STRINGDECODE('\u6d1b\u9633'), 'LYA', 'ZHLY', STRINGDECODE('\u6d1b\u9633\u673a\u573a'), 'LUOYANG', NULL, NULL),
+(77, STRINGDECODE('\u6cf8\u5dde'), 'LZO', 'ZULZ', STRINGDECODE('\u6cf8\u5dde\u84dd\u7530\u673a\u573a'), 'LUZHOU', NULL, NULL),
+(78, STRINGDECODE('\u6fb3\u95e8'), 'MFM', 'VMMC', STRINGDECODE('\u6fb3\u95e8\u673a\u573a'), 'MACAU', NULL, NULL),
+(79, STRINGDECODE('\u8292\u5e02'), 'LUM', 'ZPMS', STRINGDECODE('\u8292\u5e02\u673a\u573a'), 'MANGSHI', NULL, NULL),
+(80, STRINGDECODE('\u6885\u53bf'), 'MXZ', 'ZGMX', STRINGDECODE('\u6885\u53bf\u673a\u573a'), 'MEIXIAN', NULL, NULL),
+(81, STRINGDECODE('\u7261\u4e39\u6c5f'), 'MDG', 'ZYMD', STRINGDECODE('\u7261\u4e39\u6c5f\u6d77\u6d6a\u673a\u573a'), 'MUDANJIANG', NULL, NULL),
+(82, STRINGDECODE('\u7ef5\u9633'), 'MIG', 'ZUMY', STRINGDECODE('\u7ef5\u9633\u5357\u90ca\u673a\u573a'), 'MIANYANG', NULL, NULL),
+(83, STRINGDECODE('\u5357\u660c'), 'KHN', 'ZSCN', STRINGDECODE('\u5357\u660c\u660c\u5317\u673a\u573a'), 'NANCHANG', NULL, NULL),
+(84, STRINGDECODE('\u5357\u5145'), 'NAO', 'ZUNC', STRINGDECODE('\u5357\u5145\u9ad8\u576a\u673a\u573a'), 'NANCHONG', NULL, NULL),
+(85, STRINGDECODE('\u5357\u4eac'), 'NKG', 'ZSNJ', STRINGDECODE('\u5357\u4eac\u7984\u53e3\u673a\u573a'), 'NANJING', NULL, NULL),
+(86, STRINGDECODE('\u5357\u5b81'), 'NNG', 'ZGNN', STRINGDECODE('\u5357\u5b81\u5434\u5729\u673a\u573a'), 'NANNING', NULL, NULL),
+(87, STRINGDECODE('\u5357\u901a'), 'NTG', 'ZSNT', STRINGDECODE('\u5357\u901a\u5174\u4e1c\u673a\u573a'), 'NANTONG', NULL, NULL),
+(88, STRINGDECODE('\u5357\u9633'), 'NNY', 'ZHNY', STRINGDECODE('\u5357\u9633\u59dc\u8425\u673a\u573a'), 'NANYANG', NULL, NULL),
+(89, STRINGDECODE('\u5ae9\u6c5f'), 'NNN', 'ZBDY', STRINGDECODE('\u5ae9\u6c5f\u673a\u573a'), 'HEIHE', NULL, NULL),
+(90, STRINGDECODE('\u5b81\u6ce2'), 'NGB', 'ZSNB', STRINGDECODE('\u5b81\u6ce2\u680e\u793e\u673a\u573a'), 'NINGBO', NULL, NULL),
+(91, STRINGDECODE('\u4e14\u672b'), 'IQM', 'ZWCM', STRINGDECODE('\u4e14\u672b\u673a\u573a'), 'QIEMO', NULL, NULL),
+(92, STRINGDECODE('\u9752\u5c9b'), 'TAO', 'ZSQD', STRINGDECODE('\u9752\u5c9b\u6d41\u4ead\u673a\u573a'), 'QINGDAO', NULL, NULL),
+(93, STRINGDECODE('\u5e86\u9633'), 'IQN', 'ZLQY', STRINGDECODE('\u5e86\u9633\u673a\u573a'), 'QINGYANG', NULL, NULL),
+(94, STRINGDECODE('\u79e6\u7687\u5c9b'), 'SHP', 'ZBSH', STRINGDECODE('\u79e6\u7687\u5c9b\u5c71\u6d77\u5173\u673a\u573a'), 'QINHUANGDAO', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(95, STRINGDECODE('\u9f50\u9f50\u54c8\u5c14'), 'NDG', 'ZYQQ', STRINGDECODE('\u9f50\u9f50\u54c8\u5c14\u4e09\u5bb6\u5b50\u673a\u573a'), 'QIQIHAER', NULL, NULL),
+(96, STRINGDECODE('\u8862\u5dde'), 'JUZ', 'ZSJU', STRINGDECODE('\u8862\u5dde\u673a\u573a'), 'QUZHOU', NULL, NULL),
+(97, STRINGDECODE('\u4e09\u4e9a'), 'SYX', 'ZJSY', STRINGDECODE('\u4e09\u4e9a\u51e4\u51f0\u673a\u573a'), 'SANYA', NULL, NULL),
+(98, STRINGDECODE('\u4e0a\u6d77'), 'SHA', 'ZSSS', STRINGDECODE('\u4e0a\u6d77\u8679\u6865\u673a\u573a'), 'SHANGHAI', NULL, NULL),
+(99, STRINGDECODE('\u4e0a\u6d77\u6d66\u4e1c'), 'PVG', 'ZSPD', STRINGDECODE('\u4e0a\u6d77\u6d66\u4e1c\u673a\u573a'), 'SHANGHAI', NULL, NULL),
+(100, STRINGDECODE('\u63ed\u9633'), 'SWA', 'ZGOW', STRINGDECODE('\u63ed\u9633\u6f6e\u6c55\u673a\u573a'), 'JIEYANG', NULL, NULL),
+(101, STRINGDECODE('\u6c99\u5e02'), 'SHS', 'ZHSS', STRINGDECODE('\u8346\u5dde\u6c99\u5e02\u673a\u573a'), 'SHASHI', NULL, NULL),
+(102, STRINGDECODE('\u6df1\u5733'), 'SZX', 'ZGSZ', STRINGDECODE('\u6df1\u5733\u5b9d\u5b89\u673a\u573a'), 'SHENZHEN', NULL, NULL),
+(103, STRINGDECODE('\u6c88\u9633'), 'SHE', 'ZYTX', STRINGDECODE('\u6c88\u9633\u6843\u4ed9\u673a\u573a'), 'SHENYANG', NULL, NULL),
+(104, STRINGDECODE('\u77f3\u5bb6\u5e84'), 'SJW', 'ZBSJ', STRINGDECODE('\u77f3\u5bb6\u5e84\u6b63\u5b9a\u673a\u573a'), 'SHIJIAZHUANG', NULL, NULL),
+(105, STRINGDECODE('\u666e\u6d31'), 'SYM', 'ZPSM', STRINGDECODE('\u666e\u6d31(\u601d\u8305)\u673a\u573a'), 'PUER', NULL, NULL),
+(106, STRINGDECODE('\u82cf\u5dde'), 'SZV', 'ZSSZ', STRINGDECODE('\u82cf\u5dde\u673a\u573a'), 'SUZHOU', NULL, NULL),
+(107, STRINGDECODE('\u5854\u57ce'), 'TCG', 'ZWTC', STRINGDECODE('\u5854\u57ce\u673a\u573a'), 'TACHENG', NULL, NULL),
+(108, STRINGDECODE('\u592a\u539f'), 'TYN', 'ZBYN', STRINGDECODE('\u592a\u539f\u6b66\u5bbf\u673a\u573a'), 'TAIYUAN', NULL, NULL),
+(109, STRINGDECODE('\u5929\u6d25'), 'TSN', 'ZBTJ', STRINGDECODE('\u5929\u6d25\u6ee8\u6d77\u673a\u573a'), 'TIANJIN', NULL, NULL),
+(110, STRINGDECODE('\u901a\u5316'), 'TNH', 'ZYTN', STRINGDECODE('\u901a\u5316\u673a\u573a'), 'TONGHUA', NULL, NULL),
+(111, STRINGDECODE('\u901a\u8fbd'), 'TGO', 'ZBTL', STRINGDECODE('\u901a\u8fbd\u673a\u573a'), 'TONGLIAO', NULL, NULL),
+(112, STRINGDECODE('\u94dc\u4ec1'), 'TEN', 'ZUTR', STRINGDECODE('\u94dc\u4ec1\u51e4\u51f0\u673a\u573a'), 'TONGREN', NULL, NULL),
+(113, STRINGDECODE('\u4e07\u5dde'), 'WXN', 'ZUWX', STRINGDECODE('\u91cd\u5e86\u4e07\u5dde\u4e94\u6865\u673a\u573a'), 'CHONGQING', NULL, NULL),
+(114, STRINGDECODE('\u6f4d\u574a'), 'WEF', 'ZSWF', STRINGDECODE('\u6f4d\u574a\u673a\u573a'), 'WEIFANG', NULL, NULL),
+(115, STRINGDECODE('\u5a01\u6d77'), 'WEH', 'ZSWH', STRINGDECODE('\u5a01\u6d77\u6587\u767b\u5927\u6c34\u6cca\u673a\u573a'), 'WEIHAI', NULL, NULL),
+(116, STRINGDECODE('\u6e29\u5dde'), 'WNZ', 'ZSWZ', STRINGDECODE('\u6e29\u5dde\u6c38\u5f3a\u673a\u573a'), 'WENZHOU', NULL, NULL),
+(117, STRINGDECODE('\u6b66\u6c49'), 'WUH', 'ZHHH', STRINGDECODE('\u6b66\u6c49\u5929\u6cb3\u673a\u573a'), 'WUHAN', NULL, NULL),
+(118, STRINGDECODE('\u5361\u5854\u8d6b\u7eb3'), 'CTG', '', STRINGDECODE('\u5361\u5854\u8d6b\u7eb3\u673a\u573a'), 'CARTAGENA', NULL, NULL),
+(119, STRINGDECODE('\u4e4c\u5170\u6d69\u7279'), 'HLH', 'ZBUL', STRINGDECODE('\u4e4c\u5170\u6d69\u7279\u673a\u573a'), 'ULANHOT', NULL, NULL),
+(120, STRINGDECODE('\u4e4c\u9c81\u6728\u9f50'), 'URC', 'ZWWW', STRINGDECODE('\u4e4c\u9c81\u6728\u9f50\u5730\u7a9d\u5821\u673a\u573a'), 'URUMQI', NULL, NULL),
+(121, STRINGDECODE('\u6b66\u5937\u5c71'), 'WUS', 'ZSWY', STRINGDECODE('\u6b66\u5937\u5c71\u673a\u573a'), 'WUYISHAN', NULL, NULL),
+(122, STRINGDECODE('\u68a7\u5dde'), 'WUZ', 'ZGWZ', STRINGDECODE('\u5e7f\u897f\u68a7\u5dde\u957f\u6d32\u5c9b\u673a\u573a'), 'WUZHOU', NULL, NULL),
+(123, STRINGDECODE('\u53a6\u95e8'), 'XMN', 'ZSAM', STRINGDECODE('\u53a6\u95e8\u9ad8\u5d0e\u673a\u573a'), 'XIAMEN', NULL, NULL),
+(124, STRINGDECODE('\u897f\u5b89'), 'XIY', 'ZLXY', STRINGDECODE('\u897f\u5b89\u54b8\u9633\u673a\u573a'), 'XIAN', NULL, NULL),
+(125, STRINGDECODE('\u8944\u9633'), 'XFN', 'ZHXF', STRINGDECODE('\u8944\u9633\u5218\u96c6\u673a\u573a'), 'XIANGYANG', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(126, STRINGDECODE('\u897f\u660c'), 'XIC', 'ZUXC', STRINGDECODE('\u897f\u660c\u9752\u5c71\u673a\u573a'), 'XICHANG', NULL, NULL),
+(127, STRINGDECODE('\u9521\u6797\u6d69\u7279'), 'XIL', 'ZBXH', STRINGDECODE('\u9521\u6797\u6d69\u7279\u673a\u573a'), 'XILINHOT', NULL, NULL),
+(128, STRINGDECODE('\u897f\u5b81'), 'XNN', 'ZLXN', STRINGDECODE('\u897f\u5b81\u66f9\u5bb6\u5821\u673a\u573a'), 'XINING', NULL, NULL),
+(129, STRINGDECODE('\u5f90\u5dde'), 'XUZ', 'ZSXZ', STRINGDECODE('\u5f90\u5dde\u89c2\u97f3\u673a\u573a'), 'XUZHOU', NULL, NULL),
+(130, STRINGDECODE('\u5ef6\u5b89'), 'ENY', 'ZLYA', STRINGDECODE('\u5ef6\u5b89\u4e8c\u5341\u91cc\u94fa\u673a\u573a'), 'YANAN', NULL, NULL),
+(131, STRINGDECODE('\u5ef6\u5409'), 'YNJ', 'ZYYJ', STRINGDECODE('\u5ef6\u5409\u671d\u9633\u5ddd\u673a\u573a'), 'YANJI', NULL, NULL),
+(132, STRINGDECODE('\u70df\u53f0'), 'YNT', 'ZSYT', STRINGDECODE('\u70df\u53f0\u83b1\u5c71\u673a\u573a'), 'YANTAI', NULL, NULL),
+(133, STRINGDECODE('\u5b9c\u5bbe'), 'YBP', 'ZUYB', STRINGDECODE('\u5b9c\u5bbe(\u83dc\u575d)\u673a\u573a'), 'YIBIN', NULL, NULL),
+(134, STRINGDECODE('\u5b9c\u660c'), 'YIH', 'ZHYC', STRINGDECODE('\u5b9c\u660c\u4e09\u5ce1\u673a\u573a'), 'YICHANG', NULL, NULL),
+(135, STRINGDECODE('\u94f6\u5ddd'), 'INC', 'ZLIC', STRINGDECODE('\u94f6\u5ddd\u6cb3\u4e1c\u673a\u573a'), 'YINCHUAN', NULL, NULL),
+(136, STRINGDECODE('\u4f0a\u5b81'), 'YIN', 'ZWYN', STRINGDECODE('\u4f0a\u5b81\u673a\u573a'), 'YINING', NULL, NULL),
+(137, STRINGDECODE('\u4e49\u4e4c'), 'YIW', 'ZSYW', STRINGDECODE('\u4e49\u4e4c\u673a\u573a'), 'YIWU', NULL, NULL),
+(138, STRINGDECODE('\u6986\u6797'), 'UYN', 'ZLYL', STRINGDECODE('\u6986\u6797\u6986\u9633\u673a\u573a'), 'YULIN', NULL, NULL),
+(139, STRINGDECODE('\u662d\u901a'), 'ZAT', 'ZPZT', STRINGDECODE('\u662d\u901a\u673a\u573a'), 'ZHAOTONG', NULL, NULL),
+(140, STRINGDECODE('\u6e5b\u6c5f'), 'ZHA', 'ZGZJ', STRINGDECODE('\u6e5b\u6c5f\u673a\u573a'), 'ZHANJIANG', NULL, NULL),
+(141, STRINGDECODE('\u90d1\u5dde'), 'CGO', 'ZHCC', STRINGDECODE('\u90d1\u5dde\u65b0\u90d1\u673a\u573a'), 'ZHENGZHOU', NULL, NULL),
+(142, STRINGDECODE('\u821f\u5c71'), 'HSN', 'ZSZS', STRINGDECODE('\u821f\u5c71\u666e\u9640\u5c71\u6731\u5bb6\u5c16\u673a\u573a'), 'ZHOUSHAN', NULL, NULL),
+(143, STRINGDECODE('\u73e0\u6d77'), 'ZUH', 'ZGSD', STRINGDECODE('\u73e0\u6d77\u91d1\u6e7e\u673a\u573a'), 'ZHUHAI', NULL, NULL),
+(144, STRINGDECODE('\u9075\u4e49'), 'ZYI', 'ZUZY', STRINGDECODE('\u9075\u4e49\u65b0\u821f\u673a\u573a'), 'ZUNYI', NULL, NULL),
+(145, STRINGDECODE('\u53f0\u5317'), 'TSA', 'RCSS', STRINGDECODE('\u53f0\u5317\u677e\u5c71\u673a\u573a'), 'TAIBEI', NULL, NULL),
+(146, STRINGDECODE('\u6843\u56ed'), 'TPE', 'RCTP', STRINGDECODE('\u53f0\u5317\u6843\u56ed\u673a\u573a'), 'TAIBEI', NULL, NULL),
+(147, STRINGDECODE('\u53f0\u5357'), 'TNN', 'RCNN', STRINGDECODE('\u53f0\u5357\u673a\u573a'), 'TAINAN', NULL, NULL),
+(148, STRINGDECODE('\u9ad8\u96c4'), 'KHH', 'RCKH', STRINGDECODE('\u9ad8\u96c4\u673a\u573a'), 'GAOXIONG', NULL, NULL),
+(149, STRINGDECODE('\u53f0\u4e1c'), 'TTG', 'RCFN', STRINGDECODE('\u53f0\u4e1c\u5fd7\u822a\u673a\u573a'), 'TAIDONG', NULL, NULL),
+(150, STRINGDECODE('\u82b1\u83b2'), 'HUN', 'RCYU', STRINGDECODE('\u82b1\u83b2\u673a\u573a'), 'HUALIAN', NULL, NULL),
+(151, STRINGDECODE('\u5609\u4e49'), 'CYI', 'RCKU', STRINGDECODE('\u5609\u4e49\u673a\u573a'), 'JIAYI', NULL, NULL),
+(152, STRINGDECODE('\u9ec4\u91d1\u6d77\u5cb8'), 'OOL', 'YBCG', STRINGDECODE('\u9ec4\u91d1\u6d77\u5cb8\u673a\u573a'), 'GOLD COAST', NULL, NULL),
+(153, STRINGDECODE('\u4e5d\u5be8\u6c9f'), 'JZH', 'ZUJZ', STRINGDECODE('\u4e5d\u5be8\u6c9f\u9ec4\u9f99(\u4e5d\u9ec4\uff09\u673a\u573a'), 'JIUZHAIGOU', NULL, NULL),
+(154, STRINGDECODE('\u65e0\u9521'), 'WUX', 'ZSWX', STRINGDECODE('\u65e0\u9521\u7855\u653e\u673a\u573a'), 'WUXI', NULL, NULL),
+(155, STRINGDECODE('\u5317\u4eac\u5357\u82d1'), 'NAY', 'ZBNY', STRINGDECODE('\u5317\u4eac\u5357\u82d1\u673a\u573a'), 'BEIJING', NULL, NULL),
+(156, STRINGDECODE('\u90a3\u62c9\u63d0'), 'NLT', 'ZWNL', STRINGDECODE('\u90a3\u62c9\u63d0\u673a\u573a'), 'NALATI', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(157, STRINGDECODE('\u6797\u829d'), 'LZY', 'ZUNZ', STRINGDECODE('\u6797\u829d\u673a\u573a'), 'NYINGCHI', NULL, NULL),
+(158, STRINGDECODE('\u4e4c\u6d77'), 'WUA', 'ZBUH', STRINGDECODE('\u4e4c\u6d77\u673a\u573a'), 'WUHAI', NULL, NULL),
+(159, STRINGDECODE('\u6500\u679d\u82b1'), 'PZI', 'ZUZH', STRINGDECODE('\u6500\u679d\u82b1\u4fdd\u5b89\u8425\u673a\u573a'), 'PANZHIHUA', NULL, NULL),
+(160, STRINGDECODE('\u6ee1\u6d32\u91cc'), 'NZH', 'ZBMZ', STRINGDECODE('\u547c\u4f26\u8d1d\u5c14\u6ee1\u6d32\u91cc\u897f\u90ca\u673a\u573a'), 'MANZHOULI', NULL, NULL),
+(161, STRINGDECODE('\u5eb7\u5b9a'), 'KGT', 'ZUKD', STRINGDECODE('\u5eb7\u5b9a\u673a\u573a'), 'KANGDING', NULL, NULL),
+(162, STRINGDECODE('\u6000\u5316'), 'HJJ', 'ZGCJ', STRINGDECODE('\u6000\u5316\u82b7\u6c5f\u673a\u573a'), 'HUAIHUA', NULL, NULL),
+(163, STRINGDECODE('\u90af\u90f8'), 'HDG', 'ZBHD', STRINGDECODE('\u6cb3\u5317\u90af\u90f8\u673a\u573a\u673a\u573a'), 'HANDAN', NULL, NULL),
+(164, STRINGDECODE('\u76d0\u57ce'), 'YNZ', 'ZSYN', STRINGDECODE('\u6c5f\u82cf\u76d0\u57ce\u5357\u6d0b\u673a\u573a'), 'YANCHENG', NULL, NULL),
+(165, STRINGDECODE('\u5b89\u987a'), 'AVA', 'ZUAS', STRINGDECODE('\u8d35\u5dde\u5b89\u987a\u9ec4\u679c\u6811\u673a\u573a'), 'ANSHUN', NULL, NULL),
+(166, STRINGDECODE('\u767e\u8272'), 'AEB', 'ZGBS', STRINGDECODE('\u5e7f\u897f\u767e\u8272(\u7530\u9633)\u673a\u573a'), 'BAISE', NULL, NULL),
+(167, STRINGDECODE('\u6587\u5c71'), 'WNH', 'ZPWS', STRINGDECODE('\u4e91\u5357\u6587\u5c71\u666e\u8005\u9ed1\u673a\u573a'), 'WENSHAN', NULL, NULL),
+(168, STRINGDECODE('\u7389\u6811'), 'YUS', 'ZLYS', STRINGDECODE('\u9752\u6d77\u7389\u6811\u4e09\u6c5f\u6e90(\u5df4\u5858)\u673a\u573a'), 'YUSHU', NULL, NULL),
+(169, STRINGDECODE('\u8354\u6ce2'), 'LLB', 'ZULB', STRINGDECODE('\u8354\u6ce2\u673a\u573a'), 'LIBO', NULL, NULL),
+(170, STRINGDECODE('\u5580\u7eb3\u65af'), 'KJI', 'ZWKN', STRINGDECODE('\u65b0\u7586\u5580\u7eb3\u65af\u673a\u573a'), 'BUERJIN', NULL, NULL),
+(171, STRINGDECODE('\u9102\u5c14\u591a\u65af'), 'DSN', 'ZBDS', STRINGDECODE('\u9102\u5c14\u591a\u65af\u4f0a\u91d1\u970d\u6d1b\u673a\u573a'), 'ORDOS', NULL, NULL),
+(172, STRINGDECODE('\u9ece\u5e73'), 'HZH', 'ZUNP', STRINGDECODE('\u8d35\u5dde\u9ece\u5e73\u673a\u573a'), 'LIPING', NULL, NULL),
+(173, STRINGDECODE('\u6f20\u6cb3'), 'OHE', 'ZYMH', STRINGDECODE('\u6f20\u6cb3\u53e4\u83b2\u673a\u573a'), 'MOHE', NULL, NULL),
+(174, STRINGDECODE('\u957f\u767d\u5c71'), 'NBS', 'ZYBS', STRINGDECODE('\u957f\u767d\u5c71\u673a\u573a'), 'CHANGBAISHAN', NULL, NULL),
+(175, STRINGDECODE('\u817e\u51b2'), 'TCZ', 'ZUTC', STRINGDECODE('\u817e\u51b2\uff08\u9a7c\u5cf0\uff09\u673a\u573a'), 'TENGCHONG', NULL, NULL),
+(176, STRINGDECODE('\u4e2d\u536b'), 'ZHY', 'ZLZW', STRINGDECODE('\u4e2d\u536b(\u9999\u5c71\u3001\u6c99\u5761\u5934)\u673a\u573a'), 'ZHONGWEI', NULL, NULL),
+(177, STRINGDECODE('\u8fd0\u57ce'), 'YCU', 'ZBYC', STRINGDECODE('\u8fd0\u57ce\u5173\u516c\u673a\u573a'), 'YUNCHENG', NULL, NULL),
+(178, STRINGDECODE('\u4e1c\u8425'), 'DOY', 'ZSDY', STRINGDECODE('\u4e1c\u8425\u80dc\u5229\u673a\u573a'), 'DONGYING', NULL, NULL),
+(179, STRINGDECODE('\u5929\u6c34'), 'THQ', 'ZLTS', STRINGDECODE('\u7518\u8083\u5929\u6c34\u673a\u573a'), 'TIANSHUI', NULL, NULL),
+(180, STRINGDECODE('\u957f\u6d77'), 'CNI', 'ZYCH', STRINGDECODE('\u957f\u6d77\uff08\u5927\u957f\u5c71\u5c9b\uff09\u673a\u573a'), 'DALIAN', NULL, NULL),
+(181, STRINGDECODE('\u5174\u4e49'), 'ACX', 'ZUYI', STRINGDECODE('\u5174\u4e49\u673a\u573a'), 'XINGYI', NULL, NULL),
+(182, STRINGDECODE('\u9996\u5c14'), 'ICN', 'RKSI', STRINGDECODE('\u9996\u5c14\u4ec1\u5ddd\u673a\u573a'), 'SEOUL', NULL, NULL),
+(183, STRINGDECODE('\u6d4e\u5dde\u5c9b'), 'CJU', 'RKPC', STRINGDECODE('\u6d4e\u5dde\u673a\u573a'), 'JEJU', NULL, NULL),
+(184, STRINGDECODE('\u91dc\u5c71'), 'PUS', 'RKPP', STRINGDECODE('\u91d1\u6d77\u673a\u573a'), 'BUSAN', NULL, NULL),
+(185, STRINGDECODE('\u5927\u90b1'), 'TAE', 'RKTN', STRINGDECODE('\u5927\u90b1\u673a\u573a'), 'TAEGU', NULL, NULL),
+(186, STRINGDECODE('\u5927\u962a'), 'KIX', 'RJBB', STRINGDECODE('\u5173\u897f\u673a\u573a'), 'OSAKA', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(187, STRINGDECODE('\u4e1c\u4eac\u6210\u7530'), 'NRT', 'RJAA', STRINGDECODE('\u4e1c\u4eac\u6210\u7530\u673a\u573a'), 'TOKYO', NULL, NULL),
+(188, STRINGDECODE('\u540d\u53e4\u5c4b'), 'NGO', 'RJGG', STRINGDECODE('\u540d\u53e4\u5c4b\u4e2d\u90e8/\u65b0\u7279\u4e3d\u4e9a\u673a\u573a'), 'NAGOYA', NULL, NULL),
+(189, STRINGDECODE('\u798f\u5188'), 'FUK', 'RJFF', STRINGDECODE('\u798f\u5188\u673a\u573a'), 'FUKUOKA', NULL, NULL),
+(190, STRINGDECODE('\u9a6c\u7d2f'), 'MLE', 'VRMM', STRINGDECODE('\u9a6c\u7d2f\u673a\u573a'), 'MALE', NULL, NULL),
+(191, STRINGDECODE('\u666e\u5409\u5c9b'), 'HKT', 'VTSP', STRINGDECODE('\u666e\u5409\u673a\u573a'), 'PHUKET ISLAND', NULL, NULL),
+(192, STRINGDECODE('\u96c5\u52a0\u8fbe'), 'CGK', 'WIII', STRINGDECODE('\u96c5\u52a0\u8fbe \u82cf\u52a0\u8bfa-\u54c8\u8fbe\u673a\u573a'), 'JAKARTA', NULL, NULL),
+(193, STRINGDECODE('\u5b5f\u4e70'), 'BOM', 'VABB', STRINGDECODE('\u5b5f\u4e70\u673a\u573a'), 'BOMBAY', NULL, NULL),
+(194, STRINGDECODE('\u52a0\u5c14\u5404\u7b54'), 'CCU', 'VECC', STRINGDECODE('\u52a0\u5c14\u5404\u7b54\u673a\u573a'), 'CALCUTTA', NULL, NULL),
+(195, STRINGDECODE('\u65b0\u5fb7\u91cc'), 'DEL', 'VIDP', STRINGDECODE('\u5fb7\u91cc\u673a\u573a'), 'NEWDELHI', NULL, NULL),
+(196, STRINGDECODE('\u68c9\u5170'), 'MES', 'WIMM', STRINGDECODE('\u68c9\u5170\u673a\u573a'), 'MEDAN', NULL, NULL),
+(197, STRINGDECODE('\u5df4\u683c\u8fbe'), 'BGW', 'ORBS', STRINGDECODE('\u5df4\u683c\u8fbe\u673a\u573a'), 'IRAQ', NULL, NULL),
+(198, STRINGDECODE('\u5fb7\u9ed1\u5170'), 'THR', 'OIII', STRINGDECODE('\u5fb7\u9ed1\u5170\u673a\u573a'), 'TEHRAN', NULL, NULL),
+(199, STRINGDECODE('\u7279\u62c9\u7ef4\u592b'), 'TLV', 'LLBG', STRINGDECODE('\u7279\u62c9\u7ef4\u592b\u673a\u573a'), 'TEL AVIV', NULL, NULL),
+(200, STRINGDECODE('\u66fc\u8c37'), 'BKK', 'VTBS', STRINGDECODE('\u66fc\u8c37(\u7d20\u4e07\u90a3\u666e)\u673a\u573a'), 'BANGKOK', NULL, NULL),
+(201, STRINGDECODE('\u65b0\u52a0\u5761'), 'SIN', 'WSSS', STRINGDECODE('\u6a1f\u5b9c\u673a\u573a'), 'SINGAPORE', NULL, NULL),
+(202, STRINGDECODE('\u7f57\u9a6c'), 'FCO', 'LIRF', STRINGDECODE('\u83f2\u4e4c\u7c73\u5947\u8bfa\u673a\u573a'), 'ROME', NULL, NULL),
+(203, STRINGDECODE('\u5df4\u9ece'), 'CDG', 'LFPG', STRINGDECODE('\u6234\u9ad8\u4e50\u673a\u573a'), 'PARIS', NULL, NULL),
+(204, STRINGDECODE('\u66fc\u5f7b\u65af\u7279'), 'MAN', 'EGCC', STRINGDECODE('\u66fc\u5f7b\u65af\u7279\u673a\u573a'), 'MANCHEST', NULL, NULL),
+(205, STRINGDECODE('\u5e03\u62c9\u8328\u514b'), 'BTK', 'UIBB', STRINGDECODE('\u5e03\u62c9\u8328\u514b\u673a\u573a'), 'BRATSK', NULL, NULL),
+(206, STRINGDECODE('\u4f0a\u5c14\u5e93\u8328\u514b'), 'IKT', 'UIII', STRINGDECODE('\u4f0a\u5c14\u5e93\u8328\u514b\u673a\u573a'), 'IRKUTSK', NULL, NULL),
+(207, STRINGDECODE('\u5a01\u5c3c\u65af'), 'VCE', 'LIPZ', STRINGDECODE('\u5a01\u5c3c\u65af\u673a\u573a'), 'VENICE', NULL, NULL),
+(208, STRINGDECODE('\u7c73\u5170'), 'MXP', 'LIMC', STRINGDECODE('\u7c73\u5170\u9a6c\u5c14\u672c\u8428\u673a\u573a'), 'MILAN', NULL, NULL),
+(209, STRINGDECODE('\u90a3\u4e0d\u52d2\u65af'), 'NAP', 'LIRN', STRINGDECODE('\u90a3\u4e0d\u52d2\u65af\u673a\u573a'), 'NAPLES', NULL, NULL),
+(210, STRINGDECODE('\u9a6c\u5fb7\u91cc'), 'MAD', 'LEMD', STRINGDECODE('\u9a6c\u5fb7\u91cc\u673a\u573a'), 'MADRID', NULL, NULL),
+(211, STRINGDECODE('\u5df4\u585e\u7f57\u90a3'), 'BCN', 'LEBL', STRINGDECODE('\u5df4\u585e\u7f57\u90a3\u673a\u573a'), 'BARCELONA', NULL, NULL),
+(212, STRINGDECODE('\u5e03\u8fbe\u4f69\u65af'), 'BUD', 'LHBP', STRINGDECODE('\u5e03\u8fbe\u4f69\u65af\u673a\u573a'), 'BUDAPEST', NULL, NULL),
+(213, STRINGDECODE('\u5965\u514b\u5170'), 'AKL', 'NZAA', STRINGDECODE('\u5965\u514b\u5170\u673a\u573a'), 'AUCKLAND', NULL, NULL),
+(214, STRINGDECODE('\u60e0\u7075\u987f'), 'WLG', 'NZWN', STRINGDECODE('\u60e0\u7075\u987f\u673a\u573a'), 'WELLINGTON', NULL, NULL),
+(215, STRINGDECODE('\u96c5\u5178'), 'ATH', 'WBSB', STRINGDECODE('\u96c5\u5178\u673a\u573a'), 'ATHENS', NULL, NULL),
+(216, STRINGDECODE('\u5854\u4ec0\u5e72'), 'TAS', 'UTTT', STRINGDECODE('\u5854\u4ec0\u5e72\u673a\u573a'), 'TASHKENT', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(217, STRINGDECODE('\u65af\u91cc\u5df4\u52a0\u6e7e'), 'BWN', 'WBSB', STRINGDECODE('\u6587\u83b1\u673a\u573a'), 'BANDAR SERI BEGAWAN', NULL, NULL),
+(218, STRINGDECODE('\u4f0a\u65af\u5766\u5e03\u5c14'), 'IST', 'LTBA', STRINGDECODE('\u963f\u5854\u56fe\u5c14\u514b\u673a\u573a'), 'ISTANBUL', NULL, NULL),
+(219, STRINGDECODE('\u5580\u571f\u7a46'), 'KRT', 'HSSS', STRINGDECODE('\u5580\u571f\u7a46\u673a\u573a'), 'KHARTOUM', NULL, NULL),
+(220, STRINGDECODE('\u8fbe\u5580\u5c14'), 'DKR', 'GOOY', STRINGDECODE('\u8fbe\u5580\u5c14\u673a\u573a'), 'DAKAR', NULL, NULL),
+(221, STRINGDECODE('\u4e4c\u5170\u5df4\u6258'), 'ULN', 'ZMUB', STRINGDECODE('\u4e4c\u5170\u5df4\u6258\u673a\u573a'), 'ULANBUTOR', NULL, NULL),
+(222, STRINGDECODE('\u58a8\u897f\u54e5'), 'MEX', 'MMMX', STRINGDECODE('\u58a8\u897f\u54e5\u57ce\u673a\u573a'), 'MEXICO', NULL, NULL),
+(223, STRINGDECODE('\u5409\u9686\u5761'), 'KUL', 'WMKK', STRINGDECODE('\u5409\u9686\u5761\u673a\u573a'), 'KUALA LUMPUR', NULL, NULL),
+(224, STRINGDECODE('\u4e07\u8c61'), 'VTE', 'VLVT', STRINGDECODE('\u4e07\u8c61\u74e6\u5cb1\u673a\u573a'), 'VIENTIANE', NULL, NULL),
+(225, STRINGDECODE('\u8d1d\u9c81\u7279'), 'BEY', 'OLBA', STRINGDECODE('\u8d1d\u9c81\u7279\u673a\u573a'), 'BEIRUT', NULL, NULL),
+(226, STRINGDECODE('\u80e1\u5fd7\u660e\u5e02'), 'SGN', 'VVTS', STRINGDECODE('\u80e1\u5fd7\u660e\u5e02\u673a\u573a'), 'HOCHIMINHCITY', NULL, NULL),
+(227, STRINGDECODE('\u82cf\u74e6'), 'SUV', 'NFNA', STRINGDECODE('\u82cf\u74e6\u90a3\u673a\u573a'), 'SUVA', NULL, NULL),
+(228, STRINGDECODE('\u5362\u68ee\u5821'), 'LUX', 'ELLX', STRINGDECODE('\u5362\u68ee\u5821\u673a\u573a'), 'LUXEMBOURG', NULL, NULL),
+(229, STRINGDECODE('\u79d1\u5a01\u7279'), 'KWI', 'OKBK', STRINGDECODE('\u79d1\u5a01\u7279\u673a\u573a'), 'KUWAIT', NULL, NULL),
+(230, STRINGDECODE('\u91d1\u8fb9'), 'PNH', 'VDPP', STRINGDECODE('\u91d1\u8fb9\u673a\u573a'), 'PHNOMPENH', NULL, NULL),
+(231, STRINGDECODE('\u6e25\u592a\u534e'), 'YOW', 'CYOW', STRINGDECODE('\u6e25\u592a\u534e\u673a\u573a'), 'OTTAWA', NULL, NULL),
+(232, STRINGDECODE('\u6e05\u5dde'), 'CJJ', 'RKTU', STRINGDECODE('\u6e05\u5dde\u673a\u573a'), 'CHUNGJU', NULL, NULL),
+(233, STRINGDECODE('\u6e29\u54e5\u534e'), 'YVR', 'CYVR', STRINGDECODE('\u6e29\u54e5\u534e\u673a\u573a'), 'VANCOUVER', NULL, NULL),
+(234, STRINGDECODE('\u591a\u4f26\u591a'), 'YTZ', 'CYTZ', STRINGDECODE('\u591a\u4f26\u591a\u5e02\u4e2d\u5fc3\u673a\u573a'), 'TORONTO', NULL, NULL),
+(235, STRINGDECODE('\u591a\u4f26\u591a'), 'YYZ', 'CYYZ', STRINGDECODE('\u591a\u4f26\u591a\u76ae\u5c14\u900a\u673a\u573a'), 'TORONTO', NULL, NULL),
+(236, STRINGDECODE('\u8499\u7279\u5229\u5c14'), 'YMQ', 'CYUL', STRINGDECODE('\u8499\u7279\u5229\u5c14\u673a\u573a'), 'MONTREAL', NULL, NULL),
+(237, STRINGDECODE('\u675c\u585e\u5c14\u591a\u592b'), 'DUS', 'EDDL', STRINGDECODE('\u675c\u585e\u5c14\u591a\u592b\u673a\u573a'), 'DUSSELDORF', NULL, NULL),
+(238, STRINGDECODE('\u4e0d\u6765\u6885'), 'BRE', 'EDDW', STRINGDECODE('\u4e0d\u6765\u6885\u673a\u573a'), 'BREMEN', NULL, NULL),
+(239, STRINGDECODE('\u67cf\u6797'), 'TXL', 'EDDT', STRINGDECODE('\u6cf0\u683c\u5c14\u673a\u573a'), 'BERLIN', NULL, NULL),
+(240, STRINGDECODE('\u67cf\u6797'), 'THF', 'EDDI', STRINGDECODE('\u6ed5\u4f2f\u5c14\u970d\u592b\u673a\u573a'), 'BERLIN', NULL, NULL),
+(241, STRINGDECODE('\u6cd5\u5170\u514b\u798f'), 'FRA', 'EDDF', STRINGDECODE('\u6cd5\u5170\u514b\u798f\u673a\u573a'), 'FRANKFURT', NULL, NULL),
+(242, STRINGDECODE('\u67cf\u6797'), 'SXF', 'EDDB', STRINGDECODE('\u820d\u8bb7\u8d39\u5c14\u5fb7\u673a\u573a'), 'BERLIN', NULL, NULL),
+(243, STRINGDECODE('\u6155\u5c3c\u9ed1'), 'MUC', 'EDDM', STRINGDECODE('\u6155\u5c3c\u9ed1\u673a\u573a'), 'MUNICH', NULL, NULL),
+(244, STRINGDECODE('\u79d1\u9686'), 'CGN', 'EDDK', STRINGDECODE('\u79d1\u9686\u673a\u573a'), 'COLOGNE', NULL, NULL),
+(245, STRINGDECODE('\u6c49\u5821'), 'HAM', 'EDDH', STRINGDECODE('\u6c49\u5821\u673a\u573a'), 'HAMBURG', NULL, NULL),
+(246, STRINGDECODE('\u83ab\u65af\u79d1'), 'SVO', 'UUEE', STRINGDECODE('\u8c22\u8bfa\u6885\u6770\u6c83\u673a\u573a'), 'MOSCOW', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(247, STRINGDECODE('\u83ab\u65af\u79d1'), 'DME', 'UUDD', STRINGDECODE('\u591a\u83ab\u6770\u591a\u6c83\u673a\u573a'), 'MOSCOW', NULL, NULL),
+(248, STRINGDECODE('\u83ab\u65af\u79d1'), 'VKO', 'UUWW', STRINGDECODE('\u4f0f\u52aa\u79d1\u6c83\u673a\u573a'), 'MOSCOW', NULL, NULL),
+(249, STRINGDECODE('\u5723\u5f7c\u5f97\u5821'), 'LED', 'ULLI', STRINGDECODE('\u5723\u5f7c\u5f97\u5821\u673a\u573a'), 'SAINT PETERSBURG', NULL, NULL),
+(250, STRINGDECODE('\u8d64\u5854'), 'HTA', 'UIAA', STRINGDECODE('\u8d64\u5854\u673a\u573a'), 'CHITA', NULL, NULL),
+(251, STRINGDECODE('\u54c8\u5df4\u7f57\u592b\u65af\u514b'), 'KHV', 'UHHH', STRINGDECODE('\u4f2f\u529b\u673a\u573a'), 'KHABAROVSK', NULL, NULL),
+(252, STRINGDECODE('\u54e5\u672c\u54c8\u6839'), 'CPH', 'EKCH', STRINGDECODE('\u54e5\u672c\u54c8\u6839\u673a\u573a'), 'COPENHAGEN', NULL, NULL),
+(253, STRINGDECODE('\u5e73\u58e4'), 'FNJ', 'ZKPY', STRINGDECODE('\u5e73\u58e4\u673a\u573a'), 'NIMES', NULL, NULL),
+(254, STRINGDECODE('\u534e\u6c99'), 'WAW', 'EPWA', STRINGDECODE('\u534e\u6c99\u8427\u90a6\u673a\u573a'), 'WARSAW', NULL, NULL),
+(255, STRINGDECODE('\u6089\u5c3c'), 'SYD', 'YSSY', STRINGDECODE('\u6089\u5c3c\u91d1\u65af\u798f\u5fb7?\u53f2\u5bc6\u65af\u673a\u573a'), 'SYDNEY', NULL, NULL),
+(256, STRINGDECODE('\u58a8\u5c14\u672c'), 'MEL', 'YMML', STRINGDECODE('\u58a8\u5c14\u672c\u673a\u573a'), 'MELBOURNE', NULL, NULL),
+(257, STRINGDECODE('\u582a\u57f9\u62c9'), 'CBR', 'YSCB', STRINGDECODE('\u582a\u57f9\u62c9\u673a\u573a'), 'CANBERRA', NULL, NULL),
+(258, STRINGDECODE('\u7ef4\u4e5f\u7eb3'), 'VIE', 'LOWW', STRINGDECODE('\u7ef4\u4e5f\u7eb3\u673a\u573a'), 'VIENNA', NULL, NULL),
+(259, STRINGDECODE('\u90fd\u67cf\u6797'), 'DUB', 'EIDW', STRINGDECODE('\u90fd\u67cf\u6797\u673a\u573a'), 'DUBLIN', NULL, NULL),
+(260, STRINGDECODE('\u4e9a\u7684\u65af\u4e9a\u8d1d\u5df4'), 'ADD', 'HAAB', STRINGDECODE('\u4e9a\u7684\u65af\u4e9a\u8d1d\u5df4\u673a\u573a'), 'ADDIS ABABA', NULL, NULL),
+(261, STRINGDECODE('\u5f00\u7f57'), 'CAI', 'HECA', STRINGDECODE('\u5f00\u7f57\u673a\u573a'), 'CAIRO', NULL, NULL),
+(262, STRINGDECODE('\u963f\u65af\u65fa'), 'ASW', 'HESN', STRINGDECODE('\u963f\u65af\u65fa\u673a\u573a'), 'ASWAN', NULL, NULL),
+(263, STRINGDECODE('\u5723\u4fdd\u7f57'), 'GRU', 'SBSP', STRINGDECODE('\u5723\u4fdd\u7f57\u673a\u573a'), 'SAO PAULO', NULL, NULL),
+(264, STRINGDECODE('\u5df4\u897f\u5229\u4e9a'), 'BSB', 'SBBR', STRINGDECODE('\u5df4\u897f\u5229\u4e9a\u673a\u573a'), STRINGDECODE('BRAS\u00edLIA'), NULL, NULL),
+(265, STRINGDECODE('\u5df4\u62ff\u9a6c\u57ce'), 'PTY', 'MPMG', STRINGDECODE('\u5df4\u62ff\u9a6c\u57ce\u673a\u573a'), 'PANAMACITY', NULL, NULL),
+(266, STRINGDECODE('\u4f0a\u65af\u5170\u5821'), 'ISB', 'OPRN', STRINGDECODE('\u4f0a\u65af\u5170\u5821\u673a\u573a'), 'ISLAMABAD', NULL, NULL),
+(267, STRINGDECODE('\u5361\u62c9\u5947'), 'KHI', 'OPKC', STRINGDECODE('\u5361\u62c9\u5947\u673a\u573a'), 'KARACHI', NULL, NULL),
+(268, STRINGDECODE('\u6c99\u8fe6'), 'SHJ', 'OMSJ', STRINGDECODE('\u838e\u8fe6\u673a\u573a'), 'SHARJAH', NULL, NULL),
+(269, STRINGDECODE('\u5580\u5e03\u5c14'), 'KBL', 'OAKB', STRINGDECODE('\u5580\u5e03\u5c14\u673a\u573a'), 'KABUL', NULL, NULL),
+(270, STRINGDECODE('\u963f\u5c14\u53ca\u5c14'), 'ALG', 'DAAG', STRINGDECODE('\u963f\u5c14\u53ca\u5c14\u673a\u573a'), 'ALGIERS', NULL, NULL),
+(271, STRINGDECODE('\u5e03\u9c81\u585e\u5c14'), 'BRU', 'EBBR', STRINGDECODE('\u5e03\u9c81\u585e\u5c14\u673a\u573a'), 'BRUSSELS', NULL, NULL),
+(272, STRINGDECODE('\u9e7f\u7279\u4e39'), 'RTM', 'EHRD', STRINGDECODE('\u9e7f\u7279\u4e39\u673a\u573a'), 'ROTTERDAM', NULL, NULL),
+(273, STRINGDECODE('\u65e5\u5185\u74e6'), 'GVA', 'LSGG', STRINGDECODE('\u65e5\u5185\u74e6\u673a\u573a'), 'GENEVA', NULL, NULL),
+(274, STRINGDECODE('\u65af\u5fb7\u54e5\u5c14\u6469'), 'ARN', 'ESSA', STRINGDECODE('\u65af\u5fb7\u54e5\u5c14\u6469\u673a\u573a'), 'STOCKHOLM', NULL, NULL),
+(275, STRINGDECODE('\u7a81\u5c3c\u65af'), 'TUN', 'DTTA', STRINGDECODE('\u7a81\u5c3c\u65af\u673a\u573a'), 'TUNIS', NULL, NULL),
+(276, STRINGDECODE('\u52a0\u62c9\u52a0\u65af'), 'CCS', 'SVFM', STRINGDECODE('\u52a0\u62c9\u52a0\u65af\u673a\u573a'), 'CARACAS', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(277, STRINGDECODE('\u5371\u5730\u9a6c\u62c9\u57ce'), 'GUA', 'MGGT', STRINGDECODE('\u5371\u5730\u9a6c\u62c9\u57ce\u673a\u573a'), 'GUATEMALACITY', NULL, NULL),
+(278, STRINGDECODE('\u5927\u9a6c\u58eb\u9769'), 'DAM', 'OSDI', STRINGDECODE('\u5927\u9a6c\u58eb\u9769\u673a\u573a'), 'DAMASCUS', NULL, NULL),
+(279, STRINGDECODE('\u91cc\u6602'), 'LYS', 'LFLL', STRINGDECODE('\u91cc\u6602\u673a\u573a'), 'LYON', NULL, NULL),
+(280, STRINGDECODE('\u5723\u5730\u4e9a\u54e5'), 'SCL', 'SCEL', STRINGDECODE('\u5723\u5730\u4e9a\u54e5\u673a\u573a'), 'SANTIAGO', NULL, NULL),
+(281, STRINGDECODE('\u54e5\u5fb7\u5821'), 'GOT', 'ESGP', STRINGDECODE('\u54e5\u5fb7\u5821\u673a\u573a'), 'GOTHENBURG', NULL, NULL),
+(282, STRINGDECODE('\u4ed9\u53f0'), 'SDJ', 'FAYP', STRINGDECODE('\u4ed9\u53f0\u673a\u573a'), 'SANDAI', NULL, NULL),
+(283, STRINGDECODE('\u5343\u5c81'), 'CTS', 'RJCJ', STRINGDECODE('\u5343\u5c81\u673a\u573a'), 'CHITOSE', NULL, NULL),
+(284, STRINGDECODE('\u91cc\u65af\u672c'), 'LIS', 'RJSS', STRINGDECODE('\u91cc\u65af\u672c\u673a\u573a'), 'LISBON', NULL, NULL),
+(285, STRINGDECODE('\u5965\u65af\u9646'), 'OSL', 'ENGM', STRINGDECODE('\u5965\u65af\u9646\u673a\u573a'), 'OSLO', NULL, NULL),
+(286, STRINGDECODE('\u62c9\u5404\u65af'), 'LOS', 'DNMM', STRINGDECODE('\u62c9\u5404\u65af\u673a\u573a'), 'LAGOS', NULL, NULL),
+(287, STRINGDECODE('\u62c9\u5df4\u7279'), 'RBA', 'GMME', STRINGDECODE('\u62c9\u5df4\u7279\u673a\u573a'), 'RABAT', NULL, NULL),
+(288, STRINGDECODE('\u5f00\u666e\u6566'), 'CPT', 'FAYP', STRINGDECODE('\u5f00\u666e\u987f\u673a\u573a'), 'CAPE TOWN', NULL, NULL),
+(289, STRINGDECODE('\u7ea6\u7ff0\u5185\u65af\u5821'), 'JNB', 'FAJS', STRINGDECODE('\u7ea6\u7ff0\u5185\u65af\u5821\u673a\u573a'), 'JOHANNESBURG', NULL, NULL),
+(290, STRINGDECODE('\u4f11\u65af\u987f'), 'HOU', 'KHOU', STRINGDECODE('\u4f11\u65af\u987f\u673a\u573a'), 'HOUSTON', NULL, NULL),
+(291, STRINGDECODE('\u6a80\u9999\u5c71'), 'HNL', 'PHNL', STRINGDECODE('\u6a80\u9999\u5c71\u673a\u573a'), 'HONOLULU', NULL, NULL),
+(292, STRINGDECODE('\u829d\u52a0\u54e5'), 'ORD', 'KORD', STRINGDECODE('\u829d\u52a0\u54e5\u673a\u573a'), 'CHICAGO', NULL, NULL),
+(293, STRINGDECODE('\u7ebd\u7ea6'), 'JFK', 'KJFK', STRINGDECODE('\u80af\u5c3c\u8fea\u673a\u573a'), 'NEW YORK', NULL, NULL),
+(294, STRINGDECODE('\u6ce2\u58eb\u987f'), 'BOS', 'KBOS', STRINGDECODE('\u6ce2\u58eb\u987f\u673a\u573a'), 'BOSTON', NULL, NULL),
+(295, STRINGDECODE('\u6d1b\u6749\u77f6'), 'LAX', 'KLAX', STRINGDECODE('\u6d1b\u6749\u77f6\u673a\u573a'), 'LOS ANGELES', NULL, NULL),
+(296, STRINGDECODE('\u534e\u76db\u987f'), 'WAS', 'KWAS', STRINGDECODE('\u534e\u76db\u987f\u673a\u573a'), 'WASHINGTON', NULL, NULL),
+(297, STRINGDECODE('\u5e95\u7279\u5f8b'), 'DTT', 'KDTT', STRINGDECODE('\u5e95\u7279\u5f8b\u673a\u573a'), 'DETROIT', NULL, NULL),
+(298, STRINGDECODE('\u8fc8\u963f\u5bc6'), 'MIA', 'KMIA', STRINGDECODE('\u8fc8\u963f\u5bc6\u673a\u573a'), 'MIAMI', NULL, NULL),
+(299, STRINGDECODE('\u8d39\u57ce'), 'PHL', 'KPHL', STRINGDECODE('\u8d39\u57ce\u673a\u573a'), 'PHILADELPHIA', NULL, NULL),
+(300, STRINGDECODE('\u897f\u96c5\u56fe'), 'SEA', 'KSEA', STRINGDECODE('\u897f\u96c5\u56fe\u673a\u573a'), 'SEATTLE', NULL, NULL),
+(301, STRINGDECODE('\u65e7\u91d1\u5c71'), 'SFO', 'KSFO', STRINGDECODE('\u65e7\u91d1\u5c71\u673a\u573a'), 'SAN FRANCISCO', NULL, NULL),
+(302, STRINGDECODE('\u7d22\u975e\u4e9a'), 'SOF', 'LBSF', STRINGDECODE('\u7d22\u975e\u4e9a\u673a\u573a'), 'SOFIA', NULL, NULL),
+(303, STRINGDECODE('\u963f\u59c6\u65af\u7279\u4e39'), 'AMS', 'EHAM', STRINGDECODE('\u8377\u5170\u963f\u59c6\u65af\u7279\u4e39\u65af\u53f2\u57fa\u6d66(\u897f\u970d\u666e)\u673a\u573a'), 'AMSTERDAM', NULL, NULL),
+(304, STRINGDECODE('\u963f\u62c9\u6728\u56fe'), 'ALA', 'UAAA', STRINGDECODE('\u963f\u62c9\u6728\u56fe\u673a\u573a'), 'ALMAATA', NULL, NULL),
+(305, STRINGDECODE('\u9a6c\u5c3c\u62c9'), 'MNL', 'RPLL', STRINGDECODE('\u9a6c\u5c3c\u62c9\u673a\u573a'), 'MANILA', NULL, NULL),
+(306, STRINGDECODE('\u8d6b\u5c14\u8f9b\u57fa'), 'HEL', 'EFHK', STRINGDECODE('\u8d6b\u5c14\u8f9b\u57fa\u673a\u573a'), 'HELSINKI', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(307, STRINGDECODE('\u6ce2\u54e5\u5927'), 'BOG', 'SKBO', STRINGDECODE('\u6ce2\u54e5\u5927\u673a\u573a'), 'BOGOTA', NULL, NULL),
+(308, STRINGDECODE('\u5229\u9a6c'), 'LIM', 'LIMA', STRINGDECODE('\u5229\u9a6c\u673a\u573a'), 'LIMA', NULL, NULL),
+(309, STRINGDECODE('\u8fbe\u5361'), 'DAC', 'VGZR', STRINGDECODE('\u9f50\u4e9a\u673a\u573a'), 'DACCA', NULL, NULL),
+(310, STRINGDECODE('\u957f\u6ee9'), 'LGB', 'KLGB', STRINGDECODE('\u957f\u6ee9\u673a\u573a'), 'LONGBEACH', NULL, NULL),
+(311, STRINGDECODE('\u4f26\u6566'), 'LHR', 'EGLL', STRINGDECODE('\u4f26\u6566\u5e0c\u601d\u7f57\u673a\u573a'), 'LONDON', NULL, NULL),
+(312, STRINGDECODE('\u5b9e\u91cc\u8fbe'), 'XSP', 'WSSL', STRINGDECODE('\u5b9e\u91cc\u8fbe\u673a\u573a'), 'SELETAR', NULL, NULL),
+(313, STRINGDECODE('\u4e39\u4f5b'), 'DEN', 'KDEN', STRINGDECODE('\u4e39\u4f5b\u673a\u573a'), 'DENVER', NULL, NULL),
+(314, STRINGDECODE('\u52a0\u5fb7\u6ee1\u90fd'), 'KTM', 'VNKT', STRINGDECODE('\u52a0\u5fb7\u6ee1\u90fd\u673a\u573a'), 'KATHMANDU', NULL, NULL),
+(315, STRINGDECODE('\u767b\u5df4\u8428'), 'DPS', 'WADD', STRINGDECODE('\u5df4\u5398\u5c9b\u673a\u573a'), 'DENPASAR', NULL, NULL),
+(316, STRINGDECODE('\u9f99\u5ca9'), 'LCX', 'ZSLO', STRINGDECODE('\u798f\u5efa\u9f99\u5ca9\u51a0\u8c78\u5c71\u673a\u573a'), 'LONGYAN', NULL, NULL),
+(317, STRINGDECODE('\u52a0\u5229\u798f\u5c3c\u4e9a\u5dde'), 'BLH', 'KBLH', STRINGDECODE('\u52a0\u5229\u798f\u5c3c\u4e9a\u5e03\u83b1\u65af\u673a\u573a'), 'CALIFORNIA', NULL, NULL),
+(318, STRINGDECODE('\u5e0c\u62c9\u672c\u5fb7'), 'BDN', 'KBDN', STRINGDECODE('\u5e0c\u62c9\u672c\u5fb7\u673a\u573a'), 'GILA BEND', NULL, NULL),
+(319, STRINGDECODE('\u5df4\u541e\u9c81\u65e5'), 'BTR', 'KBTR', STRINGDECODE('\u5df4\u541e\u9c81\u65e5(\u745e\u5b89)\u673a\u573a'), 'BATON ROUGE', NULL, NULL),
+(320, STRINGDECODE('\u66fc\u8c37'), 'DMK', 'VTBD', STRINGDECODE('\u5eca\u66fc\u673a\u573a'), 'BANGKOK', NULL, NULL),
+(321, STRINGDECODE('\u82cf\u9ece\u4e16'), 'ZRH', 'LSZH', STRINGDECODE('\u82cf\u9ece\u4e16\u673a\u573a'), 'ZURICH', NULL, NULL),
+(322, STRINGDECODE('\u5229\u7269\u6d66'), 'LPL', 'EGGP', STRINGDECODE('\u5229\u7269\u6d66\u7ea6\u7ff0\u5217\u4fac\u673a\u573a'), 'LIVERPOOL', NULL, NULL),
+(323, STRINGDECODE('\u4f2f\u660e\u7ff0'), 'BHX', 'EGBB', STRINGDECODE('\u4f2f\u660e\u7ff0\u673a\u573a'), 'BIRMINGHAM', NULL, NULL),
+(324, STRINGDECODE('\u79d1\u4f26\u5761'), 'CMB', 'VCBI', STRINGDECODE('\u73ed\u8fbe\u62c9\u5948\u514b\u673a\u573a'), 'COLOMBO', NULL, NULL),
+(325, STRINGDECODE('\u4ef0\u5149'), 'RGN', 'VYYY', STRINGDECODE('\u4ef0\u5149\u673a\u573a'), 'YANGON', NULL, NULL),
+(326, STRINGDECODE('\u53e4\u5fb7\u4f0a\u5c14'), 'GYR', 'KGYR', STRINGDECODE('\u83f2\u5c3c\u514b\u65af\u53e4\u5fb7\u4f0a\u5c14\u673a\u573a'), 'GOODYEAR', NULL, NULL),
+(327, 'Pinal', 'MZJ', 'KMZJ', STRINGDECODE('\u76ae\u7eb3\u5c14\u98de\u673a\u575f\u573a\u673a\u573a'), 'PINAL COUNTY', NULL, NULL),
+(328, STRINGDECODE('\u5723\u9a6c\u4e01'), 'SXM', 'TNCM', STRINGDECODE('\u6731\u5229\u5b89\u5a1c\u516c\u4e3b\u673a\u573a'), 'ST. MAARTEN', NULL, NULL),
+(329, 'Ryan Field', 'RYN', 'KRYN', STRINGDECODE('Ryan Field\u673a\u573a'), 'RYAN FIELD', NULL, NULL),
+(330, STRINGDECODE('\u5927\u5e86'), 'DQA', 'ZYDQ', STRINGDECODE('\u5927\u5e86\u8428\u5c14\u56fe\u673a\u573a'), 'DAQING', NULL, NULL),
+(331, STRINGDECODE('\u5e03\u5b9c\u8bfa\u65af\u827e\u5229\u65af'), 'BUE', '', STRINGDECODE('\u5e03\u5b9c\u8bfa\u65af\u827e\u5229\u65af\u673a\u573a'), 'BUENOS AIRES', NULL, NULL),
+(332, STRINGDECODE('\u53e4\u664b'), 'KCH', '', STRINGDECODE('\u53e4\u664b\u673a\u573a'), 'KUCHING', NULL, NULL),
+(333, STRINGDECODE('\u6c99\u5df4'), 'BKI', '', STRINGDECODE('\u6c99\u5df4\u673a\u573a'), 'SABAH', NULL, NULL),
+(334, STRINGDECODE('\u69df\u57ce'), 'PEN', '', STRINGDECODE('\u69df\u57ce\u673a\u573a'), 'PENANG', NULL, NULL),
+(335, STRINGDECODE('\u5370\u7b2c\u5b89\u7eb3\u6ce2\u5229\u65af'), 'IND', 'KIND', STRINGDECODE('\u5370\u7b2c\u5b89\u7eb3\u6ce2\u5229\u65af\u673a\u573a'), 'INDIANAPOLIS', NULL, NULL),
+(336, STRINGDECODE('\u7ef4\u65af\u7279\u5207\u65af\u7279\u90e1'), 'HPN', '', STRINGDECODE('\u7ef4\u65af\u7279\u5207\u65af\u7279\u90e1\u673a\u573a'), 'WESTCHESTER COUNTY', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(337, STRINGDECODE('\u76d0\u6e56\u57ce'), 'SLC', '', STRINGDECODE('\u76d0\u6e56\u57ce\u673a\u573a'), 'SALT LAKE CITY', NULL, NULL),
+(338, STRINGDECODE('\u4fc4\u514b\u62c9\u8377\u9a6c\u57ce'), 'OKC', '', STRINGDECODE('\u4fc4\u514b\u62c9\u8377\u9a6c\u57ce\u673a\u573a'), 'WILL ROGERS', NULL, NULL),
+(339, STRINGDECODE('\u65af\u6ce2\u574e'), 'GEG', '', STRINGDECODE('\u65af\u6ce2\u574e\u673a\u573a'), 'SPOKANE', NULL, NULL),
+(340, STRINGDECODE('\u5723\u8fed\u6208'), 'SAN', '', STRINGDECODE('\u5723\u8fed\u6208\u673a\u573a'), 'SAN DIEGO', NULL, NULL),
+(341, STRINGDECODE('\u5723\u5b89\u4e1c\u5c3c\u5965'), 'SAT', '', STRINGDECODE('\u5723\u5b89\u4e1c\u5c3c\u5965\u673a\u573a'), 'SAN ANTONIO', NULL, NULL),
+(342, STRINGDECODE('\u4f11\u65af\u6566'), 'IAH', '', STRINGDECODE('\u4f11\u65af\u6566\u673a\u573a'), 'GEORGE BUSH', NULL, NULL),
+(343, STRINGDECODE('\u5b5f\u83f2\u65af'), 'MEM', 'KMEM', STRINGDECODE('\u5b5f\u83f2\u65af\u673a\u573a'), 'MEMPHIS', NULL, NULL),
+(344, STRINGDECODE('\u62c9\u65af\u7ef4\u52a0\u65af'), 'LAS', 'KLAS', STRINGDECODE('\u62c9\u65af\u7ef4\u52a0\u65af\u9ea6\u5361\u4f26\u56fd\u9645\u673a\u573a\u673a\u573a'), 'MCCARRAN', NULL, NULL),
+(345, STRINGDECODE('\u91cc\u58eb\u6ee1'), 'RIC', '', STRINGDECODE('\u91cc\u58eb\u6ee1\u673a\u573a'), 'RICHMOND', NULL, NULL),
+(346, STRINGDECODE('\u83ab\u6797'), 'MLI', '', STRINGDECODE('\u83ab\u6797\u673a\u573a'), 'QUAD-CITY', NULL, NULL),
+(347, STRINGDECODE('\u8003\u7231\u5c9b'), 'LIH', '', STRINGDECODE('\u8003\u7231\u5c9b\u673a\u573a'), 'KAUAI ISLAND', NULL, NULL),
+(348, STRINGDECODE('\u582a\u8428\u65af\u57ce'), 'MCI', '', STRINGDECODE('\u582a\u8428\u65af\u57ce\u673a\u573a'), 'KANSAS CITY', NULL, NULL),
+(349, STRINGDECODE('\u54c8\u91cc\u65af\u5821'), 'MDT', '', STRINGDECODE('\u54c8\u91cc\u65af\u5821\u673a\u573a'), 'HARRISBURG SKYPORT', NULL, NULL),
+(350, STRINGDECODE('\u5f97\u6885\u56e0'), 'DSM', '', STRINGDECODE('\u5f97\u6885\u56e0\u673a\u573a'), 'DES MOINES', NULL, NULL),
+(351, STRINGDECODE('\u5217\u514b\u661f\u6566'), 'LEX', '', STRINGDECODE('\u5217\u514b\u661f\u6566\u673a\u573a'), 'ORLANDO', NULL, NULL),
+(352, STRINGDECODE('\u5965\u5170\u591a'), 'MCO', 'KMCO', STRINGDECODE('\u5965\u5170\u591a\u673a\u573a'), 'AOKELAN', NULL, NULL),
+(353, STRINGDECODE('\u6770\u514b\u900a\u7ef4\u5c14'), 'JAX', 'KJAX', STRINGDECODE('\u6770\u514b\u900a\u7ef4\u5c14\u673a\u573a'), 'JACKSONVILLE', NULL, NULL),
+(354, STRINGDECODE('\u5e03\u6cd5\u7f57'), 'BUF', 'KBUF', STRINGDECODE('\u5e03\u6cd5\u7f57\u673a\u573a'), 'BUFFALO', NULL, NULL),
+(355, STRINGDECODE('\u4e9a\u7279\u5170\u5927'), 'ATL', 'KATL', STRINGDECODE('\u4e9a\u7279\u5170\u5927\u673a\u573a'), 'ATLANTA', NULL, NULL),
+(356, STRINGDECODE('\u5723\u8def\u6613\u65af'), 'STL', '', STRINGDECODE('\u5723\u8def\u6613\u65af\u673a\u573a'), 'SAINT LOUIS', NULL, NULL),
+(357, STRINGDECODE('\u6ce2\u7279\u5170'), 'PDX', '', STRINGDECODE('\u6ce2\u7279\u5170\u673a\u573a'), 'PORTLAND', NULL, NULL),
+(358, STRINGDECODE('\u66fc\u5fb7\u52d2'), 'MDL', 'VYMD', STRINGDECODE('\u66fc\u5fb7\u52d2\u673a\u573a'), STRINGDECODE('\u66fc\u5fb7\u52d2'), NULL, NULL),
+(359, STRINGDECODE('\u6ce2\u5c14\u56fe'), 'OPO', '', STRINGDECODE('\u6ce2\u5c14\u56fe\u673a\u573a'), 'PORTO', NULL, NULL),
+(360, STRINGDECODE('\u51b2\u7ef3'), 'OKA', 'ROAH', STRINGDECODE('\u90a3\u9738\u673a\u573a'), 'OKINAWA', NULL, NULL),
+(361, STRINGDECODE('\u4e1c\u4eac'), 'TYO', '', STRINGDECODE('\u4e1c\u4eac\u673a\u573a'), 'TOKYO', NULL, NULL),
+(362, STRINGDECODE('\u672d\u5e4c'), 'SPK', '', STRINGDECODE('\u672d\u5e4c\u673a\u573a'), 'SAPPORO', NULL, NULL),
+(363, STRINGDECODE('\u585e\u73ed'), 'SPN', 'PGSN', STRINGDECODE('\u585e\u73ed\u673a\u573a'), 'NORTHERN MARIANA ISLANDS', NULL, NULL),
+(364, STRINGDECODE('\u4f2f\u5c14\u5c3c'), 'BRN', 'LSZB', STRINGDECODE('\u4f2f\u5c14\u5c3c\u673a\u573a'), 'BERNE', NULL, NULL),
+(365, STRINGDECODE('\u82cf\u6885\u5c9b'), 'USM', 'VTSM', STRINGDECODE('\u82cf\u6885\u5c9b\u673a\u573a'), 'KOH SAMUI', NULL, NULL),
+(366, STRINGDECODE('\u57fa\u8f85'), 'IEV', '', STRINGDECODE('\u57fa\u8f85\u673a\u573a'), 'KIEV', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(367, STRINGDECODE('\u57fa\u7763\u57ce'), 'CHC', '', STRINGDECODE('\u57fa\u7763\u57ce\u673a\u573a'), 'CHRISTCHURCH', NULL, NULL),
+(368, STRINGDECODE('\u8036\u8def\u6492\u51b7'), 'JRS', '', STRINGDECODE('\u8036\u8def\u6492\u51b7\u673a\u573a'), 'JERUSALEM', NULL, NULL),
+(369, STRINGDECODE('\u90fd\u7075'), 'TRN', '', STRINGDECODE('\u90fd\u7075\u673a\u573a'), 'TURIN', NULL, NULL),
+(370, STRINGDECODE('\u7f57\u9a6c'), 'ROM', '', STRINGDECODE('\u7f57\u9a6c\u673a\u573a'), 'ROME', NULL, NULL),
+(371, STRINGDECODE('\u4f5b\u7f57\u4f26\u8428'), 'FLR', '', STRINGDECODE('\u4f5b\u7f57\u4f26\u8428\u673a\u573a'), 'FLORENCE', NULL, NULL),
+(372, STRINGDECODE('\u73ed\u52a0\u7f57\u5c14'), 'BLR', '', STRINGDECODE('\u73ed\u52a0\u7f57\u5c14\u673a\u573a'), 'BANGALORE', NULL, NULL),
+(373, STRINGDECODE('\u6cd7\u6c34'), 'SUB', 'WARR', STRINGDECODE('\u6731\u5b89\u8fbe\u6cd7\u6c34\u673a\u573a'), 'SURABAYA', NULL, NULL),
+(374, STRINGDECODE('\u7231\u4e01\u5821'), 'EDI', '', STRINGDECODE('\u7231\u4e01\u5821\u673a\u573a'), 'EDINBURGH', NULL, NULL),
+(375, STRINGDECODE('\u5229\u5179'), 'LBA', '', STRINGDECODE('\u5229\u5179\u673a\u573a'), 'LEEDS', NULL, NULL),
+(376, STRINGDECODE('\u683c\u62c9\u65af\u54e5'), 'GLA', '', STRINGDECODE('\u683c\u62c9\u65af\u54e5\u673a\u573a'), 'GLASGOW', NULL, NULL),
+(377, STRINGDECODE('\u5b89\u66fc'), 'AMM', 'OJAI', STRINGDECODE('\u5b89\u66fc\u963f\u8389\u5a05\u738b\u540e\u673a\u573a'), 'AMMAN', NULL, NULL),
+(378, STRINGDECODE('\u6cb3\u5185'), 'HAN', '', STRINGDECODE('\u6cb3\u5185\u673a\u573a'), 'HANOI', NULL, NULL),
+(379, STRINGDECODE('\u591a\u54c8'), 'DOH', 'OTBD', STRINGDECODE('\u591a\u54c8\u673a\u573a'), 'DOH', NULL, NULL),
+(380, STRINGDECODE('\u5e03\u62c9\u683c'), 'PRG', '', STRINGDECODE('\u5e03\u62c9\u683c\u673a\u573a'), 'PRAGUE', NULL, NULL),
+(381, STRINGDECODE('\u6e29\u5c3c\u4f2f'), 'YWG', 'CYWG', STRINGDECODE('\u6e29\u5c3c\u4f2f\u673a\u573a'), 'DELINE', NULL, NULL),
+(382, STRINGDECODE('\u7ef4\u591a\u5229\u4e9a'), 'YYJ', 'CYYJ', STRINGDECODE('\u7ef4\u591a\u5229\u4e9a\u673a\u573a'), 'VICTORIA', NULL, NULL),
+(383, STRINGDECODE('\u9b41\u5317\u514b'), 'YQB', 'CYQB', STRINGDECODE('\u9b41\u5317\u514b\u57ce\u673a\u573a'), 'QUEBEC', NULL, NULL),
+(384, STRINGDECODE('\u66b9\u7c92'), 'REP', 'VDSR', STRINGDECODE('\u66b9\u7c92\u5434\u54e5\u673a\u573a'), 'ANGKOR WAT', NULL, NULL),
+(386, STRINGDECODE('\u5168\u5dde'), 'CHN', '', STRINGDECODE('\u5168\u5dde\u673a\u573a'), 'JEONJU', NULL, NULL),
+(387, STRINGDECODE('\u5bbf\u96fe'), 'CEB', '', STRINGDECODE('\u5bbf\u96fe\u673a\u573a'), 'CEBU', NULL, NULL),
+(388, STRINGDECODE('\u5df4\u9ece'), 'PAR', '', STRINGDECODE('\u5df4\u9ece\u673a\u573a'), 'PARIS', NULL, NULL),
+(389, STRINGDECODE('\u7b26\u62c9\u8fea\u6c83\u65af\u6258\u514b'), 'VVO', 'UHWW', STRINGDECODE('\u7b26\u62c9\u8fea\u6c83\u65af\u6258\u514b\u673a\u573a'), 'VLADIVOSTOK', NULL, NULL),
+(390, STRINGDECODE('\u83ab\u65af\u79d1'), 'MOW', '', STRINGDECODE('\u83ab\u65af\u79d1\u673a\u573a'), 'MOSCOW', NULL, NULL),
+(391, STRINGDECODE('\u7ebd\u4f26\u5821'), 'NUE', 'EDDN', STRINGDECODE('\u7ebd\u4f26\u5821\u673a\u573a'), 'NUREMBERG', NULL, NULL),
+(392, STRINGDECODE('\u8fea\u62dc'), 'DXB', 'OMDB', STRINGDECODE('\u8fea\u62dc\u673a\u573a'), 'DUBAI', NULL, NULL),
+(393, STRINGDECODE('\u963f\u5e03\u624e\u6bd4'), 'AUH', '', STRINGDECODE('\u963f\u5e03\u624e\u6bd4\u673a\u573a'), 'ABU DHABI', NULL, NULL),
+(394, STRINGDECODE('\u4e9a\u5386\u5c71\u5927'), 'ALY', '', STRINGDECODE('\u4e9a\u5386\u5c71\u5927\u673a\u573a'), 'ALEXANDRIA', NULL, NULL),
+(395, STRINGDECODE('\u963f\u5fb7\u83b1\u5fb7'), 'ADL', 'YPAD', STRINGDECODE('\u963f\u5fb7\u83b1\u5fb7\u673a\u573a'), 'ADELAIDE', NULL, NULL),
+(396, STRINGDECODE('\u73c0\u65af'), 'PER', 'YPPH', STRINGDECODE('\u73c0\u65af\u673a\u573a'), 'PERTH', NULL, NULL),
+(397, STRINGDECODE('\u5e03\u91cc\u65af\u73ed'), 'BNE', 'YBBN', STRINGDECODE('\u5e03\u91cc\u65af\u73ed\u673a\u573a'), 'BRISBANE', NULL, NULL),
+(398, STRINGDECODE('\u8fbe\u5c14\u6587'), 'DRW', 'YPDN', STRINGDECODE('\u8fbe\u5c14\u6587\u673a\u573a'), 'DARWIN', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(399, STRINGDECODE('\u9e21\u897f'), 'JXA', 'ZYJX', STRINGDECODE('\u9e21\u897f\u5174\u51ef\u6e56\u673a\u573a'), 'JIXI', NULL, NULL),
+(400, STRINGDECODE('\u6c38\u5dde'), 'LLF', 'ZGLG', STRINGDECODE('\u6e56\u5357\u6c38\u5dde\u96f6\u9675\u673a\u573a'), 'YONGZHOU', NULL, NULL),
+(401, STRINGDECODE('\u97f6\u5173'), 'HSC', '', STRINGDECODE('\u97f6\u5173\u673a\u573a'), 'SHAOGUAN', NULL, NULL),
+(402, STRINGDECODE('\u4e95\u5188\u5c71'), 'JGS', 'ZSGS', STRINGDECODE('\u4e95\u5188\u5c71\u673a\u573a'), 'JINGGANGSHAN', NULL, NULL),
+(403, STRINGDECODE('\u961c\u9633'), 'FUG', 'ZSFY', STRINGDECODE('\u961c\u9633\u897f\u5173\u673a\u573a'), 'FUYANG', NULL, NULL),
+(404, STRINGDECODE('\u51ef\u6069\u65af'), 'CNS', 'YBCS', STRINGDECODE('\u51ef\u6069\u65af\u673a\u573a'), 'CAIRNS', NULL, NULL),
+(405, STRINGDECODE('\u84ec\u5854\u5361\u7eb3'), 'PUJ', 'MDPC', STRINGDECODE('\u84ec\u5854\u5361\u7eb3\u673a\u573a'), 'PUNTA CA NA', NULL, NULL),
+(406, STRINGDECODE('\u4e8c\u8fde\u6d69\u7279'), 'ERL', 'ZBER', STRINGDECODE('\u4e8c\u8fde\u6d69\u7279\u8d5b\u4e4c\u82cf\u56fd\u9645\u673a\u573a'), 'ERLIANHOT', NULL, NULL),
+(407, STRINGDECODE('\u5e7f\u5143'), 'GYS', 'ZUGU', STRINGDECODE('\u5e7f\u5143\u673a\u573a'), 'GUANGYUAN', NULL, NULL),
+(408, STRINGDECODE('\u4f5b\u5c71'), 'FUO', 'ZGFS', STRINGDECODE('\u4f5b\u5c71\u6c99\u5824\u673a\u573a'), 'FOSHAN', NULL, NULL),
+(409, STRINGDECODE('\u5409\u5b89'), 'KNC', 'ZSJA', STRINGDECODE('\u5409\u5b89\u673a\u573a'), 'JIAN', NULL, NULL),
+(410, STRINGDECODE('\u535a\u97e6'), 'BVA', 'LFOB', STRINGDECODE('\u535a\u97e6\u8482\u8036\u673a\u573a'), 'BEAUVAIS', NULL, NULL),
+(411, STRINGDECODE('\u4f0a\u6625'), 'LDS', 'ZYLD', STRINGDECODE('\u4f0a\u6625\u6797\u90fd\u673a\u573a'), 'YICHUN', NULL, NULL),
+(412, STRINGDECODE('\u5b89\u5361\u62c9'), 'ANK', '', STRINGDECODE('\u5b89\u5361\u62c9(\u9996\u90fd)\u673a\u573a'), 'ANKARA', NULL, NULL),
+(413, STRINGDECODE('\u5b89\u5361\u62c9'), 'ESB', 'LTAC', STRINGDECODE('\u5b89\u5361\u62c9\u57c3\u68ee\u535a\u963f\u673a\u573a'), 'ANKARA', NULL, NULL),
+(414, STRINGDECODE('\u5410\u9c81\u756a'), 'TLQ', 'ZWTL', STRINGDECODE('\u5410\u9c81\u756a\u4ea4\u6cb3\u673a\u573a'), 'TULUFAN', NULL, NULL),
+(415, STRINGDECODE('\u4e1c\u4eac\u7fbd\u7530'), 'HND', 'RJTT', STRINGDECODE('\u4e1c\u4eac\u7fbd\u7530\u56fd\u9645\u673a\u573a'), 'TOKYO', NULL, NULL),
+(416, STRINGDECODE('\u8fbe\u62c9\u65af'), 'DFW', 'KDFW', STRINGDECODE('\u8fbe\u62c9\u65af\u6c83\u5c14\u65af\u5821\u673a\u573a'), 'DALLAS', NULL, NULL),
+(417, STRINGDECODE('\u56fa\u539f'), 'GYU', 'ZLGY', STRINGDECODE('\u5b81\u590f\u56fa\u539f\u516d\u76d8\u5c71\u673a\u573a'), 'GUYUAN', NULL, NULL),
+(418, STRINGDECODE('\u91d1\u95e8'), 'KNH', 'RCBS', STRINGDECODE('\u5c1a\u4e49\u673a\u573a'), 'JINMEN', NULL, NULL),
+(419, STRINGDECODE('\u9a6c\u516c'), 'MZG', 'RCQC', STRINGDECODE('\u9a6c\u516c\u673a\u573a'), 'PENGHU', NULL, NULL),
+(420, STRINGDECODE('\u91d1\u6d66'), 'GMP', 'RKSS', STRINGDECODE('\u9996\u5c14\u91d1\u6d66\u56fd\u9645\u673a\u573a'), 'SEOUL', NULL, NULL),
+(421, STRINGDECODE('\u58a8\u5c14\u672c'), 'AVV', 'YMAV', STRINGDECODE('\u7231\u534e\u9686\u673a\u573a'), 'MELBOURNE', NULL, NULL),
+(422, STRINGDECODE('\u9a6c\u62c9\u52a0'), 'AGP', 'LEMG', STRINGDECODE('\u9a6c\u62c9\u52a0\u673a\u573a'), 'MALAGA', NULL, NULL),
+(423, STRINGDECODE('\u5965\u4ec0'), 'OSS', 'UAFO', STRINGDECODE('\u5965\u4ec0\u673a\u573a'), 'OSH STATE', NULL, NULL),
+(424, STRINGDECODE('\u5965\u5c14\u4ee3\u65af'), 'ADY', 'FAAL', STRINGDECODE('\u5965\u5c14\u4ee3\u65af\u673a\u573a'), 'ALLDAYS', NULL, NULL),
+(425, STRINGDECODE('\u8428\u51e1\u7eb3'), 'SAV', 'KSAV', STRINGDECODE('\u8428\u51e1\u7eb3\u673a\u573a'), 'SAVANNAH', NULL, NULL),
+(426, STRINGDECODE('\u626c\u65af\u987f'), 'YNG', 'KYNG', STRINGDECODE('\u626c\u65af\u987f\u673a\u573a'), 'YOUNGSTOWN-WARREN REGIONAL', NULL, NULL),
+(427, STRINGDECODE('\u53f0\u4e2d'), 'RMQ', 'RCMQ', STRINGDECODE('\u53f0\u4e2d\u6e05\u6cc9\u5c97\u673a\u573a'), 'TAIZHONG', NULL, NULL),
+(428, STRINGDECODE('\u5c4f\u4e1c'), 'PIF', 'RCDC', STRINGDECODE('\u5c4f\u4e1c\u673a\u573a'), 'PINGDONG', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(429, STRINGDECODE('\u6052\u6625'), 'HCN', 'RCKW', STRINGDECODE('\u6052\u6625\u4e94\u91cc\u4ead\u673a\u573a'), 'PINGDONG', NULL, NULL),
+(430, STRINGDECODE('\u90a2\u53f0'), 'XNT', 'ZBXT', STRINGDECODE('\u90a2\u53f0\u8921\u88e2\u673a\u573a'), 'SHAHE', NULL, NULL),
+(431, STRINGDECODE('\u5174\u57ce'), 'XEN', 'ZYXC', STRINGDECODE('\u5174\u57ce\u673a\u573a'), 'HULUDAO', NULL, NULL),
+(432, STRINGDECODE('\u5b89\u9633'), 'AYN', 'ZHAY', STRINGDECODE('\u5b89\u9633\u5317\u90ca\u673a\u573a'), 'ANYANG', NULL, NULL),
+(433, STRINGDECODE('\u5317\u7aff'), 'MFK', 'RCMT', STRINGDECODE('\u5317\u7aff\u673a\u573a'), STRINGDECODE('\u5317\u7aff'), NULL, NULL),
+(434, STRINGDECODE('\u8fde\u6c5f'), 'LZN', 'RCFG', STRINGDECODE('\u5357\u7aff\u673a\u573a'), 'LIANJIANG NANGAN', NULL, NULL),
+(435, STRINGDECODE('\u4e03\u7f8e'), 'CMJ', 'RCCM', STRINGDECODE('\u4e03\u7f8e\u673a\u573a'), 'QIMEI', NULL, NULL),
+(436, STRINGDECODE('\u591a\u68ee'), 'DHN', 'KDHN', STRINGDECODE('\u591a\u68ee\u673a\u573a'), 'DOTHAN', NULL, NULL),
+(437, STRINGDECODE('\u4ea8\u8328\u7ef4\u5c14'), 'HSV', 'KHSV', STRINGDECODE('\u4ea8\u8328\u7ef4\u5c14\u673a\u573a'), 'HUNTSVILLE', NULL, NULL),
+(438, STRINGDECODE('\u83ab\u6bd4\u5c14'), 'MOB', 'KMOB', STRINGDECODE('\u83ab\u6bd4\u5c14\u673a\u573a'), 'MOBILE', NULL, NULL),
+(439, STRINGDECODE('\u8499\u54e5\u9a6c\u5229'), 'MGM', 'KMGM', STRINGDECODE('\u8499\u54e5\u9a6c\u5229\u673a\u573a'), 'MONTGOMERY', NULL, NULL),
+(440, STRINGDECODE('\u963f\u62c9\u5df4\u9a6c'), 'MSL', 'KMSL', STRINGDECODE('\u963f\u62c9\u5df4\u9a6c\u897f\u5317\u673a\u573a'), 'ALABAMA', NULL, NULL),
+(441, STRINGDECODE('\u5b89\u514b\u96f7\u5947'), 'ANC', 'PANC', STRINGDECODE('\u6cf0\u5fb7?\u53f2\u8482\u6587\u65af\u5b89\u514b\u96f7\u5947\u673a\u573a'), 'ANCHORAGE', NULL, NULL),
+(442, STRINGDECODE('\u5df4\u9ece'), 'ORY', 'LFPO', STRINGDECODE('\u5df4\u9ece\uff0d\u5965\u5229\u673a\u573a'), 'PARIS', NULL, NULL),
+(443, STRINGDECODE('\u5df4\u585e\u5c14'), 'BSL', 'LFSB', STRINGDECODE('\u5df4\u585e\u5c14\u7c73\u5362\u65af\u5f17\u8d56\u5821\u673a\u573a'), 'BASEL', NULL, NULL),
+(444, STRINGDECODE('\u56fe\u5362\u5179'), 'TLS', 'LFBO', STRINGDECODE('\u56fe\u5362\u5179\u5e03\u62c9\u5c3c\u4e9a\u514b\u673a\u573a'), 'TOULOUSE', NULL, NULL),
+(445, STRINGDECODE('\u65af\u7279\u62c9\u65af\u5821'), 'SXB', 'LFST', STRINGDECODE('\u65af\u7279\u62c9\u65af\u5821\u673a\u573a'), 'STRASBOURG', NULL, NULL),
+(446, STRINGDECODE('\u5c3c\u65af'), 'NCE', 'LFMN', STRINGDECODE('\u5c3c\u65af\u84dd\u8272\u6d77\u5cb8\u673a\u573a'), 'NICE', NULL, NULL),
+(447, STRINGDECODE('\u9a6c\u8d5b'), 'MRS', 'LFML', STRINGDECODE('\u9a6c\u8d5b\u666e\u7f57\u65fa\u65af\u673a\u573a'), 'MARSEILLES', NULL, NULL),
+(448, STRINGDECODE('\u6728\u6d66'), 'MWX', 'RKJB', STRINGDECODE('\u52a1\u5b89\u673a\u573a'), 'MUAN', NULL, NULL),
+(449, STRINGDECODE('\u7ebd\u5361\u65af\u5c14'), 'NCL', 'EGNT', STRINGDECODE('\u7ebd\u5361\u65af\u5c14\u673a\u573a'), 'NEWCASTLE', NULL, NULL),
+(450, STRINGDECODE('\u91cc\u7ea6\u70ed\u5185\u5362'), 'GIG', 'SBGL', STRINGDECODE('\u91cc\u7ea6\u70ed\u5185\u5362 \u52a0\u5229\u6602\u673a\u573a'), 'RIODEJANEIRO', NULL, NULL),
+(451, STRINGDECODE('\u7d2f\u897f\u8153'), 'REC', 'SBRF', STRINGDECODE('\u7d2f\u897f\u8153\u74dc\u62c9\u62c9\u76ae\u65af\u5409\u5c14\u8d1d\u6258?\u5f17\u96f7\u96f7\u673a\u573a'), 'RECIFE', NULL, NULL),
+(452, STRINGDECODE('\u91cc\u7ea6\u70ed\u5185\u5362'), 'SDU', 'SBRJ', STRINGDECODE('\u5723\u675c\u8499\u7279\u673a\u573a'), 'RIODEJANEIRO', NULL, NULL),
+(453, STRINGDECODE('\u9a6c\u7459\u65af'), 'MAO', 'SBEG', STRINGDECODE('\u9a6c\u7459\u65af\u7231\u5fb7\u534e\u591a?\u6208\u6885\u65af\u673a\u573a'), 'MANAUS', NULL, NULL),
+(454, STRINGDECODE('\u8428\u5c14\u74e6\u591a'), 'SSA', 'SBSV', STRINGDECODE('\u8428\u5c14\u74e6\u591a\u8def\u6613\u65af?\u7231\u5fb7\u534e\u591a?\u9a6c\u52a0\u826f\u65af\u8bae\u5458\u673a\u573a'), 'SALVADOR', NULL, NULL),
+(455, STRINGDECODE('\u84ec\u83b1'), 'PNJ', 'ZSPL', STRINGDECODE('\u84ec\u83b1\u6c99\u6cb3\u53e3\u673a\u573a'), 'YANTAI', NULL, NULL),
+(456, STRINGDECODE('\u574e\u5927\u54c8'), 'KDH', 'OAKN', STRINGDECODE('\u574e\u5927\u54c8\u673a\u573a'), 'KANDAHAR', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(457, STRINGDECODE('\u7f57\u5b89\u8fbe'), 'LAD', 'FNLU', STRINGDECODE('\u7f57\u5b89\u8fbe\u4e8c\u6708\u56db\u65e5\u673a\u573a'), 'LUANDA', NULL, NULL),
+(458, STRINGDECODE('\u4e4c\u65af\u6000\u4e9a'), 'USH', 'SAWH', STRINGDECODE('\u4e4c\u65af\u6000\u4e9a \u9a6c\u5c14\u7ef4\u7eb3\u65af\u673a\u573a'), 'USHUAIA', NULL, NULL),
+(459, STRINGDECODE('\u5e03\u5b9c\u8bfa\u65af\u827e\u5229\u65af'), 'EZE', 'SAEZ', STRINGDECODE('\u57c3\u585e\u8428\u76ae\u65af\u5854\u91cc\u5c3c\u90e8\u957f\u673a\u573a'), 'BUENOS AIRES', NULL, NULL),
+(460, STRINGDECODE('\u5217\u65e5'), 'LGG', 'EBLG', STRINGDECODE('\u5217\u65e5\u673a\u573a'), 'LIEGE', NULL, NULL),
+(461, STRINGDECODE('\u6c99\u5c14\u52d2\u9c81\u74e6'), 'CRL', 'EBCI', STRINGDECODE('\u6c99\u5c14\u52d2\u9c81\u74e6 \u5357\u5e03\u9c81\u585e\u5c14\u673a\u573a'), 'CHARLEROI', NULL, NULL),
+(462, STRINGDECODE('\u6c49\u8bfa\u5a01'), 'HAJ', 'EDDV', STRINGDECODE('\u6c49\u8bfa\u5a01 \u6717\u6839\u54c8\u6839\u673a\u573a'), 'HANNOVER', NULL, NULL),
+(463, STRINGDECODE('\u5fb7\u7d2f\u65af\u987f'), 'DRS', 'EDDC', STRINGDECODE('\u5fb7\u7d2f\u65af\u987f\u673a\u573a'), 'DRESDEN', NULL, NULL),
+(464, STRINGDECODE('\u65af\u56fe\u52a0\u7279'), 'STR', 'EDDS', STRINGDECODE('\u65af\u56fe\u52a0\u7279\u673a\u573a'), 'STUTTGART', NULL, NULL),
+(465, STRINGDECODE('\u91d1\u5948'), 'MAA', 'VOMM', STRINGDECODE('\u91d1\u5948\u673a\u573a'), 'CHENNAI', NULL, NULL),
+(466, STRINGDECODE('\u7279\u91cc\u51e1\u5f97\u7405'), 'TRV', 'VOTV', STRINGDECODE('\u7279\u91cc\u51e1\u5f97\u7405\u673a\u573a'), 'TRIVANDRUM', NULL, NULL),
+(467, STRINGDECODE('\u90a3\u683c\u6d66\u5c14'), 'NAG', 'VANP', STRINGDECODE('\u7d22\u5185\u683c\u7fc1\u673a\u573a'), 'NAGPUR', NULL, NULL),
+(468, STRINGDECODE('\u827e\u54c8\u8fc8\u8fbe\u5df4\u5fb7'), 'AMD', 'VAAH', STRINGDECODE('\u8428\u8fbe\u5c14?\u74e6\u62c9\u5df4\u4f0a?\u5e15\u7279\u5c14\u673a\u573a'), 'AHMEDABAD', NULL, NULL),
+(469, STRINGDECODE('\u51fd\u9986'), 'HKD', 'RJCH', STRINGDECODE('\u51fd\u9986\u673a\u573a'), 'HAKODATE', NULL, NULL),
+(470, STRINGDECODE('\u5e7f\u5c9b'), 'HIJ', 'RJOA', STRINGDECODE('\u5e7f\u5c9b\u673a\u573a'), 'HIROSHIMA', NULL, NULL),
+(471, STRINGDECODE('\u65b0\u6cfb'), 'KIJ', 'RJSN', STRINGDECODE('\u65b0\u6cfb\u673a\u573a'), 'NIIGATA', NULL, NULL),
+(472, STRINGDECODE('\u9ad8\u677e'), 'TAK', 'RJOT', STRINGDECODE('\u9ad8\u677e\u673a\u573a'), 'TAKAMATSU', NULL, NULL),
+(473, STRINGDECODE('\u948f\u8def'), 'KUH', 'RJCK', STRINGDECODE('\u948f\u8def\u673a\u573a'), 'KUSHIRO', NULL, NULL),
+(474, STRINGDECODE('\u677e\u5c71'), 'MYJ', 'RJOM', STRINGDECODE('\u65e5\u672c\u677e\u5c71\u673a\u573a'), 'MATSUYAMA', NULL, NULL),
+(475, STRINGDECODE('\u798f\u5188'), 'KKJ', 'RJFR', STRINGDECODE('\u5317\u4e5d\u5dde\u673a\u573a'), 'FUKUOKA', NULL, NULL),
+(476, STRINGDECODE('\u957f\u5d0e'), 'NGS', 'RJFU', STRINGDECODE('\u957f\u5d0e\u673a\u573a'), 'NAGASAKI', NULL, NULL),
+(477, STRINGDECODE('\u718a\u672c'), 'KMJ', 'RJFT', STRINGDECODE('\u718a\u672c\u673a\u573a'), 'KUMAMOTO', NULL, NULL),
+(478, STRINGDECODE('\u5927\u5206'), 'OIT', 'RJFO', STRINGDECODE('\u5927\u5206\u673a\u573a'), 'OITA', NULL, NULL),
+(479, STRINGDECODE('\u5bab\u5d0e'), 'KMI', 'RJFM', STRINGDECODE('\u5bab\u5d0e\u673a\u573a'), 'MIYAZAKI', NULL, NULL),
+(480, STRINGDECODE('\u9e7f\u513f\u5c9b'), 'KOJ', 'RJFK', STRINGDECODE('\u9e7f\u513f\u5c9b\u673a\u573a'), 'KAGOSHIMA', NULL, NULL),
+(481, STRINGDECODE('\u65ed\u5ddd'), 'AKJ', 'RJEC', STRINGDECODE('\u65ed\u5ddd\u673a\u573a'), 'ASAHIKAWA', NULL, NULL),
+(482, STRINGDECODE('\u5e26\u5e7f'), 'OBO', 'RJCB', STRINGDECODE('\u5e26\u5e7f\u673a\u573a'), 'OBIHIRO', NULL, NULL),
+(483, STRINGDECODE('\u79cb\u7530'), 'AXT', 'RJSK', STRINGDECODE('\u79cb\u7530\u673a\u573a'), 'AKITA', NULL, NULL),
+(484, STRINGDECODE('\u5c71\u53e3'), 'UBJ', 'RJDC', STRINGDECODE('\u5c71\u53e3\u673a\u573a'), 'YAMAGUCHI', NULL, NULL),
+(485, STRINGDECODE('\u4e4c\u9686\u4ed6\u5c3c'), 'UTH', 'VTUD', STRINGDECODE('\u4e4c\u9686\u4ed6\u5c3c\u673a\u573a'), 'UDON THANI', NULL, NULL),
+(486, STRINGDECODE('\u82ad\u5824\u96c5'), 'UTP', 'VTBU', STRINGDECODE('\u4e4c\u6253\u629b\u673a\u573a'), 'PATTAYA', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(487, STRINGDECODE('\u6e05\u8fc8'), 'CNX', 'VTCC', STRINGDECODE('\u6e05\u8fc8\u673a\u573a'), 'CHIANG MAI', NULL, NULL),
+(488, STRINGDECODE('\u5408\u827e'), 'HDY', 'VTSS', STRINGDECODE('\u5408\u827e\u673a\u573a'), 'HAT YAI', NULL, NULL),
+(489, STRINGDECODE('\u4f0a\u65af\u5766\u5e03\u5c14'), 'SAW', 'LTFJ', STRINGDECODE('\u8428\u6bd4\u54c8?\u683c\u514b\u7434\u673a\u573a'), 'ISTANBUL', NULL, NULL),
+(490, STRINGDECODE('\u6d1b\u7f8e'), 'LFW', 'DXXX', STRINGDECODE('\u7eb3\u8f9b\u8d1d?\u57c3\u4e9a\u5fb7\u9a6c\u673a\u573a'), 'LOME', NULL, NULL),
+(491, STRINGDECODE('\u8fbe\u66fc'), 'DMM', 'OEDF', STRINGDECODE('\u6cd5\u8d6b\u5fb7\u56fd\u738b\u673a\u573a'), 'DAMMAM', NULL, NULL),
+(492, STRINGDECODE('\u5229\u96c5\u5fb7'), 'RUH', 'OERK', STRINGDECODE('\u54c8\u7acb\u5fb7\u56fd\u738b\u673a\u573a'), 'RIYADH', NULL, NULL),
+(493, STRINGDECODE('\u5409\u8fbe'), 'JED', 'OEJN', STRINGDECODE('\u963f\u535c\u675c\u52d2-\u963f\u9f50\u5179\u56fd\u738b\u673a\u573a'), 'JEDDAH', NULL, NULL),
+(494, STRINGDECODE('\u9ea6\u5730\u90a3'), 'MED', 'OEMA', STRINGDECODE('\u7a46\u7f55\u9ed8\u5fb7?\u672c?\u963f\u535c\u675c\u52d2-\u963f\u9f50\u5179\u4eb2\u738b\u673a\u573a'), 'MEDINA', NULL, NULL),
+(495, STRINGDECODE('\u59c6\u9a6c\u5df4\u6258'), 'MBD', 'FAMM', STRINGDECODE('\u59c6\u9a6c\u5df4\u6258\u673a\u573a'), 'MMABATHO', NULL, NULL),
+(496, STRINGDECODE('\u52a0\u90a3\u5229\u7fa4\u5c9b'), 'LPA', 'GCLP', STRINGDECODE('\u5927\u52a0\u90a3\u5229\u673a\u573a'), 'ISLAS CANARIAS', NULL, NULL),
+(497, STRINGDECODE('\u7279\u5185\u91cc\u8d39'), 'TFN', 'GCXO', STRINGDECODE('\u5317\u7279\u5185\u91cc\u8d39\u673a\u573a'), 'TENERIFE', NULL, NULL),
+(498, STRINGDECODE('\u660e\u65af\u514b'), 'MSQ', 'UMMS', STRINGDECODE('\u660e\u65af\u514b\u673a\u573a'), 'MINSK', NULL, NULL),
+(499, STRINGDECODE('\u65af\u74e6\u5c14\u5df4\u7fa4\u5c9b'), 'LYR', 'ENSB', STRINGDECODE('\u65af\u74e6\u5c14\u5df4\u6717\u4f0a\u5c14\u673a\u573a'), 'SVALBARD', NULL, NULL),
+(500, STRINGDECODE('\u8428\u5c14\u8328\u5821'), 'SZG', 'LOWS', STRINGDECODE('\u8428\u5c14\u8328\u5821\u673a\u573a'), 'SALZBURG', NULL, NULL),
+(501, STRINGDECODE('\u675c\u963f\u62c9'), 'DLA', 'FKKD', STRINGDECODE('\u675c\u963f\u62c9\u673a\u573a'), 'DOUALA', NULL, NULL),
+(502, STRINGDECODE('\u54c8\u5229\u6cd5\u514b\u65af'), 'YHZ', 'CYHZ', STRINGDECODE('\u54c8\u5229\u6cd5\u514b\u65af\u7f57\u4f2f\u7279?\u6d1b\u6069?\u65af\u5766\u83f2\u5c14\u5fb7\u673a\u573a'), 'HALIFAX', NULL, NULL),
+(503, STRINGDECODE('\u8428\u65af\u5361\u901a'), 'YXE', 'CYXE', STRINGDECODE('\u8428\u65af\u5361\u901a\u7ea6\u7ff0?\u4e54\u6cbb?\u8fea\u82ac\u8d1d\u514b\u673a\u573a'), 'SASKATOON', NULL, NULL),
+(504, STRINGDECODE('\u6000\u7279\u970d\u65af'), 'YXY', 'CYXY', STRINGDECODE('\u57c3\u91cc\u514b?\u5c3c\u5c14\u68ee\u6000\u7279\u970d\u65af\u673a\u573a'), 'WHITEHORSE', NULL, NULL),
+(505, STRINGDECODE('\u54c8\u5bc6\u5c14\u987f'), 'YHM', 'CYHM', STRINGDECODE('\u7ea6\u7ff0?\u5361\u5c14?\u8292\u7f57\u54c8\u5bc6\u5c14\u987f\u673a\u573a'), 'HAMILTON', NULL, NULL),
+(506, STRINGDECODE('\u4e07\u9526'), 'YKZ', 'CYKZ', STRINGDECODE('\u5df4\u987f\u7ef4\u5c14\u673a\u573a'), 'MARKHAM', NULL, NULL),
+(507, STRINGDECODE('\u68ee\u8bb7\u5821'), 'SGD', 'EKSB', STRINGDECODE('\u68ee\u8bb7\u5821\u673a\u573a'), 'SONDERBORG', NULL, NULL),
+(508, STRINGDECODE('\u8f9b\u4ee3\u5c14'), 'CNL', 'EKSN', STRINGDECODE('\u8f9b\u4ee3\u5c14\u673a\u573a'), 'SINDAL', NULL, NULL),
+(509, STRINGDECODE('\u827e\u65af\u5c24\u7279'), 'ATZ', 'HEAT', STRINGDECODE('\u827e\u65af\u5c24\u7279\u673a\u573a'), 'ASSIUT', NULL, NULL),
+(510, STRINGDECODE('\u5362\u514b\u7d22'), 'LXR', 'HELX', STRINGDECODE('\u5362\u514b\u7d22\u673a\u573a'), 'LUXOR', NULL, NULL),
+(511, STRINGDECODE('\u6c99\u59c6\u6c99\u4f0a\u8d6b'), 'SSH', 'HESH', STRINGDECODE('\u6c99\u59c6\u6c99\u4f0a\u8d6b\u673a\u573a'), 'SHARM EL-SHEIKH', NULL, NULL),
+(512, STRINGDECODE('\u53e4\u5c14\u4ee3\u76d6'), 'HRG', 'HEGN', STRINGDECODE('\u53e4\u5c14\u4ee3\u76d6\u673a\u573a'), 'HURGHADA', NULL, NULL),
+(513, STRINGDECODE('\u963f\u514b\u62c9'), 'ACC', 'DGAA', STRINGDECODE('\u79d1\u6258\u5361\u673a\u573a'), 'ACCRA', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(514, STRINGDECODE('\u51ef\u592b\u62c9\u7ef4\u514b'), 'KEF', 'BIKF', STRINGDECODE('\u51ef\u592b\u62c9\u7ef4\u514b\u673a\u573a'), 'KEFLAVIK', NULL, NULL),
+(515, STRINGDECODE('\u4e07\u9e26\u8001'), 'MDC', 'WAMM', STRINGDECODE('\u7f8e\u5a1c\u591a\u673a\u573a'), 'MANADO', NULL, NULL),
+(516, STRINGDECODE('\u6bd4\u4ec0\u51ef\u514b'), 'FRU', 'UAFM', STRINGDECODE('\u9a6c\u7eb3\u65af\u673a\u573a'), 'BISHKEK', NULL, NULL),
+(517, STRINGDECODE('\u5fb7\u9ed1\u5170'), 'IKA', 'OIIE', STRINGDECODE('\u4f0a\u739b\u76ee\u970d\u6885\u5c3c\u673a\u573a'), 'TEHRAN', NULL, NULL),
+(518, STRINGDECODE('\u9a6c\u4ec0\u54c8\u5fb7'), 'MHD', 'OIMM', STRINGDECODE('\u9a6c\u4ec0\u54c8\u5fb7\u673a\u573a'), 'MASHHAD', NULL, NULL),
+(519, STRINGDECODE('\u8bbe\u62c9\u5b50'), 'SYZ', 'OISS', STRINGDECODE('\u8bbe\u62c9\u5b50\u673a\u573a'), 'SHIRAZ', NULL, NULL),
+(520, STRINGDECODE('\u5361\u5854\u5c3c\u4e9a'), 'CTA', 'LICC', STRINGDECODE('\u4e30\u5766\u7f57\u6492\u673a\u573a'), 'CATANIA', NULL, NULL),
+(521, STRINGDECODE('\u73ed\u52a0\u897f'), 'BEN', 'HLLB', STRINGDECODE('\u73ed\u52a0\u897f\u8d1d\u5c3c\u7eb3\u673a\u573a'), 'BENGHAZI', NULL, NULL),
+(522, STRINGDECODE('\u57c3\u65af\u6bd4\u7ea6'), 'EBJ', 'EKEB', STRINGDECODE('\u57c3\u65af\u6bd4\u7ea6\u673a\u573a'), 'ESBJERG', NULL, NULL),
+(523, STRINGDECODE('\u62c9\u5408\u5c14'), 'LHE', 'OPLA', STRINGDECODE('\u62c9\u5408\u5c14\u673a\u573a'), 'LAHORE', NULL, NULL),
+(524, STRINGDECODE('\u767d\u6c99\u74e6'), 'PEW', 'OPPS', STRINGDECODE('\u767d\u6c99\u74e6\u673a\u573a'), 'PESHAWAR', NULL, NULL),
+(525, STRINGDECODE('\u65b0\u897f\u4f2f\u5229\u4e9a'), 'OVB', 'UNNT', STRINGDECODE('\u65b0\u897f\u4f2f\u5229\u4e9a\u673a\u573a'), 'NOVOSIBIRSK TOLMACHEVO', NULL, NULL),
+(526, STRINGDECODE('\u963f\u91cc'), 'NGQ', 'ZUAL', STRINGDECODE('\u963f\u91cc\u6606\u838e\u673a\u573a'), 'SHIQUANHE', NULL, NULL),
+(527, STRINGDECODE('\u4f26\u6566'), 'LGW', 'EGKK', STRINGDECODE('\u76d6\u7279\u5a01\u514b\u673a\u573a'), 'LONDON', NULL, NULL),
+(528, STRINGDECODE('\u7eb3\u4ec0\u7ef4\u5c14'), 'BNA', 'KBNA', STRINGDECODE('\u7eb3\u4ec0\u7ef4\u5c14\u673a\u573a'), 'NASHVILLE', NULL, NULL),
+(529, STRINGDECODE('\u5854\u5c14\u8428'), 'TUL', 'KTUL', STRINGDECODE('\u5854\u5c14\u8428\u673a\u573a'), 'TULSA', NULL, NULL),
+(530, STRINGDECODE('\u829d\u52a0\u54e5'), 'MDW', 'KMDW', STRINGDECODE('\u829d\u52a0\u54e5\u4e2d\u9014\u673a\u573a'), 'CHICAGO', NULL, NULL),
+(531, STRINGDECODE('\u52b3\u5fb7\u4ee3\u5c14\u5821'), 'FLL', 'KFLL', STRINGDECODE('\u52b3\u5fb7\u4ee3\u5c14\u5821\uff0d\u597d\u83b1\u575e\u673a\u573a'), 'FORT LAUDERDALE', NULL, NULL),
+(532, STRINGDECODE('\u5965\u5170\u591a'), 'SFB', 'KSFB', STRINGDECODE('\u5965\u5170\u591a\u6851\u798f\u5fb7\u673a\u573a'), 'AOKELAN', NULL, NULL),
+(533, STRINGDECODE('\u5df4\u5c14\u7684\u6469'), 'BWI', 'KBWI', STRINGDECODE('\u53e4\u5fb7?\u9a6c\u6b47\u5c14\u673a\u573a'), 'BALTIMORE', NULL, NULL),
+(534, STRINGDECODE('\u534e\u76db\u987f'), 'DCA', 'KDCA', STRINGDECODE('\u7f57\u7eb3\u5fb7?\u91cc\u6839\u673a\u573a'), 'WASHINGTON', NULL, NULL),
+(535, STRINGDECODE('\u4e9a\u4e01'), 'SAH', 'OYSN', STRINGDECODE('\u4e9a\u4e01\u673a\u573a'), 'ADEN', NULL, NULL),
+(536, STRINGDECODE('\u5965\u514b\u5170'), 'OAK', 'KOAK', STRINGDECODE('\u52a0\u5dde\u5965\u514b\u5170\u673a\u573a'), 'OAKLAND', NULL, NULL),
+(537, STRINGDECODE('\u683c\u62c9\u65af\u54e5'), 'PIK', 'EGPK', STRINGDECODE('\u666e\u96f7\u65af\u8482\u514b\u673a\u573a'), 'GLASGOW', NULL, NULL),
+(538, STRINGDECODE('\u8d1d\u5c14\u6cd5\u65af\u7279'), 'BHD', 'EGAC', STRINGDECODE('\u4e54\u6cbb?\u8d1d\u65af\u7279\u8d1d\u5c14\u6cd5\u65af\u7279\u673a\u573a'), 'BELFAST', NULL, NULL),
+(539, STRINGDECODE('\u7ebd\u74e6\u514b'), 'EWR', 'KEWR', STRINGDECODE('\u7ebd\u74e6\u514b\u673a\u573a'), 'NEWARK', NULL, NULL),
+(540, STRINGDECODE('\u5df4\u6208\u7279\u7ef4\u5c14'), 'YBG', 'CYBG', STRINGDECODE('\u5df4\u6208\u7279\u7ef4\u5c14\u673a\u573a'), 'BAGOTVILLE', NULL, NULL),
+(541, STRINGDECODE('\u9e8b\u9e7f\u6e56'), 'YAD', 'CYAD', STRINGDECODE('\u9e8b\u9e7f\u6e56\u673a\u573a'), 'MOOSE LAKE', NULL, NULL),
+(542, STRINGDECODE('\u5f17\u6717\u897f\u65af\u5821'), 'YAG', 'CYAG', STRINGDECODE('\u5f17\u6717\u897f\u65af\u5821\u673a\u573a'), 'FORT FRANCES', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(543, STRINGDECODE('\u62c9\u683c\u5170\u5fb7'), 'YGL', 'CYGL', STRINGDECODE('\u62c9\u683c\u5170\u5fb7\u673a\u573a'), 'LAGRANDE', NULL, NULL),
+(544, STRINGDECODE('\u82cf\u5723\u739b\u4e3d'), 'YAM', 'CYAM', STRINGDECODE('\u82cf\u5723\u739b\u4e3d\u673a\u573a'), 'SAULT STE. MARIE', NULL, NULL),
+(545, STRINGDECODE('\u54c8\u5229\u6cd5\u514b\u65af'), 'YAW', 'CYAW', STRINGDECODE('\u54c8\u5229\u6cd5\u514b\u65af\u673a\u573a'), 'HALIFAX', NULL, NULL),
+(546, STRINGDECODE('\u56fe\u82ac\u5974'), 'YAZ', 'CYAZ', STRINGDECODE('\u56fe\u82ac\u5974\u673a\u573a'), 'TOFINO', NULL, NULL),
+(547, STRINGDECODE('\u4f69\u5229\u6e7e'), 'YBB', 'CYBB', STRINGDECODE('\u4f69\u5229\u6e7e\u673a\u573a'), 'PELLY BAY', NULL, NULL),
+(548, STRINGDECODE('\u8d1d\u79d1\u83ab'), 'YBC', 'CYBC', STRINGDECODE('\u8d1d\u79d1\u83ab\u673a\u573a'), 'BAIE COMEAU', NULL, NULL),
+(549, STRINGDECODE('\u65b0\u5a01\u65af\u654f\u65af\u7279'), 'YBD', 'CYBD', STRINGDECODE('\u65b0\u5a01\u65af\u654f\u65af\u7279\u673a\u573a'), 'NEW WESTMINSTER', NULL, NULL),
+(550, STRINGDECODE('\u94c0\u57ce'), 'YBE', 'CYBE', STRINGDECODE('\u94c0\u57ce\u673a\u573a'), 'URANIUM CITY', NULL, NULL),
+(551, STRINGDECODE('\u90a6\u5c3c\u7ef4\u5c14'), 'YBF', 'CYBF', STRINGDECODE('\u90a6\u5c3c\u7ef4\u5c14\u673a\u573a'), 'BONNYVILLE', NULL, NULL),
+(552, STRINGDECODE('\u8d1d\u514b\u6e56'), 'YBK', 'CYBK', STRINGDECODE('\u8d1d\u514b\u6e56\u673a\u573a'), 'BAKER LAKE', NULL, NULL),
+(553, STRINGDECODE('\u535a\u767b'), 'YBN', 'CYBN', STRINGDECODE('\u535a\u767b\u76f4\u5347\u673a\u673a\u573a'), 'BORDEN', NULL, NULL),
+(554, STRINGDECODE('\u8335\u65af\u5e03\u9c81\u514b'), 'INN', 'LOWI', STRINGDECODE('\u8335\u65af\u5e03\u9c81\u514b\u673a\u573a'), 'INNSBRUCK', NULL, NULL),
+(555, STRINGDECODE('\u5df4\u745f\u65af\u7279'), 'BHS', 'YBTH', STRINGDECODE('\u5df4\u745f\u65af\u7279\u673a\u573a'), 'BATHURST', NULL, NULL),
+(556, STRINGDECODE('\u5361\u5730\u514b\u5170'), 'MPH', '', STRINGDECODE('\u5361\u5730\u514b\u5170\u673a\u573a'), 'CATICLAN', NULL, NULL),
+(557, STRINGDECODE('\u795e\u6cb3'), 'ZGI', 'CZGI', STRINGDECODE('\u795e\u6cb3\u673a\u573a'), 'GODS RIVER', NULL, NULL),
+(558, STRINGDECODE('\u57fa\u52b3\u7eb3'), 'YLW', 'CYLW', STRINGDECODE('\u57fa\u52b3\u7eb3\u673a\u573a'), 'KELOWNA', NULL, NULL),
+(559, STRINGDECODE('\u5723\u7ea6\u7ff0'), 'YSJ', 'CYSJ', STRINGDECODE('\u5723\u7ea6\u7ff0\u673a\u573a'), 'SAINT JOHN', NULL, NULL),
+(560, STRINGDECODE('\u4e54\u6cbb\u7687\u5b50'), 'YXS', 'CYXS', STRINGDECODE('\u4e54\u6cbb\u7687\u5b50\u57ce\u673a\u573a'), 'PRINCE GEORGE', NULL, NULL),
+(561, STRINGDECODE('\u8428\u5fb7\u4f2f\u91cc'), 'YSB', 'CYSB', STRINGDECODE('\u8428\u5fb7\u4f2f\u91cc\u673a\u573a'), 'SUDBURY', NULL, NULL),
+(562, STRINGDECODE('\u51ef\u6069\u5c9b'), 'YPR', 'CYPR', STRINGDECODE('\u9c81\u73c0\u7279\u738b\u5b50\u6e2f\u673a\u573a'), 'CANE ISLAND', NULL, NULL),
+(563, STRINGDECODE('\u4e18\u5409\u5c14'), 'YYQ', 'CYYQ', STRINGDECODE('\u4e18\u5409\u5c14\u673a\u573a'), 'CHURCHILL', NULL, NULL),
+(564, STRINGDECODE('\u5317\u6e7e'), 'YYB', 'CYYB', STRINGDECODE('\u5317\u6e7e\u673a\u573a'), 'NORTH BAY', NULL, NULL),
+(565, STRINGDECODE('\u6e29\u838e'), 'YQG', 'CYQG', STRINGDECODE('\u6e29\u838e\u673a\u573a'), 'WINDSOR', NULL, NULL),
+(566, STRINGDECODE('\u57fa\u5947\u7eb3'), 'YKF', '', STRINGDECODE('\u57fa\u5947\u7eb3\u673a\u573a'), 'KITCHENER', NULL, NULL),
+(567, STRINGDECODE('\u5510\u5c71'), 'TVS', 'ZBSN', STRINGDECODE('\u5510\u5c71\u4e09\u5973\u6cb3\u673a\u573a'), 'TANGSHAN', NULL, NULL),
+(568, STRINGDECODE('\u76d6\u5c14\u8fbe\u8036'), 'GHA', 'DAUG', STRINGDECODE('\u76d6\u5c14\u8fbe\u8036\u673a\u573a'), 'GHARDAIA', NULL, NULL),
+(569, STRINGDECODE('\u56fe\u53e4\u5c14\u7279'), 'TGR', 'DAUK', STRINGDECODE('\u56fe\u53e4\u5c14\u7279\u673a\u573a'), 'TOUGGOURT', NULL, NULL),
+(570, STRINGDECODE('\u74e6\u5fb7'), 'ELU', 'DAUO', STRINGDECODE('\u76d6\u9a6c\u5c14\u673a\u573a'), '-', NULL, NULL),
+(571, STRINGDECODE('\u7267\u4e4b\u539f'), 'FSZ', 'RJNS', STRINGDECODE('\u9759\u5188\u673a\u573a'), 'MANGROVE', NULL, NULL),
+(572, STRINGDECODE('\u5927\u962a\u4f0a\u4e39'), 'ITM', 'RJOO', STRINGDECODE('\u4f0a\u4e39\u673a\u573a'), 'OSAKA', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(573, STRINGDECODE('\u6dee\u5b89'), 'HIA', 'ZSSH', STRINGDECODE('\u6dee\u5b89\u6d9f\u6c34\u673a\u573a'), 'HUAIAN', NULL, NULL),
+(574, STRINGDECODE('\u5df4\u5398\u5df4\u677f'), 'BPN', 'WALL', STRINGDECODE('\u5df4\u5398\u5df4\u677f\u673a\u573a'), 'BALIKPAPAN', NULL, NULL),
+(575, STRINGDECODE('\u83b1\u6bd4\u9521'), 'AOC', 'EDAC', STRINGDECODE('\u83b1\u6bd4\u9521\u963f\u5c14\u6ed5\u5821\u673a\u573a'), 'LEIPZIG', NULL, NULL),
+(576, STRINGDECODE('\u9a6c\u5fb7\u5821'), 'CSO', 'EDBC', STRINGDECODE('\u9a6c\u5fb7\u5821\u79d1\u8d6b\u65bd\u6cf0\u7279\u673a\u573a'), 'MAGDEBURG', NULL, NULL),
+(577, STRINGDECODE('\u827e\u798f\u7279'), 'ERF', 'EDDE', STRINGDECODE('\u827e\u798f\u7279\u673a\u573a'), 'ERFURT', NULL, NULL),
+(578, STRINGDECODE('\u83b1\u6bd4\u9521'), 'LEJ', 'EDDP', STRINGDECODE('\u83b1\u6bd4\u9521\u54c8\u52d2\u673a\u573a'), 'LEIPZIG', NULL, NULL),
+(579, STRINGDECODE('\u8428\u5c14\u5e03\u9c81\u6839'), 'SCN', 'EDDR', STRINGDECODE('\u8428\u5c14\u5e03\u5415\u80af\u673a\u573a'), 'SAARBRUCKEN', NULL, NULL),
+(580, STRINGDECODE('\u57c3\u683c\u5c14\u65af\u5df4\u8d6b'), 'QEF', 'EDFE', STRINGDECODE('\u57c3\u683c\u5c14\u65af\u5df4\u8d6b\u673a\u573a'), 'EGELSBACH', NULL, NULL),
+(581, STRINGDECODE('\u6cd5\u5170\u514b\u798f'), 'HHN', 'EDFH', STRINGDECODE('\u6cd5\u5170\u514b\u798f\u54c8\u6069\u673a\u573a'), 'FRANKFURT', NULL, NULL),
+(582, STRINGDECODE('\u66fc\u6d77\u59c6'), 'MHG', 'EDFM', STRINGDECODE('\u66fc\u6d77\u59c6\u5e02\u673a\u573a'), 'MANNHEIM', NULL, NULL),
+(583, STRINGDECODE('\u5e03\u5c14\u5df4\u8d6b'), 'SGE', 'EDGS', STRINGDECODE('Siegerland\u673a\u573a'), 'BURBACH', NULL, NULL),
+(584, STRINGDECODE('\u6c49\u5821'), 'XFW', 'EDHI', STRINGDECODE('Hamburg Finkenwerder\u673a\u573a'), 'HAMBURG', NULL, NULL),
+(585, STRINGDECODE('\u53d9\u5c14\u7279\u5c9b'), 'GWT', 'EDXW', STRINGDECODE('\u53d9\u5c14\u7279\u5c9b\u673a\u573a'), 'SYLT', NULL, NULL),
+(586, STRINGDECODE('\u5965\u52d2\u677e'), 'AES', 'ENAL', STRINGDECODE('\u5965\u52d2\u677e\u673a\u573a'), 'ALESUND', NULL, NULL),
+(587, 'Rygge', 'RYG', 'ENRY', STRINGDECODE('Rygge\u673a\u573a'), 'RYGGE', NULL, NULL),
+(588, STRINGDECODE('\u6d77\u4e8e\u683c\u677e'), 'HAU', 'ENHD', STRINGDECODE('\u6d77\u4e8e\u683c\u677e\u673a\u573a'), 'HAUGESUND', NULL, NULL),
+(589, STRINGDECODE('\u514b\u91cc\u65af\u8482\u5b89\u6851'), 'KRS', 'ENCN', STRINGDECODE('\u514b\u91cc\u65af\u8482\u5b89\u6851\u673a\u573a'), 'KRISTIANSAND', NULL, NULL),
+(590, STRINGDECODE('\u52d2\u7f57\u65af'), 'RRS', 'ENRO', STRINGDECODE('Roeros\u673a\u573a'), 'ROROS', NULL, NULL),
+(591, STRINGDECODE('\u5361\u666e\u65af\u5361\u8f9b'), 'YYU', 'CYYU', STRINGDECODE('\u5361\u666e\u65af\u5361\u8f9b\u673a\u573a'), 'KAPUSKASING', NULL, NULL),
+(592, STRINGDECODE('\u54c8\u8fea\u6e2f'), 'YZT', 'CYZT', STRINGDECODE('\u6ce2\u7279\u54c8\u8fea\u673a\u573a'), 'HARDY', NULL, NULL),
+(593, STRINGDECODE('\u535a\u4e50'), 'BPL', 'ZWBL', STRINGDECODE('\u65b0\u7586\u535a\u4e50\u673a\u573a'), 'BOLE', NULL, NULL),
+(594, STRINGDECODE('\u6cd5\u9c81'), 'ZFA', 'CZFA', STRINGDECODE('\u6cd5\u9c81\u673a\u573a'), 'FARO', NULL, NULL),
+(595, STRINGDECODE('\u5384\u5c14\u987f'), 'YXR', 'CYXR', STRINGDECODE('\u5384\u5c14\u987f\u673a\u573a'), 'EARLTON', NULL, NULL),
+(596, STRINGDECODE('\u8d1d\u4f26\u65af\u91cc\u5f17'), 'YBV', 'CYBV', STRINGDECODE('\u8d1d\u4f26\u65af\u6cb3\u673a\u573a'), 'BERENS RIVER', NULL, NULL),
+(597, STRINGDECODE('\u5207\u7279\u6e29\u5fb7'), 'YCQ', 'CYCQ', STRINGDECODE('\u5207\u7279\u6e29\u5fb7\u673a\u573a'), 'CHETWYND', NULL, NULL),
+(598, STRINGDECODE('\u8428\u83f2\u5c14\u5fb7'), 'YSD', 'CYSD', STRINGDECODE('\u8428\u83f2\u5c14\u5fb7\u673a\u573a'), 'SUFFIELD', NULL, NULL),
+(599, STRINGDECODE('\u6ce2\u62c9\u56fe\u514b'), 'YPC', 'CYPC', STRINGDECODE('\u6ce2\u62c9\u56fe\u514b\u673a\u573a'), 'PAULATUK', NULL, NULL),
+(600, STRINGDECODE('\u5361\u5c14\u7ef4'), 'CLY', 'CYSN', STRINGDECODE('\u5723\u51ef\u745f\u7433\u673a\u573a'), 'CALVER', NULL, NULL),
+(601, STRINGDECODE('\u4f0a\u6b66\u5409\u7ef4\u514b'), 'YIK', 'CYIK', STRINGDECODE('\u4f0a\u6b66\u5409\u7ef4\u514b\u673a\u573a'), 'IVUJIVIK', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(602, STRINGDECODE('\u91cc\u683c\u5229'), 'YWY', 'CYWY', STRINGDECODE('\u91cc\u683c\u5229\u673a\u573a'), 'WRIGLEY', NULL, NULL),
+(603, STRINGDECODE('\u8c22\u5f17\u7ef4\u5c14'), 'YKL', 'CYKL', STRINGDECODE('\u8c22\u5f17\u7ef4\u5c14\u673a\u573a'), 'SCHEFFERVILLE', NULL, NULL),
+(604, STRINGDECODE('\u5207\u65af\u7279\u83f2\u5c14\u5fb7\u56e0\u83b1\u7279'), 'YCS', 'CYCS', STRINGDECODE('\u5207\u65af\u7279\u83f2\u5c14\u5fb7\u56e0\u83b1\u7279\u673a\u573a'), 'CHESTERFIELD INLET', NULL, NULL),
+(605, STRINGDECODE('\u60e0\u5c14\u79d1\u592b'), 'YXN', 'CYXN', STRINGDECODE('\u60e0\u5c14\u79d1\u592b\u673a\u573a'), 'WHALE COVE', NULL, NULL),
+(606, STRINGDECODE('\u5e03\u82cf\u5b89\u52a0'), 'USU', 'RPVV', STRINGDECODE('\u5e03\u82cf\u5b89\u52a0\u673a\u573a'), 'BUSUANGA', NULL, NULL),
+(607, 'Havre ST. Pierre', 'YGV', 'CYGV', STRINGDECODE('Havre ST. Pierre\u673a\u573a'), 'HAVRE ST. PIERRE', NULL, NULL),
+(608, STRINGDECODE('\u7eb3\u5854\u4ec0\u6606'), 'YNA', 'CYNA', STRINGDECODE('\u7eb3\u5854\u4ec0\u6606\u673a\u573a'), 'NATASHQUAN', NULL, NULL),
+(609, STRINGDECODE('\u745f\u4f5b\u7f57\u91cc\u8fbe\u57fa\u65af'), 'YSP', 'CYSP', STRINGDECODE('\u745f\u4f5b\u7f57\u91cc\u8fbe\u57fa\u65af\u9a6c\u62c9\u677e\u673a\u573a'), 'THE FLORIDA KEYS', NULL, NULL),
+(610, STRINGDECODE('\u7ea6\u514b\u987f'), 'YQV', 'CYQV', STRINGDECODE('\u7ea6\u514b\u987f\u673a\u573a'), 'YORKTON', NULL, NULL),
+(611, STRINGDECODE('\u5229\u4e9a\u5fb7\u5821'), 'YJF', 'CYJF', STRINGDECODE('\u5229\u4e9a\u5fb7\u5821\u673a\u573a'), 'FORT LIARD', NULL, NULL),
+(612, STRINGDECODE('\u632a\u5a01\u8c6a\u65af'), 'YNE', 'CYNE', STRINGDECODE('\u632a\u5a01\u8c6a\u65af\u673a\u573a'), 'NORWAY HOUSE', NULL, NULL),
+(613, STRINGDECODE('\u57c3\u5fb7\u68ee'), 'YET', 'CYET', STRINGDECODE('\u57c3\u5fb7\u68ee\u673a\u573a'), 'EDSON', NULL, NULL),
+(614, STRINGDECODE('\u6851\u5fb7\u65af\u76ae\u7279'), 'YZP', 'CYZP', STRINGDECODE('\u6851\u5fb7\u65af\u76ae\u7279\u673a\u573a'), 'SANDSPIT', NULL, NULL),
+(615, 'Kimmirut', 'YLC', 'CYLC', STRINGDECODE('\u4eca\u7c73\u9c81\u7279\u673a\u573a'), 'KIMMIRUT', NULL, NULL),
+(616, STRINGDECODE('\u8328\u6797'), 'YZW', 'CYZW', STRINGDECODE('\u8328\u6797\u673a\u573a'), 'TESLIN', NULL, NULL),
+(617, STRINGDECODE('\u5948\u6069'), 'YDP', 'CYDP', STRINGDECODE('\u5948\u6069\u673a\u573a'), 'NAIN', NULL, NULL),
+(618, STRINGDECODE('\u5927\u7279\u52b3\u7279\u6e56'), 'YTL', 'CYTL', STRINGDECODE('\u5927\u7279\u52b3\u7279\u6e56\u673a\u573a'), 'BIG TROUT', NULL, NULL),
+(619, STRINGDECODE('\u6ce2\u8482\u5947\u62c9\u666e\u5927\u8349\u539f'), 'YPG', 'CYPG', STRINGDECODE('\u6ce2\u8482\u5947\u62c9\u666e\u5927\u8349\u539f\u673a\u573a'), 'PORTAGE LA PRARIE', NULL, NULL),
+(620, STRINGDECODE('\u7a46\u745f\u5c3c'), 'YMO', 'CYMO', STRINGDECODE('\u7a46\u745f\u5c3c\u673a\u573a'), 'MOOSONEE', NULL, NULL),
+(621, STRINGDECODE('\u514b\u5185\u5c14'), 'YQZ', 'CYQZ', STRINGDECODE('\u514b\u5185\u5c14\u673a\u573a'), 'QUESNEL', NULL, NULL),
+(622, STRINGDECODE('\u798f\u7279\u96f7\u7d22\u5362\u7533'), 'YFR', 'CYFR', STRINGDECODE('\u798f\u7279\u96f7\u7d22\u5362\u7533\u673a\u573a'), 'FORT RESOLUTION', NULL, NULL),
+(623, STRINGDECODE('\u9a6c\u5e93\u7ef4\u514b'), 'YMN', 'CYFT', STRINGDECODE('\u9a6c\u5e93\u7ef4\u514b\u673a\u573a'), 'MAKKOVIK', NULL, NULL),
+(624, STRINGDECODE('\u6d3e\u5185\u8d1d'), 'YKG', 'CYAS', STRINGDECODE('\u6d3e\u5185\u8d1d\u673a\u573a'), 'KANGIRSUK', NULL, NULL),
+(625, STRINGDECODE('\u574e\u8d1d\u5c14'), 'YBL', 'CYBL', STRINGDECODE('\u574e\u8d1d\u5c14\u6cb3\u673a\u573a'), 'CAMPBELL', NULL, NULL),
+(626, STRINGDECODE('\u5e03\u5170\u767b'), 'YBR', 'CYBR', STRINGDECODE('\u5e03\u5170\u767b\u673a\u573a'), 'BRANDON', NULL, NULL),
+(627, STRINGDECODE('\u5e03\u6717\u8428\u5e03\u9686'), 'YBX', 'CYBX', STRINGDECODE('\u5e03\u6717\u8428\u5e03\u9686\u673a\u573a'), 'BLANC SABLON', NULL, NULL),
+(628, STRINGDECODE('\u5251\u6865\u6e7e'), 'YCB', 'CYCB', STRINGDECODE('\u5251\u6865\u6e7e\u673a\u573a'), 'CAMBRIDGE BAY', NULL, NULL),
+(629, STRINGDECODE('\u7eb3\u5948\u83ab'), 'YCD', 'CYCD', STRINGDECODE('\u7eb3\u5948\u83ab\u673a\u573a'), 'NANAIMO', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(630, STRINGDECODE('\u5e93\u683c\u5362\u514b\u56fe\u514b'), 'YCO', 'CYCO', STRINGDECODE('\u5e93\u683c\u5362\u514b\u56fe\u514b\u673a\u573a'), 'KUGLUKTUK', NULL, NULL),
+(631, STRINGDECODE('\u514b\u83b1\u5fb7'), 'YCY', 'CYCY', STRINGDECODE('\u514b\u83b1\u5fb7\u6cb3\u673a\u573a'), 'CLYDE', NULL, NULL),
+(632, STRINGDECODE('\u9053\u68ee'), 'YDA', 'CYDA', STRINGDECODE('\u9053\u68ee\u57ce\u5e02\u673a\u573a'), 'DAWSON', NULL, NULL),
+(633, STRINGDECODE('\u591a\u82ac'), 'YDN', 'CYDN', STRINGDECODE('\u591a\u82ac\u673a\u573a'), 'DAUPHIN', NULL, NULL),
+(634, STRINGDECODE('\u4e18\u5409\u5c14'), 'ZUM', 'CZUM', STRINGDECODE('\u4e18\u5409\u5c14\u7011\u5e03\u673a\u573a'), 'CHURCHILL', NULL, NULL),
+(635, STRINGDECODE('\u65af\u56fe\u5c14\u7279'), 'ZST', 'CZST', STRINGDECODE('\u65af\u56fe\u5c14\u7279\u673a\u573a'), 'STEWART', NULL, NULL),
+(636, STRINGDECODE('\u5e73\u5f7b\u514b\u91cc\u514b'), 'WPC', 'CZPC', STRINGDECODE('\u5e73\u5f7b\u514b\u91cc\u514b\u673a\u573a'), 'PINCHER CREEK', NULL, NULL),
+(637, STRINGDECODE('\u9a6c\u585e\u7279'), 'ZMT', 'CZMT', STRINGDECODE('\u9a6c\u585e\u7279\u673a\u573a'), 'MASSET', NULL, NULL),
+(638, 'Tasiujaq', 'YTQ', 'CYTQ', STRINGDECODE('Tasiujaq\u673a\u573a'), 'TASIUJAQ', NULL, NULL),
+(639, STRINGDECODE('\u6c64\u666e\u68ee'), 'YTH', 'CYTH', STRINGDECODE('\u6c64\u666e\u68ee\u673a\u573a'), 'THOMPSON', NULL, NULL),
+(640, STRINGDECODE('\u83b1\u65af\u5e03\u91cc\u5947'), 'YQL', 'CYQL', STRINGDECODE('\u83b1\u65af\u5e03\u91cc\u5947\u90e1\u7acb\u673a\u573a'), 'LETHBRIDGE', NULL, NULL),
+(641, STRINGDECODE('\u51ef\u8bfa\u62c9'), 'YQK', 'CYQK', STRINGDECODE('\u51ef\u8bfa\u62c9\u673a\u573a'), 'KENORA', NULL, NULL),
+(642, STRINGDECODE('\u96f7\u666e\u5c14\u65af\u6e7e'), 'YUT', 'CYUT', STRINGDECODE('\u96f7\u666e\u5c14\u65af\u6e7e\u673a\u573a'), 'REPULSE BAY', NULL, NULL),
+(643, STRINGDECODE('\u970d\u5c14\u6d77\u6ee9'), 'YUX', 'CYUX', STRINGDECODE('\u970d\u5c14\u6d77\u6ee9\u673a\u573a'), 'HALL BEACH', NULL, NULL),
+(644, STRINGDECODE('\u9c81\u5b89'), 'YUY', 'CYUY', STRINGDECODE('\u9c81\u5b89\u8bfa\u5170\u8fbe\u673a\u573a'), 'ROUYN', NULL, NULL),
+(645, STRINGDECODE('\u5a01\u5ec9\u65af\u6e56'), 'YWL', 'CYWL', STRINGDECODE('\u5a01\u5ec9\u65af\u6e56\u673a\u573a'), 'WILLIANS LAKE', NULL, NULL),
+(646, STRINGDECODE('\u514b\u5170\u5e03\u9c81\u514b'), 'YXC', 'CYXC', STRINGDECODE('\u514b\u5170\u5e03\u9c81\u514b\u5361\u7eb3\u8fea\u4e01\u7f57\u57fa\u65af\u673a\u573a'), 'CRANBROOK', NULL, NULL),
+(647, STRINGDECODE('\u6885\u8fea\u8f9b\u54c8\u7279'), 'YXH', 'CYXH', STRINGDECODE('\u6885\u8fea\u8f9b\u54c8\u7279\u673a\u573a'), 'MEDICINE HAT', NULL, NULL),
+(648, STRINGDECODE('\u798f\u7279\u5723\u7ea6\u7ff0'), 'YXJ', 'CYXJ', STRINGDECODE('\u798f\u7279\u5723\u7ea6\u7ff0\u673a\u573a'), 'FORT ST.JOHN', NULL, NULL),
+(649, STRINGDECODE('\u82cf\u5362\u8003\u7279'), 'YXL', 'CYXL', STRINGDECODE('\u82cf\u5362\u8003\u7279\u673a\u573a'), 'SIOUX LOOKOUT', NULL, NULL),
+(650, STRINGDECODE('\u5fb7\u745e\u53f8'), 'YXT', 'CYXT', STRINGDECODE('\u5fb7\u745e\u53f8\u673a\u573a'), 'TERRACE', NULL, NULL),
+(651, STRINGDECODE('\u5b89\u5927\u7565'), 'YXU', 'CYXU', STRINGDECODE('\u52a0\u62ff\u5927\u4f26\u6566\u673a\u573a'), 'ONTARIO', NULL, NULL),
+(652, STRINGDECODE('\u5b89\u5927\u7565'), 'YRL', 'CYRL', STRINGDECODE('\u5b89\u5927\u7565\u7ea2\u6e56\u673a\u573a'), 'ONTARIO', NULL, NULL),
+(653, STRINGDECODE('\u827e\u4f2f\u7279\u738b\u5b50\u57ce'), 'YPA', 'CYPA', STRINGDECODE('\u827e\u4f2f\u7279\u738b\u5b50\u57ce\u673a\u573a'), 'PRINCE ALBERT', NULL, NULL),
+(654, STRINGDECODE('\u548c\u5e73\u6cb3'), 'YPE', 'CYPE', STRINGDECODE('\u548c\u5e73\u6cb3\u673a\u573a'), 'PEACE RIVER', NULL, NULL),
+(655, STRINGDECODE('\u76ae\u514b\u5c14'), 'YPL', 'CYPL', STRINGDECODE('\u76ae\u514b\u5c14\u673a\u573a'), 'PICKLE', NULL, NULL),
+(656, STRINGDECODE('\u5f7c\u5f97\u535a\u52d2'), 'YPQ', 'CYPQ', STRINGDECODE('\u5f7c\u5f97\u535a\u52d2\u673a\u573a'), 'PETERBOROUGH', NULL, NULL),
+(657, STRINGDECODE('\u9c8d\u5a01\u5c14\u6cb3'), 'YPW', 'CYPW', STRINGDECODE('\u9c8d\u5a01\u5c14\u6cb3\u673a\u573a'), 'POWELL RIVER', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(658, 'Povungnituk', 'YPX', 'CYPX', STRINGDECODE('Povungnituk\u673a\u573a'), 'POVUNGNITUK', NULL, NULL),
+(659, STRINGDECODE('\u798f\u7279\u5947\u4f69\u6069'), 'YPY', 'CYPY', STRINGDECODE('\u798f\u7279\u5947\u4f69\u6069\u673a\u573a'), 'FORT CHIPEWYAN', NULL, NULL),
+(660, STRINGDECODE('\u6000\u7279\u79d1\u7279'), 'YZU', 'CYZU', STRINGDECODE('\u6000\u7279\u79d1\u7279\u673a\u573a'), 'WHITECOURT', NULL, NULL),
+(661, STRINGDECODE('\u74e6\u52d2\u591a'), 'YVO', 'CYVO', STRINGDECODE('\u74e6\u52d2\u591a\u673a\u573a'), 'VAL D.OR', NULL, NULL),
+(662, STRINGDECODE('\u51b7\u6e56'), 'YOD', 'CYOD', STRINGDECODE('\u51b7\u6e56\u7a7a\u519b\u57fa\u5730\u673a\u573a'), 'COLD LAKE', NULL, NULL),
+(663, STRINGDECODE('\u5361\u8482'), 'YOA', 'CYOA', STRINGDECODE('\u5361\u8482\u673a\u573a'), 'EKATI', NULL, NULL),
+(664, STRINGDECODE('\u5fb7\u8d56\u767b'), 'YHD', 'CYHD', STRINGDECODE('\u5fb7\u8d56\u767b\u673a\u573a'), 'DRYDEN', NULL, NULL),
+(665, STRINGDECODE('\u970d\u666e'), 'YHE', 'CYHE', STRINGDECODE('\u970d\u666e\u673a\u573a'), 'HOPE', NULL, NULL),
+(666, STRINGDECODE('\u5df4\u745f\u65af\u7279'), 'ZBF', 'CZBF', STRINGDECODE('\u52a0\u62ff\u5927\u5df4\u745f\u65af\u7279\u673a\u573a'), 'BATHURST', NULL, NULL),
+(667, STRINGDECODE('\u79d1\u52d2\u5c14\u6e2f'), 'YZS', 'CYZS', STRINGDECODE('\u79d1\u52d2\u5c14\u6e2f\u673a\u573a'), 'CORAL HARBOUR', NULL, NULL),
+(668, STRINGDECODE('\u827e\u4f2f\u5854'), 'YZH', 'CYZH', STRINGDECODE('\u827e\u4f2f\u5854\u5974\u6e56\u673a\u573a'), 'ALBERTA', NULL, NULL),
+(669, STRINGDECODE('\u8036\u6d1b\u5948\u592b'), 'YZF', 'CYZF', STRINGDECODE('\u8036\u6d1b\u5948\u592b\u673a\u573a'), 'YELLOWKNIFE', NULL, NULL),
+(670, STRINGDECODE('\u8499\u82e5\u5229'), 'YYY', 'CYYY', STRINGDECODE('\u8499\u82e5\u5229\u673a\u573a'), 'MONT JOLI', NULL, NULL),
+(671, STRINGDECODE('\u5723\u7ea6\u7ff0\u65af'), 'YYT', 'CYYT', STRINGDECODE('\u5723\u7ea6\u7ff0\u65af\u673a\u573a'), 'ST JOHN.S', NULL, NULL),
+(672, STRINGDECODE('\u5854\u514b\u6258\u4e9a\u56fe\u514b'), 'YUB', 'CYUB', STRINGDECODE('\u5854\u514b\u6258\u4e9a\u56fe\u514b\u673a\u573a'), 'TUKTOYAKTUK', NULL, NULL),
+(673, STRINGDECODE('\u8482\u660e\u65af'), 'YTS', 'CYTS', STRINGDECODE('\u8482\u660e\u65af\u673a\u573a'), 'TIMMINS', NULL, NULL),
+(674, STRINGDECODE('\u963f\u5e15\u62c9\u5951\u79d1\u62c9'), 'AAF', 'KAAF', STRINGDECODE('\u963f\u5e15\u62c9\u5951\u79d1\u62c9\u673a\u573a'), 'APALACHICOLA', NULL, NULL),
+(675, STRINGDECODE('\u963f\u4f26\u6566'), 'ABE', 'KABE', STRINGDECODE('\u963f\u4f26\u6566\u673a\u573a'), 'LEHIGH VALLEY', NULL, NULL),
+(676, STRINGDECODE('\u963f\u6bd4\u6797'), 'ABI', 'KABI', STRINGDECODE('\u963f\u6bd4\u6797\u673a\u573a'), 'ABILENE', NULL, NULL),
+(677, STRINGDECODE('\u4f2f\u7eb3\u5229\u6b27'), 'ABQ', 'KABQ', STRINGDECODE('\u963f\u5c14\u4f2f\u514b\u57fa\u673a\u573a'), 'BERNALILLO', NULL, NULL),
+(678, STRINGDECODE('\u5e03\u6717'), 'ABR', 'KABR', STRINGDECODE('\u7f8e\u56fd\u963f\u4f2f\u4e01\u673a\u573a'), 'BROWN', NULL, NULL),
+(679, STRINGDECODE('\u5cb1\u65af'), 'ABZ', 'EGPD', STRINGDECODE('\u963f\u4f2f\u4e01\u673a\u573a'), 'DYCE', NULL, NULL),
+(680, STRINGDECODE('\u6960\u5854\u57fa\u7279'), 'ACK', 'KACK', STRINGDECODE('\u6960\u5854\u57fa\u7279\u673a\u573a'), 'NANTUCKET', NULL, NULL),
+(681, STRINGDECODE('\u74e6\u79d1'), 'ACT', 'KACT', STRINGDECODE('\u74e6\u79d1\u5730\u533a\u673a\u573a'), 'WACO TEXAS', NULL, NULL),
+(682, STRINGDECODE('\u52a0\u5229\u798f\u5c3c\u4e9a\u5dde'), 'ACV', 'KACV', STRINGDECODE('\u963f\u514b\u5854\u673a\u573a'), 'CALIFORNIA', NULL, NULL),
+(683, STRINGDECODE('\u6ce2\u59c6\u90a3'), 'ACY', 'KACY', STRINGDECODE('\u5927\u897f\u6d0b\u57ce\u673a\u573a'), 'BOMUNA', NULL, NULL),
+(684, STRINGDECODE('\u5854\u5170\u7279'), 'AFW', 'KAFW', STRINGDECODE('Fort Worth Alliance\u673a\u573a'), 'TARRANT', NULL, NULL),
+(685, STRINGDECODE('\u5339\u5179\u5821'), 'AGC', 'KAGC', STRINGDECODE('Allegheny County\u673a\u573a'), 'PITTSBURGH PENNSYLVANIA', NULL, NULL),
+(686, STRINGDECODE('\u4e54\u6cbb\u4e9a\u5dde'), 'AGS', 'KAGS', STRINGDECODE('Augusta Regional\u673a\u573a'), 'GEORGIA', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(687, STRINGDECODE('\u7ebd\u7ea6'), 'ALB', 'KALB', STRINGDECODE('\u5965\u5c14\u5df4\u5c3c\u673a\u573a'), 'NEW YORK', NULL, NULL),
+(688, STRINGDECODE('\u827e\u4e3d\u65af'), 'ALI', 'KALI', STRINGDECODE('\u827e\u4e3d\u65af\u673a\u573a'), 'ALICE', NULL, NULL),
+(689, STRINGDECODE('\u5965\u5c14\u987f'), 'ALN', 'KALN', STRINGDECODE('\u5965\u5c14\u987f\u673a\u573a'), 'ALTON', NULL, NULL),
+(690, STRINGDECODE('\u6ed1\u94c1\u5362'), 'ALO', 'KALO', STRINGDECODE('\u6ed1\u94c1\u5362\u5730\u533a\u673a\u573a'), 'WATERLOO', NULL, NULL),
+(691, STRINGDECODE('\u74e6\u62c9\u74e6\u62c9'), 'ALW', 'KALW', STRINGDECODE('\u74e6\u62c9\u74e6\u62c9\u673a\u573a'), 'WALLA WALLA', NULL, NULL),
+(692, STRINGDECODE('\u963f\u9a6c\u91cc\u6d1b'), 'AMA', 'KAMA', STRINGDECODE('\u963f\u9a6c\u91cc\u6d1b\u673a\u573a'), 'AMARILLO TEXAS', NULL, NULL),
+(693, STRINGDECODE('\u5b89\u59ae\u65af\u987f'), 'ANB', 'KANB', STRINGDECODE('\u5b89\u59ae\u65af\u987f\u6885\u7279\u52d2\u6ce2\u5229\u6ed5\u673a\u573a'), 'ANNISTON', NULL, NULL),
+(694, STRINGDECODE('\u5b89\u5fb7\u68ee'), 'AND', 'KAND', STRINGDECODE('\u5b89\u5fb7\u68ee\u673a\u573a'), 'ANDERSON', NULL, NULL),
+(695, STRINGDECODE('\u963f\u5c14\u76ae\u7eb3'), 'APN', 'KAPN', STRINGDECODE('\u963f\u5c14\u76ae\u7eb3\u673a\u573a'), 'ALPENA MICHIGAN', NULL, NULL),
+(696, STRINGDECODE('\u6c83\u7279\u6566'), 'ART', 'KART', STRINGDECODE('\u6c83\u7279\u6566\u673a\u573a'), 'WATERTOWN', NULL, NULL),
+(697, STRINGDECODE('\u6c83\u7279\u6566'), 'ATY', 'KATY', STRINGDECODE('\u6c83\u7279\u6566\u5730\u533a\u673a\u573a'), 'WATERTOWN', NULL, NULL),
+(698, STRINGDECODE('\u5965\u65af\u6c40'), 'AUS', 'KAUS', STRINGDECODE('\u5965\u65af\u6c40\u8d1d\u683c\u65af\u7279\u7f57\u59c6\u673a\u573a'), 'AUSTIN TEXAS', NULL, NULL),
+(699, STRINGDECODE('\u963f\u4ec0\u7ef4\u5c14'), 'AVL', 'KAVL', STRINGDECODE('\u963f\u4ec0\u7ef4\u5c14\u673a\u573a'), 'ASHEVILLE', NULL, NULL),
+(700, 'Pittston Township', 'AVP', 'KAVP', STRINGDECODE('\u5a01\u5c14\u514b\u65af-\u5df4\u91cc\u673a\u573a'), 'PITTSTON TOWNSHIP', NULL, NULL),
+(701, STRINGDECODE('\u4e9a\u5386\u5c71\u5fb7\u91cc\u4e9a'), 'AXN', 'KAXN', STRINGDECODE('\u4e9a\u5386\u5c71\u5fb7\u91cc\u4e9a\u673a\u573a'), 'ALEXANDRIA', NULL, NULL),
+(702, STRINGDECODE('\u5361\u62c9\u9a6c\u7956'), 'AZO', 'KAZO', STRINGDECODE('\u5361\u62c9\u9a6c\u7956/\u5df4\u7279\u5c14\u514b\u91cc\u514b\u673a\u573a'), 'KALAMAZOO', NULL, NULL),
+(703, STRINGDECODE('\u4f0d\u5179\u6e56\u53bf'), 'BDE', 'KBDE', STRINGDECODE('\u5df4\u5fb7\u7279BAUDETTE\u673a\u573a'), 'LAKE OF THE WOODS COUNTY', NULL, NULL),
+(704, STRINGDECODE('\u5e03\u91cc\u5947\u6ce2\u7279'), 'BDR', 'KBDR', STRINGDECODE('\u5e03\u91cc\u5947\u6ce2\u7279\u673a\u573a'), 'BRIDGEPORT CONNECTICUT', NULL, NULL),
+(705, STRINGDECODE('\u5e03\u62c9\u5fb7\u798f\u5fb7'), 'BFD', 'KBFD', STRINGDECODE('\u5e03\u62c9\u5fb7\u798f\u5fb7\u673a\u573a'), 'BRADFORD', NULL, NULL),
+(706, STRINGDECODE('\u897f\u96c5\u56fe'), 'BFI', 'KBFI', STRINGDECODE('\u6ce2\u97f3\u573a\u56fd\u738b\u90e1\u7acb\u673a\u573a'), 'SEATTLE', NULL, NULL),
+(707, STRINGDECODE('\u8d1d\u514b\u65af\u83f2\u5c14\u5fb7'), 'BFL', 'KBFL', STRINGDECODE('\u6885\u591a\u65af\u573a\u673a\u573a'), 'BAKERSFIELD CALIFORNIA', NULL, NULL),
+(708, STRINGDECODE('\u83ab\u6bd4\u5c14'), 'BFM', 'KBFM', STRINGDECODE('Mobile Downtown\u673a\u573a'), 'MOBILE', NULL, NULL),
+(709, STRINGDECODE('\u7f05\u56e0'), 'BGM', 'KBGM', STRINGDECODE('Greater Binghamton\u673a\u573a'), 'MAINE', NULL, NULL),
+(710, STRINGDECODE('\u73ed\u6208'), 'BGR', 'KBGR', STRINGDECODE('\u73ed\u6208\u673a\u573a'), 'BANGOR', NULL, NULL),
+(711, STRINGDECODE('\u4f2f\u660e\u7ff0'), 'BHM', 'KBHM', STRINGDECODE('\u4f2f\u660e\u7ff0\u8212\u7279\u5c14\u65af\u6c83\u601d\u673a\u573a'), 'BIRMINGHAM', NULL, NULL),
+(712, STRINGDECODE('\u6bd4\u6797\u65af'), 'BIL', 'KBIL', STRINGDECODE('\u6bd4\u6797\u65af\u673a\u573a'), 'BILLINGS', NULL, NULL),
+(713, STRINGDECODE('\u4ffe\u65af\u9ea6'), 'BIS', 'KBIS', STRINGDECODE('\u4ffe\u65af\u9ea6\u673a\u573a'), 'BISMARCK NORTH DAKOTA', NULL, NULL),
+(714, STRINGDECODE('\u6770\u5f17\u79d1'), 'BJC', 'KBJC', STRINGDECODE('\u6770\u5f17\u79d1\u673a\u573a'), 'JEFFCO', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(715, STRINGDECODE('\u8d1d\u514b\u53bf'), 'BKE', 'KBKE', STRINGDECODE('\u8d1d\u514b\u673a\u573a'), 'BAKER COUNTY', NULL, NULL),
+(716, STRINGDECODE('\u514b\u5229\u592b\u5170'), 'BKL', 'KBKL', STRINGDECODE('\u514b\u5229\u592b\u5170\u4f2f\u514b\u83b1\u514b\u592b\u5170\u7279\u673a\u573a'), 'CLEVELAND', NULL, NULL),
+(717, STRINGDECODE('\u8d1d\u7075\u6c49'), 'BLI', 'KBLI', STRINGDECODE('\u8d1d\u7075\u6c49\u673a\u573a'), 'BELLINGHAM WASHINGTON', NULL, NULL),
+(718, STRINGDECODE('\u535a\u4f0a\u897f'), 'BOI', 'KBOI', STRINGDECODE('\u535a\u4f0a\u897f\u673a\u573a'), 'BOISE IDAHO', NULL, NULL),
+(719, STRINGDECODE('\u67cf\u6797\u987f'), 'BTV', 'KBTV', STRINGDECODE('\u67cf\u6797\u987f\u673a\u573a'), 'BURLINGTON', NULL, NULL),
+(720, STRINGDECODE('\u67cf\u6797\u987f'), 'BRL', 'KBRL', STRINGDECODE('\u4f2f\u7075\u987f\u673a\u573a'), 'BURLINGTON', NULL, NULL),
+(721, STRINGDECODE('\u5e03\u6717\u65af\u7ef4\u5c14'), 'BRO', 'KBRO', STRINGDECODE('\u5e03\u6717\u65af\u7ef4\u5c14\u5357\u5e15\u5fb7\u96f7\u5c9b\u673a\u573a'), 'BROWNSVILLE TEXAS', NULL, NULL),
+(722, STRINGDECODE('\u6bd4\u5c24\u7279'), 'BTM', 'KBTM', STRINGDECODE('\u6bd4\u5c24\u7279\u8d1d\u5c14\u7a46\u5c3c\u673a\u573a'), 'BUTTE MONTANA', NULL, NULL),
+(723, STRINGDECODE('\u5361\u5c14\u970d\u6069'), 'BTL', 'KBTL', STRINGDECODE('WK\u51ef\u6d1b\u683c\u673a\u573a'), 'CALHOUN', NULL, NULL),
+(724, STRINGDECODE('\u57c3\u585e\u514b\u65af'), 'BVY', 'KBVY', STRINGDECODE('\u8d1d\u5f17\u5229\u673a\u573a'), 'ESSEX COUNTY', NULL, NULL),
+(725, STRINGDECODE('\u54e5\u4f26\u6bd4\u4e9a'), 'CAE', 'KCAE', STRINGDECODE('\u54e5\u4f26\u6bd4\u4e9a\u6885\u7279\u52d2\u6ce2\u5229\u6ed5\u673a\u573a'), 'COLUMBIA', NULL, NULL),
+(726, STRINGDECODE('\u65af\u5854\u514b'), 'CAK', 'KCAK', STRINGDECODE('\u963f\u514b\u4f26\u574e\u987f\u673a\u573a'), 'STARK', NULL, NULL),
+(727, STRINGDECODE('\u9521\u8fbe\u57ce'), 'CDC', 'KCDC', STRINGDECODE('\u9521\u8fbe\u57ce\u673a\u573a'), 'CEDAR CITY', NULL, NULL),
+(728, STRINGDECODE('\u65af\u666e\u6797\u83f2\u5c14\u5fb7'), 'CEF', 'KCEF', STRINGDECODE('\u97e6\u65af\u6258\u5f17\u673a\u573a'), 'SPRINGFIELD', NULL, NULL),
+(729, STRINGDECODE('\u514b\u96f7\u65af\u7279\u7ef4'), 'CEW', 'KCEW', STRINGDECODE('\u9c8d\u52c3\u8d5b\u514b\u65af\u673a\u573a'), 'CRESTVIEW', NULL, NULL),
+(730, STRINGDECODE('\u5f00\u666e\u5409\u62c9\u591a'), 'CGI', 'KCGI', STRINGDECODE('\u5f00\u666e\u5409\u62c9\u591a\u673a\u573a'), 'CAPE GIRARDEAU', NULL, NULL),
+(731, STRINGDECODE('\u67e5\u5854\u52aa\u52a0'), 'CHA', 'KCHA', STRINGDECODE('Lovell Field\u673a\u573a'), 'CHATTANOOGA', NULL, NULL),
+(732, STRINGDECODE('\u590f\u6d1b\u8328\u7ef4\u5c14'), 'CHO', 'KCHO', STRINGDECODE('\u590f\u6d1b\u8328\u7ef4\u5c14\u963f\u5c14\u4f2f\u9a6c\u5c14\u673a\u573a'), 'CHARLOTTESVILLE', NULL, NULL),
+(733, STRINGDECODE('\u67e5\u5c14\u65af\u987f'), 'CHS', 'KCHS', STRINGDECODE('\u67e5\u5c14\u65af\u987fAFB\u673a\u573a'), 'CHARLESTON', NULL, NULL),
+(734, STRINGDECODE('\u9521\u8fbe\u62c9\u76ae\u5179'), 'CID', 'KCID', STRINGDECODE('\u9521\u8fbe\u62c9\u76ae\u5179\u673a\u573a'), 'CEDAR RAPIDS IOWA', NULL, NULL),
+(735, STRINGDECODE('\u5bc6\u6b47\u6839'), 'CIU', 'KCIU', STRINGDECODE('\u5947\u666e\u74e6\u90e1\u7acb\u673a\u573a'), 'MICHIGAN', NULL, NULL),
+(736, STRINGDECODE('\u5e03\u91cc\u5947\u6ce2\u7279'), 'CKB', 'KCKB', STRINGDECODE('North Central West Virginia\u673a\u573a'), 'BRIDGEPORT CONNECTICUT', NULL, NULL),
+(737, STRINGDECODE('\u514b\u5229\u592b\u5170'), 'CLE', 'KCLE', STRINGDECODE('Cleveland Hopkins\u673a\u573a'), 'CLEVELAND', NULL, NULL),
+(738, STRINGDECODE('\u5e03\u62c9\u7d22\u65af'), 'CLL', 'KCLL', STRINGDECODE('Easterwood Field\u673a\u573a'), 'BRAZOS COUNTY', NULL, NULL),
+(739, STRINGDECODE('\u5b89\u5409\u5229\u65af\u6e2f'), 'CLM', 'KCLM', STRINGDECODE('William R. Fairchild\u673a\u573a'), 'PORT ANGELES', NULL, NULL),
+(740, STRINGDECODE('\u590f\u6d1b\u7279'), 'CLT', 'KCLT', STRINGDECODE('\u590f\u6d1b\u7279/\u9053\u683c\u62c9\u65af\u673a\u573a'), 'CHARLOTTE', NULL, NULL),
+(741, STRINGDECODE('\u5f17\u96f7\u5fb7\u91cc\u514b\u987f'), 'YFC', 'CYFC', STRINGDECODE('\u5f17\u96f7\u5fb7\u91cc\u514b\u987f\u673a\u573a'), 'FREDERICTON', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(742, STRINGDECODE('\u7c73\u82cf\u62c9'), 'MSO', 'KMSO', STRINGDECODE('\u7c73\u82cf\u62c9\u673a\u573a'), 'MISSOULA', NULL, NULL),
+(743, STRINGDECODE('\u660e\u5c3c\u963f\u6ce2\u5229\u65af'), 'MSP', 'KMSP', STRINGDECODE('\u660e\u5c3c\u963f\u6ce2\u5229\u65af\u2015\u5723\u4fdd\u7f57\u673a\u573a'), 'MINNEAPOLIS', NULL, NULL),
+(744, STRINGDECODE('\u9a6c\u585e\u7eb3'), 'MSS', 'KMSS', STRINGDECODE('\u9a6c\u585e\u7eb3\u673a\u573a'), 'MASSENA', NULL, NULL),
+(745, STRINGDECODE('\u65b0\u5965\u5c14\u826f'), 'MSY', 'KMSY', STRINGDECODE('\u65b0\u5965\u5c14\u826f\u673a\u573a'), 'NEW ORLEANS LOUISIANA', NULL, NULL),
+(746, STRINGDECODE('\u9a6c\u91cc\u5170'), 'MTN', 'KMTN', STRINGDECODE('\u9a6c\u4e01\u5dde\u7acb\u673a\u573a'), 'MARYLAND', NULL, NULL),
+(747, 'Moses Lake', 'MWH', 'KMWH', STRINGDECODE('\u683c\u5170\u7279\u90e1\u7acb\u673a\u573a'), 'MOSES LAKE', NULL, NULL),
+(748, STRINGDECODE('\u9ed8\u7279\u5c14\u6bd4\u5947'), 'MYR', 'KMYR', STRINGDECODE('\u9ed8\u7279\u5c14\u6bd4\u5947\u673a\u573a'), 'MYRTLE BEACH', NULL, NULL),
+(749, STRINGDECODE('\u8328\u57ce'), 'IBR', 'RJAH', STRINGDECODE('\u8328\u57ce\u673a\u573a'), 'BARAKI', NULL, NULL),
+(750, STRINGDECODE('\u5965\u5c14\u5fb7\u5c3c'), 'ACI', 'EGJA', STRINGDECODE('\u5965\u5c14\u5fb7\u5c3c\u673a\u573a'), 'ALDERNEY', NULL, NULL),
+(751, STRINGDECODE('\u683c\u6069\u6d4e'), 'GCI', 'EGJB', STRINGDECODE('\u683c\u6069\u6d4e\u673a\u573a'), 'GUERNSEY', NULL, NULL),
+(752, STRINGDECODE('\u6cfd\u897f'), 'JER', 'EGJJ', STRINGDECODE('\u6cfd\u897f\u673a\u573a'), 'JERSEY', NULL, NULL),
+(753, STRINGDECODE('\u8096\u52d2\u59c6'), 'ESH', 'EGKA', STRINGDECODE('\u8096\u52d2\u59c6\u7531\u6d77\u673a\u573a'), 'SHOREHAM', NULL, NULL),
+(754, STRINGDECODE('\u683c\u6d1b\u65af\u7279'), 'GLO', 'EGBJ', STRINGDECODE('\u683c\u6d1b\u65af\u7279\u673a\u573a'), 'GLOUCESTER', NULL, NULL),
+(755, STRINGDECODE('\u574e\u8d1d\u5c14\u9547'), 'CAL', 'EGEC', STRINGDECODE('\u574e\u8d1d\u5c14\u9547\u673a\u573a'), 'CAMPBELTOWN', NULL, NULL),
+(756, STRINGDECODE('\u52a0\u7684\u592b'), 'CWL', 'EGFF', STRINGDECODE('\u52a0\u7684\u592b\u673a\u573a'), 'CARDIFF', NULL, NULL),
+(757, STRINGDECODE('\u5e03\u91cc\u65af\u6258\u5c14'), 'BRS', 'EGGD', STRINGDECODE('\u5e03\u91cc\u65af\u6258\u5c14\u673a\u573a'), 'BRISTOL', NULL, NULL),
+(758, STRINGDECODE('\u4f26\u6566'), 'LTN', 'EGGW', STRINGDECODE('\u4f26\u6566\u5362\u987f\u673a\u573a'), 'LONDON', NULL, NULL),
+(759, STRINGDECODE('\u83f2\u5c3c\u514b\u65af'), 'DVT', 'KDVT', STRINGDECODE('\u51e4\u51f0\u57ce\u9e7f\u8c37/\u83f2\u5c3c\u514b\u65af\u8fea\u5c14\u5c71\u8c37\u673a\u573a'), 'PHOENIX', NULL, NULL),
+(760, STRINGDECODE('\u7f57\u8428\u91cc\u5965'), 'ROS', 'SAAR', STRINGDECODE('\u7f57\u8428\u91cc\u5965\u673a\u573a'), 'ROSARIO', NULL, NULL),
+(761, STRINGDECODE('\u52a0\u65af\u4f69'), 'YGP', 'CYGP', STRINGDECODE('\u52a0\u65af\u4f69\u673a\u573a'), 'GASPE', NULL, NULL),
+(762, STRINGDECODE('\u6770\u62c9\u5c14\u987f'), 'YGQ', 'CYGQ', STRINGDECODE('\u6770\u62c9\u5c14\u987f\u673a\u573a'), 'GERALDTON', NULL, NULL),
+(763, STRINGDECODE('\u9ea6\u8fea\u5170\u7fa4\u5c9b'), 'YGR', 'CYGR', STRINGDECODE('\u9ea6\u8fea\u5170\u7fa4\u5c9b\u673a\u573a'), 'ILES DE LA MADELEINE', NULL, NULL),
+(764, STRINGDECODE('\u4f0a\u683c\u5362\u5229\u514b'), 'YGT', 'CYGT', STRINGDECODE('\u4f0a\u683c\u5362\u5229\u514b\u673a\u573a'), 'IGLOOLIK', NULL, NULL),
+(765, STRINGDECODE('\u5e93\u6731\u963f\u62c9\u666e'), 'YGW', 'CYGW', STRINGDECODE('\u5e93\u6731\u963f\u62c9\u666e\u673a\u573a'), 'KUUJJUARAPIK', NULL, NULL),
+(766, STRINGDECODE('\u53e4\u62c9\u6728'), 'YGX', 'CYGX', STRINGDECODE('\u53e4\u62c9\u6728\u673a\u573a'), 'GILLAM', NULL, NULL),
+(767, STRINGDECODE('\u7a46\u65af\u4e54'), 'YMJ', 'CYMJ', STRINGDECODE('\u7a46\u65af\u4e54\u673a\u573a'), 'MOOSE JAW', NULL, NULL),
+(768, STRINGDECODE('\u797a\u5e03\u560e\u83ab'), 'YMT', 'CYMT', STRINGDECODE('\u797a\u5e03\u560e\u83ab\u673a\u573a'), 'CHIBOUGAMAU', NULL, NULL),
+(769, STRINGDECODE('\u57c3\u5fb7\u8499\u987f'), 'YXD', 'CYXD', STRINGDECODE('\u57c3\u5fb7\u8499\u987f\u5e02\u4e2d\u5fc3\u673a\u573a'), 'EDMONTON', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(770, STRINGDECODE('\u5357\u5b89\u666e\u6566'), 'SOU', 'EGHI', STRINGDECODE('\u5357\u5b89\u666e\u6566\u673a\u573a'), 'SOUTHAMPTON', NULL, NULL),
+(771, STRINGDECODE('\u4f26\u6566'), 'STN', 'EGSS', STRINGDECODE('\u4f26\u6566\u65af\u5766\u65af\u7279\u5fb7\u673a\u573a'), 'LONDON', NULL, NULL),
+(772, STRINGDECODE('\u8499\u5f7c\u5229\u57c3'), 'MPL', 'LFMT', STRINGDECODE('\u8499\u5f7c\u5229\u57c3\u5730\u4e2d\u6d77\u673a\u573a'), 'MONTPELLIER', NULL, NULL),
+(773, STRINGDECODE('\u7b2c\u6bd4\u5229\u65af'), 'TBS', 'UGTB', STRINGDECODE('\u7b2c\u6bd4\u5229\u65af\u673a\u573a'), 'TBILISI', NULL, NULL),
+(774, STRINGDECODE('\u57c3\u5c14\u679c\u7d2f\u963f'), 'ELG', 'DAUE', STRINGDECODE('\u57c3\u5c14\u679c\u7d2f\u963f\u673a\u573a'), 'ALGERIA', NULL, NULL),
+(775, STRINGDECODE('\u54c8\u897f\u8fc8\u8428\u4e4c\u5fb7'), 'HME', 'DAUH', STRINGDECODE('\u54c8\u897f\u8fc8\u8428\u4e4c\u5fb7\u673a\u573a'), 'HASSI MESSAOUD', NULL, NULL),
+(776, STRINGDECODE('\u56e0\u8428\u62c9\u8d6b'), 'INZ', 'DAUI', STRINGDECODE('\u56e0\u8428\u62c9\u8d6b\u673a\u573a'), 'IN SALAH', NULL, NULL),
+(777, STRINGDECODE('\u827e\u683c\u74e6\u7279'), 'LOO', 'DAUL', STRINGDECODE('\u827e\u683c\u74e6\u7279\u673a\u573a'), 'LAGHOUAT', NULL, NULL),
+(778, STRINGDECODE('\u63d0\u7c73\u8499'), 'TMX', 'DAUT', STRINGDECODE('\u63d0\u7c73\u8499\u673a\u573a'), 'TIMIMOUN', NULL, NULL),
+(779, STRINGDECODE('\u79d1\u6258\u52aa'), 'COO', 'DBBB', STRINGDECODE('\u79d1\u6258\u52aa\u673a\u573a'), 'COTONOU', NULL, NULL),
+(780, STRINGDECODE('\u74e6\u52a0\u675c\u53e4'), 'OUA', 'DFFD', STRINGDECODE('\u74e6\u52a0\u675c\u53e4\u673a\u573a'), 'OUAGADOUGOU', NULL, NULL),
+(781, STRINGDECODE('\u535a\u535a\u8fea\u4e4c\u62c9\u7d22'), 'BOY', 'DFOO', STRINGDECODE('BOBO DIOULASSO\u673a\u573a'), 'BOBO DIOULASSO', NULL, NULL),
+(782, STRINGDECODE('\u5e93\u9a6c\u897f'), 'KMS', 'DGSI', STRINGDECODE('\u5e93\u9a6c\u897f\u673a\u573a'), 'KUMASI', NULL, NULL),
+(783, STRINGDECODE('\u963f\u5e03\u8d3e'), 'ABV', 'DNAA', STRINGDECODE('\u963f\u5e03\u8d3e\u673a\u573a'), 'ABUJA', NULL, NULL),
+(784, STRINGDECODE('\u6cf0\u8d1d\u8428'), 'TEE', 'DABS', STRINGDECODE('\u6cf0\u8d1d\u8428\u673a\u573a'), 'TEBESSA', NULL, NULL),
+(785, STRINGDECODE('\u5eb7\u65af\u5766\u4e01'), 'CZL', 'DABC', STRINGDECODE('CONSTANTINE MOHAMED BOUDIAF\u673a\u573a'), 'CONSTANTINE', NULL, NULL),
+(786, STRINGDECODE('\u5b89\u7eb3\u5df4'), 'AAE', 'DABB', STRINGDECODE('\u5b89\u7eb3\u5df4\u673a\u573a'), 'ANNABA', NULL, NULL),
+(787, STRINGDECODE('\u56e0\u963f\u8fc8\u7eb3\u65af'), 'IAM', 'DAUZ', STRINGDECODE('\u56e0\u963f\u8fc8\u7eb3\u65af\u673a\u573a'), 'IN AMENAS', NULL, NULL),
+(788, STRINGDECODE('\u624e\u91cc\u4e9a'), 'ZAR', 'DNZA', STRINGDECODE('\u624e\u91cc\u4e9a\u673a\u573a'), 'ZARIA', NULL, NULL),
+(789, STRINGDECODE('\u9a6c\u62c9\u8fea'), 'MFQ', 'DRRM', STRINGDECODE('\u9a6c\u62c9\u8fea\u673a\u573a'), 'MARADI', NULL, NULL),
+(790, STRINGDECODE('\u5c3c\u4e9a\u7f8e'), 'NIM', 'DRRN', STRINGDECODE('\u5c3c\u4e9a\u7f8e\u673a\u573a'), 'NIAMEY', NULL, NULL),
+(791, STRINGDECODE('\u963f\u52a0\u5fb7\u5179'), 'AJY', 'DRZA', STRINGDECODE('\u963f\u52a0\u5fb7\u5179\u673a\u573a'), 'AGADES', NULL, NULL),
+(792, STRINGDECODE('\u6d25\u5fb7\u5c14'), 'ZND', 'DRZR', STRINGDECODE('\u6d25\u5fb7\u5c14\u673a\u573a'), 'ZINDER', NULL, NULL),
+(793, STRINGDECODE('\u5854\u5df4\u5361'), 'TBJ', 'DTKA', STRINGDECODE('\u5854\u5df4\u5361\u673a\u573a'), 'TABARKA', NULL, NULL),
+(794, STRINGDECODE('\u83ab\u7eb3\u65af\u63d0\u5c14'), 'MIR', 'DTMB', STRINGDECODE('\u83ab\u7eb3\u65af\u63d0\u5c14\u673a\u573a'), 'MONASTIR', NULL, NULL),
+(795, STRINGDECODE('\u52a0\u592b\u8428'), 'GAF', 'DTTF', STRINGDECODE('\u52a0\u592b\u8428\u673a\u573a'), 'GAFSA', NULL, NULL),
+(796, STRINGDECODE('\u52a0\u8d1d\u65af'), 'GAE', 'DTTG', STRINGDECODE('\u52a0\u8d1d\u65af\u673a\u573a'), 'GABES', NULL, NULL),
+(797, STRINGDECODE('\u6770\u5c14\u5df4'), 'DJE', 'DTTJ', STRINGDECODE('\u6885\u5229\u5854\u673a\u573a'), 'DJERBA', NULL, NULL),
+(798, STRINGDECODE('\u65af\u6cd5\u514b\u65af'), 'SFA', 'DTTX', STRINGDECODE('\u65af\u6cd5\u514b\u65afThyna\u673a\u573a'), 'SFAX', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(799, STRINGDECODE('\u6258\u6cfd\u5c14'), 'TOE', 'DTTZ', STRINGDECODE('\u6258\u6cfd\u5c14\u673a\u573a'), 'TOZEUR', NULL, NULL),
+(800, STRINGDECODE('\u5b89\u7279\u536b\u666e'), 'ANR', 'EBAW', STRINGDECODE('\u5b89\u7279\u536b\u666e\u673a\u573a'), 'ANRWERP', NULL, NULL),
+(801, STRINGDECODE('\u5965\u65af\u5766\u5fb7'), 'OST', 'EBOS', STRINGDECODE('\u5965\u65af\u5766\u5fb7\u673a\u573a'), 'OSTEND', NULL, NULL),
+(802, STRINGDECODE('\u8d6b\u6797\u65af\u591a\u592b'), 'HDF', 'EDAH', STRINGDECODE('\u8d6b\u6797\u65af\u591a\u592b\u673a\u573a'), 'HERINGSDORF', NULL, NULL),
+(803, STRINGDECODE('\u8499\u65af\u7279'), 'FMO', 'EDDG', STRINGDECODE('\u8499\u65af\u7279\u673a\u573a'), 'MUENSTER', NULL, NULL),
+(804, STRINGDECODE('\u57fa\u5c14'), 'KEL', 'EDHK', STRINGDECODE('\u57fa\u5c14\u673a\u573a'), 'KIEL', NULL, NULL),
+(805, STRINGDECODE('\u4e4c\u5170\u4e4c\u5fb7'), 'UUD', 'UIUU', STRINGDECODE('\u4e4c\u5170\u4e4c\u5fb7\u673a\u573a'), 'ULAN-UDE', NULL, NULL),
+(806, STRINGDECODE('\u963f\u5c14\u6c49\u683c\u5c14\u65af\u514b'), 'ARH', 'ULAA', STRINGDECODE('\u963f\u5c14\u6c49\u683c\u5c14\u65af\u514b\u673a\u573a'), 'ARKHANGELSK', NULL, NULL),
+(807, 'AMDERMA', 'AMV', 'ULDD', STRINGDECODE('AMDERMA\u673a\u573a'), 'AMDERMA', NULL, NULL),
+(808, STRINGDECODE('\u6469\u5c14\u66fc\u65af\u79d1'), 'MMK', 'ULMM', STRINGDECODE('\u6469\u5c14\u66fc\u65af\u79d1\u673a\u573a'), 'MURMANSK', NULL, NULL),
+(809, STRINGDECODE('\u74dc\u62c9\u4e01\u52a0\u5974'), 'TGG', 'WMKN', STRINGDECODE('\u74dc\u62c9\u4e01\u52a0\u5974\u673a\u573a'), 'KUALA TERENGGANU', NULL, NULL),
+(810, STRINGDECODE('\u5965\u5170'), 'ORN', 'DAOO', STRINGDECODE('\u827e\u585e\u5c3c\u4e9a\u673a\u573a'), 'ORAN', NULL, NULL),
+(811, STRINGDECODE('\u7279\u83b1\u59c6\u68ee'), 'TLM', 'DAON', STRINGDECODE('\u7279\u83b1\u59c6\u68ee\u673a\u573a'), 'TLEMCEN', NULL, NULL),
+(812, STRINGDECODE('\u5ef7\u675c\u592b'), 'TIN', 'DAOF', STRINGDECODE('\u5ef7\u675c\u592b\u673a\u573a'), 'TINDOUF', NULL, NULL),
+(813, STRINGDECODE('\u63d0\u4e9a\u96f7\u7279'), 'TID', 'DAOB', STRINGDECODE('\u63d0\u4e9a\u96f7\u7279\u673a\u573a'), 'TIARET', NULL, NULL),
+(814, STRINGDECODE('\u56e0\u76d6\u624e\u59c6'), 'INF', 'DATG', STRINGDECODE('\u56e0\u76d6\u624e\u59c6\u673a\u573a'), 'IN GUEZZAM', NULL, NULL),
+(815, STRINGDECODE('\u5b89\u6258\u6cd5\u52a0\u65af\u5854'), 'ANF', 'SCFA', STRINGDECODE('CERRO MORENO\u673a\u573a'), 'ANTOFAGASTA', NULL, NULL),
+(816, STRINGDECODE('\u6d1b\u65af\u5b89\u8d6b\u83b1\u65af'), 'LSQ', 'SCGE', STRINGDECODE('\u6d1b\u65af\u5b89\u8d6b\u83b1\u65af\u673a\u573a'), 'LOS ANGELES', NULL, NULL),
+(817, STRINGDECODE('\u6c99\u666e\u6d1b'), 'YLD', 'CYLD', STRINGDECODE('\u6c99\u666e\u6d1b\u673a\u573a'), 'CHAPLEAU', NULL, NULL),
+(818, STRINGDECODE('\u6885\u591a\u83b1\u514b'), 'YLJ', 'CYLJ', STRINGDECODE('\u6885\u591a\u83b1\u514b\u673a\u573a'), 'MEADOW LAKE', NULL, NULL),
+(819, STRINGDECODE('\u52b3\u57c3\u5fb7\u660e\u65af\u7279'), 'YLL', 'CYLL', STRINGDECODE('\u52b3\u57c3\u5fb7\u660e\u65af\u7279\u673a\u573a'), 'LLOYDMINSTER', NULL, NULL),
+(820, STRINGDECODE('\u827e\u4e50\u7279'), 'YLT', 'CYLT', STRINGDECODE('\u827e\u4e50\u7279\u673a\u573a'), 'ALERT', NULL, NULL),
+(821, STRINGDECODE('\u574e\u5409\u514b\u65af\u74e6\u5c14'), 'XGR', 'CYLU', STRINGDECODE('\u574e\u5409\u514b\u65af\u74e6\u5c14\u673a\u573a'), 'KANGIQSUALUJJUAQ', NULL, NULL),
+(822, STRINGDECODE('\u9a6c\u514b\u9a6c\u91cc\u5821'), 'YMM', 'CYMM', STRINGDECODE('\u9a6c\u514b\u9a6c\u91cc\u5821\u673a\u573a'), 'FORT MCMURRAY', NULL, NULL),
+(823, STRINGDECODE('\u4e4c\u82d7\u5965'), 'YUD', 'CYMU', STRINGDECODE('\u4e4c\u82d7\u5965\u673a\u573a'), 'UMIUJAG', NULL, NULL),
+(824, STRINGDECODE('\u8499\u7279\u5229\u5c14'), 'YMX', 'CYMX', STRINGDECODE('\u7c73\u62c9\u8d1d\u5c14\u673a\u573a'), 'MONTREAL', NULL, NULL),
+(825, STRINGDECODE('\u97e6\u660e\u5409'), 'YNC', 'CYNC', STRINGDECODE('\u97e6\u660e\u5409\u673a\u573a'), 'WEMINDJI', NULL, NULL),
+(826, STRINGDECODE('\u52a0\u8482\u8bfa'), 'YND', 'CYND', STRINGDECODE('\u52a0\u8482\u8bfa\u673a\u573a'), 'GATINEAU', NULL, NULL),
+(827, STRINGDECODE('\u683c\u6797\u4f0d\u5fb7'), 'YZX', 'CYZX', STRINGDECODE('\u683c\u6797\u4f0d\u5fb7\u673a\u573a'), 'GREENWOOD', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(828, STRINGDECODE('\u4e03\u5c9b\u6e2f'), 'YZV', 'CYZV', STRINGDECODE('\u4e03\u5c9b\u6e2f\u673a\u573a'), 'SEPT-ILES', NULL, NULL),
+(829, STRINGDECODE('\u53e4\u65af\u8d1d'), 'YYR', 'CYYR', STRINGDECODE('\u53e4\u65af\u8d1d\u673a\u573a'), 'GOOSE BAY', NULL, NULL),
+(830, STRINGDECODE('\u65af\u5a01\u592b\u7279\u5361\u4f26\u7279'), 'YYN', 'CYYN', STRINGDECODE('\u65af\u5a01\u592b\u7279\u5361\u4f26\u7279\u673a\u573a'), 'SWIFT CURRENT', NULL, NULL),
+(831, 'TALOYOAK', 'YYH', 'CYYH', STRINGDECODE('TALOYOAK\u673a\u573a'), 'TALOYOAK', NULL, NULL),
+(832, STRINGDECODE('\u590f\u6d1b\u7279\u57ce'), 'YYG', 'CYYG', STRINGDECODE('\u590f\u6d1b\u7279\u57ce\u673a\u573a'), 'CHARLOTTETOWN', NULL, NULL),
+(833, STRINGDECODE('\u5f6d\u8482\u79d1\u987f'), 'YYF', 'CYYF', STRINGDECODE('\u5f6d\u8482\u79d1\u987f\u673a\u573a'), 'PENTICTON', NULL, NULL),
+(834, STRINGDECODE('\u7eb3\u5c14\u900a\u5821'), 'YYE', 'CYYE', STRINGDECODE('\u7eb3\u5c14\u900a\u5821\u673a\u573a'), 'FORT NELSON', NULL, NULL),
+(835, STRINGDECODE('\u53f2\u5bc6\u745f\u65af'), 'YYD', 'CYYD', STRINGDECODE('\u53f2\u5bc6\u745f\u65af\u673a\u573a'), 'SMITHERS', NULL, NULL),
+(836, STRINGDECODE('\u5361\u5c14\u52a0\u91cc'), 'YYC', 'CYYC', STRINGDECODE('CALGARY\u673a\u573a'), 'CALGARY', NULL, NULL),
+(837, STRINGDECODE('\u6c83\u74e6'), 'YXZ', 'CYXZ', STRINGDECODE('\u6c83\u74e6\u673a\u573a'), 'WAWA', NULL, NULL),
+(838, STRINGDECODE('\u963f\u4f2f\u5179\u798f\u5fb7'), 'YXX', 'CYXX', STRINGDECODE('\u963f\u4f2f\u5179\u798f\u5fb7\u673a\u573a'), 'ABBOTSFORD', NULL, NULL),
+(839, STRINGDECODE('\u5351\u5c14\u6839'), 'BGO', 'ENBR', STRINGDECODE('\u5351\u5c14\u6839\u673a\u573a'), 'BERGEN', NULL, NULL),
+(840, STRINGDECODE('\u514b\u62c9\u65af\u8bfa\u4e9a\u5c14\u65af\u514b'), 'KJA', 'UNKL', STRINGDECODE('\u514b\u62c9\u65af\u8bfa\u4e9a\u5c14\u65af\u514b\u673a\u573a'), 'KRASNOYARSK KRAI', NULL, NULL),
+(841, STRINGDECODE('\u574e\u4f69\u5207'), 'CPE', 'MMCP', STRINGDECODE('\u574e\u4f69\u5207\u673a\u573a'), 'CAMPECHE', NULL, NULL),
+(842, STRINGDECODE('\u534e\u96f7\u65af'), 'CJS', 'MMCS', STRINGDECODE('\u534e\u96f7\u65af\u673a\u573a'), 'CIUDAD JUAREZ', NULL, NULL),
+(843, STRINGDECODE('\u5947\u7434\u4f0a\u67e5'), 'CZA', 'MMCT', STRINGDECODE('\u5947\u7434\u4f0a\u67e5\u673a\u573a'), 'CHICHEN ITZA', NULL, NULL),
+(844, STRINGDECODE('\u5947\u74e6\u74e6'), 'CUU', 'MMCU', STRINGDECODE('\u5947\u74e6\u74e6\u673a\u573a'), 'CHIHUAHUA', NULL, NULL),
+(845, STRINGDECODE('\u7ef4\u591a\u5229\u4e9a\u57ce'), 'CVM', 'MMCV', STRINGDECODE('\u7ef4\u591a\u5229\u4e9a\u57ce\u673a\u573a'), 'CIUDAD VICTORIA', NULL, NULL),
+(846, STRINGDECODE('\u514b\u62c9\u514b'), 'CRK', 'RPLC', STRINGDECODE('\u514b\u62c9\u514b\u673a\u573a'), 'MANILA', NULL, NULL),
+(847, STRINGDECODE('\u666e\u62c9\u5854\u6e2f'), 'POP', 'MDPP', STRINGDECODE('Puerto PLata Gregorio Luperon\u673a\u573a'), 'PUERTO PLATA', NULL, NULL),
+(848, STRINGDECODE('\u5723\u591a\u660e\u5404'), 'SDQ', 'MDSD', STRINGDECODE('LAS AMERICAS\u673a\u573a'), 'SANTO DOMINGO', NULL, NULL),
+(849, STRINGDECODE('\u5723\u5730\u4e9a\u54e5'), 'STI', 'MDST', STRINGDECODE('SANTIAGO MUNICIPAL\u673a\u573a'), 'SANTIAGO', NULL, NULL),
+(850, STRINGDECODE('\u963f\u5361\u666e\u5c14\u79d1'), 'ACA', 'MMAA', STRINGDECODE('\u963f\u5361\u666e\u5c14\u79d1\u673a\u573a'), 'ACAPULCO', NULL, NULL),
+(851, STRINGDECODE('\u8499\u7279\u54e5\u8d1d'), 'MBJ', 'MKJS', STRINGDECODE('SANGSTER\u673a\u573a'), 'MONTEGO BAY', NULL, NULL),
+(852, STRINGDECODE('\u8499\u7279\u96f7'), 'MTY', 'MMMY', STRINGDECODE('\u58a8\u897f\u54e5\u8499\u7279\u96f7\u673a\u573a'), 'MONTERREY', NULL, NULL),
+(853, STRINGDECODE('\u963f\u74dc\u65af\u5361\u8fde\u7279\u65af'), 'AGU', 'MMAS', STRINGDECODE('\u963f\u74dc\u65af\u5361\u8fde\u7279\u65af\u673a\u573a'), 'AGUASCALIENTES', NULL, NULL),
+(854, 'HUATULCO', 'HUX', 'MMBT', STRINGDECODE('HUATULCO\u673a\u573a'), 'HUATULCO', NULL, NULL),
+(855, STRINGDECODE('\u9b41\u90a3\u4f10\u514b'), 'CVJ', 'MMCB', STRINGDECODE('\u9b41\u90a3\u4f10\u514b\u673a\u573a'), 'CUERNAVACA', NULL, NULL),
+(856, STRINGDECODE('\u5361\u95e8\u57ce'), 'CME', 'MMCE', STRINGDECODE('\u5361\u95e8\u57ce\u673a\u573a'), 'CIUDAD DEL CARMEN', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(857, STRINGDECODE('\u5207\u56fe\u9a6c\u5c14'), 'CTM', 'MMCM', STRINGDECODE('\u5207\u56fe\u9a6c\u5c14\u673a\u573a'), 'CHETUMAL', NULL, NULL),
+(858, STRINGDECODE('\u79d1\u82cf\u6885\u5c14'), 'CZM', 'MMCZ', STRINGDECODE('\u79d1\u82cf\u6885\u5c14\u673a\u573a'), 'COZUMEL', NULL, NULL),
+(859, STRINGDECODE('\u79d1\u5229\u9a6c'), 'CLQ', 'MMIA', STRINGDECODE('\u79d1\u5229\u9a6c\u673a\u573a'), 'COLIMA', NULL, NULL),
+(860, STRINGDECODE('\u51b2\u7ef3'), 'ISG', 'ROIG', STRINGDECODE('\u77f3\u57a3\u673a\u573a'), 'OKINAWA', NULL, NULL),
+(861, STRINGDECODE('\u5df4\u62c9\u5965\u7eb3'), 'BRX', 'MDBH', STRINGDECODE('\u5df4\u62c9\u5965\u7eb3\u673a\u573a'), 'BARAHONA', NULL, NULL),
+(862, STRINGDECODE('\u9686\u5fb7\u91cc\u7eb3'), 'LDB', 'SBLO', STRINGDECODE('\u9686\u5fb7\u91cc\u7eb3\u673a\u573a'), 'LONDRINA', NULL, NULL),
+(863, STRINGDECODE('\u9a6c\u6069\u6cb3\u7554\u6c99\u9686'), 'XCR', 'LFOK', STRINGDECODE('\u74e6\u7279\u91cc\u673a\u573a'), 'CHALONS SUR MARNE', NULL, NULL),
+(864, STRINGDECODE('\u4f50\u8d3a'), 'HSG', 'RJFS', STRINGDECODE('\u4f50\u8d3a\u673a\u573a'), 'ZUOHE', NULL, NULL),
+(865, STRINGDECODE('\u57c3\u5f17\u91cc\u7279'), 'PAE', 'KPAE', STRINGDECODE('\u57c3\u5f17\u96f7\u7279\u6f58\u6069\u673a\u573a'), 'EVERETT', NULL, NULL),
+(866, STRINGDECODE('\u6069\u5fb7\u57f9'), 'EBB', 'HUEN', STRINGDECODE('\u6069\u5fb7\u57f9\u673a\u573a'), 'ENTEBBE', NULL, NULL),
+(867, STRINGDECODE('\u5f7c\u5f97\u7f57\u5df4\u752b\u6d1b\u592b\u65af\u514b'), 'PKC', 'UHPP', STRINGDECODE('\u5f7c\u5f97\u7f57\u5df4\u752b\u6d1b\u592b\u65af\u514b\u673a\u573a'), 'PETROPAVLOVSK-KAMCHATSKY', NULL, NULL),
+(868, STRINGDECODE('\u70ed\u90a3\u4e9a'), 'GOA', 'LIMJ', STRINGDECODE('\u70ed\u90a3\u4e9a\u2015\u897f\u585e\u65af\u7279\u91cc\u514b\u91cc\u65af\u6258\u5f17?\u54e5\u4f26\u5e03\u673a\u573a'), 'JANUA', NULL, NULL),
+(869, STRINGDECODE('\u963f\u65af\u5854\u7eb3'), 'TSE', 'UACC', STRINGDECODE('\u963f\u65af\u5854\u7eb3\u673a\u573a'), 'ASTANA', NULL, NULL),
+(870, STRINGDECODE('\u5361\u62c9\u5e72\u8fbe'), 'KGF', 'UAKK', STRINGDECODE('\u5361\u62c9\u5e72\u8fbe\u673a\u573a'), 'KARAGANDA', NULL, NULL),
+(871, STRINGDECODE('\u4f69\u97e6\u514b'), 'PWE', 'UHMP', STRINGDECODE('\u4f69\u97e6\u514b\u673a\u573a'), 'PEVEK', NULL, NULL),
+(872, STRINGDECODE('\u5357\u8428\u54c8\u6797\u65af\u514b'), 'UUS', 'UHSS', STRINGDECODE('\u5357\u8428\u54c8\u6797\u65af\u514b\u673a\u573a'), 'YUZHNO-SAKHALINSK', NULL, NULL),
+(873, STRINGDECODE('\u666e\u65af\u79d1\u592b'), 'PKV', 'ULOO', STRINGDECODE('\u666e\u65af\u79d1\u592b\u673a\u573a'), 'PSKOV', NULL, NULL),
+(874, STRINGDECODE('\u6c83\u6d1b\u683c\u8fbe'), 'VGD', 'ULWW', STRINGDECODE('\u6c83\u6d1b\u683c\u8fbe\u673a\u573a'), 'VOLOGDA', NULL, NULL),
+(875, STRINGDECODE('\u5e03\u96f7\u65af\u7279'), 'BQT', 'UMBB', STRINGDECODE('\u5e03\u96f7\u65af\u7279\u673a\u573a'), 'BREST', NULL, NULL),
+(876, STRINGDECODE('\u6208\u6885\u5c14'), 'GME', 'UMGG', STRINGDECODE('\u6208\u6885\u5c14\u673a\u573a'), 'GOMEL', NULL, NULL),
+(877, STRINGDECODE('\u7ef4\u6377\u5e03\u65af\u514b'), 'VTB', 'UMII', STRINGDECODE('\u7ef4\u6377\u5e03\u65af\u514b\u673a\u573a'), 'VITEBSK', NULL, NULL),
+(878, STRINGDECODE('\u52a0\u91cc\u5b81\u683c\u52d2'), 'KGD', 'UMKK', STRINGDECODE('\u52a0\u91cc\u5b81\u683c\u52d2\u673a\u573a'), 'KALININGRAD', NULL, NULL),
+(879, STRINGDECODE('\u683c\u7f57\u5fb7\u8bfa'), 'GNA', 'UMMG', STRINGDECODE('\u683c\u7f57\u5fb7\u8bfa\u673a\u573a'), 'GRODNO', NULL, NULL),
+(880, STRINGDECODE('\u5df4\u5e93'), 'GYD', 'UBBB', STRINGDECODE('\u5df4\u5e93\u6bd4\u7eb3\u673a\u573a'), 'BAKU', NULL, NULL),
+(881, STRINGDECODE('\u522b\u5c14\u54e5\u7f57\u5fb7'), 'EGO', 'UUOB', STRINGDECODE('\u522b\u5c14\u54e5\u7f57\u5fb7\u673a\u573a'), 'BELGOROD', NULL, NULL),
+(882, STRINGDECODE('\u6c83\u7f57\u6d85\u4ec0'), 'VOZ', 'UUOO', STRINGDECODE('\u6c83\u7f57\u6d85\u4ec0\u673a\u573a'), 'VORONEZH', NULL, NULL),
+(883, STRINGDECODE('\u4e4c\u8d6b\u5854'), 'UCT', 'UUYH', STRINGDECODE('\u4e4c\u8d6b\u5854\u673a\u573a'), 'UKHTA', NULL, NULL),
+(884, STRINGDECODE('\u4e4c\u8f9b\u65af\u514b'), 'USK', 'UUYS', STRINGDECODE('\u4e4c\u8f9b\u65af\u514b\u673a\u573a'), 'USINSK', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(885, STRINGDECODE('\u6c83\u5c14\u5e93\u5854'), 'VKT', 'UUYW', STRINGDECODE('\u6c83\u5c14\u5e93\u5854\u673a\u573a'), 'VORKUTA', NULL, NULL),
+(886, STRINGDECODE('\u4e0b\u8bfa\u592b\u54e5\u7f57\u5fb7'), 'GOJ', 'UWGG', STRINGDECODE('\u4e0b\u8bfa\u592b\u54e5\u7f57\u5fb7\u673a\u573a'), 'NIZHNIY NOVGOROD', NULL, NULL),
+(887, STRINGDECODE('\u8482\u534e\u7eb3'), 'TIJ', 'MMTJ', STRINGDECODE('\u8482\u534e\u7eb3-\u7f57\u5fb7\u91cc\u683c\u65af\u673a\u573a'), 'TIJUANA', NULL, NULL),
+(888, STRINGDECODE('\u7279\u7f57\u7eb3'), 'TRH', 'UOTT', STRINGDECODE('\u7279\u7f57\u7eb3\u673a\u573a'), 'TRONA', NULL, NULL),
+(889, STRINGDECODE('\u534e\u6b23'), 'HHQ', 'VTPH', STRINGDECODE('\u534e\u6b23\u673a\u573a'), 'HUA HIN', NULL, NULL),
+(890, STRINGDECODE('\u7ebd\u5361\u65af\u5c14'), 'NTL', 'YWLM', STRINGDECODE('\u5a01\u5ec9\u65af\u6566\u673a\u573a'), 'NEWCASTLE', NULL, NULL),
+(891, STRINGDECODE('\u57c3\u5fb7\u8499\u987f'), 'YEG', 'CYEG', STRINGDECODE('\u57c3\u5fb7\u8499\u987f\u673a\u573a'), 'EDMONTON', NULL, NULL),
+(892, STRINGDECODE('\u8bfa\u798f\u514b\u5c9b'), 'NLK', 'YSNF', STRINGDECODE('\u8bfa\u798f\u514b\u5c9b\u673a\u573a'), 'NORFOLK ISLAND', NULL, NULL),
+(893, STRINGDECODE('\u8fbe\u535a'), 'DBO', 'YSDU', STRINGDECODE('\u8fbe\u535a\u673a\u573a'), 'DUBBO', NULL, NULL),
+(894, STRINGDECODE('\u5723\u8bde\u5c9b'), 'XCH', 'YPXM', STRINGDECODE('\u5723\u8bde\u5c9b\u673a\u573a'), 'CHRISTMAS ISLAND', NULL, NULL),
+(895, STRINGDECODE('\u4f0d\u9ed8\u62c9'), 'UMR', 'YPWR', STRINGDECODE('\u4f0d\u9ed8\u62c9\u673a\u573a'), 'WOOMERA', NULL, NULL),
+(896, STRINGDECODE('\u51ef\u745f\u7433'), 'KTR', 'YPTN', STRINGDECODE('\u5ef7\u5fb7\u5c14\u673a\u573a'), 'KATHERINE', NULL, NULL),
+(897, STRINGDECODE('\u9ed1\u5fb7\u5170\u6e2f'), 'PHE', 'YPPD', STRINGDECODE('\u9ed1\u5fb7\u5170\u6e2f\u673a\u573a'), 'PORT HEDLAND', NULL, NULL),
+(898, STRINGDECODE('\u5229\u5c14\u8499\u65af'), 'LEA', 'YPLM', STRINGDECODE('\u5229\u5c14\u8499\u65af\u673a\u573a'), 'LEARMONTH', NULL, NULL),
+(899, STRINGDECODE('\u5e93\u52aa\u7eb3\u62c9'), 'KNX', 'YPKU', STRINGDECODE('\u5e93\u52aa\u7eb3\u62c9\u673a\u573a'), 'KUNUNURRA', NULL, NULL),
+(900, STRINGDECODE('\u5361\u5c14\u53e4\u5229'), 'KGI', 'YPKG', STRINGDECODE('\u5361\u5c14\u53e4\u5229\u673a\u573a'), 'KALGOORLIE', NULL, NULL),
+(901, STRINGDECODE('\u8a79\u8fbe\u79d1\u7279'), 'JAD', 'YPJT', STRINGDECODE('\u8a79\u8fbe\u79d1\u7279\u673a\u573a'), 'JANDAKOT', NULL, NULL),
+(902, STRINGDECODE('\u67d4\u4f5b\u5dde'), 'JHB', 'WMKJ', STRINGDECODE('\u58eb\u4e43\u673a\u573a'), 'JOHOR', NULL, NULL),
+(903, STRINGDECODE('\u6208\u592b'), 'GOV', 'YPGV', STRINGDECODE('\u6208\u592b\u673a\u573a'), 'GOVE', NULL, NULL),
+(904, STRINGDECODE('\u79d1\u79d1\u65af\u5c9b'), 'CCK', 'YPCC', STRINGDECODE('\u79d1\u79d1\u65af\u5c9b\u673a\u573a'), 'COCOS ISLANDS', NULL, NULL),
+(905, STRINGDECODE('\u6717\u585e\u65af\u987f'), 'LST', 'YMLT', STRINGDECODE('\u6717\u585e\u65af\u987f\u673a\u573a'), 'LAUNCESTON', NULL, NULL),
+(906, STRINGDECODE('\u970d\u5df4\u7279'), 'HBA', 'YMHB', STRINGDECODE('\u970d\u5df4\u7279\u673a\u573a'), 'HOBART', NULL, NULL),
+(907, STRINGDECODE('\u970d\u6069\u5c9b'), 'HID', 'YHID', STRINGDECODE('\u970d\u6069\u5c9b\u673a\u573a'), 'HORN ISLAND', NULL, NULL),
+(908, STRINGDECODE('\u6770\u62c9\u5c14\u987f'), 'GET', 'YGEL', STRINGDECODE('\u6770\u62c9\u5c14\u6566\u673a\u573a'), 'GERALDTON', NULL, NULL),
+(909, STRINGDECODE('\u73ed\u987f\u675c'), 'FDU', 'FZBO', STRINGDECODE('\u73ed\u987f\u675c\u673a\u573a'), 'BANDUNDU', NULL, NULL),
+(910, STRINGDECODE('\u6d77\u970d'), 'HEH', 'VYHH', STRINGDECODE('\u8335\u83b1\u6e56\u673a\u573a'), 'HEHO', NULL, NULL),
+(911, STRINGDECODE('\u826f\u4e4c'), 'NYU', 'VYNU', STRINGDECODE('\u826f\u4e4c\u673a\u573a'), 'NYAUNG-U', NULL, NULL),
+(912, STRINGDECODE('\u5e03\u54c8\u62c9'), 'BHK', 'UTSB', STRINGDECODE('\u5e03\u54c8\u62c9\u673a\u573a'), 'BUKHARA', NULL, NULL),
+(913, STRINGDECODE('\u5e03\u9c81\u59c6'), 'BME', 'YBRM', STRINGDECODE('\u5e03\u9c81\u59c6\u673a\u573a'), 'BROOME', NULL, NULL),
+(914, STRINGDECODE('\u7f57\u514b\u6c49\u666e\u987f'), 'ROK', 'YBRK', STRINGDECODE('\u7f57\u514b\u6c49\u666e\u987f\u673a\u573a'), 'ROCKHAMPTON', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(915, STRINGDECODE('\u4f26\u6566'), 'LCY', 'EGLC', STRINGDECODE('\u4f26\u6566\u57ce\u5e02\u673a\u573a'), 'LONDON', NULL, NULL),
+(916, STRINGDECODE('\u91d1\u6c99\u8428'), 'FIH', 'FZAA', STRINGDECODE('\u91d1\u6c99\u8428\u6069\u5409\u5229\u673a\u573a'), 'KINSHASA', NULL, NULL),
+(917, STRINGDECODE('\u5362\u672c\u5df4\u5e0c'), 'FBM', 'FZQA', STRINGDECODE('\u5362\u672c\u5df4\u5e0c\u673a\u573a'), 'LUBUMBASHI', NULL, NULL),
+(918, STRINGDECODE('\u5361\u8428\u5e03\u5170\u5361'), 'CMN', 'GMMN', STRINGDECODE('\u9ed8\u7f55\u9ed8\u5fb7V\u673a\u573a'), 'CASABLANCA', NULL, NULL),
+(919, STRINGDECODE('\u963f\u4ec0\u54c8\u5df4\u5fb7'), 'ASB', 'UTAA', STRINGDECODE('\u963f\u4ec0\u54c8\u5df4\u5fb7\u673a\u573a'), 'ASHGABAT', NULL, NULL),
+(920, STRINGDECODE('\u9ed4\u6c5f'), 'JIQ', 'ZUQJ', STRINGDECODE('\u9ed4\u6c5f\u821f\u767d\u673a\u573a'), 'ZHOUBAI', NULL, NULL),
+(921, STRINGDECODE('\u627f\u5fb7'), 'CEH', '', STRINGDECODE('\u627f\u5fb7\u673a\u573a'), 'CHENGDE', NULL, NULL),
+(922, STRINGDECODE('\u5854\u62c9\u54c8\u897f'), 'TLH', 'KTLH', STRINGDECODE('\u5854\u62c9\u54c8\u897f\u673a\u573a'), 'TALLAHASSEE', NULL, NULL),
+(923, STRINGDECODE('\u675c\u5c1a\u522b'), 'DYU', 'UTDD', STRINGDECODE('\u675c\u5c1a\u522b\u673a\u573a'), 'DUSHANBE', NULL, NULL),
+(924, STRINGDECODE('\u53f6\u5361\u6377\u7433\u5821'), 'SVX', 'USSS', STRINGDECODE('\u53f6\u5361\u6377\u7433\u5821/\u79d1\u5229\u4f50\u6c83\u673a\u573a\u673a\u573a'), 'YEKATERINBURG', NULL, NULL),
+(925, STRINGDECODE('\u6d77\u5fb7\u62c9\u5df4'), 'HYD', 'VOHY', STRINGDECODE('\u6d77\u5fb7\u62c9\u5df4\u673a\u573a'), 'HYDERABAD', NULL, NULL),
+(926, STRINGDECODE('\u4f0a\u5179\u5bc6\u5c14'), 'ADB', 'LTBJ', STRINGDECODE('\u4f0a\u5179\u5bc6\u5c14Adnan Menderes\u673a\u573a'), 'IZMIR', NULL, NULL),
+(927, STRINGDECODE('\u57fa\u8f85'), 'KBP', 'UKBB', STRINGDECODE('\u6ce2\u91cc\u65af\u73c0\u5c14\u673a\u573a'), 'KIEV', NULL, NULL),
+(928, STRINGDECODE('\u96c5\u52a0\u8fbe'), 'JKT', '', STRINGDECODE('\u96c5\u52a0\u8fbe\u673a\u573a'), 'JAKARTA', NULL, NULL),
+(929, STRINGDECODE('\u83ab\u96f7\u5229\u4e9a'), 'MLM', 'MMMM', STRINGDECODE('\u83ab\u96f7\u5229\u4e9a\u673a\u573a'), 'MORELIA', NULL, NULL),
+(930, STRINGDECODE('\u7ef4\u591a\u5229\u4e9a'), 'SEZ', 'FSIA', STRINGDECODE('\u585e\u820c\u5c14\u673a\u573a'), 'VICTORIA', NULL, NULL),
+(931, STRINGDECODE('\u7ebd\u7ea6'), 'LGA', 'KLGA', STRINGDECODE('\u62c9\u74dc\u8fea\u4e9a\u673a\u573a'), 'NEW YORK', NULL, NULL),
+(932, STRINGDECODE('\u514b\u6797\u987f\u53bf'), 'CWI', '', STRINGDECODE('\u514b\u6797\u987f\u673a\u573a'), 'CLINTON IOWA', NULL, NULL),
+(933, STRINGDECODE('\u5c98\u6e2f'), 'DAD', 'VVDN', STRINGDECODE('\u5c98\u6e2f\u673a\u573a'), 'DA NANG', NULL, NULL),
+(934, STRINGDECODE('\u9a6c\u5854\u5170'), 'AMI', 'WADA', STRINGDECODE('Selaparang\u673a\u573a'), 'MATARAM', NULL, NULL),
+(935, STRINGDECODE('\u5229\u65af\u83ab\u5c14'), 'LSY', 'YLIS', STRINGDECODE('\u5229\u65af\u83ab\u5c14\u673a\u573a'), 'LISMORE', NULL, NULL),
+(936, STRINGDECODE('\u963f\u5c14\u5c71'), 'YIE', 'ZBES', STRINGDECODE('\u963f\u5c14\u5c71\u4f0a\u5c14\u65bd\u673a\u573a'), 'ARXAN', NULL, NULL),
+(937, STRINGDECODE('\u6258\u5362'), 'TLU', 'SKTL', STRINGDECODE('\u6258\u5362\u673a\u573a'), 'TOLU', NULL, NULL),
+(938, STRINGDECODE('\u5bcc\u5c71'), 'TOY', 'RJNT', STRINGDECODE('\u5bcc\u5c71\u673a\u573a'), 'FUSHAN', NULL, NULL),
+(939, STRINGDECODE('\u6960\u666e\u62c9'), 'APL', 'FQNP', STRINGDECODE('\u6960\u666e\u62c9\u673a\u573a'), 'NAMPULA', NULL, NULL),
+(940, STRINGDECODE('\u5df4\u4e1c'), 'PDG', 'WIPT', STRINGDECODE('\u8fbe\u6ee8\u673a\u573a'), 'PADANG', NULL, NULL),
+(941, STRINGDECODE('\u65e5\u5580\u5219'), 'RKZ', 'ZURK', STRINGDECODE('\u65e5\u5580\u5219\u548c\u5e73\u673a\u573a'), 'RIKAZE', NULL, NULL),
+(942, STRINGDECODE('\u5fb7\u73ed'), 'DUR', 'FADN', STRINGDECODE('\u5fb7\u73ed\u673a\u573a'), 'DURBAN', NULL, NULL),
+(943, STRINGDECODE('\u5e03\u96f7\u897f\u4e9a'), 'VBS', 'LIPO', STRINGDECODE('Brescia Montichiari\u673a\u573a'), 'BRESCIA', NULL, NULL),
+(944, STRINGDECODE('\u5229\u4f2f\u7ef4\u5c14'), 'LBV', 'FOOL', STRINGDECODE('\u5229\u4f2f\u7ef4\u5c14\u83b1\u6602\u59c6\u5df4\u673a\u573a'), 'LIBREVILIE', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(945, STRINGDECODE('\u5185\u7f57\u6bd5'), 'NBO', 'HKJK', STRINGDECODE('\u5185\u7f57\u6bd5\u4e54\u83ab?\u80af\u96c5\u5854\u673a\u573a'), 'NAIROBI', NULL, NULL),
+(946, STRINGDECODE('\u7c73\u5170'), 'LIN', 'LIML', STRINGDECODE('\u7c73\u5170\u5229\u7eb3\u7279\u673a\u573a'), 'MILAN', NULL, NULL),
+(947, STRINGDECODE('\u62c9\u7eb3\u5361'), 'LCA', 'LCLK', STRINGDECODE('\u62c9\u7eb3\u5361\u673a\u573a'), 'LARNACA', NULL, NULL),
+(948, STRINGDECODE('\u6797\u80af'), 'LNK', 'KLNK', STRINGDECODE('\u6797\u80af\u673a\u573a'), 'LINCOLN', NULL, NULL),
+(949, STRINGDECODE('\u8fbe\u7d2f\u65af\u8428\u62c9\u59c6'), 'DAR', 'HTDA', STRINGDECODE('\u5c3c\u96f7\u5c14\u673a\u573a'), 'DAR ES SALAAM', NULL, NULL),
+(950, STRINGDECODE('\u5e95\u7279\u5f8b'), 'DTW', 'KDTW', STRINGDECODE('\u5e95\u7279\u5f8b\u90fd\u4f1a\u97e6\u6069\u53bf\u673a\u573a'), 'DETROIT', NULL, NULL),
+(951, STRINGDECODE('\u54c8\u62c9\u96f7'), 'HRE', 'FVHA', STRINGDECODE('\u54c8\u62c9\u96f7\u673a\u573a'), 'HARARE', NULL, NULL),
+(952, STRINGDECODE('\u62c9\u5df4\u65af'), 'LPB', 'SLLP', STRINGDECODE('EL ALTO\u673a\u573a'), 'LA PAZ', NULL, NULL),
+(953, STRINGDECODE('\u5723\u4f55\u585e'), 'SJO', 'MROC', STRINGDECODE('\u80e1\u5b89 \u5723\u739b\u5229\u4e9a\u673a\u573a'), 'SAN JOSE', NULL, NULL),
+(954, STRINGDECODE('\u5723\u4f55\u585e'), 'SJC', 'KSJC', STRINGDECODE('\u8bfa\u66fc?\u7c73\u5185\u5854\u5723\u4f55\u585e\u673a\u573a'), 'SAN JOSE', NULL, NULL),
+(955, STRINGDECODE('\u5723\u8428\u5c14\u74e6\u591a'), 'SAL', 'MSLP', STRINGDECODE('\u5723\u8428\u5c14\u74e6\u591a \u79d1\u9a6c\u62c9\u5e15\u673a\u573a'), 'SAN SALVADOR', NULL, NULL),
+(956, STRINGDECODE('\u8d39\u8036\u7279\u7ef4\u5c14'), 'FYV', 'KFAY', STRINGDECODE('\u8d39\u8036\u7279\u7ef4\u5c14\u673a\u573a'), 'FAYETTEVILLE, ARKANSAS', NULL, NULL),
+(957, STRINGDECODE('\u5965\u5170\u591a'), 'ORL', '', STRINGDECODE('\u8d6b\u767b\u673a\u573a'), 'AOKELAN', NULL, NULL),
+(958, STRINGDECODE('\u5188\u5c71'), 'OKJ', 'RJOB', STRINGDECODE('\u5188\u5c71\u673a\u573a'), 'OKAYAMA PREFECTURE', NULL, NULL),
+(959, STRINGDECODE('\u5357\u8fea'), 'NAN', 'NFFN', STRINGDECODE('\u5357\u8fea\u673a\u573a'), 'NADI', NULL, NULL),
+(960, STRINGDECODE('\u4f0a\u74dc\u82cf'), 'IGR', 'SARI', STRINGDECODE('\u4f0a\u74dc\u82cf\u673a\u573a'), 'IGUAZU', NULL, NULL),
+(961, STRINGDECODE('\u7ebd\u7ea6'), 'ISP', 'KISP', STRINGDECODE('\u957f\u5c9b\u673a\u573a'), 'NEW YORK', NULL, NULL),
+(962, STRINGDECODE('\u54c8\u7279\u798f\u5fb7\u53bf'), 'BDL', 'KBDL', STRINGDECODE('\u54c8\u7279\u798f\u5fb7\u673a\u573a'), 'HARTFORD COUNTY, CONNECTICUT', NULL, NULL),
+(963, STRINGDECODE('\u5185\u5c14\u65af\u666e\u96f7\u7279'), 'MQP', 'FAKN', STRINGDECODE('\u514b\u9c81\u683c\u59c6\u666e\u9a6c\u5170\u52a0\u56fd\u9645\u673a\u573a\u673a\u573a'), 'NELSPRUIT', NULL, NULL),
+(964, STRINGDECODE('\u65af\u666e\u5229\u7279'), 'SPU', 'LDSP', STRINGDECODE('\u65af\u666e\u5229\u7279\u673a\u573a\u673a\u573a'), 'SPLIT', NULL, NULL),
+(965, STRINGDECODE('\u97e6\u6069\u5821'), 'FWA', 'KFWA', STRINGDECODE('\u97e6\u6069\u5821\u5df4\u5c14\u673a\u573a'), 'FORTWAYNE', NULL, NULL),
+(966, STRINGDECODE('\u91d1\u660c'), 'JIC', 'ZLJC', STRINGDECODE('\u91d1\u660c\u673a\u573a'), 'JINCHANG', NULL, NULL),
+(967, STRINGDECODE('\u62c9\u74e6\u683c'), 'LAO', '', STRINGDECODE('\u62c9\u74e6\u683c\u673a\u573a'), 'LAOAG', NULL, NULL),
+(968, STRINGDECODE('\u83ab\u5c14\u5179\u6bd4\u6e2f'), 'POM', 'AYPY', STRINGDECODE('\u83ab\u5c14\u5179\u6bd4\u6e2f\u673a\u573a'), 'PORT MORESBY', NULL, NULL),
+(969, STRINGDECODE('\u534e\u76db\u987f'), 'IAD', 'KIAD', STRINGDECODE('\u534e\u76db\u987f\u675c\u52d2\u65af\u673a\u573a'), 'WASHINGTON', NULL, NULL),
+(970, STRINGDECODE('\u5361\u5229\u4e9a\u91cc'), 'CAG', 'LIEE', STRINGDECODE('\u5361\u5229\u4e9a\u91cc\u673a\u573a'), 'CAGLIARI', NULL, NULL),
+(971, STRINGDECODE('\u7f57\u9a6c'), 'CIA', 'LIRA', STRINGDECODE('\u7f57\u9a6c\u94b1\u76ae\u8bfa\u673a\u573a'), 'ROME', NULL, NULL),
+(972, STRINGDECODE('\u5e15\u7f57'), 'PBH', 'VQPR', STRINGDECODE('\u5e15\u7f57\u673a\u573a'), 'PARO', NULL, NULL),
+(973, STRINGDECODE('\u7ef4\u5c14\u7ebd\u65af'), 'VNO', 'EYVI', STRINGDECODE('\u7ef4\u5c14\u7ebd\u65af\u673a\u573a'), 'VILNIUS', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(974, STRINGDECODE('\u592a\u5b50\u6e2f\u56fd\u9645'), 'PAP', 'MTPP', STRINGDECODE('\u592a\u5b50\u6e2f\u56fd\u9645\u673a\u573a'), 'PORT-AU-PRINCE', NULL, NULL),
+(975, STRINGDECODE('\u5170\u5361\u5a01'), 'LGK', 'WMKL', STRINGDECODE('\u6d6e\u7f57\u4ea4\u6021\u673a\u573a'), 'LANGKAWI', NULL, NULL),
+(976, STRINGDECODE('\u9a6c\u8033\u4ed6'), 'MLA', 'LMML', STRINGDECODE('\u9a6c\u8033\u4ed6\u673a\u573a'), 'MALTA', NULL, NULL),
+(977, STRINGDECODE('\u5361\u5229\u535a'), 'KLO', 'RPVK', STRINGDECODE('\u5361\u5229\u535a\u673a\u573a'), 'KALIBO', NULL, NULL),
+(978, STRINGDECODE('\u5f20\u6396'), 'YZY', 'ZLZY', STRINGDECODE('\u5f20\u6396\u673a\u573a'), 'ZHANGYE', NULL, NULL),
+(979, STRINGDECODE('\u6597\u6e56'), 'TWU', 'WBKW', STRINGDECODE('\u6597\u6e56\u673a\u573a'), 'TAWAU', NULL, NULL),
+(980, STRINGDECODE('\u9ece\u7259\u5b9e\u6bd4'), 'LGP', '', STRINGDECODE('\u9ece\u7259\u5b9e\u6bd4\u673a\u573a'), 'LEGASPI', NULL, NULL),
+(981, STRINGDECODE('\u5854\u6bd4\u62c9\u5170'), 'TAG', '', STRINGDECODE('\u5854\u6bd4\u62c9\u5170\u673a\u573a'), 'TAGBILARAN', NULL, NULL),
+(982, STRINGDECODE('\u963f\u6d1b\u5c9b'), 'ARD', '', STRINGDECODE('\u963f\u6d1b\u5c9b\u673a\u573a'), 'ALOR ISLAND', NULL, NULL),
+(983, STRINGDECODE('\u53e4\u90a6'), 'KOE', '', STRINGDECODE('\u53e4\u90a6\u673a\u573a'), 'KUPANG', NULL, NULL),
+(984, STRINGDECODE('\u5362\u8428\u5361'), 'LUN', 'FLLS', STRINGDECODE('\u5362\u8428\u5361\u673a\u573a'), 'LUSAKA', NULL, NULL),
+(985, STRINGDECODE('\u7687\u540e\u9547'), 'ZQN', 'NZQN', STRINGDECODE('\u7687\u540e\u9547\u673a\u573a'), 'QUEENSTOWN', NULL, NULL),
+(986, STRINGDECODE('\u626c\u5dde'), 'YTY', 'ZSYA', STRINGDECODE('\u626c\u5dde\u6cf0\u5dde\u673a\u573a'), 'YANGZHOU', NULL, NULL),
+(987, STRINGDECODE('\u5df4\u5f66\u6dd6\u5c14'), 'RLK', 'ZBYZ', STRINGDECODE('\u5df4\u5f66\u6dd6\u5c14\u5929\u5409\u6cf0\u673a\u573a'), 'BAYAN NUR', NULL, NULL),
+(988, STRINGDECODE('\u7279\u7f57\u59c6\u745f'), 'TOS', '', STRINGDECODE('\u7279\u7f57\u59c6\u745f\u673a\u573a'), 'TROMSO', NULL, NULL),
+(989, STRINGDECODE('\u6717\u52c3\u62c9\u90a6'), 'LPQ', '', STRINGDECODE('\u6717\u52c3\u62c9\u90a6\u673a\u573a'), 'LUANG PRABANG', NULL, NULL),
+(990, STRINGDECODE('\u5c0f\u677e'), 'KMQ', 'RJNK', STRINGDECODE('\u5c0f\u677e\u673a\u573a'), 'KOMATSU', NULL, NULL),
+(991, STRINGDECODE('\u5e03\u52a0\u52d2\u65af\u7279'), 'OTP', 'LROP', STRINGDECODE('\u5e03\u52a0\u52d2\u65af\u7279\u5965\u6258\u4f69\u5c3c\u673a\u573a'), 'BUCHAREST', NULL, NULL),
+(992, STRINGDECODE('\u5e93\u91cc\u8482\u5df4'), 'CWB', 'SBCT', STRINGDECODE('\u5e93\u91cc\u8482\u5df4\u673a\u573a'), 'CURITIBA', NULL, NULL),
+(993, STRINGDECODE('\u666e\u7f57\u7ef4\u767b\u65af'), 'PVD', 'KPVD', STRINGDECODE('\u666e\u7f57\u7ef4\u767b\u65af\u673a\u573a'), 'PROVIDENCE', NULL, NULL),
+(994, STRINGDECODE('\u9a6c\u666e\u6258'), 'MPM', 'FQMA', STRINGDECODE('\u9a6c\u666e\u6258\u673a\u573a'), 'MAPUTO', NULL, NULL),
+(995, STRINGDECODE('\u54c8\u74e6\u90a3'), 'HAV', '', STRINGDECODE('\u54c8\u74e6\u90a3\u4f55\u585e\u9a6c\u8482\u673a\u573a'), 'HAVANA', NULL, NULL),
+(996, STRINGDECODE('\u6bdb\u91cc\u6c42\u65af'), 'MRU', 'FIMP', STRINGDECODE('\u6bdb\u91cc\u6c42\u65af\u673a\u573a'), 'MAURITIUS', NULL, NULL),
+(997, STRINGDECODE('\u83f2\u5c3c\u514b\u65af'), 'PHX', 'KPHX', STRINGDECODE('\u83f2\u5c3c\u514b\u65af\u5929\u6e2f\u673a\u573a'), 'PHOENIX', NULL, NULL),
+(998, STRINGDECODE('\u7ef4\u7f57\u7eb3'), 'VRN', '', STRINGDECODE('\u7ef4\u7f57\u7eb3\u673a\u573a'), 'VERONA', NULL, NULL),
+(999, STRINGDECODE('\u5173\u5c9b'), 'GUM', 'PGUM', STRINGDECODE('\u5173\u5c9b\u673a\u573a'), 'GUAM', NULL, NULL),
+(1000, STRINGDECODE('\u80e1\u5360\u5fb7'), 'LBD', 'UTDL', STRINGDECODE('\u80e1\u5360\u5fb7\u673a\u573a'), 'KHUDZHAND', NULL, NULL),
+(1002, STRINGDECODE('\u91cc\u52a0'), 'RIX', 'EVRA', STRINGDECODE('\u91cc\u52a0\u673a\u573a'), 'RIGA', NULL, NULL),
+(1003, STRINGDECODE('\u5e03\u62c9\u6208\u7ef4\u7533\u65af\u514b'), 'BQS', 'UHBB', STRINGDECODE('\u5e03\u62c9\u6208\u7ef4\u7533\u65af\u514b\u673a\u573a'), 'BLAGOVESCHENSK', NULL, NULL),
+(1004, STRINGDECODE('\u96c5\u5e93\u8328\u514b'), 'YKS', '', STRINGDECODE('\u96c5\u5e93\u8328\u514b\u673a\u573a'), 'YAKUTSK', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(1005, STRINGDECODE('\u5965\u4f26\u5821'), 'REN', 'UWOO', STRINGDECODE('\u5965\u4f26\u5821\u673a\u573a'), 'ORENBURG', NULL, NULL),
+(1006, STRINGDECODE('\u5df4\u6797'), 'BAH', 'OBBI', STRINGDECODE('\u5df4\u6797\u673a\u573a'), 'MOURINHO HA LA', NULL, NULL),
+(1007, STRINGDECODE('\u8bfa\u7ef4\u5947'), 'NWI', 'EGSH', STRINGDECODE('\u8bfa\u7ef4\u5947\u673a\u573a'), 'NORWICH', NULL, NULL),
+(1008, STRINGDECODE('\u5e03\u96f7\u52a0\u6e2f'), 'LMQ', 'HLMB', STRINGDECODE('\u5e03\u96f7\u52a0\u6e2f\u673a\u573a'), 'MARSA EL BREGA', NULL, NULL),
+(1009, STRINGDECODE('\u5f17\u91cc\u6566'), 'FNA', '', STRINGDECODE('\u5f17\u91cc\u6566\u673a\u573a'), 'FREETOWN', NULL, NULL),
+(1010, STRINGDECODE('\u5df4\u58eb\u62c9'), 'BSR', 'ORMM', STRINGDECODE('\u5df4\u58eb\u62c9\u673a\u573a'), 'BASRA', NULL, NULL),
+(1011, STRINGDECODE('\u5173\u4e39'), 'KUA', 'WMKD', STRINGDECODE('\u5173\u4e39\u673a\u573a'), 'KUANTAN', NULL, NULL),
+(1012, STRINGDECODE('\u91cc\u5965\u683c\u5170\u5fb7'), 'RGA', 'SAWE', STRINGDECODE('\u91cc\u5965\u683c\u5170\u5fb7\u673a\u573a'), 'RIO GRANDE', NULL, NULL),
+(1013, STRINGDECODE('\u6e05\u83b1'), 'CEI', 'VTCT', STRINGDECODE('\u6e05\u83b1\u673a\u573a'), 'CHIANAG RAI', NULL, NULL),
+(1014, STRINGDECODE('\u666e\u6797\u585e\u8428\u6e2f'), 'PPS', 'RPVP', STRINGDECODE('\u666e\u6797\u585e\u8428\u6e2f\u673a\u573a'), 'PUERTO PRINCESA', NULL, NULL),
+(1015, STRINGDECODE('\u4e07\u7eb6'), 'URT', '', STRINGDECODE('\u4e07\u7eb6\u673a\u573a'), 'SURAT THANI', NULL, NULL),
+(1016, STRINGDECODE('\u6bd5\u5c14\u5df4\u9102'), 'BIO', 'LEBB', STRINGDECODE('\u6bd5\u5c14\u5df4\u9102\u673a\u573a'), 'BILBAO', NULL, NULL),
+(1017, STRINGDECODE('\u6bd4\u4e9a\u91cc\u8328'), 'BIQ', 'LFBZ', STRINGDECODE('\u6bd4\u4e9a\u91cc\u8328-\u5b89\u683c\u96f7\u673a\u573a'), 'BIARRITZ', NULL, NULL),
+(1018, STRINGDECODE('\u79d1\u94a6'), 'COK', 'VOCI', STRINGDECODE('\u79d1\u94a6\u673a\u573a'), 'KOCHI', NULL, NULL),
+(1019, STRINGDECODE('\u67cf\u6797'), 'BER', 'EDDB', STRINGDECODE('\u67cf\u6797\u52c3\u5170\u767b\u5821\u673a\u573a'), 'BERLIN', NULL, NULL),
+(1020, STRINGDECODE('\u6e29\u5f97\u548c\u514b'), 'WDH', 'FYWH', STRINGDECODE('\u6e29\u5f97\u548c\u514b\u5362\u683c\u54c8\u5a01\u673a\u573a'), 'WINDHOEK', NULL, NULL),
+(1021, STRINGDECODE('\u53f0\u4e1c'), 'TTT', 'RCFN', STRINGDECODE('\u53f0\u4e1c\u4e30\u5e74\u673a\u573a'), 'TAIDONG', NULL, NULL),
+(1022, STRINGDECODE('\u5e03\u62c9\u67f4\u7ef4\u5c14'), 'BZV', 'FCBB', STRINGDECODE('\u5e03\u62c9\u67f4\u7ef4\u5c14\u9a6c\u4e9a\u673a\u573a'), 'BRAZZAVILLE', NULL, NULL),
+(1023, STRINGDECODE('\u9a6c\u65af\u5580\u7279'), 'MCT', 'OOMS', STRINGDECODE('\u9a6c\u65af\u5580\u7279\u673a\u573a'), 'MUSCAT', NULL, NULL),
+(1024, STRINGDECODE('\u5df4\u9a6c\u79d1'), 'BAM', 'GABS', STRINGDECODE('\u5df4\u9a6c\u79d1\u673a\u573a'), 'BAMAKO', NULL, NULL),
+(1025, STRINGDECODE('\u4e09\u5b9d\u5784'), 'SRG', 'WARS', STRINGDECODE('\u4e09\u5b9d\u5784\u827e\u54c8\u8fc8\u5fb7\u4e9a\u5c3c\u673a\u573a'), 'SEMARANG', NULL, NULL),
+(1026, STRINGDECODE('\u65af\u5fb7\u54e5\u5c14\u6469'), 'NYO', '', STRINGDECODE('\u65af\u5fb7\u54e5\u5c14\u6469\u53f2\u5361\u592b\u65af\u5854\u673a\u573a'), 'STOCKHOLM', NULL, NULL),
+(1027, STRINGDECODE('\u8f9b\u8f9b\u90a3\u63d0'), 'CVG', 'KCVG', STRINGDECODE('\u8f9b\u8f9b\u90a3\u63d0\u673a\u573a'), 'CINCINNATI', NULL, NULL),
+(1028, STRINGDECODE('\u5df4\u6de1\u5c9b'), 'BTH', 'WIKB', STRINGDECODE('\u5df4\u6de1\u5c9b\u673a\u573a'), 'BATAM', NULL, NULL),
+(1029, 'Tucson', 'TUS', 'KTUS', STRINGDECODE('\u56fe\u68ee\u673a\u573a'), 'TUCSON', NULL, NULL),
+(1030, STRINGDECODE('\u9a6c\u7565\u5361\u5c9b\u5e15\u5c14\u9a6c'), 'PMI', 'LEPA', STRINGDECODE('\u9a6c\u7565\u5361\u5c9b\u5e15\u5c14\u9a6c\u673a\u573a'), 'PALMA DE MALLORCA', NULL, NULL),
+(1031, STRINGDECODE('\u5339\u5179\u5821'), 'PIT', 'KPIT', STRINGDECODE('\u5339\u5179\u5821\u673a\u573a'), 'PITTSBURGH PENNSYLVANIA', NULL, NULL),
+(1032, STRINGDECODE('\u79d1\u7eb3'), 'KOA', 'PHKO', STRINGDECODE('\u79d1\u7eb3\u673a\u573a'), 'KONA', NULL, NULL),
+(1033, STRINGDECODE('\u5723\u5854\u5b89\u90a3'), 'SNA', '', STRINGDECODE('\u5723\u5854\u5b89\u90a3\u6a59\u90e1\u53bf\u673a\u573a'), 'SANTA ANA', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(1034, STRINGDECODE('\u5361\u80e1\u5362\u4f0a'), 'OGG', '', STRINGDECODE('\u5361\u80e1\u5362\u4f0a\u673a\u573a'), 'KAHULUI', NULL, NULL),
+(1035, STRINGDECODE('\u7532\u7c73'), 'KBV', 'VTSG', STRINGDECODE('\u7532\u7c73\u673a\u573a'), 'KRABI', NULL, NULL),
+(1036, STRINGDECODE('\u9752\u68ee'), 'AOJ', 'RJSA', STRINGDECODE('\u9752\u68ee\u673a\u573a'), 'AOMORI', NULL, NULL),
+(1037, STRINGDECODE('\u57fa\u591a'), 'UIO', 'SEQU', STRINGDECODE('\u57fa\u591a\u673a\u573a'), 'QUITO', NULL, NULL),
+(1038, STRINGDECODE('\u9ea6\u8fea\u900a'), 'MSN', 'KMSN', STRINGDECODE('\u9ea6\u8fea\u900a\u673a\u573a'), 'MADISON', NULL, NULL),
+(1039, STRINGDECODE('\u5723\u82ad\u82ad\u62c9'), 'SBA', 'KSBA', STRINGDECODE('\u5723\u82ad\u82ad\u62c9\u673a\u573a'), 'SANTA BARBARA', NULL, NULL),
+(1040, 'Springfield-Branson National', 'SGF', 'KSG', STRINGDECODE('\u65af\u666e\u6797\u83f2\u5c14\u5fb7\u673a\u573a'), 'SPRINGFIELD', NULL, NULL),
+(1042, STRINGDECODE('\u8def\u6613\u65af\u7ef4\u5c14'), 'SDF', 'KSDF', STRINGDECODE('\u8def\u6613\u65af\u7ef4\u5c14\u673a\u573a'), 'LOUISVILLE', NULL, NULL),
+(1043, 'Shimkent', 'CIT', '', STRINGDECODE('\u4ec0\u59c6\u80af\u7279\u673a\u573a'), 'SHIMKEN', NULL, NULL),
+(1044, STRINGDECODE('\u535a\u7f57\u5c3c\u4e9a'), 'BLQ', 'LIPE', STRINGDECODE('\u535a\u7f57\u5c3c\u4e9a\u673a\u573a'), 'BOLOGNA', NULL, NULL),
+(1045, STRINGDECODE('\u6d66\u90a3'), 'PNQ', 'VAPO', STRINGDECODE('\u6d66\u90a3\u673a\u573a'), 'PUNE', NULL, NULL),
+(1046, STRINGDECODE('\u97e9\u56fd\u8944\u9633'), 'YNY', 'RKNY', STRINGDECODE('\u97e9\u56fd\u8944\u9633\u673a\u573a'), 'YANGYANG', NULL, NULL),
+(1047, STRINGDECODE('\u7ef4\u8428\u5361\u5e15\u7279\u5357'), 'VTZ', '', STRINGDECODE('\u7ef4\u8428\u5361\u5e15\u7279\u5357\u673a\u573a'), 'VISHAKHAPATNAM', NULL, NULL),
+(1048, STRINGDECODE('\u535a\u5179\u66fc'), 'BZN', 'KBZN', STRINGDECODE('\u535a\u5179\u66fc\u8d1d\u5c14\u683c\u83b1\u5fb7\u673a\u573a'), 'BOZEMAN', NULL, NULL),
+(1049, STRINGDECODE('\u5409\u9686\u5761'), 'SZB', 'WMSA', STRINGDECODE('\u5409\u9686\u5761\u82cf\u4e39\u963f\u535c\u675c\u5c14\u673a\u573a'), 'KUALA LUMPUR', NULL, NULL),
+(1050, STRINGDECODE('\u62c9\u9ed8\u9f50\u4e9a'), 'SUF', 'LICA', STRINGDECODE('\u62c9\u9ed8\u9f50\u4e9a\u673a\u573a'), 'LAMEZIA TERME', NULL, NULL),
+(1051, STRINGDECODE('\u54e5\u8fbe\u5df4\u9c81'), 'KBR', '', STRINGDECODE('\u54e5\u8fbe\u5df4\u9c81\u673a\u573a'), 'KOTA BHARU', NULL, NULL),
+(1052, STRINGDECODE('\u658b\u6d66\u5c14'), 'JAI', 'VIJP', STRINGDECODE('\u658b\u6d66\u5c14\u673a\u573a'), 'JAIPUR', NULL, NULL),
+(1053, STRINGDECODE('\u74e6\u62c9\u7eb3\u897f'), 'VNS', 'VIBN', STRINGDECODE('\u74e6\u62c9\u7eb3\u897f\u673a\u573a'), 'VARANASI', NULL, NULL),
+(1054, STRINGDECODE('\u76ae\u4e4c\u62c9'), 'PIU', 'SPUR', STRINGDECODE('\u76ae\u4e4c\u62c9\u673a\u573a'), 'PIURA', NULL, NULL),
+(1055, STRINGDECODE('\u5723\u6258\u91cc\u5c3c'), 'JTR', '', STRINGDECODE('\u5723\u6258\u91cc\u5c3c\u673a\u573a'), 'SANTORINI', NULL, NULL),
+(1056, STRINGDECODE('\u675c\u9a6c\u683c\u7279'), 'DGT', 'RPVD', STRINGDECODE('\u675c\u9a6c\u683c\u7279\u673a\u573a'), 'DUMAGUETE', NULL, NULL),
+(1057, STRINGDECODE('\u96f7\u514b\u4e9a\u672a\u514b'), 'RKV', 'BIRK', STRINGDECODE('\u96f7\u514b\u4e9a\u672a\u514b\u673a\u573a'), 'REYKJAVIK', NULL, NULL),
+(1058, STRINGDECODE('\u52a0\u683c\u8fbe\u5947'), 'JGD', '', STRINGDECODE('\u52a0\u683c\u8fbe\u5947\u673a\u573a'), STRINGDECODE('\u52a0\u683c\u8fbe\u5947'), NULL, NULL),
+(1059, STRINGDECODE('\u82cf\u798f\u5c14\u65af'), 'FSD', 'KFSD', STRINGDECODE('\u82cf\u798f\u5c14\u65af\u673a\u573a'), 'SIOUX FALLS', NULL, NULL),
+(1060, STRINGDECODE('\u5e03\u83b1\u514b\u5e03\u65af'), 'BBS', '', STRINGDECODE('\u5e03\u83b1\u514b\u5e03\u65af\u673a\u573a'), 'BLACKBUSH', NULL, NULL),
+(1061, STRINGDECODE('\u6cd5\u6208'), 'FAR', 'KFAR', STRINGDECODE('\u6cd5\u6208\u8d6b\u514b\u673a\u573a'), 'FARGO', NULL, NULL),
+(1062, STRINGDECODE('\u9102\u6728\u65af\u514b'), 'OMS', 'UNOO', STRINGDECODE('\u9102\u6728\u65af\u514b\u673a\u573a'), 'OMSK', NULL, NULL),
+(1063, STRINGDECODE('\u5c24\u91d1'), 'EUG', 'KEUG', STRINGDECODE('\u5c24\u91d1\u673a\u573a'), 'EUGENE', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(1064, STRINGDECODE('\u7f57\u963f\u8bfa\u514b'), 'ROA', 'KROA', STRINGDECODE('\u7f57\u963f\u8bfa\u514b\u673a\u573a'), STRINGDECODE('\u7f57\u963f\u8bfa\u514b'), NULL, NULL),
+(1065, STRINGDECODE('\u5766\u5e15'), 'TPA', '', STRINGDECODE('\u5766\u5e15\u673a\u573a'), 'TAMPA', NULL, NULL),
+(1066, STRINGDECODE('\u7f57\u5229\u8fbe\u52d2\u59c6'), 'RDU', 'KRDU', STRINGDECODE('\u7f57\u5229\u8fbe\u52d2\u59c6\u673a\u573a'), 'RALEIGH DURHAM', NULL, NULL),
+(1067, STRINGDECODE('\u5723\u4fdd\u7f57'), 'CGH', 'SBSP', STRINGDECODE('\u5723\u4fdd\u7f57\u5b54\u6208\u5c3c\u4e9a\u65af\u673a\u573a'), 'SAO PAULO', NULL, NULL),
+(1068, STRINGDECODE('\u54e5\u4f26\u5e03'), 'CSG', 'KCSG', STRINGDECODE('\u54e5\u4f26\u5e03\u673a\u573a'), 'COLUMBUS', NULL, NULL),
+(1069, STRINGDECODE('\u8428\u514b\u62c9\u95e8\u6258'), 'SMF', 'KSMF', STRINGDECODE('\u8428\u514b\u62c9\u95e8\u6258\u673a\u573a'), 'SACRAMENTO', NULL, NULL),
+(1070, STRINGDECODE('\u5f17\u5362\u91cc\u4e9a\u8bfa\u6ce2\u5229\u65af'), 'FLN', '', STRINGDECODE('\u5f17\u5362\u91cc\u4e9a\u8bfa\u6ce2\u5229\u65af\u673a\u573a'), 'FLORIANOPOLIS', NULL, NULL),
+(1071, STRINGDECODE('\u5854\u6797'), 'TLL', 'EETN', STRINGDECODE('\u4f26\u7eb3\u7279?\u6885\u91cc\u5854\u6797\u673a\u573a'), 'TALLINN', NULL, NULL),
+(1072, STRINGDECODE('\u963f\u8fbe\u7eb3'), 'ADA', 'LTAF', STRINGDECODE('\u963f\u8fbe\u7eb3\u673a\u573a'), 'ADANA', NULL, NULL),
+(1073, STRINGDECODE('\u57fa\u97e6\u65af\u5fb7'), 'EYW', '', STRINGDECODE('\u57fa\u97e6\u65af\u5fb7\u673a\u573a'), 'KEY WEST', NULL, NULL),
+(1074, STRINGDECODE('\u57c3\u963f\u574e'), 'ECN', 'LCEN', STRINGDECODE('\u57c3\u963f\u574e\u673a\u573a'), 'ERCAN', NULL, NULL),
+(1075, STRINGDECODE('\u5723\u585e\u74e6\u65af\u8482\u5b89'), 'EAS', '', STRINGDECODE('\u5723\u585e\u74e6\u65af\u8482\u5b89\u673a\u573a'), 'SAN SEBASTIAN', NULL, NULL),
+(1076, STRINGDECODE('\u5361\u5c14\u65af\u5df4\u5fb7'), 'CNM', '', STRINGDECODE('\u5361\u5c14\u65af\u5df4\u5fb7\u673a\u573a'), 'CARLSBAD', NULL, NULL),
+(1077, STRINGDECODE('\u5e03\u5b9c\u8bfa\u65af\u827e\u5229\u65af'), 'AEP', 'SABE', STRINGDECODE('\u5e03\u5b9c\u8bfa\u65af\u827e\u5229\u65af\u970d\u5c14\u8d6b\u7ebd\u8d1d\u91cc\u673a\u573a'), 'BUENOS AIRES', NULL, NULL),
+(1078, STRINGDECODE('\u963f\u65af\u5f6d'), 'ASE', 'KASE', STRINGDECODE('\u963f\u65af\u5f6d\u673a\u573a'), 'ASPEN', NULL, NULL),
+(1079, STRINGDECODE('\u5f00\u585e\u5229'), 'ASR', 'LTAU', STRINGDECODE('\u5f00\u585e\u5229\u673a\u573a'), 'KAYSERI', NULL, NULL),
+(1080, STRINGDECODE('\u5e0c\u6d1b'), 'ITO', 'PHTO', STRINGDECODE('\u5e0c\u6d1b\u673a\u573a'), 'HILO', NULL, NULL),
+(1082, STRINGDECODE('\u79d1\u73c0\u65af\u514b\u91cc\u65af\u8482'), 'CRP', '', STRINGDECODE('\u79d1\u73c0\u65af\u514b\u91cc\u65af\u8482\u673a\u573a'), 'CORPUS CHRISTI', NULL, NULL),
+(1083, STRINGDECODE('\u4f73\u7279\u571f'), 'KDM', '', STRINGDECODE('\u4f73\u7279\u571f\u673a\u573a'), 'KAADEDHDHOO', NULL, NULL),
+(1084, STRINGDECODE('\u62c9\u76ae\u5fb7\u57ce'), 'RAP', '', STRINGDECODE('\u62c9\u76ae\u5fb7\u57ce\u673a\u573a'), 'RAPID CITY', NULL, NULL),
+(1085, STRINGDECODE('\u8499\u7279\u96f7'), 'MRY', '', STRINGDECODE('\u8499\u7279\u96f7\u673a\u573a'), 'MONTEREY', NULL, NULL),
+(1086, STRINGDECODE('\u4ea8\u5fb7\u68ee'), 'HNZ', '', STRINGDECODE('\u4ea8\u5fb7\u68ee\u673a\u573a'), 'HENDERSON', NULL, NULL),
+(1087, STRINGDECODE('\u987a\u5316'), 'HUI', 'VVPB', STRINGDECODE('\u987a\u5316\u5bcc\u724c\u673a\u573a'), 'HUE', NULL, NULL),
+(1088, STRINGDECODE('\u57c3\u5c14?\u5e15\u7d22'), 'ELP', '', STRINGDECODE('\u57c3\u5c14?\u5e15\u7d22\u673a\u573a'), 'EL PASO', NULL, NULL),
+(1089, STRINGDECODE('\u535a\u5361\u62c9'), 'PKR', 'VNPK', STRINGDECODE('\u535a\u5361\u62c9\u673a\u573a'), 'POKHARA', NULL, NULL),
+(1090, STRINGDECODE('\u624e\u91d1\u7d22\u65af'), 'ZTH', 'LGZA', STRINGDECODE('\u624e\u91d1\u7d22\u65af\u673a\u573a'), 'ZAKINTHOS', NULL, NULL),
+(1092, STRINGDECODE('\u514b\u96f7\u5854\u7f57'), 'QRO', 'XXXX', STRINGDECODE('\u514b\u96f7\u5854\u7f57\u673a\u573a'), 'QUERETARO', NULL, NULL),
+(1093, STRINGDECODE('\u6d77\u65c1'), 'LOP', 'WADL', STRINGDECODE('\u6d77\u65c1\u673a\u573a'), 'PRAYA', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(1094, STRINGDECODE('\u62c9\u5948'), 'LNY', 'PHNY', STRINGDECODE('\u62c9\u5948\u673a\u573a'), 'LANAI CITY', NULL, NULL),
+(1095, STRINGDECODE('\u5854\u97e6\u4e4c\u5c3c\u5c9b'), 'TVU', '', STRINGDECODE('\u5854\u97e6\u4e4c\u5c3c\u5c9b\u673a\u573a'), 'TAVEUNI ISLAND', NULL, NULL),
+(1096, STRINGDECODE('\u683c\u8fde\u5409\u514b'), 'GDZ', '', STRINGDECODE('\u683c\u8fde\u5409\u514b\u673a\u573a'), 'GELENDZIK', NULL, NULL),
+(1097, STRINGDECODE('\u574e\u6606'), 'CUN', 'MMUN', STRINGDECODE('\u574e\u6606\u673a\u573a'), 'CANCUN', NULL, NULL),
+(1098, STRINGDECODE('\u8def\u6613\u65af?\u7a46\u5c3c\u5965\u65af?\u9a6c\u6797'), 'SJU', 'TJSJ', STRINGDECODE('\u8def\u6613\u65af?\u7a46\u5c3c\u5965\u65af?\u9a6c\u6797\u673a\u573a'), 'SAN JUAN', NULL, NULL),
+(1099, STRINGDECODE('\u8d1d\u6d1b\u5965\u91cc\u85cf\u7279'), 'PLU', 'SBBH', STRINGDECODE('\u8d1d\u6d1b\u5965\u91cc\u85cf\u7279\u673a\u573a'), 'BELO HORIZONT', NULL, NULL),
+(1100, STRINGDECODE('\u8d1d\u6d1b\u5965\u91cc\u85cf\u7279'), 'CNF', 'SBCF', STRINGDECODE('\u5766\u514b\u96f7\u591a\u5185\u7ef4\u65af\u673a\u573a'), 'BELO HORIZONT', NULL, NULL),
+(1101, STRINGDECODE('\u74e6\u62c9\u5fb7'), 'VRA', '', STRINGDECODE('\u74e6\u62c9\u5fb7\u673a\u573a'), 'VARADERO', NULL, NULL),
+(1102, STRINGDECODE('\u4e4c\u8d1d\u5170\u8fea\u4e9a'), 'UDI', 'SBUL', STRINGDECODE('\u4e4c\u8d1d\u5170\u8fea\u4e9a\u673a\u573a'), 'UBERLANDIA', NULL, NULL),
+(1103, STRINGDECODE('\u5723\u4fdd\u7f57'), 'VCP', '', STRINGDECODE('\u574e\u76ae\u7eb3\u65af\u673a\u573a'), 'SAO PAULO', NULL, NULL),
+(1104, STRINGDECODE('\u963f\u62c9\u5361\u8339'), 'AJU', 'SBAR', STRINGDECODE('\u963f\u62c9\u5361\u8339\u673a\u573a'), 'ARACAJU', NULL, NULL),
+(1105, STRINGDECODE('\u6885\u80af'), 'MCN', 'KMCN', STRINGDECODE('\u6885\u80af\u673a\u573a'), 'MACON', NULL, NULL),
+(1106, STRINGDECODE('\u6731\u5df4'), 'JUB', 'HSSJ', STRINGDECODE('\u6731\u5df4\u673a\u573a'), 'JUBA', NULL, NULL),
+(1107, STRINGDECODE('\u6c55\u5934'), '', 'ZGOW', STRINGDECODE('\u63ed\u9633\u673a\u573a'), 'JIEYANG', NULL, NULL),
+(1108, STRINGDECODE('\u590d\u6d3b\u8282\u5c9b'), 'IPC', 'SCI', STRINGDECODE('\u590d\u6d3b\u8282\u5c9b\u9a6c\u5854\u7ef4\u91cc\u673a\u573a'), 'EASTER ISLAND', NULL, NULL),
+(1109, STRINGDECODE('\u9e1f\u53d6'), 'YGJ', 'RJOH', STRINGDECODE('\u9e1f\u53d6\u673a\u573a'), 'YONAGO', NULL, NULL),
+(1110, STRINGDECODE('\u5e15\u76ae\u63d0'), 'PPT', 'NTAA', STRINGDECODE('\u5e15\u76ae\u63d0\u673a\u573a'), 'PAPEETE', NULL, NULL),
+(1111, STRINGDECODE('\u82bd\u5e84'), 'CXR', '', STRINGDECODE('\u82bd\u5e84\u91d1\u5170\u673a\u573a'), 'NHA TRANG', NULL, NULL),
+(1112, STRINGDECODE('\u57c3\u56e0\u970d\u6e29'), 'EIN', '', STRINGDECODE('\u57c3\u56e0\u970d\u6e29\u673a\u573a'), 'EINDHOVEN', NULL, NULL),
+(1113, STRINGDECODE('\u96ea\u57ce'), 'SYR', 'KSYR', STRINGDECODE('\u96ea\u57ce\u6c49\u8003\u514b\u673a\u573a'), 'SYRACUSE', NULL, NULL),
+(1114, STRINGDECODE('\u5927\u53fb'), 'DLI', 'VVDL', STRINGDECODE('\u5927\u53fb\u83b2\u59dc\u673a\u573a'), 'DALAT', NULL, NULL),
+(1115, STRINGDECODE('\u7f8e\u91cc'), 'MYY', 'WBGR', STRINGDECODE('\u7f8e\u91cc\u673a\u573a'), 'MIRI', NULL, NULL),
+(1116, STRINGDECODE('\u91cc\u8d3e\u7eb3'), 'YQR', 'CYQR', STRINGDECODE('\u91cc\u8d3e\u7eb3\u673a\u573a'), 'REGINA', NULL, NULL),
+(1117, STRINGDECODE('\u963f\u6bd4\u8ba9'), 'ABJ', 'DIAP', STRINGDECODE('\u963f\u6bd4\u8ba9\u673a\u573a'), 'ABIDJAN', NULL, NULL),
+(1118, STRINGDECODE('\u4f0a\u74dc\u82cf\u7011\u5e03'), 'IGU', 'SBFI', STRINGDECODE('\u4f0a\u74dc\u82cf\u7011\u5e03\u673a\u573a'), 'IGUAZU FALLS', NULL, NULL),
+(1119, STRINGDECODE('\u9f99\u8bb7\u6bd4'), 'RNB', '', STRINGDECODE('\u9f99\u8bb7\u6bd4\u673a\u573a'), 'RONNEBY', NULL, NULL),
+(1120, STRINGDECODE('\u4e9a\u7f57\u58eb\u6253'), 'AOR', 'WMKA', STRINGDECODE('AOR\u673a\u573a'), 'ALOR SETAR', NULL, NULL),
+(1121, STRINGDECODE('\u4e4c\u620e\u6f58\u5f53'), 'UPG', 'WAAA', STRINGDECODE('\u4e4c\u620e\u6f58\u5f53\u673a\u573a'), 'UJUNG PANDANG', NULL, NULL),
+(1122, STRINGDECODE('\u8363\u5e02'), 'VII', '', STRINGDECODE('\u8363\u5e02\u673a\u573a'), 'VINH CITY', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(1123, STRINGDECODE('\u514b\u62c9\u65af\u8bfa\u8fbe'), 'KRR', 'URKK', STRINGDECODE('\u514b\u62c9\u65af\u8bfa\u8fbe\u673a\u573a'), 'KRASNODAR', NULL, NULL),
+(1124, STRINGDECODE('\u4e5e\u529b\u9a6c\u624e\u7f57'), 'JRO', 'HTKJ', STRINGDECODE('\u4e5e\u529b\u9a6c\u624e\u7f57\u673a\u573a'), 'KILIMANJARO', NULL, NULL),
+(1125, STRINGDECODE('\u5f6d\u8428\u79d1\u62c9'), 'PNS', 'KPNS', STRINGDECODE('\u5f6d\u8428\u79d1\u62c9\u673a\u573a'), 'PENSACOLA', NULL, NULL),
+(1126, STRINGDECODE('\u660c\u8fea\u52a0\u5c14'), 'IXC', '', STRINGDECODE('\u660c\u8fea\u52a0\u5c14\u673a\u573a'), 'CHANDIGARH', NULL, NULL),
+(1127, STRINGDECODE('\u65e5\u60f9'), 'JOG', 'WARJ', STRINGDECODE('\u65e5\u60f9\u673a\u573a'), 'YOGYAKARTA', NULL, NULL),
+(1128, STRINGDECODE('\u5362\u6b66\u514b'), 'LUW', 'WAMW', STRINGDECODE('\u5362\u6b66\u514b\u673a\u573a'), 'LUWUK', NULL, NULL),
+(1129, STRINGDECODE('\u4f0a\u62c9\u514b\u5229\u7fc1'), 'HER', '', STRINGDECODE('\u4f0a\u62c9\u514b\u5229\u7fc1\u673a\u573a'), 'HERAKLION', NULL, NULL),
+(1130, STRINGDECODE('\u5c71\u6253\u6839'), 'SDK', 'WBKS', STRINGDECODE('\u5c71\u6253\u6839\u673a\u573a'), 'SANDAKAN', NULL, NULL),
+(1131, STRINGDECODE('\u5e03\u52a0\u65af'), 'BOJ', '', STRINGDECODE('\u5e03\u52a0\u65af\u673a\u573a'), 'BOURGAS', NULL, NULL),
+(1132, STRINGDECODE('\u963f\u7279\u52b3'), 'GUW', 'UATG', STRINGDECODE('\u963f\u7279\u52b3\u673a\u573a'), 'ATYRAU', NULL, NULL),
+(1133, STRINGDECODE('\u5229\u6587\u65af\u901a'), 'LVI', 'FLLI', STRINGDECODE('\u5229\u6587\u65af\u901a\u673a\u573a'), 'LIVINGSTONE', NULL, NULL),
+(1134, STRINGDECODE('\u8499\u5df4\u8428'), 'MBA', 'HKMO', STRINGDECODE('\u8499\u5df4\u8428\u673a\u573a'), 'MOMBASA', NULL, NULL),
+(1135, STRINGDECODE('\u7684\u91cc\u96c5\u65af\u7279'), 'TRS', 'LIPQ', STRINGDECODE('\u7684\u91cc\u96c5\u65af\u7279\u673a\u573a'), 'TRIESTE', NULL, NULL),
+(1136, STRINGDECODE('\u666e\u62c9\u68ee\u897f\u4e9a'), 'PLJ', '', STRINGDECODE('\u666e\u62c9\u68ee\u897f\u4e9a\u673a\u573a'), 'PLACENCIA', NULL, NULL),
+(1137, STRINGDECODE('\u5f6d\u4e16\u6d1b'), 'PHS', 'VTPP', STRINGDECODE('\u5f6d\u4e16\u6d1b\u673a\u573a'), 'PHITSANULOK', NULL, NULL),
+(1138, STRINGDECODE('\u827e\u5c14\u65af\u5ca9'), 'AYQ', '', STRINGDECODE('\u5eb7\u5185\u5c14\u5170\u673a\u573a'), 'AYERS ROCK', NULL, NULL),
+(1139, STRINGDECODE('\u827e\u56e0'), 'AAN', 'OMAL', STRINGDECODE('\u827e\u56e0\u673a\u573a'), 'AL AIN', NULL, NULL),
+(1140, STRINGDECODE('\u65af\u5854\u7279\u5927\u5b66'), 'SCE', 'KUNV', STRINGDECODE('\u65af\u5854\u7279\u5927\u5b66\u673a\u573a'), 'STATE COLLEGE', NULL, NULL),
+(1141, STRINGDECODE('\u79d1\u7f57\u5c14'), 'ROR', 'PTRO', STRINGDECODE('\u79d1\u7f57\u5c14\u673a\u573a'), 'KOROR', NULL, NULL),
+(1142, STRINGDECODE('\u83ab\u7f57\u5c3c'), 'HAH', 'FMCH', STRINGDECODE('\u83ab\u7f57\u5c3c\u673a\u573a'), 'MORONI', NULL, NULL),
+(1143, STRINGDECODE('\u9ad8\u77e5'), 'KCZ', 'RJOK', STRINGDECODE('\u9ad8\u77e5\u673a\u573a'), 'KOCHI', NULL, NULL),
+(1144, STRINGDECODE('\u8bd7\u5deb'), 'SBW', 'WBGS', STRINGDECODE('\u8bd7\u5deb\u673a\u573a'), 'SIBU', NULL, NULL),
+(1145, STRINGDECODE('\u585e\u8428\u6d1b\u5c3c\u57fa'), 'SKG', 'LGTS', STRINGDECODE('\u585e\u8428\u6d1b\u5c3c\u57fa\u673a\u573a'), 'THESSALONIKI', NULL, NULL),
+(1146, STRINGDECODE('\u4e07\u9686'), 'BDO', 'WICC', STRINGDECODE('\u4e07\u9686\u673a\u573a'), 'BANDUNG', NULL, NULL),
+(1147, STRINGDECODE('\u5bcc\u56fd\u5c9b'), 'PQC', 'VVPQ', STRINGDECODE('\u5bcc\u56fd\u5c9b\u673a\u573a'), 'PHU QUOC', NULL, NULL),
+(1148, STRINGDECODE('\u7f57\u5207\u65af\u7279'), 'ROC', 'KROC', STRINGDECODE('\u7f57\u5207\u65af\u7279\u673a\u573a'), 'ROCHESTE', NULL, NULL),
+(1149, STRINGDECODE('\u5c0f\u77f3\u57ce'), 'LIT', 'KLIT', STRINGDECODE('\u5c0f\u77f3\u57ce\u673a\u573a'), 'LITTLE ROCK', NULL, NULL),
+(1150, STRINGDECODE('\u5fb7\u5c9b'), 'TKS', 'RJOS', STRINGDECODE('\u5fb7\u5c9b\u673a\u573a'), 'TOKUSHIMA', NULL, NULL),
+(1151, STRINGDECODE('\u5973\u6ee1\u522b'), 'MMB', 'RJCM', STRINGDECODE('\u5973\u6ee1\u522b\u673a\u573a'), 'MEMANBETSU', NULL, NULL),
+(1152, STRINGDECODE('\u897f\u68d5\u6988\u6ee9'), 'PBI', 'KPBI', STRINGDECODE('\u897f\u68d5\u6988\u6ee9\u673a\u573a'), 'WEST PALM BEACH', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(1153, STRINGDECODE('\u6797\u96ea\u5e73'), 'LPI', '', STRINGDECODE('\u6797\u96ea\u5e73\u673a\u573a'), 'LINKOEPING', NULL, NULL),
+(1154, STRINGDECODE('\u6c64\u65af\u7ef4\u5c14'), 'TSV', 'YBTL', STRINGDECODE('\u6c64\u65af\u7ef4\u5c14\u673a\u573a'), 'TOWNSVILLE', NULL, NULL),
+(1155, STRINGDECODE('\u6069\u8d3e\u6885\u7eb3'), 'NDJ', 'FTTJ', STRINGDECODE('\u6069\u8d3e\u6885\u7eb3\u673a\u573a'), 'NDJAMENA', NULL, NULL),
+(1156, STRINGDECODE('\u827e\u4e3d\u65af\u65af\u666e\u6797\u65af'), 'ASP', '', STRINGDECODE('\u827e\u4e3d\u65af\u65af\u666e\u6797\u65af\u673a\u573a'), 'ALICE SPRINGS', NULL, NULL),
+(1157, STRINGDECODE('\u6606\u5c9b'), 'VCS', '', STRINGDECODE('\u6606\u5c9b\u673a\u573a'), 'CON DAO', NULL, NULL),
+(1158, STRINGDECODE('\u5bc6\u5c14\u6c83\u57fa'), 'MKE', 'KMKE', STRINGDECODE('\u5bc6\u5c14\u6c83\u57fa\u8bfa\u82e5\u673a\u573a'), 'MILWAUKEE', NULL, NULL),
+(1159, STRINGDECODE('\u5854\u90a3\u90a3\u5229\u4f5b'), 'TNR', 'FMMI', STRINGDECODE('\u5854\u90a3\u90a3\u5229\u4f5b\u673a\u573a'), 'ANTANANARIV', NULL, NULL),
+(1160, STRINGDECODE('\u8bfa\u514b\u65af\u7ef4\u5c14'), 'TYS', 'KTYS', STRINGDECODE('\u8bfa\u514b\u65af\u7ef4\u5c14\u673a\u573a'), 'KNOXVILLE', NULL, NULL),
+(1161, STRINGDECODE('\u5927\u6eaa\u57ce'), 'GRR', '', STRINGDECODE('\u5927\u6eaa\u57ce\u673a\u573a'), 'GRAND RAPIDS', NULL, NULL),
+(1162, STRINGDECODE('\u5723\u4e39\u5c3c\u65af'), 'RUN', '', STRINGDECODE('\u5723\u4e39\u5c3c\u65af\u673a\u573a'), 'SAINT DENIS REUNION', NULL, NULL),
+(1163, STRINGDECODE('\u5e03\u9686\u65b9\u4e39'), 'BFN', 'FABL', STRINGDECODE('\u5e03\u9686\u65b9\u4e39\u673a\u573a'), 'BLOEMFONTEIN', NULL, NULL),
+(1164, STRINGDECODE('\u963f\u96f7\u683c\u91cc\u6e2f'), 'POA', 'SBPA', STRINGDECODE('\u963f\u96f7\u683c\u91cc\u6e2f\u673a\u573a'), 'PORTO ALEGRE', NULL, NULL),
+(1165, STRINGDECODE('\u5f17\u96f7\u65af\u8bfa'), 'FAT', 'KFAT', STRINGDECODE('\u5f17\u96f7\u65af\u8bfa\u673a\u573a'), 'FRESNO', NULL, NULL),
+(1166, STRINGDECODE('\u6851\u7ed9\u5df4\u5c14'), 'ZNZ', 'HTZA', STRINGDECODE('\u6851\u7ed9\u5df4\u5c14\u673a\u573a'), 'ZANZIBA', NULL, NULL),
+(1167, STRINGDECODE('\u4e9a\u677e\u68ee'), 'ASU', 'SGAS', STRINGDECODE('\u4e9a\u677e\u68ee\u673a\u573a'), 'ASUNCION', NULL, NULL),
+(1168, STRINGDECODE('\u6c49\u8003\u514b'), 'CMX', 'KCMX', STRINGDECODE('\u6c49\u8003\u514b\u673a\u573a'), 'HANCOCK', NULL, NULL),
+(1169, STRINGDECODE('\u6d77\u9632'), 'HPH', 'VVCI', STRINGDECODE('\u6d77\u9632\u673a\u573a'), 'HAIPHONG', NULL, NULL),
+(1170, STRINGDECODE('\u82bd\u5e84'), 'NHA', 'VVNT', STRINGDECODE('\u82bd\u5e84\u673a\u573a'), 'NHA TRANG', NULL, NULL),
+(1171, STRINGDECODE('\u9ea6\u5361\u4f26'), 'MFE', 'KMFE', STRINGDECODE('\u9ea6\u5361\u4f26\u673a\u573a'), 'MCALLEN', NULL, NULL),
+(1172, STRINGDECODE('\u683c\u62c9\u7eb3\u8fbe'), 'GRX', '', STRINGDECODE('\u683c\u62c9\u7eb3\u8fbe\u673a\u573a'), 'GRANADA', NULL, NULL),
+(1173, STRINGDECODE('\u963f\u514b\u5957'), 'SCO', 'UATE', STRINGDECODE('\u963f\u514b\u5957\u673a\u573a'), 'AKTAU', NULL, NULL),
+(1174, STRINGDECODE('\u514b\u83b1\u8499\u8d39\u6717'), 'CFE', '', STRINGDECODE('\u514b\u83b1\u8499\u8d39\u6717\u673a\u573a'), 'CLERMONT-FERRAND', NULL, NULL),
+(1175, STRINGDECODE('\u54e5\u4f26\u5e03'), 'CMH', 'KCMH', STRINGDECODE('\u54e5\u4f26\u5e03\u6e2f\u673a\u573a'), 'COLUMBUS', NULL, NULL),
+(1176, STRINGDECODE('\u8428\u9a6c\u62c9'), 'KUF', 'UWWW', STRINGDECODE('\u8428\u9a6c\u62c9\u673a\u573a'), 'SAMARA', NULL, NULL),
+(1177, STRINGDECODE('\u70ed\u6d6a\u5c9b'), 'RDN', '', STRINGDECODE('\u70ed\u6d6a\u5c9b\u673a\u573a'), 'REDANG ISLAND', NULL, NULL),
+(1178, STRINGDECODE('\u83b1\u57ce'), 'LAE', '', STRINGDECODE('\u83b1\u57ce\u673a\u573a'), 'LAE', NULL, NULL),
+(1179, STRINGDECODE('\u79d1\u6bd4\u4e9a\u6ce2'), 'CPO', 'SCHA', STRINGDECODE('\u79d1\u6bd4\u4e9a\u6ce2\u673a\u573a'), 'COPIAPO', NULL, NULL),
+(1180, STRINGDECODE('\u8428\u5c14\u74e6\u591a'), 'ESR', '', STRINGDECODE('\u8428\u5c14\u74e6\u591a\u673a\u573a'), STRINGDECODE('\u8428\u5c14\u74e6\u591a'), NULL, NULL),
+(1181, STRINGDECODE('\u5f52\u4ec1'), 'UIH', 'VVQN', STRINGDECODE('\u5f52\u4ec1\u673a\u573a'), 'QUI NHON', NULL, NULL);
+INSERT INTO PUBLIC.AIRPORTCODE(ID, NAME, THREECODE, FOURCODE, AIRPORTNAME, ENNAME, COUNTY, CONTINENT) VALUES
+(1182, STRINGDECODE('\u987f\u6d85\u8328\u514b'), 'DOK', 'UKCC', STRINGDECODE('\u987f\u6d85\u8328\u514b\u673a\u573a'), 'DONETSK', NULL, NULL),
+(1183, STRINGDECODE('\u4ec0\u91cc\u592b\u6ce2\u7279'), 'SHV', 'KSHV', STRINGDECODE('\u4ec0\u91cc\u592b\u6ce2\u7279\u673a\u573a'), 'SHREVEPORT', NULL, NULL),
+(1184, STRINGDECODE('\u8fea\u6bd4\u514b'), 'DBQ', 'KDBQ', STRINGDECODE('\u8fea\u6bd4\u514b\u673a\u573a'), 'DUBUQUE', NULL, NULL),
+(1185, STRINGDECODE('\u5361\u62c9\u7279\u54c8'), 'KTA', '', STRINGDECODE('\u5361\u62c9\u7279\u54c8\u673a\u573a'), 'KARRATHA', NULL, NULL),
+(1186, STRINGDECODE('\u4e3d\u6c34'), 'RSU', 'RKJY', STRINGDECODE('\u4e3d\u6c34\u673a\u573a'), 'YEOSU', NULL, NULL),
+(1187, STRINGDECODE('\u5de8\u6e2f'), 'PLM', 'WIPP', STRINGDECODE('\u5de8\u6e2f\u673a\u573a'), 'PALEMBANG', NULL, NULL),
+(1188, STRINGDECODE('\u8d1d\u52a0\u83ab'), 'BGY', 'LIME', STRINGDECODE('\u8d1d\u52a0\u83ab\u673a\u573a'), 'BERGAMO', NULL, NULL),
+(1189, STRINGDECODE('\u74e6\u4f26\u897f\u4e9a'), 'VLC', 'LEVC', STRINGDECODE('\u74e6\u4f26\u897f\u4e9a\u673a\u573a'), 'VALENCIA', NULL, NULL),
+(1190, STRINGDECODE('\u7a46\u9f99\u8fbe\u74e6'), 'MOQ', 'FMMV', STRINGDECODE('\u7a46\u9f99\u8fbe\u74e6\u673a\u573a'), 'MORONDAVA', NULL, NULL),
+(1191, STRINGDECODE('\u6885\u91cc\u8fbe'), 'MID', 'MMMD', STRINGDECODE('\u6885\u91cc\u8fbe\u673a\u573a'), 'MERIDA', NULL, NULL),
+(1192, STRINGDECODE('\u5723\u9a6c\u4e3d\u4e9a'), 'SMX', '', STRINGDECODE('\u5723\u9a6c\u4e3d\u4e9a\u673a\u573a'), 'SANTA MARIA', NULL, NULL),
+(1193, STRINGDECODE('\u5b89\u79d1\u7eb3'), 'AOI', 'LIPY', STRINGDECODE('\u5b89\u79d1\u7eb3\u673a\u573a'), 'ANCONA', NULL, NULL),
+(1194, STRINGDECODE('\u4e0b\u74e6\u5c14\u6258\u592b\u65af\u514b'), 'NJC', '', STRINGDECODE('\u4e0b\u74e6\u5c14\u6258\u592b\u65af\u514b\u673a\u573a'), 'NIZHNEVARTOVSK', NULL, NULL),
+(1195, STRINGDECODE('\u68d5\u6988\u6cc9'), 'PSP', 'KPSP', STRINGDECODE('Palm Springs\u673a\u573a'), 'PALM SPRINGS', NULL, NULL),
+(1196, STRINGDECODE('\u96f7\u5fb7\u8499\u5fb7'), 'RDM', 'KRDM', STRINGDECODE('\u96f7\u5fb7\u8499\u5fb7\u673a\u573a'), 'REDMOND', NULL, NULL),
+(1197, STRINGDECODE('\u4f0a\u8428\u5361'), 'ITH', 'KITH', STRINGDECODE('\u4f0a\u8428\u5361\u673a\u573a'), 'ITHACA', NULL, NULL),
+(1198, STRINGDECODE('\u666e\u7f57\u745f\u6d3e\u6069'), 'PPP', '', STRINGDECODE('\u666e\u7f57\u745f\u6d3e\u6069\u673a\u573a'), 'PROSERPINE', NULL, NULL),
+(1199, STRINGDECODE('\u8499\u7279\u5229\u5c14'), 'YUL', 'CYUL', STRINGDECODE('\u8499\u7279\u5229\u5c14\u7279\u9c81\u591a\u673a\u573a'), 'MONTREAL', NULL, NULL);
+CREATE CACHED TABLE PUBLIC.AREA(
+    ID INT DEFAULT (NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_7F2845FF_3DF9_4803_A054_18619B04FFBE) NOT NULL NULL_TO_DEFAULT SEQUENCE PUBLIC.SYSTEM_SEQUENCE_7F2845FF_3DF9_4803_A054_18619B04FFBE,
+    NAME VARCHAR(100),
+    PARENT INT
+);
+ALTER TABLE PUBLIC.AREA ADD CONSTRAINT PUBLIC.CONSTRAINT_1 PRIMARY KEY(ID);
+-- 207 +/- SELECT COUNT(*) FROM PUBLIC.AREA;
+INSERT INTO PUBLIC.AREA(ID, NAME, PARENT) VALUES
+(1, STRINGDECODE('\u4e9a\u6d32'), 0),
+(2, STRINGDECODE('\u6b27\u6d32'), 0),
+(3, STRINGDECODE('\u7f8e\u6d32'), 0),
+(4, STRINGDECODE('\u975e\u6d32'), 0),
+(5, STRINGDECODE('\u5927\u6d0b\u6d32'), 0),
+(6, STRINGDECODE('\u671d\u9c9c'), 1),
+(7, STRINGDECODE('\u65e5\u672c'), 1),
+(8, STRINGDECODE('\u6587\u83b1'), 1),
+(9, STRINGDECODE('\u65b0\u52a0\u5761'), 1),
+(10, STRINGDECODE('\u9a6c\u6765\u897f\u4e9a'), 1),
+(11, STRINGDECODE('\u5370\u5ea6'), 1),
+(12, STRINGDECODE('\u963f\u5bcc\u6c57'), 1),
+(13, STRINGDECODE('\u5766\u5409\u514b\u65af\u5766'), 1),
+(14, STRINGDECODE('\u4e4c\u5179\u522b\u514b\u65af\u5766'), 1),
+(15, STRINGDECODE('\u571f\u5e93\u66fc\u65af\u5766'), 1),
+(16, STRINGDECODE('\u4f0a\u6717'), 1),
+(17, STRINGDECODE('\u4f0a\u62c9\u514b'), 1),
+(18, STRINGDECODE('\u79d1\u5a01\u7279'), 1),
+(19, STRINGDECODE('\u963f\u8054\u914b'), 1),
+(20, STRINGDECODE('\u5361\u5854\u5c14'), 1),
+(21, STRINGDECODE('\u54c8\u8428\u514b\u65af\u5766'), 1),
+(22, STRINGDECODE('\u4e5f\u95e8'), 1),
+(23, STRINGDECODE('\u5fb7\u56fd'), 2),
+(24, STRINGDECODE('\u4e39\u9ea6'), 2),
+(25, STRINGDECODE('\u82f1\u56fd'), 2),
+(26, STRINGDECODE('\u6cd5\u56fd'), 2),
+(27, STRINGDECODE('\u6377\u514b'), 2),
+(28, STRINGDECODE('\u65af\u6d1b\u4f10\u514b'), 2),
+(29, STRINGDECODE('\u5308\u7259\u5229'), 2),
+(30, STRINGDECODE('\u963f\u6839\u5ef7'), 3),
+(31, STRINGDECODE('\u4e4c\u62c9\u572d'), 3),
+(32, STRINGDECODE('\u5df4\u62c9\u572d'), 3),
+(33, STRINGDECODE('\u5df4\u897f'), 3),
+(34, STRINGDECODE('\u79d8\u9c81'), 3),
+(35, STRINGDECODE('\u73bb\u5229\u7ef4\u4e9a'), 3),
+(36, STRINGDECODE('\u7f8e\u56fd'), 3),
+(37, STRINGDECODE('\u52a0\u62ff\u5927'), 3),
+(38, STRINGDECODE('\u6d2a\u90fd\u62c9\u65af'), 3),
+(39, STRINGDECODE('\u591a\u7c73\u5c3c\u52a0'), 3),
+(40, STRINGDECODE('\u591a\u7c73\u5c3c\u514b'), 3),
+(41, STRINGDECODE('\u54e5\u65af\u8fbe\u9ece\u52a0'), 3),
+(42, STRINGDECODE('\u963f\u5c14\u53ca\u5229\u4e9a'), 4),
+(43, STRINGDECODE('\u57c3\u53ca'), 4),
+(44, STRINGDECODE('\u57c3\u585e\u4fc4\u6bd4\u4e9a'), 4),
+(45, STRINGDECODE('\u5b89\u54e5\u62c9'), 4),
+(46, STRINGDECODE('\u8d1d\u5b81'), 4),
+(47, STRINGDECODE('\u535a\u8328\u74e6\u7eb3'), 4),
+(48, STRINGDECODE('\u5e03\u57fa\u7eb3\u6cd5\u7d22'), 4),
+(49, STRINGDECODE('\u5e03\u9686\u8fea'), 4),
+(50, STRINGDECODE('\u8d64\u9053\u51e0\u5185\u4e9a'), 4),
+(51, STRINGDECODE('\u591a\u54e5'), 4),
+(52, STRINGDECODE('\u5384\u7acb\u7279\u91cc\u4e9a'), 4),
+(53, STRINGDECODE('\u4f5b\u5f97\u89d2'), 4),
+(54, STRINGDECODE('\u5188\u6bd4\u4e9a'), 4),
+(55, STRINGDECODE('\u521a\u679c'), 4),
+(56, STRINGDECODE('\u521a\u679c\u6c11\u4e3b\u5171\u548c\u56fd'), 4),
+(57, STRINGDECODE('\u5409\u5e03\u5824'), 4),
+(58, STRINGDECODE('\u51e0\u5185\u4e9a'), 4),
+(59, STRINGDECODE('\u51e0\u5185\u4e9a\u6bd4\u7ecd'), 4),
+(60, STRINGDECODE('\u52a0\u7eb3'), 4),
+(61, STRINGDECODE('\u52a0\u84ec'), 4),
+(62, STRINGDECODE('\u6d25\u5df4\u5e03\u97e6'), 4),
+(63, STRINGDECODE('\u5580\u9ea6\u9686'), 4),
+(64, STRINGDECODE('\u79d1\u7279\u8fea\u74e6'), 4),
+(65, STRINGDECODE('\u80af\u5c3c\u4e9a'), 4),
+(66, STRINGDECODE('\u5362\u65fa\u8fbe'), 4),
+(67, STRINGDECODE('\u9a6c\u8fbe\u52a0\u65af\u52a0'), 4),
+(68, STRINGDECODE('\u9a6c\u62c9\u7ef4'), 4),
+(69, STRINGDECODE('\u6fb3\u5927\u5229\u4e9a'), 5),
+(70, STRINGDECODE('\u65b0\u897f\u5170'), 5),
+(71, STRINGDECODE('\u5df4\u5e03\u4e9a\u65b0\u51e0\u5185\u4e9a'), 5),
+(72, STRINGDECODE('\u97e9\u56fd'), 1),
+(73, STRINGDECODE('\u83f2\u5f8b\u5bbe'), 1),
+(74, STRINGDECODE('\u5370\u5ea6\u5c3c\u897f\u4e9a'), 1),
+(75, STRINGDECODE('\u8d8a\u5357'), 1),
+(76, STRINGDECODE('\u8001\u631d'), 1),
+(77, STRINGDECODE('\u67ec\u57d4\u5be8'), 1),
+(78, STRINGDECODE('\u6cf0\u56fd'), 1),
+(79, STRINGDECODE('\u7f05\u7538'), 1),
+(80, STRINGDECODE('\u4e0d\u4e39'), 1),
+(81, STRINGDECODE('\u5c3c\u6cca\u5c14'), 1),
+(82, STRINGDECODE('\u5b5f\u52a0\u62c9\u56fd'), 1),
+(83, STRINGDECODE('\u65af\u91cc\u5170\u5361'), 1),
+(84, STRINGDECODE('\u9a6c\u5c14\u4ee3\u592b'), 1),
+(85, STRINGDECODE('\u5df4\u57fa\u65af\u5766'), 1),
+(86, STRINGDECODE('\u963f\u66fc'), 1),
+(87, STRINGDECODE('\u6c99\u7279\u963f\u5783\u4f2f'), 1),
+(88, STRINGDECODE('\u7ea6\u65e6'), 1);
+INSERT INTO PUBLIC.AREA(ID, NAME, PARENT) VALUES
+(89, STRINGDECODE('\u5df4\u52d2\u65af\u5766'), 1),
+(90, STRINGDECODE('\u53d9\u5229\u4e9a'), 1),
+(91, STRINGDECODE('\u9ece\u5df4\u5ae9'), 1),
+(92, STRINGDECODE('\u585e\u6d66\u8def\u65af'), 1),
+(93, STRINGDECODE('\u571f\u5c14\u5176'), 1),
+(94, STRINGDECODE('\u683c\u9c81\u5409\u4e9a'), 1),
+(95, STRINGDECODE('\u5409\u5c14\u5409\u65af\u65af\u5766'), 1),
+(96, STRINGDECODE('\u963f\u585e\u62dc\u7586'), 1),
+(97, STRINGDECODE('\u5df4\u6797\u56fd'), 1),
+(98, STRINGDECODE('\u9521\u91d1'), 1),
+(99, STRINGDECODE('\u4e9a\u7f8e\u5c3c\u4e9a'), 1),
+(100, STRINGDECODE('\u4ee5\u8272\u5217'), 1),
+(101, STRINGDECODE('\u8499\u53e4'), 1),
+(102, STRINGDECODE('\u5965\u5730\u5229'), 2),
+(103, STRINGDECODE('\u745e\u58eb'), 2),
+(104, STRINGDECODE('\u767d\u4fc4\u7f57\u65af'), 2),
+(105, STRINGDECODE('\u4fc4\u7f57\u65af'), 2),
+(106, STRINGDECODE('\u610f\u5927\u5229'), 2),
+(107, STRINGDECODE('\u897f\u73ed\u7259'), 2),
+(108, STRINGDECODE('\u8461\u8404\u7259'), 2),
+(109, STRINGDECODE('\u514b\u7f57\u5730\u4e9a'), 2),
+(110, STRINGDECODE('\u9a6c\u8033\u4ed6'), 2),
+(111, STRINGDECODE('\u7f57\u9a6c\u5c3c\u4e9a'), 2),
+(112, STRINGDECODE('\u6469\u5c14\u591a\u74e6/\u6469\u5c14\u8fbe\u7ef4\u4e9a\u5171\u548c\u56fd'), 2),
+(113, STRINGDECODE('\u963f\u5c14\u5df4\u5c3c\u4e9a'), 2),
+(114, STRINGDECODE('\u65af\u6d1b\u6587\u5c3c\u4e9a'), 2),
+(115, STRINGDECODE('\u6ce2\u65af\u5c3c\u4e9a\u548c\u9ed1\u585e\u54e5\u7ef4\u90a3'), 2),
+(116, STRINGDECODE('\u5b89\u9053\u5c14'), 2),
+(117, STRINGDECODE('\u5217\u652f\u6566\u58eb\u767b'), 2),
+(118, STRINGDECODE('\u6bd4\u5229\u65f6'), 2),
+(119, STRINGDECODE('\u5e0c\u814a'), 2),
+(120, STRINGDECODE('\u5362\u68ee\u5821'), 2),
+(121, STRINGDECODE('\u4fdd\u52a0\u5229\u4e9a'), 2),
+(122, STRINGDECODE('\u68b5\u8482\u5188'), 2),
+(123, STRINGDECODE('\u9a6c\u5176\u987f\uff08\u5357\u65af\u62c9\u592b\uff09'), 2),
+(124, STRINGDECODE('\u5357\u65af\u62c9\u592b'), 2),
+(125, STRINGDECODE('\u7acb\u9676\u5b9b'), 2),
+(126, STRINGDECODE('\u5723\u9a6c\u529b\u8bfa'), 2),
+(127, STRINGDECODE('\u6469\u7eb3\u54e5'), 2),
+(128, STRINGDECODE('\u8377\u5170'), 2),
+(129, STRINGDECODE('\u7231\u5c14\u5170'), 2),
+(130, STRINGDECODE('\u632a\u5a01'), 2),
+(131, STRINGDECODE('\u51b0\u5c9b'), 2),
+(132, STRINGDECODE('\u745e\u5178'), 2),
+(133, STRINGDECODE('\u82ac\u5170'), 2),
+(134, STRINGDECODE('\u7231\u6c99\u5c3c\u4e9a'), 2),
+(135, STRINGDECODE('\u62c9\u6258\u7ef4\u4e9a'), 2),
+(136, STRINGDECODE('\u4e4c\u514b\u5170'), 2),
+(137, STRINGDECODE('\u6ce2\u5170'), 2),
+(138, STRINGDECODE('\u5384\u74dc\u591a\u5c14'), 3),
+(139, STRINGDECODE('\u54e5\u4f26\u6bd4\u4e9a'), 3),
+(140, STRINGDECODE('\u6cd5\u5c5e\u572d\u4e9a\u90a3'), 3),
+(141, STRINGDECODE('\u572d\u4e9a\u90a3'), 3),
+(142, STRINGDECODE('\u82cf\u91cc\u5357'), 3),
+(143, STRINGDECODE('\u59d4\u5185\u745e\u62c9'), 3),
+(144, STRINGDECODE('\u667a\u5229'), 3),
+(145, STRINGDECODE('\u4e1c\u5e1d\u6c76'), 3),
+(146, STRINGDECODE('\u5b89\u63d0\u74dc\u548c\u5df4\u5e03\u8fbe'), 3),
+(147, STRINGDECODE('\u5df4\u5df4\u591a\u65af'), 3),
+(148, STRINGDECODE('\u5df4\u54c8\u9a6c'), 3),
+(149, STRINGDECODE('\u5df4\u62ff\u9a6c'), 3),
+(150, STRINGDECODE('\u4f2f\u5229\u5179'), 3),
+(151, STRINGDECODE('\u5c3c\u52a0\u62c9\u74dc'), 3),
+(152, STRINGDECODE('\u8428\u5c14\u74e6\u591a'), 3),
+(153, STRINGDECODE('\u5723\u57fa\u6b21\u548c\u5c3c\u7ef4\u65af'), 3),
+(154, STRINGDECODE('\u5723\u5362\u897f\u4e9a'), 3),
+(155, STRINGDECODE('\u5723\u6587\u751f\u7279\u548c\u683c\u6797\u7eb3\u4e01\u65af'), 3),
+(156, STRINGDECODE('\u58a8\u897f\u54e5'), 3),
+(157, STRINGDECODE('\u53e4\u5df4'), 3),
+(158, STRINGDECODE('\u683c\u6797\u7eb3\u8fbe'), 3),
+(159, STRINGDECODE('\u6d77\u5730'), 3),
+(160, STRINGDECODE('\u7279\u5c3c\u8fbe\u548c\u591a\u5df4\u54e5'), 3),
+(161, STRINGDECODE('\u5371\u5730\u9a6c\u62c9'), 3),
+(162, STRINGDECODE('\u7259\u4e70\u52a0'), 3),
+(163, STRINGDECODE('\u5f00\u7f57\u7fa4\u5c9b'), 3),
+(164, STRINGDECODE('\u74dc\u5fb7\u7f57\u666e\u5c9b(\u6cd5\u5c5e\uff0c\u52a0\u52d2\u6bd4)'), 3),
+(165, STRINGDECODE('\u3000'), 3),
+(166, STRINGDECODE('\u9a6c\u91cc'), 4),
+(167, STRINGDECODE('\u6bdb\u91cc\u5854\u5c3c\u4e9a'), 4),
+(168, STRINGDECODE('\u6bdb\u91cc\u6c42\u65af'), 4);
+INSERT INTO PUBLIC.AREA(ID, NAME, PARENT) VALUES
+(169, STRINGDECODE('\u6469\u6d1b\u54e5'), 4),
+(170, STRINGDECODE('\u83ab\u6851\u6bd4\u514b'), 4),
+(171, STRINGDECODE('\u7eb3\u7c73\u6bd4\u4e9a'), 4),
+(172, STRINGDECODE('\u5229\u6bd4\u91cc\u4e9a'), 4),
+(173, STRINGDECODE('\u5229\u6bd4\u4e9a'), 4),
+(174, STRINGDECODE('\u5357\u975e'), 4),
+(175, STRINGDECODE('\u5c3c\u65e5\u5c14'), 4),
+(176, STRINGDECODE('\u5c3c\u65e5\u5229\u4e9a'), 4),
+(177, STRINGDECODE('\u585e\u62c9\u5229\u6602'), 4),
+(178, STRINGDECODE('\u585e\u5185\u52a0\u5c14'), 4),
+(179, STRINGDECODE('\u585e\u820c\u5c14'), 4),
+(180, STRINGDECODE('\u5723\u591a\u7f8e\u548c\u666e\u6797\u897f\u6bd4'), 4),
+(181, STRINGDECODE('\u65af\u5a01\u58eb\u5170'), 4),
+(182, STRINGDECODE('\u82cf\u4e39'), 4),
+(183, STRINGDECODE('\u7d22\u9a6c\u91cc'), 4),
+(184, STRINGDECODE('\u5766\u6851\u5c3c\u4e9a'), 4),
+(185, STRINGDECODE('\u7a81\u5c3c\u65af'), 4),
+(186, STRINGDECODE('\u4e4c\u5e72\u8fbe'), 4),
+(187, STRINGDECODE('\u8d5e\u6bd4\u4e9a'), 4),
+(188, STRINGDECODE('\u4e4d\u5f97'), 4),
+(189, STRINGDECODE('\u4e2d\u975e'), 4),
+(190, STRINGDECODE('\u83b1\u7d22\u6258'), 4),
+(191, STRINGDECODE('\u79d1\u6469\u7f57'), 4),
+(192, STRINGDECODE('\u6590\u6d4e\u7fa4\u5c9b'), 5),
+(193, STRINGDECODE('\u65b0\u5580\u91cc\u591a\u5c3c\u4e9a(\u592a\u5e73\u6d0b)'), 5),
+(194, STRINGDECODE('\u897f\u8428\u6469\u4e9a(\u592a\u5e73\u6d0b)'), 5),
+(195, STRINGDECODE('\u57fa\u91cc\u5df4\u65af'), 5),
+(196, STRINGDECODE('\u9a6c\u7ecd\u5c14\u7fa4\u5c9b'), 5),
+(197, STRINGDECODE('\u5bc6\u514b\u7f57\u5c3c\u897f\u4e9a\u8054\u90a6'), 5),
+(198, STRINGDECODE('\u7459\u9c81'), 5),
+(199, STRINGDECODE('\u5e15\u52b3'), 5),
+(200, STRINGDECODE('\u7f8e\u5c5e\u8428\u6469\u4e9a'), 5),
+(201, STRINGDECODE('\u6240\u7f57\u95e8\u7fa4\u5c9b'), 5),
+(202, STRINGDECODE('\u56fe\u74e6\u5362'), 5),
+(203, STRINGDECODE('\u6c64\u52a0'), 5),
+(204, STRINGDECODE('\u5854\u5e0c\u63d0'), 5),
+(205, STRINGDECODE('\u74e6\u52aa\u963f\u56fe'), 5),
+(206, STRINGDECODE('\u9a6c\u514b\u8428\u65af\u7fa4\u5c9b(\u73bb\u5229)'), 5),
+(207, STRINGDECODE('\u571f\u963f\u83ab\u571f\u7fa4\u5c9b'), 5);
