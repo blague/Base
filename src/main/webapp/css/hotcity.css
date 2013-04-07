@@ -1,0 +1,172 @@
+﻿* {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.hotcity {
+    margin: 0 auto;
+    height: auto;
+    width: 330px;
+    border: 1px solid #bbbbbb;
+    padding: 2px;
+    z-index: 1000;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.hotcity_menu {
+    height: 28px;
+    background: #f1f1f1;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 6px;
+}
+
+.hotcity_menu h2 {
+    width: 62px;
+    float: left;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 4px;
+    margin-right: 3px;
+}
+
+.hotcity_menu h2 b {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666666;
+    text-decoration: none;
+    background: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+
+.mr2 {
+    width: 50px;
+}
+
+#hotcity_menu .on b {
+    height: 25px;
+    line-height: 25px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    background: #FFF;
+    color: #003;
+    border: 1px solid #999;
+}
+
+.hotcity ul li {
+    float: left;
+    width: 64px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+
+/*选项卡style*/
+.paytabbox2 {
+    margin-top: 10px;
+}
+
+.tagMenu2 {
+    height: 22px;
+    line-height: 22px;
+    position: relative;
+    border-bottom: 1px solid #999
+}
+
+.tagMenu2 ul {
+    position: absolute;
+    left: 6px;
+    bottom: -1px;
+    height: 21px;
+}
+
+ul.paytabmenu2 li {
+    float: left;
+    line-height: 20px;
+    height: 20px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+    width: 42px;
+}
+
+ul.paytabmenu2 li.cur2 {
+    border: 1px solid #999;
+    background: #f1f1f1;
+    height: 19px;
+    line-height: 19px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.paytabcontent2 {
+    padding: 5px;
+    clear: both;
+    width: 100%;
+}
+
+.lay2 {
+}
+
+.lay2 a {
+    cursor: pointer;
+}
+
+/**/
+.search_mndiv {
+    width: 180px;
+    float: left;
+    border: 1px solid #7f9db9;
+    background: #FFF;
+}
+
+.search_mndiv input {
+    width: 153px !important;
+    float: left;
+    border: none;
+}
+
+.search_mndiv span {
+    background: url(../images/allbg.gif) no-repeat 0px -51px;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: 3px;
+    margin-left: 0px;
+    margin-right: 4px;
+}
+
+.printtip {
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px dashed #CCC;
+    text-indent: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
