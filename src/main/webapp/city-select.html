@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>城市控件</title>
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre,
+        form, fieldset, legend, button, input, textarea, th, td {
+            margin: 0;
+            padding: 0;
+        }
+
+        body, button, input, select, textarea {
+            font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 100%;
+        }
+
+        address, cite, dfn, em, var {
+            font-style: normal;
+        }
+
+        code, kbd, pre, samp {
+            font-family: courier new, courier, monospace;
+        }
+
+        small {
+            font-size: 12px;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        sup {
+            vertical-align: text-top;
+        }
+
+        sub {
+            vertical-align: text-bottom;
+        }
+
+        legend {
+            color: #000;
+        }
+
+        fieldset, img {
+            border: 0;
+        }
+
+        button, input, select, textarea {
+            font-size: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    </style>
+    <link type="text/css" href="css/city-select.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/cityList.js"></script>
+    <script type="text/javascript">
+        /**
+         *   城市选择控件
+         */
+        ;
+        (function () {
+
+            var opts,inputs;
+
+            $.fn.citySelect = function (options) {
+                inputs = this;
+                opts = $.extend({}, {
+                    selector: "input[name*=cityname]",
+                    selectDiv: "#city-ui"
+                }, options);
+                if(inputs.length){
+                    $(inputs).focus(tip).keyup(autoComplete)
+                }else{
+                    $(opts.selector).focus(tip).keyup(autoComplete);
+                }
+
+            }
+
+            /**
+             *  内部初始值
+             */
+            var tipDivTmpl = "<div class='city-ui' style='display: none;height: 300px;'></div>";//tip最外层div
+
+            function tabs(){
+                var level1;
+                for (var o in cityList) {
+                   console.log(o);
+                }
+            }
+
+            //tip方法,onFocus且输入框中无值
+            function tip(){
+                position($(this));
+            }
+
+            //自动完成方法，onKeyup松开按键
+            function autoComplete(){ }
+
+            function position($dom){
+                $(".city-ui").css({"top":$dom.position().top + $dom.height(),"left":$dom.position().left}).show();
+            }
+
+            /**
+             *初始化方法
+             * @private
+             */
+            function _init() {
+               if(!$(".city-ui").length){
+
+                   $("body").append(tipDivTmpl);
+
+                   /*fix : ie6 浮动被select遮盖*/
+                   if($.browser.msie && /msie 6\.0/i.test(navigator.userAgent)){
+                       var html = '<iframe class="bgiframe"frameborder="0"tabindex="-1"src="javascript:false;"style="display:block;position:absolute;z-index:-1;filter:Alpha(Opacity=\'0\');top:expression(((parseInt(this.parentNode.currentStyle.borderTopWidth)||0)*-1)+\'px\');left:expression(((parseInt(this.parentNode.currentStyle.borderLeftWidth)||0)*-1)+\'px\');width:expression(this.parentNode.offsetWidth+\'px\');height:expression(this.parentNode.offsetHeight+\'px\');"/>';
+                       $(".city-ui").each(function (){
+                           if ( $(this).children('iframe.bgiframe').length === 0 )
+                               this.insertBefore( document.createElement(html), this.firstChild );
+                       })
+                   }
+               }
+            }
+            $(function () {
+                _init();
+            })
+        })(jQuery);
+        $(function (){
+            $("input[name*='cityname']").citySelect();
+        })
+    </script>
+</head>
+<body>
+<div style="margin: 0 auto;width: 960px;">
+    <br/>
+    <input class="city" name="cfcityname"/><input class="city" name="aa"/>
+    <br/>
+    select控件遮盖测试:<select>
+    <option>1select控件遮盖测试</option>
+    <option>2select控件遮盖测试</option>
+    <option>3select控件遮盖测试</option>
+    <option>4select控件遮盖测试</option>
+</select>
+</div>
+
+
+</body>
+</html>

@@ -6,21 +6,46 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/showcity.js"></script>
     <script type="text/javascript">
-         $(function (){
-         })
+        /**
+         *   城市选择控件
+         */
+        ;(function (){
+            //默认值
+            $.fn.citySelect.defaults= {
+                selector : "input[name=*cityname]",
+                selectDiv : "#city-select"
+            };
+            $.fn.citySelect = function (options){
+                opts = $.extend({}, $.fn.citySelect.defaults, options);
+            }
+
+            function _init(){
+
+            }
+         })(jQuery);
     </script>
-    <link type="text/css" href="css/hotcity.css" rel="stylesheet" />
+    <link type="text/css" href="css/city-select.css" rel="stylesheet" />
 
 </head>
 <body>
-    <input type="text" id="city" onclick="tanchu(this)"  />
-    <div class="hotcity" id="tanchu" style="display:none;">
+    <div>
+        <input type="text" id="city" onclick="tanchu(this)"  />
+    </div>
+    <div>
+    select控件遮盖测试:<select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    </div>
+    <div class="city-select" id="city-select" onclick="tanchu(this)" style="display:none;">
     <iframe style="width:330px; height:220px; background:#fff;position:absolute;z-index:-1; _margin-left:-20px; border:none;" frameborder="0"></iframe>
     <div class="printtip">↑可直接输入城市中文、拼音、拼音首字母、英文、三字码</div>
     <!--选择国内外↓-->
-    <div class="hotcity_menu" id="hotcity_menu">
-        <h2 id="hotcity_domestic" class="on" onclick="go_domestic()"><b name="tanchu">国内城市</b></h2>
-        <h2 id="hotcity_abroad" onclick="go_abroad()" class="mr2"><b name="tanchu">国际城市</b></h2>
+    <div class="city-select-menu" id="hotcity_menu">
+        <h2 id="city-select-domestic" class="on" onclick="go_domestic()"><b name="tanchu">国内城市</b></h2>
+        <h2 id="city-select-International" onclick="go_abroad()" class="mr2"><b name="tanchu">国际城市</b></h2>
     </div>
     <!--国内热门城市↓-->
     <div id="dom_city_cont" style="display: block;">

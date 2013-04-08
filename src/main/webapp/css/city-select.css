@@ -1,0 +1,67 @@
+﻿.city-ui {
+    margin: 0 auto;
+    width: 330px;
+    border: 1px solid #bbbbbb;
+    z-index: 1000;
+    position: absolute;
+    background: #FFF;
+    overflow: hidden;
+
+    -moz-box-shadow: 3px 3px 4px #999;
+    -webkit-box-shadow: 3px 3px 4px #999;
+    box-shadow: 3px 3px 4px #999;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength = 4, Direction = 135, Color = '#999999');
+}
+
+.city-ui-tabs {
+    position: relative;
+    padding: .2em;
+    zoom: 1;
+}
+
+/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.city-ui-tabs .city-ui-tabs-nav {
+    margin: 0;
+    padding: .2em .2em 0;
+}
+
+.city-ui-tabs .city-ui-tabs-nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    margin: 1px .2em 0 0;
+    border-bottom: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.city-ui-tabs .city-ui-tabs-nav li a {
+    float: left;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+.city-ui-tabs .city-ui-tabs-nav li.city-ui-tabs-active {
+    margin-bottom: -1px;
+    padding-bottom: 1px;
+}
+
+.city-ui-tabs .city-ui-tabs-nav li.city-ui-tabs-active a, .city-ui-tabs .city-ui-tabs-nav li.city-ui-state-disabled a, .city-ui-tabs .city-ui-tabs-nav li.city-ui-tabs-loading a {
+    cursor: text;
+}
+
+.city-ui-tabs .city-ui-tabs-nav li a, .city-ui-tabs-collapsible .city-ui-tabs-nav li.city-ui-tabs-active a {
+    cursor: pointer;
+}
+
+/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.city-ui-tabs .city-ui-tabs-panel {
+    display: block;
+    border-width: 0;
+    padding: 1em 1.4em;
+    background: none;
+}

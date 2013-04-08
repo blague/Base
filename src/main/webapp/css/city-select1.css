@@ -1,27 +1,27 @@
-﻿* {
+﻿.city-select {
     font-size: 12px;
 }
 
-a {
+.city-select a {
     text-decoration: none;
 }
 
-a:hover {
+.city-select a:hover {
     text-decoration: none;
 }
 
-ul {
+.city-select ul {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
 }
 
-h2 {
+.city-select h2 {
     margin: 0px;
     padding: 0px;
 }
 
-.hotcity {
+.city-select {
     margin: 0 auto;
     height: auto;
     width: 330px;
@@ -29,13 +29,11 @@ h2 {
     padding: 2px;
     z-index: 1000;
     position: absolute;
-    top: 200px;
-    left: 500px;
     background: #FFF;
     overflow: hidden;
 }
 
-.hotcity_menu {
+.city-select .city-select-menu {
     height: 28px;
     background: #f1f1f1;
     overflow: hidden;
@@ -43,7 +41,7 @@ h2 {
     padding-left: 6px;
 }
 
-.hotcity_menu h2 {
+.city-select .city-select-menu h2 {
     width: 62px;
     float: left;
     text-align: center;
@@ -53,7 +51,7 @@ h2 {
     margin-right: 3px;
 }
 
-.hotcity_menu h2 b {
+.city-select-menu h2 b {
     display: block;
     font-size: 12px;
     font-weight: bold;
@@ -64,11 +62,11 @@ h2 {
     cursor: pointer;
 }
 
-.mr2 {
+.city-select .mr2 {
     width: 50px;
 }
 
-#hotcity_menu .on b {
+.city-select .on b {
     height: 25px;
     line-height: 25px;
     text-decoration: none;
@@ -79,7 +77,7 @@ h2 {
     border: 1px solid #999;
 }
 
-.hotcity ul li {
+.city-select ul li {
     float: left;
     width: 64px;
     text-align: center;

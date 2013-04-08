@@ -6,7 +6,7 @@ function tanchu(anchor){
 
 	textinput = $(anchor).prev();
     var citylistarr = [];
-    var position = getposition(anchor);
+    var position = $(anchor).position();
     var tc = document.getElementById('tanchu');
     var as = tc.getElementsByTagName("a");
     for(var i=0; i<as.length; i++)

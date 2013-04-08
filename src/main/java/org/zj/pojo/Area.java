@@ -1,11 +1,13 @@
 package org.zj.pojo;
 
+import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * 地区信息
  */
-public class Area {
+public class Area  {
 
     private int id;
 
@@ -19,6 +21,11 @@ public class Area {
     private List<String> citys;
 
     public Area() {
+    }
+
+    public Area(String name) {
+        this.name = name;
+        this.citys = new ArrayList<String>();
     }
 
     public int getId() {
@@ -51,5 +58,13 @@ public class Area {
 
     public void setCitys(List<String> citys) {
         this.citys = citys;
+    }
+
+    public String toCityChain(){
+        StringBuffer sb = new StringBuffer();
+        for (String str : this.citys){
+             sb.append("'").append(str).append("'");
+        }
+        return sb.toString().replaceAll("''","','");
     }
 }
