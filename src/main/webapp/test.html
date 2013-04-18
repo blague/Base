@@ -2,51 +2,42 @@
 <html>
 <head>
     <title></title>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript">
-        // Simple JavaScript Templating
-        // John Resig - http://ejohn.org/ - MIT Licensed
-        (function(){
-            var cache = {};
-
-            this.tmpl = function tmpl(str, data){
-                // Figure out if we're getting a template, or if we need to
-                // load the template - and be sure to cache the result.
-                var fn = !/\W/.test(str) ?
-                        cache[str] = cache[str] ||
-                                tmpl(document.getElementById(str).innerHTML) :
-
-                    // Generate a reusable function that will serve as a template
-                    // generator (and which will be cached).
-                        new Function("obj",
-                                "var p=[],print=function(){p.push.apply(p,arguments);};" +
-
-                                    // Introduce the data as local variables using with(){}
-                                        "with(obj){p.push('" +
-
-                                    // Convert the template into pure JavaScript
-                                        str
-                                                .replace(/[\r\t\n]/g, " ")
-                                                .split("<%").join("\t")
-                                                .replace(/((^|%>)[^\t]*)'/g, "$1\r")
-                                                .replace(/\t=(.*?)%>/g, "',$1,'")
-                                                .split("\t").join("');")
-                                                .split("%>").join("p.push('")
-                                                .split("\r").join("\\'")
-                                        + "');}return p.join('');");
-
-                // Provide some basic currying to the user
-                return data ? fn( data ) : fn;
-            };
-        })()
-
-        var render = tmpl("");
-
+        $(document).ready(function(){
+            $(".tab li").click(function(){
+                var $this = $(this);
+                $this.addClass("cur").siblings().removeClass('cur');
+                $this.parent().siblings("div").hide().eq($(this).index()).show();
+                //另一种方法: $("div").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on');
+            });
+        });
     </script>
-    <script type="text/html" id="test">
-        <div><#=name#></div>
-    </script>
+    <style>
+        div{margin:0;padding:0;width:184px;border:1px solid #ccc;display:none;}
+        .tab{margin:0;padding:0;list-style:none;width:200px;overflow:hidden;}
+        .tab li{float:left;width:60px;height:30px;background:#ccc;color:#fff;border:1px solid red; text-align:center;line-height:30px;cursor:pointer; }
+        .on{display:block;}
+        .tab li.cur{background:blue;}
+    </style>
 </head>
 <body id="results">
-
+<ul class="tab">
+    <li>最新</li>
+    <li class="cur">热门</li>
+    <li>新闻</li>
+</ul>
+<div>11</div>
+<div class="on">22</div>
+<div>
+    <ul class="tab">
+        <li>最新</li>
+        <li class="cur">热门</li>
+        <li>新闻</li>
+    </ul>
+    <div>11</div>
+    <div class="on">22</div>
+    <div>33<br>33<br>33<br>33<br>33<br>33<br></div>
+</div>
 </body>
 </html>
