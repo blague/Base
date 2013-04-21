@@ -93,9 +93,9 @@
                 if (!obj) {
                     inputs = $(opts.selector);
                 }
-                inputs.focus(function (){
+                inputs.focus(function (e){
                     target = this;
-                    position($(this))
+                    tip(e,this);
                 })
                 $("body").append(tabs(cityList[0]))
                 _init();
@@ -148,6 +148,7 @@
                 });
 
 
+
                 //初始化默认显示
                 $tabs.find("div:first").addClass("on");
                 $tabs.find("li:first").addClass("cur");
@@ -160,7 +161,13 @@
 
             //tip方法,onFocus且输入框中无值
             function tip() {
-                position($(this));
+                position($(target));
+                $(document).bind("mouseup",function (e){
+                    if($(e.target).parent(".city-ui").length == 0){
+                        $(".city-ui").hide();
+                        $(document).unbind("mouseup",arguments.callee)
+                    }
+                })
             }
 
             //自动完成方法，onKeyup松开按键
