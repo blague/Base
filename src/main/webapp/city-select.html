@@ -77,7 +77,7 @@
         ;
         (function () {
 
-            var opts, inputs;
+            var opts, inputs , target;
 
             var defaults = {
                 selector: "input[name*=cityname]",
@@ -93,19 +93,69 @@
                 if (!obj) {
                     inputs = $(opts.selector);
                 }
+                inputs.focus(function (){
+                    target = this;
+                    position($(this))
+                })
+                $("body").append(tabs(cityList[0]))
+                _init();
             }
 
             /**
              *  内部初始值
              */
-            var tipDivTmpl = "<div><ul></ul></div>";//tip最外层div
-            var li = "<li></li>";
+            var tipDivTmpl = '<div class="city-ui"></div>';//tip最外层div
+            var tabTmpl ='<ul class="tab">' +
+                    '<# for (var i in data) { #>' +
+                    '<li><#= i #></li> ' +
+                    '<# } #>' +
+                    '</ul>' +
+                    '<# for (var i in data) { #>' +
+                    '<div>' +
+                    '<# if (Object.prototype.toString.apply(data[i]) === "[object Array]") { #>' +
+                    '<ul class="cities">' +
+                    '<# for (var j = 0,length = data[i].length;j<length;j++){ #>' +
+                    '<li data="<#= data[i][j].id#>"><#= data[i][j].name#></li>' +
+                    '<# } #>' +
+                    '</ul>' +
+                    '<# } #>' +
+                    '</div>'+
+                    '<# } #>';
 
-            function tabs() {
-                var level1;
-                for (var o in cityList[0]) {
-                    console.log(o);
-                }
+            // 创建城市点选控件
+            function tabs(data) {
+                //创建选择框
+                var $tabs = $(tipDivTmpl);
+                $tabs.append(tmpl(tabTmpl,{data:data}));
+                $tabs.find("li").each(function (idx){
+                    if(data[$(this).text()]){
+                        $tabs.find("div").eq(idx).append(tmpl(tabTmpl,{data:data[$(this).text()]}));
+                    }
+                })
+                //绑定方法
+                $tabs.find(".tab li").click(function(){
+                    var $this = $(this);
+                    $this.addClass("cur").siblings().removeClass('cur');
+                    $this.parent().siblings("div").hide().eq($(this).index()).show();
+                });
+                $tabs.find(".cities li").mouseover(function (){
+                    $(this).toggleClass("grey");
+                }).mouseout(function (){
+                    $(this).toggleClass("grey");
+                }).click(function (){
+                    $(".city-ui").hide();
+                    target.value = $(this).text();
+                });
+
+
+                //初始化默认显示
+                $tabs.find("div:first").addClass("on");
+                $tabs.find("li:first").addClass("cur");
+                $tabs.find("div:first div:first").addClass("on");
+                $tabs.find("div:first li:first").addClass("cur");
+
+
+                return $tabs;
             }
 
             //tip方法,onFocus且输入框中无值
@@ -123,18 +173,18 @@
 
             //模版方法
             function tmpl(str, data) {
-                var fn;
-                fn = new Function("obj",
+//                console.log("var p=[];" + "with(obj){p.push('" + str.replace(/\\/g, "\\\\").replace(/[\r\t\n]/g, " ").split("<#").join("\t").replace(/((^|#>)[^t]*)'/g, "$1r").replace(/\t=(.*?)#>/g, "',$1,'").split("\t").join("');").split("#>").join("p.push('").split("\r").join("\\") + "');}return p.join('');")
+                var fn = new Function("obj",
                         "var p=[];" +
                                 "with(obj){p.push('" +
                                 str.replace(/\\/g, "\\\\")
                                         .replace(/[\r\t\n]/g, " ")
-                                        .split("{{").join("t")
-                                        .replace(/((^|}})[^t]*)'/g, "$1r")
-                                        .replace(/t=(.*?)}}/g, "',$1,'")
-                                        .split("t").join("');")
-                                        .split("}}").join("p.push('")
-                                        .split("r").join("\'")
+                                        .split("<#").join("\t")
+                                        .replace(/((^|#>)[^t]*)'/g, "$1r")
+                                        .replace(/\t=(.*?)#>/g, "',$1,'")
+                                        .split("\t").join("');")
+                                        .split("#>").join("p.push('")
+                                        .split("\r").join("\\")
                                 + "');}return p.join('');");
                 return fn(data);
             }
@@ -154,10 +204,11 @@
                     }
             }
 
-            $(function () {
-                _init();
-            })
         })(jQuery);
+
+        $(function (){
+            $.citySelect();
+        })
     </script>
 </head>
 <body>

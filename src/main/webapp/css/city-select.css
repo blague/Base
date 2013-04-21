@@ -1,6 +1,7 @@
 ﻿.city-ui {
+    display: none;
     margin: 0 auto;
-    width: 330px;
+    width: 400px;
     border: 1px solid #bbbbbb;
     z-index: 1000;
     position: absolute;
@@ -16,52 +17,53 @@
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength = 4, Direction = 135, Color = '#999999');
 }
 
-.city-ui-tabs {
-    position: relative;
-    padding: .2em;
+.city-ui div {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    display: none;
+}
+
+.city-ui .tab {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+    width: 400px;
+    height: 32px;
+    border-bottom: 1px solid #ddd;
     zoom: 1;
 }
 
-/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
-.city-ui-tabs .city-ui-tabs-nav {
-    margin: 0;
-    padding: .2em .2em 0;
-}
-
-.city-ui-tabs .city-ui-tabs-nav li {
-    list-style: none;
+.city-ui li {
     float: left;
-    position: relative;
-    top: 0;
-    margin: 1px .2em 0 0;
-    border-bottom: 0;
-    padding: 0;
-    white-space: nowrap;
-}
-
-.city-ui-tabs .city-ui-tabs-nav li a {
-    float: left;
-    padding: .5em 1em;
-    text-decoration: none;
-}
-
-.city-ui-tabs .city-ui-tabs-nav li.city-ui-tabs-active {
-    margin-bottom: -1px;
-    padding-bottom: 1px;
-}
-
-.city-ui-tabs .city-ui-tabs-nav li.city-ui-tabs-active a, .city-ui-tabs .city-ui-tabs-nav li.city-ui-state-disabled a, .city-ui-tabs .city-ui-tabs-nav li.city-ui-tabs-loading a {
-    cursor: text;
-}
-
-.city-ui-tabs .city-ui-tabs-nav li a, .city-ui-tabs-collapsible .city-ui-tabs-nav li.city-ui-tabs-active a {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
     cursor: pointer;
+    background-color: #fff;
+}
+.city-ui .tab li {
+    float: left;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #555;
+    position: relative;
+    bottom:-1px;
 }
 
-/* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
-.city-ui-tabs .city-ui-tabs-panel {
+.city-ui div.on {
     display: block;
-    border-width: 0;
-    padding: 1em 1.4em;
-    background: none;
+}
+
+.city-ui .tab li.cur {
+    border:1px solid #ddd;
+    border-bottom: 1px solid #fff;
+}
+
+.city-ui .grey{
+    background-color: grey;
 }
