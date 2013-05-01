@@ -2,42 +2,16 @@
 <html>
 <head>
     <title></title>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".tab li").click(function(){
-                var $this = $(this);
-                $this.addClass("cur").siblings().removeClass('cur');
-                $this.parent().siblings("div").hide().eq($(this).index()).show();
-                //另一种方法: $("div").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on');
-            });
-        });
-    </script>
     <style>
-        div{margin:0;padding:0;width:184px;border:1px solid #ccc;display:none;}
-        .tab{margin:0;padding:0;list-style:none;width:200px;overflow:hidden;}
-        .tab li{float:left;width:60px;height:30px;background:#ccc;color:#fff;border:1px solid red; text-align:center;line-height:30px;cursor:pointer; }
-        .on{display:block;}
-        .tab li.cur{background:blue;}
+        .tab{margin:0;padding:0;list-style:none;width:260px;height:40px;border-bottom: 10px solid green}
+        .tab li{zoom: 1;bottom: -1px;position:relative ;border: 10px solid yellow;border-bottom:10px solid;float:left;width:60px;height:30px; text-align:center;line-height:30px;cursor:pointer; }
     </style>
 </head>
-<body id="results">
+<body>
 <ul class="tab">
     <li>最新</li>
     <li class="cur">热门</li>
     <li>新闻</li>
 </ul>
-<div>11</div>
-<div class="on">22</div>
-<div>
-    <ul class="tab">
-        <li>最新</li>
-        <li class="cur">热门</li>
-        <li>新闻</li>
-    </ul>
-    <div>11</div>
-    <div class="on">22</div>
-    <div>33<br>33<br>33<br>33<br>33<br>33<br></div>
-</div>
 </body>
 </html>
