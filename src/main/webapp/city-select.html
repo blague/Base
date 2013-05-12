@@ -81,7 +81,7 @@
 
             var defaults = {
                 selector: "input[name*=cityname]",
-                selectDiv: "#city-ui"
+                selectDiv: "city-ui"
             };
 
             $.fn.citySelect = function (options) {
@@ -101,10 +101,31 @@
                 _init();
             }
 
+            var keyCode = {
+                BACKSPACE: 8,
+                COMMA: 188,
+                DELETE: 46,
+                DOWN: 40,
+                END: 35,
+                ENTER: 13,
+                ESCAPE: 27,
+                HOME: 36,
+                LEFT: 37,
+                PAGE_DOWN: 34,
+                PAGE_UP: 33,
+                PERIOD: 190,
+                RIGHT: 39,
+                SPACE: 32,
+                TAB: 9,
+                UP: 38
+            }
+
+            //65-90为a-z有效输入这个时候才会去检索
+
             /**
              *  内部初始值
              */
-            var tipDivTmpl = '<div class="city-ui"></div>';//tip最外层div
+            var tipDivTmpl = '<div class="'+opts.selectDiv+'"></div>';//tip最外层div
             var tabTmpl ='<ul class="tab">' +
                     '<# for (var i in data) { #>' +
                     '<li><#= i #></li> ' +
@@ -175,7 +196,6 @@
 
             //模版方法
             function tmpl(str, data) {
-//                console.log("var p=[];" + "with(obj){p.push('" + str.replace(/\\/g, "\\\\").replace(/[\r\t\n]/g, " ").split("<#").join("\t").replace(/((^|#>)[^t]*)'/g, "$1r").replace(/\t=(.*?)#>/g, "',$1,'").split("\t").join("');").split("#>").join("p.push('").split("\r").join("\\") + "');}return p.join('');")
                 var fn = new Function("obj",
                         "var p=[];" +
                                 "with(obj){p.push('" +

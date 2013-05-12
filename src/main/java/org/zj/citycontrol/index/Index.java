@@ -4,25 +4,19 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
-import org.apache.lucene.index.CorruptIndexException;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.queryParser.ParseException;
+import org.apache.lucene.index.*;
 import org.apache.lucene.queryParser.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
+import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.store.LockObtainFailedException;
 import org.apache.lucene.util.Version;
-import org.apache.poi.hwpf.model.FieldDescriptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.zj.citycontrol.dao.AreaDao;
-import org.zj.citycontrol.model.Area;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,7 +54,6 @@ public class Index {
                 }
                 indexWiter.addDocument(doc);
             }
-            System.out.println(file.getAbsolutePath());
         } catch (IOException e) {
             e.printStackTrace();
         }finally {
@@ -90,9 +83,7 @@ public class Index {
 
             //4.创建搜索的Query
             //创建parser来确定要搜索文件的内容，第二个参数表示搜索的域
-            QueryParser parser=new QueryParser(
-                    Version.LUCENE_36,
-                    fieldName,new StandardAnalyzer(Version.LUCENE_36));
+            QueryParser parser= null;
             //创建Query，表示搜索域为content中包含java的文档
             Query query=parser.parse(str);
             return searcher.search(query,2);
@@ -111,10 +102,10 @@ public class Index {
     }
 
 
+
     public static void main(String[] args) {
           Index index = new Index();
-//          index.create();
-        TopDocs tds = index.search("MC","北京");
+        TopDocs tds = index.search("MC","*");
         if (tds != null) {
             System.out.println(tds.totalHits);
         }

@@ -24,14 +24,14 @@ public class AreaDao {
         @Override
         public Area mapRow(ResultSet rs, int i) throws SQLException {
             Area area = new Area();
-            area.setId(rs.getInt("BH"));
+//          area.setId(rs.getString("BH"));
             area.setName(rs.getString("MC"));
             area.setEnName(rs.getString("YWMC"));
             area.setShot(rs.getString("DLMCJP"));
-            area.setCountryId(rs.getString("SZGJ"));
-            area.setNumber(rs.getString("CSBH"));
-            area.setAirportName(rs.getString("JCMC"));
-            area.setAirportCode(rs.getString("NBBH"));
+//          area.setCountryId(rs.getString("SZGJ"));
+            area.setCid(rs.getString("CSBH"));
+            area.setAirName(rs.getString("JCMC"));
+            area.setCode(rs.getString("NBBH"));
 
             return area;
         }
@@ -45,7 +45,16 @@ public class AreaDao {
         }
 
 //        return jdbcTemplate.query(QUERY_ALL_AREA+gngj,areaMapper);
-        return jdbcTemplate.queryForList(QUERY_ALL_AREA+gngj);
+        return jdbcTemplate.queryForList(QUERY_ALL_AREA,gngj);
+    }
+
+    public List<Area> getArea(boolean international){
+        String gngj = "'1'";
+        if(international){
+            gngj = "'0'";
+        }
+
+        return jdbcTemplate.query(QUERY_ALL_AREA+gngj,areaMapper);
     }
 
 }
