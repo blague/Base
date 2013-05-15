@@ -70,6 +70,8 @@
     <link type="text/css" href="css/city-select.css" rel="stylesheet"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/cityList.js"></script>
+    <script type="text/javascript" src="js/iAirPort.js"></script>
+    <script type="text/javascript" src="js/cnAirPort.js"></script>
     <script type="text/javascript">
         /**
          *   城市选择控件
@@ -77,11 +79,12 @@
         ;
         (function () {
 
-            var opts, inputs , target;
+            var opts, inputs , target , tipDivTmpl , tabTmpl , keyCode,term;
 
             var defaults = {
                 selector: "input[name*=cityname]",
-                selectDiv: "city-ui"
+                selectDiv: "city-ui",
+                delay :"200"
             };
 
             $.fn.citySelect = function (options) {
@@ -90,67 +93,28 @@
 
             $.citySelect = function (options, obj) {
                 opts = $.extend({}, defaults, options);
+                _initValue();
                 if (!obj) {
                     inputs = $(opts.selector);
                 }
                 inputs.focus(function (e){
                     target = this;
-                    tip();
+                    _tip();
+                }).keyup(function (e){
+
                 })
-                $("body").append(tabs(cityList[0]));
+                $("body").append(_tabs(cityList[0]));
                 _init();
             }
 
-            var keyCode = {
-                BACKSPACE: 8,
-                COMMA: 188,
-                DELETE: 46,
-                DOWN: 40,
-                END: 35,
-                ENTER: 13,
-                ESCAPE: 27,
-                HOME: 36,
-                LEFT: 37,
-                PAGE_DOWN: 34,
-                PAGE_UP: 33,
-                PERIOD: 190,
-                RIGHT: 39,
-                SPACE: 32,
-                TAB: 9,
-                UP: 38
-            }
-
-            //65-90为a-z有效输入这个时候才会去检索
-
-            /**
-             *  内部初始值
-             */
-            var tipDivTmpl = '<div class="'+opts.selectDiv+'"></div>';//tip最外层div
-            var tabTmpl ='<ul class="tab">' +
-                    '<# for (var i in data) { #>' +
-                    '<li><#= i #></li> ' +
-                    '<# } #>' +
-                    '</ul>' +
-                    '<# for (var i in data) { #>' +
-                    '<div>' +
-                    '<# if (Object.prototype.toString.apply(data[i]) === "[object Array]") { #>' +
-                    '<ul class="cities">' +
-                    '<# for (var j = 0,length = data[i].length;j<length;j++){ #>' +
-                    '<li data="<#= data[i][j].id#>"><#= data[i][j].name#></li>' +
-                    '<# } #>' +
-                    '</ul>' +
-                    '<# } #>' +
-                    '</div>'+
-                    '<# } #>';
-
             // 创建城市点选控件
-            function tabs(data) {
+            function _tabs(data) {
                 //创建选择框
                 var $tabs = $(tipDivTmpl);
-                $tabs.append(tmpl(tabTmpl,{data:data}));
+                $tabs.append(_tmpl(tabTmpl,{data:data}));
                 $tabs.find("li").each(function (idx){
                     if(data[$(this).text()]){
-                        $tabs.find("div").eq(idx).append(tmpl(tabTmpl,{data:data[$(this).text()]}));
+                        $tabs.find("div").eq(idx).append(_tmpl(tabTmpl,{data:data[$(this).text()]}));
                     }
                 })
                 //绑定方法
@@ -181,21 +145,80 @@
             }
 
             //tip方法,onFocus且输入框中无值
-            function tip() {
-                position($(target));
+            function _tip() {
+                _position($(target));
             }
 
-            function position($dom) {
+            function _position($dom) {
                 $(".city-ui").css({"top": $dom.position().top + $dom.height(), "left": $dom.position().left}).show();
             }
 
 
             //自动完成方法，onKeyup松开按键
-            function autoComplete() {
+            function _autoComplete(event) {
+                switch( event.keyCode ) {
+                    case keyCode.PAGE_UP:
+                        this._move( -2, event );
+                        break;
+                    case keyCode.PAGE_DOWN:
+                        this._move( 2, event );
+                        break;
+                    case keyCode.UP:
+                        this._move( -1, event );
+                        break;
+                    case keyCode.DOWN:
+                        this._move( -2, event );
+                        break;
+                    case keyCode.ENTER:
+                    case keyCode.NUMPAD_ENTER:
+                        //判断提示层是否显示
+                        if ( this.menu.active ) {
+                            event.preventDefault();
+                            this.menu.select( event );
+                        }
+                        break;
+                    case keyCode.TAB:
+                        if ( this.menu.active ) {
+                            this.menu.select( event );
+                        }
+                        break;
+                    /*case keyCode.ESCAPE:
+                        if ( this.menu.element.is( ":visible" ) ) {
+                            this._value( this.term );
+                            this.close( event );
+                            event.preventDefault();
+                        }
+                        break;*/
+                    default:
+                        this._searchTimeout( event );
+                        break;
+                }
+            }
+
+            //搜索延迟
+            function _searchTimeout ( event ) {
+                clearTimeout( this.searching );
+                this.searching = setTimeout(function() {
+                    if ( this.term !== this._value() ) {
+                        this.selectedItem = null;
+                        this._search( null, event );
+                    }
+                }, opts.delay );
+            }
+
+            //查询
+            function _search( value, event){
+                value = value != null ? value : this._value();
+
+            }
+
+            //获得所有当前值
+            function _value(){
+                return $(target).val();
             }
 
             //模版方法
-            function tmpl(str, data) {
+            function _tmpl(str, data) {
                 var fn = new Function("obj",
                         "var p=[];" +
                                 "with(obj){p.push('" +
@@ -231,6 +254,49 @@
                     }
                 });
 
+            }
+
+            /**
+             * 初始化私有变量
+             */
+            function _initValue(){
+                keyCode = {
+                    BACKSPACE: 8,
+                    COMMA: 188,
+                    DELETE: 46,
+                    DOWN: 40,
+                    END: 35,
+                    ENTER: 13,
+                    ESCAPE: 27,
+                    HOME: 36,
+                    LEFT: 37,
+                    PAGE_DOWN: 34,
+                    PAGE_UP: 33,
+                    PERIOD: 190,
+                    RIGHT: 39,
+                    SPACE: 32,
+                    TAB: 9,
+                    UP: 38
+                } //65-90为a-z有效输入这个时候才会去检索
+
+                tipDivTmpl = '<div class="'+opts.selectDiv+'"></div>';//tip最外层div
+
+                tabTmpl ='<ul class="tab">' +
+                        '<# for (var i in data) { #>' +
+                        '<li><#= i #></li> ' +
+                        '<# } #>' +
+                        '</ul>' +
+                        '<# for (var i in data) { #>' +
+                        '<div>' +
+                        '<# if (Object.prototype.toString.apply(data[i]) === "[object Array]") { #>' +
+                        '<ul class="cities">' +
+                        '<# for (var j = 0,length = data[i].length;j<length;j++){ #>' +
+                        '<li data="<#= data[i][j].id#>"><#= data[i][j].name#></li>' +
+                        '<# } #>' +
+                        '</ul>' +
+                        '<# } #>' +
+                        '</div>'+
+                        '<# } #>';
             }
 
         })(jQuery);
