@@ -79,7 +79,7 @@
         ;
         (function () {
 
-            var opts, inputs , target , tipDivTmpl , tabTmpl , keyCode,term;
+            var opts, inputs , target , tipDivTmpl , tabTmpl , keyCode,term,searching;
 
             var defaults = {
                 selector: "input[name*=cityname]",
@@ -158,9 +158,11 @@
             function _autoComplete(event) {
                 switch( event.keyCode ) {
                     case keyCode.PAGE_UP:
+                    case keyCode.LEFT:
                         this._move( -2, event );
                         break;
                     case keyCode.PAGE_DOWN:
+                    case keyCode.RIGHT:
                         this._move( 2, event );
                         break;
                     case keyCode.UP:
@@ -197,18 +199,17 @@
 
             //搜索延迟
             function _searchTimeout ( event ) {
-                clearTimeout( this.searching );
-                this.searching = setTimeout(function() {
-                    if ( this.term !== this._value() ) {
-                        this.selectedItem = null;
-                        this._search( null, event );
+                clearTimeout( searching );
+                searching = setTimeout(function() {
+                    if ( term !== _value() ) {
+                        _search( null, event );
                     }
                 }, opts.delay );
             }
 
             //查询
             function _search( value, event){
-                value = value != null ? value : this._value();
+                 term = _value();
 
             }
 
