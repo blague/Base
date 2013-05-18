@@ -90,9 +90,9 @@
                 dataSource = {},//数据来源，这里是写死的加载js，之后替换getDataSource方法就可以更换为ajax
                 cityArray,
                 searchDiv,//提示层
-                searchDivUl,//
-                searchDivP,//页号
-                searchSelectItem,//当前选中项
+                searchDivUl,//查询结果列表
+                searchDivP,//页面显示
+                selectItem,//当前选中项
                 currentPage = 1,//当前页
                 count = 0,//记录总页数
                 searchCache=new Array();//所搜结果缓存，已经检索过的就不再检索了,这个集合中只是存在的在dataSource中的索引
@@ -107,7 +107,7 @@
                 delay :"200",//搜索的按键延迟时间,毫秒为单位
                 cnSource:"js/cnAirPort.js",//国内数据来源
                 intlSource:"js/iAirPort.js",//国际数据来源
-                isIntl :true,//是否为国际
+                isIntl :false,//是否为国际
                 pageSize:10,//每页显示结果数
                 searchTitle:"可输入中文/全拼/简拼/三字码",
                 tabTile:"",
@@ -130,6 +130,14 @@
                     _tip(opts.tabId);
                 }).keyup(function (e){
                      _autoComplete(e);
+                }).keydown(function (e){
+                    switch (e.keyCode){
+                        case keyCode.LEFT:
+                        case keyCode.RIGHT:
+                        case keyCode.UP:
+                        case keyCode.DOWN:
+                            e.preventDefault();
+                    }
                 })
                 $("body").append(_tabs(cityList[0])).append(searchDiv);
                 searchDiv = $(opts.searchId);
@@ -185,19 +193,17 @@
                 switch( event.keyCode ) {
                     case keyCode.PAGE_UP:
                     case keyCode.LEFT:
-                        target.focus();
-                        _doPage( -1, event );
+                        _doPage( -1 );
                         break;
                     case keyCode.PAGE_DOWN:
                     case keyCode.RIGHT:
-                        target.focus();
-                        _doPage( 1, event );
+                        _doPage( 1 );
                         break;
                     case keyCode.UP:
-                        _move( -1, event );
+                        _move( flags.PREV );
                         break;
                     case keyCode.DOWN:
-                        _move( 1, event );
+                        _move( flags.NEXT );
                         break;
                     case keyCode.ENTER:
                     case keyCode.NUMPAD_ENTER:
@@ -232,10 +238,26 @@
                 }, opts.delay );
             }
 
-            function _move(num,event){
+            function _move(act){
+                 if(!searchDivUl.children().length){
+                    return ;
+                 }else{
+                    if(!act().length){
+                       if(act == flags.NEXT){
+                           selectItem = searchDivUl.children().first();
+                       }else if(act == flags.PREV){
+                           selectItem = searchDivUl.children().last();
+                       }
+                    }else{
+                        selectItem = act();
+                    }
+                 }
+
+                searchDivUl.find(".hover").removeClass("hover");
+                $(selectItem).addClass("hover");
             }
 
-            function _doPage(num,evnet){
+            function _doPage(num){
                  if(0<currentPage+num && currentPage+num<=count){
                      currentPage+=num;
                      _showSearhResult();
@@ -250,20 +272,24 @@
                    return ;
                }
                count = Math.ceil(searchCache[term].length /opts.pageSize);
-               console.log(searchCache[term].length +"/"+ opts.pageSize + "="+count+",currentPage="+currentPage);
                for(var i =(currentPage- 1)*opts.pageSize,length=currentPage*opts.pageSize > searchCache[term].length ? searchCache[term].length : currentPage*opts.pageSize; i < length;i++){
                        searchDivUl.append("<li><h1>"+cityArray[searchCache[term][i]].name+"</h1><p>"+cityArray[searchCache[term][i]].airName+"</p></li>");
                }
                if(count != 1){
-                   for(var i =1;i<=count;i++){
-                       if(currentPage == i){
-                           searchDivP.append(i);
+                   for(var j =1;j<=count;j++){
+                       if(currentPage == j){
+                           searchDivP.append(j);
                        }else{
-                           searchDivP.append("<a>"+i+"</a>");
+                           searchDivP.append("<a>"+j+"</a>");
                        }
                    }
                }
-               searchSelectItem = searchDivUl.children().first().addClass("hover");
+               selectItem =searchDivUl.children().first().addClass("hover");
+               searchDivUl.children().mouseover(function (){
+                   selectItem.removeClass("hover");
+                   selectItem = $(this);
+                   selectItem.addClass("hover");
+               })
             }
             //查询
             function _search( event){
@@ -383,7 +409,9 @@
                //集合中值无意义，只是做标识，KEY值才是其代表的意义。
                flags ={
                    PAGE :1,//翻页
-                   ITEM : 2 //移动
+                   ITEM : 2, //移动
+                   NEXT : function (){ return selectItem.next();},//下一个
+                   PREV : function (){ return selectItem.prev();}//上一个
                }
 
                 tipDivTmpl = '<div id="'+opts.tabId.replace("#","")+'" class="'+opts.cssScope+'"></div>';//tip最外层div
@@ -418,7 +446,7 @@
 <body>
 <div style="margin: 0 auto;width: 960px;">
     <br/>
-    <input class="city" name="cfcityname"/><input class="city" name="aa"/>
+    <input class="city" name="cfcityname"/><input class="city" name="aa" value="aaaaa"/>
     <br/>
     select控件遮盖测试:<select>
     <option>1select控件遮盖测试</option>
