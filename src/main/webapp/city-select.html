@@ -34,13 +34,13 @@
             list-style: none;
         }
 
-        a {
+        /*a {
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
-        }
+        }*/
 
         sup {
             vertical-align: text-top;
@@ -124,13 +124,7 @@
                 if (!obj) {
                     inputs = $(opts.selector);
                 }
-                inputs.focus(function (e){
-                    if(target && target.is($(this)) && $("."+opts.cssScope+":visible").length) return ;
-                    target = $(this);
-                    _tip(opts.tabId);
-                }).keyup(function (e){
-                     _autoComplete(e);
-                }).keydown(function (e){
+                inputs.focus(_showMeu).click(_showMeu).keyup(_autoComplete).keydown(function (e){
                     switch (e.keyCode){
                         case keyCode.LEFT:
                         case keyCode.RIGHT:
@@ -144,6 +138,16 @@
                 searchDivUl = searchDiv.find("ul");
                 searchDivP = searchDiv.find("p:last");
                 _init();
+            }
+
+            $.citySelect.doPage = _doPage;
+
+            function _showMeu(){
+                if(target && target.is($(this)) && $("."+opts.cssScope+":visible").length){
+                    return ;
+                }
+                target = $(this);
+                _tip(opts.tabId);
             }
 
             // 创建城市点选控件
@@ -193,11 +197,11 @@
                 switch( event.keyCode ) {
                     case keyCode.PAGE_UP:
                     case keyCode.LEFT:
-                        _doPage( -1 );
+                        _doPage( currentPage -1 );
                         break;
                     case keyCode.PAGE_DOWN:
                     case keyCode.RIGHT:
-                        _doPage( 1 );
+                        _doPage( currentPage + 1 );
                         break;
                     case keyCode.UP:
                         _move( flags.PREV );
@@ -207,9 +211,9 @@
                         break;
                     case keyCode.ENTER:
                     case keyCode.NUMPAD_ENTER:
-                        if ( this.menu.active ) {
+                        if ( $(opts.searchId).is(":visible") ) {
                             event.preventDefault();
-                            this.menu.select( event );
+                            _selected();
                         }
                         break;
                     default:
@@ -227,6 +231,7 @@
                         searchDiv.hide();
                         return false;
                     }else{
+                        _tip(opts.searchId);
                         $(opts.tabId).hide();
                         searchDiv.show();
                     }
@@ -258,8 +263,8 @@
             }
 
             function _doPage(num){
-                 if(0<currentPage+num && currentPage+num<=count){
-                     currentPage+=num;
+                 if(0<num && num<=count){
+                     currentPage = num;
                      _showSearhResult();
                  }
             }
@@ -280,7 +285,7 @@
                        if(currentPage == j){
                            searchDivP.append(j);
                        }else{
-                           searchDivP.append("<a>"+j+"</a>");
+                           searchDivP.append("<a href='javascript:void(0)' onclick='$.citySelect.doPage("+j+");'>"+j+"</a>");
                        }
                    }
                }
@@ -289,7 +294,12 @@
                    selectItem.removeClass("hover");
                    selectItem = $(this);
                    selectItem.addClass("hover");
-               })
+               }).click(_selected);
+               searchDivP.find("a").click(function (){})
+            }
+            function _selected(){
+                target.val(selectItem.find("h1").html());
+                searchDiv.hide();
             }
             //查询
             function _search( event){
