@@ -226,16 +226,14 @@
             function _searchTimeout ( event ) {
                 clearTimeout( searching );
                 searching = setTimeout(function() {
-                    if(!_value() && $(opts.tabId).is(":hidden")){
-                        _tip(opts.tabId);
-                        searchDiv.hide();
-                        return false;
-                    }else{
+                    if(!_value() && $(opts.tabId).is(":hidden") ){
+                            _tip(opts.tabId);
+                            searchDiv.hide();
+                            return false;
+                    }else if(_value()){
                         _tip(opts.searchId);
                         $(opts.tabId).hide();
                         searchDiv.show();
-                    }
-                    if ( term !== _value() ) {
                         _search( event );
                         currentPage = 1;
                         _showSearhResult();
@@ -295,7 +293,6 @@
                    selectItem = $(this);
                    selectItem.addClass("hover");
                }).click(_selected);
-               searchDivP.find("a").click(function (){})
             }
             function _selected(){
                 target.val(selectItem.find("h1").html());
