@@ -80,9 +80,10 @@
             var opts,
                 inputs ,//选择到的输入框
                 target ,//当前选择的input
-                targetRange,//当前input中的光标
                 tipDivTmpl  ,//div外部模板
                 tabTmpl ,//tab控件模板
+                cnTmpl,//国内模版
+                intlTmpl,//国际模版
                 keyCode ,//keyCode集合
                 flags,//标识集合
                 term ,//输入值缓存
@@ -92,26 +93,43 @@
                 searchDiv,//提示层
                 searchDivUl,//查询结果列表
                 searchDivP,//页面显示
+                searchTmpl,//搜索显示的模版
                 selectItem,//当前选中项
                 currentPage = 1,//当前页
                 count = 0,//记录总页数
-                searchCache=new Array();//所搜结果缓存，已经检索过的就不再检索了,这个集合中只是存在的在dataSource中的索引
-
+                searchCache=new Array(),//所搜结果缓存，已经检索过的就不再检索了,这个集合中只是存在的在dataSource中的索引
+                area ,//国家信息集合
+                tabSource,//tab控件的数据源
+                cnKey ,//国内tab控件的key值集合
+                intlKey,//国际
+                tabPanel;
 
 
             var defaults = {
                 selector: "input[name*=cityname]",//选择器
                 cssScope: "city-ui",//
-                tabId :"#cityTab",
                 searchId :"#search",
                 delay :"200",//搜索的按键延迟时间,毫秒为单位
-                cnSource:"js/cnAirPort.js",//国内数据来源
-                intlSource:"js/iAirPort.js",//国际数据来源
+                doPageFun:"doPage",//翻页方法
+                movePageFun:"move",//上一个/下一个按钮调用方式
+                change:"switchRange",//更改国内国际状态的方法
+                nextBtnName:"->",//下一个
+                prevBtnName:"<-",//上一个
+                cnSource:"/info/js/city/domestic.js",//国内数据来源
+                intlSource:"/info/js/city/intl.js",//国际数据来源
+                areaSource:"/info/js/city/area.js",//国家数据来源
+                tabSource:"/info/js/city/tab-source.js",//tab选项卡数据来源
                 isIntl :false,//是否为国际
                 pageSize:10,//每页显示结果数
                 searchTitle:"可输入中文/全拼/简拼/三字码",
                 tabTile:"",
-                nullTip:"对不起，无匹配，请重新输入"
+                nullTip:"对不起，无匹配，请重新输入",
+                tabId : {
+                    cn:"domestic",
+                    intl:"intl"
+                },
+                cnTmpl : function (data){ return '<li data="'+data[4]+'" val="'+data[2]+'"><span>'+data[2]+'</span></li>' },
+                intlTmpl : function (data){ return '<li data="'+data[4]+'" val="'+data[2]+'"><h1>'+data[2]+','+area[data[5]].name+','+data[4]+'</h1></li>'}
             };
 
             $.fn.citySelect = function (options) {
@@ -119,12 +137,20 @@
             }
 
             $.citySelect = function (options, obj) {
-                $.citySelect.opts = opts = $.extend({}, defaults, options);
+                opts = $.extend({}, defaults, options);
+                window[opts.doPageFun] = _doPage;
+                window[opts.movePageFun]   = _moveBtnAct;
+                window[opts.change] = _switchRange;
                 _initValue();
                 if (!obj) {
                     inputs = $(opts.selector);
                 }
-                inputs.focus(_showMeu).click(_showMeu).keyup(_autoComplete).keydown(function (e){
+                inputs.focus(function (){
+                    _showMeu(this);
+                    $(this).attr("defaultValue",$(this).val());
+                }).click(function (){
+                            _showMeu(this);
+                        }).keyup(_autoComplete).keydown(function (e){
                     switch (e.keyCode){
                         case keyCode.LEFT:
                         case keyCode.RIGHT:
@@ -133,63 +159,57 @@
                             e.preventDefault();
                     }
                 })
-                $("body").append(_tabs(cityList[0])).append(searchDiv);
+                $("body").append(_tabs()).append(searchDiv);
                 searchDiv = $(opts.searchId);
                 searchDivUl = searchDiv.find("ul");
                 searchDivP = searchDiv.find("p:last");
                 _init();
             }
 
-            $.citySelect.doPage = _doPage;
+            function _switchRange(){
+                opts.isIntl = !opts.isIntl;
+                if(opts.isIntl){
+                    tabPanel = $("#"+opts.tabId.intl);
+                    searchTmpl = opts.intlTmpl
+                }else{
+                    tabPanel = $("#"+opts.tabId.cn);
+                    searchTmpl = opts.cnTmpl
+                }
+            }
 
-            function _showMeu(){
+            function _showMeu(ob){
                 if(target && target.is($(this)) && $("."+opts.cssScope+":visible").length){
                     return ;
                 }
-                target = $(this);
-                _tip(opts.tabId);
+                target = $(ob);
+                _position(tabPanel);
             }
 
             // 创建城市点选控件
-            function _tabs(data) {
+            function _tabs() {
                 //创建选择框
-                var $tabs = $(tipDivTmpl);
-                $tabs.append(_tmpl(tabTmpl,{data:data}));
-                $tabs.find("li").each(function (idx){
-                    if(data[$(this).text()]){
-                        $tabs.find("div").eq(idx).append(_tmpl(tabTmpl,{data:data[$(this).text()]}));
-                    }
-                })
+                var $tabs = tabTmpl(cnKey,tabSource["domestic"],opts.tabId.cn).after(tabTmpl(intlKey,tabSource["intl"],opts.tabId.intl));
                 //绑定方法
                 $tabs.find(".tab li").click(function(){
                     var $this = $(this);
-                    $this.addClass("cur").siblings().removeClass('cur');
-                    $this.parent().siblings("div").hide().eq($(this).index()).show();
+                    $this.addClass("cur").siblings(".cur").removeClass('cur');
+                    $this.parent().siblings("dl").hide().eq($(this).index()).show();
                 });
-                $tabs.find(".cities li").mouseover(function (){
-                    $(this).toggleClass("hover");
-                }).mouseout(function (){
-                    $(this).toggleClass("hover");
-                }).click(function (){
-                    $(opts.tabId).hide();
-                    target.val($(this).text());
+                $tabs.find(".cities a").click(function (){
+                    tabPanel.hide();
+                    selectItem = $(this);
+                    _selected();
                 });
 
                 //初始化默认显示
-                $tabs.find("div:first").addClass("on");
-                $tabs.find("li:first").addClass("cur");
-                $tabs.find("div:first div:first").addClass("on");
-                $tabs.find("div:first li:first").addClass("cur");
+                $tabs.find("li:first").addClass("on");
+                $tabs.find("dl:first").show();
 
                 return $tabs;
             }
 
-            function _tip(id) {
-                _position(id);
-            }
-
-            function _position(id) {
-                $(id).css({"top": target.position().top + target.height(), "left": target.position().left}).show();
+            function _position($dom) {
+                $dom.css({"top": target.position().top + target.height(), "left": target.position().left}).show();
             }
 
             //自动完成方法，onKeyup松开按键
@@ -226,13 +246,13 @@
             function _searchTimeout ( event ) {
                 clearTimeout( searching );
                 searching = setTimeout(function() {
-                    if(!_value() && $(opts.tabId).is(":hidden") ){
-                            _tip(opts.tabId);
-                            searchDiv.hide();
-                            return false;
+                    if(!_value() && tabPanel.is(":hidden")){
+                        _position(tabPanel);
+                        searchDiv.hide();
+                        return false;
                     }else if(_value()){
-                        _tip(opts.searchId);
-                        $(opts.tabId).hide();
+                        _position($(opts.searchId));
+                        tabPanel.hide();
                         searchDiv.show();
                         _search( event );
                         currentPage = 1;
@@ -260,11 +280,16 @@
                 $(selectItem).addClass("hover");
             }
 
+            function _moveBtnAct(num){
+                _doPage(currentPage +num );
+            }
+
             function _doPage(num){
                  if(0<num && num<=count){
                      currentPage = num;
                      _showSearhResult();
                  }
+                 target.focus();
             }
 
             function _showSearhResult(){
@@ -276,16 +301,18 @@
                }
                count = Math.ceil(searchCache[term].length /opts.pageSize);
                for(var i =(currentPage- 1)*opts.pageSize,length=currentPage*opts.pageSize > searchCache[term].length ? searchCache[term].length : currentPage*opts.pageSize; i < length;i++){
-                       searchDivUl.append("<li><h1>"+cityArray[searchCache[term][i]].name+"</h1><p>"+cityArray[searchCache[term][i]].airName+"</p></li>");
+                       searchDivUl.append(searchTmpl(cityArray[searchCache[term][i]]));
                }
                if(count != 1){
+                   searchDivP.append("<a href='javascript:void(0)' onclick='"+opts.movePageFun+"(-1)' >"+opts.prevBtnName+"</a>");
                    for(var j =1;j<=count;j++){
                        if(currentPage == j){
-                           searchDivP.append(j);
+                           searchDivP.append("<p>"+j+"</p>");
                        }else{
-                           searchDivP.append("<a href='javascript:void(0)' onclick='$.citySelect.doPage("+j+");'>"+j+"</a>");
+                           searchDivP.append("<a href='javascript:void(0)' onclick='"+opts.doPageFun+"("+j+");'>"+j+"</a>");
                        }
                    }
+                   searchDivP.append("<a href='javascript:void(0)' onclick='"+opts.movePageFun+"(1)' >"+opts.nextBtnName+"</a>");
                }
                selectItem =searchDivUl.children().first().addClass("hover");
                searchDivUl.children().mouseover(function (){
@@ -295,8 +322,9 @@
                }).click(_selected);
             }
             function _selected(){
-                target.val(selectItem.find("h1").html());
+                target.val(selectItem.attr("val")).attr("defaultValue",selectItem.attr("val"));
                 searchDiv.hide();
+                target.next().val(selectItem.attr("data"));
             }
             //查询
             function _search( event){
@@ -308,13 +336,13 @@
                     cityArray = _getDataSource();
                     var nameArray=new Array(),enNameArray=new Array(),codeArray=new Array(),shotArray=new Array();
                     for(var i=0,length= cityArray.length;i<length;i++){
-                         if(mather.test(cityArray[i].name)){
+                         if(mather.test(cityArray[i][2])){
                               nameArray.push(i);
-                         }else if(mather.test(cityArray[i].enName)){
+                         }else if(mather.test(cityArray[i][0])){
                              enNameArray.push(i);
-                         }else if(mather.test(cityArray[i].shot)){
+                         }else if(mather.test(cityArray[i][1])){
                              shotArray.push(i);
-                         } else if (mather.test(cityArray[i].code)){
+                         } else if (mather.test(cityArray[i][4])){
                              codeArray.push(i);
                          }
                     }
@@ -351,23 +379,6 @@
                 return temp;
             }
 
-            //模版方法
-            function _tmpl(str, data) {
-                var fn = new Function("obj",
-                        "var p=[];" +
-                                "with(obj){p.push('" +
-                                str.replace(/\\/g, "\\\\")
-                                        .replace(/[\r\t\n]/g, " ")
-                                        .split("<#").join("\t")
-                                        .replace(/((^|#>)[^t]*)'/g, "$1r")
-                                        .replace(/\t=(.*?)#>/g, "',$1,'")
-                                        .split("\t").join("');")
-                                        .split("#>").join("p.push('")
-                                        .split("\r").join("\\")
-                                + "');}return p.join('');");
-                return fn(data);
-            }
-
             /**
              *初始化方法
              * @private
@@ -385,8 +396,19 @@
                 $(document).mouseup(function  (e){
                     if($(e.target).closest("."+opts.cssScope+" , "+opts.selector).length == 0 ){
                         $("."+opts.cssScope).hide();
+                        if(target){
+                            target.val(target.attr("defaultValue"))
+                        }
                     }
                 });
+
+                if(opts.isIntl){
+                    tabPanel = $("#"+opts.tabId.intl);
+                    searchTmpl = opts.intlTmpl
+                }else{
+                    tabPanel = $("#"+opts.tabId.cn);
+                    searchTmpl = opts.cnTmpl
+                }
 
             }
 
@@ -394,7 +416,7 @@
              * 初始化私有变量
              */
             function _initValue(){
-                keyCode = {
+               keyCode = {
                     BACKSPACE: 8,
                     COMMA: 188,
                     DELETE: 46,
@@ -413,7 +435,6 @@
                     UP: 38
                 }
 
-               //集合中值无意义，只是做标识，KEY值才是其代表的意义。
                flags ={
                    PAGE :1,//翻页
                    ITEM : 2, //移动
@@ -421,26 +442,34 @@
                    PREV : function (){ return selectItem.prev();}//上一个
                }
 
-                tipDivTmpl = '<div id="'+opts.tabId.replace("#","")+'" class="'+opts.cssScope+'"></div>';//tip最外层div
-
-                tabTmpl ='<ul class="tab">' +
-                        '<# for (var i in data) { #>' +
-                        '<li><#= i #></li> ' +
-                        '<# } #>' +
-                        '</ul>' +
-                        '<# for (var i in data) { #>' +
-                        '<div>' +
-                        '<# if (Object.prototype.toString.apply(data[i]) === "[object Array]") { #>' +
-                        '<ul class="cities">' +
-                        '<# for (var j = 0,length = data[i].length;j<length;j++){ #>' +
-                        '<li data="<#= data[i][j].id#>"><#= data[i][j].name#></li>' +
-                        '<# } #>' +
-                        '</ul>' +
-                        '<# } #>' +
-                        '</div>'+
-                        '<# } #>';
-
+                tipDivTmpl = '<div class="'+opts.cssScope+'"></div>';//tip最外层div
+                tabTmpl = function (keyArray,data,id){
+                     var tabDom = $('<ul class="tab"></ul>');
+                     var  tab = $(tipDivTmpl).attr("id",id);
+                     for(var i=0,iLen=keyArray.length;i<iLen;i++){
+                        var key = keyArray[i].key;
+                        tabDom.append("<li>"+keyArray[i].name+"</li>");
+                        var contentDom = $('<dl class="cities"></dl>');
+                        for(var j= 0,jLen=key.length ; j<jLen ; j++){
+                            var dt = key[j].length > 1 ? "<dt></dt>" : "<dt>"+key[j]+"</dt>";
+                            var dd = $("<dd></dd>");
+                            for(var k in data[key[j]]){
+                                dd.append('<a href="javascript:void(0);" data="'+data[key[j]][k][4]+'"  val="'+data[key[j]][k][2]+'">'+data[key[j]][k][2]+'</a>')
+                            }
+                            contentDom.append(dt).append(dd);
+                        }
+                        tab.append(contentDom);
+                     }
+                    tab.children().first().before(tabDom);
+                    return tab;
+                }
                 searchDiv = '<div class="city-ui" id="'+opts.searchId.replace("#","")+'"> <p> '+opts.searchTitle+' </p> <ul class="result"></ul> <p></p> </div>';
+                cnKey = [ { key:["domesticHot"], name:"热门" }, { key:["A","B","C","D","E","F"], name:"ABCDEF" }, { key:["G","H","J"], name:"EFGH" }, { key:["K","L","M","N"], name:"KLMN" }, { key:["P","Q","R","S","T","W"], name:"PQRSTW" },{ key:["X","Y","Z"], name:"XYZ" } ]
+                intlKey =[ { key:["intlHot"], name:"国际热门" }, { key:["0001"], name:"亚洲" }, { key:["0002"], name:"欧洲" }, { key:["0003","0004"], name:"美洲" }, { key:["0005"], name:"非洲" },{ key:["0006"], name:"大洋洲" } ]
+
+                area = _getJSON(opts.areaSource);
+                tabSource = _getJSON(opts.tabSource);
+
             }
 
         })(jQuery);
@@ -449,6 +478,8 @@
             $.citySelect();
         })
     </script>
+<script>
+</script>
 </head>
 <body>
 <div style="margin: 0 auto;width: 960px;">
@@ -462,6 +493,5 @@
     <option>4select控件遮盖测试</option>
 </select>
 </div>
-
 </body>
 </html>

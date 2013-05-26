@@ -15,41 +15,46 @@
     /* For IE 5.5 - 7 */
     /*filter: progid:DXImageTransform.Microsoft.Shadow(Strength = 4, Direction = 135, Color = '#999999');*/
 }
-
-.city-ui div {
+.city{border:1px solid #ccc; height:24px; line-height:24px;}
+/*.city-ui div {
     margin: 0;
     padding: 0;
     width: 400px;
     display: none;
-}
+}*/
 
 .city-ui .tab {
     margin: 5px;
     padding: 0;
+    padding-left: 20px;
     list-style: none;
     width: 400px;
-    height: 32px;
+    height: 28px;
     border-bottom: 1px solid #ddd;
     zoom: 1;
 }
 
 .city-ui .cities li {
     float: left;
-    width: 60px;
-    height: 30px;
-    line-height: 30px;
+    width: 65px;
+    height: 28px;
+    line-height: 28px;
     text-align: center;
     cursor: pointer;
     /*background-color: #fff;*/
 }
+
 .city-ui .tab li {
     float: left;
-    width: 60px;
-    height: 30px;
-    line-height: 30px;
+    height: 26px;
+    line-height: 26px;
+    background:#F6F6F6;
+    border:1px solid #DDDDDD;
     text-align: center;
     cursor: pointer;
     color: #555;
+    margin-right:6px;
+    padding:0 8px;
     position: relative;
     bottom:-1px;
 }
@@ -61,11 +66,36 @@
 .city-ui .tab li.cur {
     border:1px solid #ddd;
     border-bottom: 1px solid #fff;
+    background:#fff;
 }
 
 .city-ui .hover{
-    border: solid 1px #87ceeb;
-    background-color: #add8e6;
+    color: #f55c26;
+    font-weight:bold;
+}
+.city-ui dl{
+    display: none;
+}
+.city-ui .cities dt {
+    float:left;
+    width:20px;
+    text-align:center;
+    line-height:26px;
+}
+.city-ui .cities dd{width: 400px;overflow:hidden;}
+.city-ui .cities dd a{
+    width:65px;
+    float:left;
+    color:#000;
+    font-size:12px;
+    text-decoration:none;
+    height:26px;
+    line-height:26px;
+    text-align:center;
+}
+.city-ui .cities dd a:hover{
+    color: #f55c26;
+    font-weight:bold;
 }
 
 /*索引样式*/
@@ -79,4 +109,11 @@
 }
 .city-ui p{
     text-align: center;
+}
+.city-ui p a ,.city-ui p p{
+    color: #778899;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    float: left;
 }
