@@ -70,8 +70,6 @@
     <link type="text/css" href="css/city-select.css" rel="stylesheet"/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/cityList.js"></script>
-    <script type="text/javascript" src="js/iAirPort.js"></script>
-    <script type="text/javascript" src="js/cnAirPort.js"></script>
     <script type="text/javascript">
         /**
          *   城市选择控件
@@ -79,12 +77,32 @@
         ;
         (function () {
 
-            var opts, inputs , target , tipDivTmpl , tabTmpl , keyCode,term,searching;
+            var opts,
+                inputs ,//选择到的输入框
+                target ,//当前选择的input
+                tipDivTmpl  ,//div外部模板
+                tabTmpl ,//tab控件模板
+                keyCode ,//keyCode集合
+                term ,//输入值缓存
+                searching ,//
+                dataSource = {},//数据来源，这里是写死的加载js，之后替换getDataSource方法就可以更换为ajax
+                cityArray,
+                searchDiv,//提示层
+                searchDivUl,
+                searchDivP,
+                currentPage = 1,//当前页
+                searchCache=new Array();//所搜结果缓存，已经检索过的就不再检索了,这个集合中只是存在的在dataSource中的索引
 
             var defaults = {
-                selector: "input[name*=cityname]",
-                selectDiv: "city-ui",
-                delay :"200"
+                selector: "input[name*=cityname]",//选择器
+                cssScope: "city-ui",//
+                tabId :"#cityTab",
+                searchId :"#search",
+                delay :"200",//搜索的按键延迟时间,毫秒为单位
+                cnSource:"js/cnAirPort.js",//国内数据来源
+                intlSource:"js/iAirPort.js",//国际数据来源
+                isIntl :true,//是否为国际
+                pageSize:10//每页显示结果数
             };
 
             $.fn.citySelect = function (options) {
@@ -92,7 +110,7 @@
             }
 
             $.citySelect = function (options, obj) {
-                opts = $.extend({}, defaults, options);
+                $.citySelect.opts = opts = $.extend({}, defaults, options);
                 _initValue();
                 if (!obj) {
                     inputs = $(opts.selector);
@@ -101,9 +119,12 @@
                     target = this;
                     _tip();
                 }).keyup(function (e){
-
+                     _autoComplete(e);
                 })
-                $("body").append(_tabs(cityList[0]));
+                $("body").append(_tabs(cityList[0])).append(searchDiv);
+                searchDiv = $(opts.searchId);
+                searchDivUl = searchDiv.find("ul");
+                searchDivP = searchDiv.find("p:last");
                 _init();
             }
 
@@ -124,22 +145,19 @@
                     $this.parent().siblings("div").hide().eq($(this).index()).show();
                 });
                 $tabs.find(".cities li").mouseover(function (){
-                    $(this).toggleClass("grey");
+                    $(this).toggleClass("hover");
                 }).mouseout(function (){
-                    $(this).toggleClass("grey");
+                    $(this).toggleClass("hover");
                 }).click(function (){
-                    $(".city-ui").hide();
+                    $(opts.tabId).hide();
                     target.value = $(this).text();
                 });
-
-
 
                 //初始化默认显示
                 $tabs.find("div:first").addClass("on");
                 $tabs.find("li:first").addClass("cur");
                 $tabs.find("div:first div:first").addClass("on");
                 $tabs.find("div:first li:first").addClass("cur");
-
 
                 return $tabs;
             }
@@ -150,7 +168,7 @@
             }
 
             function _position($dom) {
-                $(".city-ui").css({"top": $dom.position().top + $dom.height(), "left": $dom.position().left}).show();
+                $(opts.tabId).css({"top": $dom.position().top + $dom.height(), "left": $dom.position().left}).show();
             }
 
 
@@ -169,53 +187,108 @@
                         this._move( -1, event );
                         break;
                     case keyCode.DOWN:
-                        this._move( -2, event );
+                        this._move( 1, event );
                         break;
                     case keyCode.ENTER:
                     case keyCode.NUMPAD_ENTER:
-                        //判断提示层是否显示
                         if ( this.menu.active ) {
                             event.preventDefault();
                             this.menu.select( event );
                         }
                         break;
-                    case keyCode.TAB:
-                        if ( this.menu.active ) {
-                            this.menu.select( event );
-                        }
-                        break;
-                    /*case keyCode.ESCAPE:
-                        if ( this.menu.element.is( ":visible" ) ) {
-                            this._value( this.term );
-                            this.close( event );
-                            event.preventDefault();
-                        }
-                        break;*/
                     default:
-                        this._searchTimeout( event );
+                        _searchTimeout( event );
                         break;
                 }
             }
 
             //搜索延迟
             function _searchTimeout ( event ) {
+                if(!_value() && $(opts.tabId).is(":hidden")){
+                    _tip();
+                    return false;
+                }else{
+                    $(opts.tabId).hide();
+                   searchDiv.show();
+                }
                 clearTimeout( searching );
                 searching = setTimeout(function() {
                     if ( term !== _value() ) {
-                        _search( null, event );
+                        _search( event );
+                        _showSearhResult();
                     }
                 }, opts.delay );
             }
 
+            function _move(flag,event){
+                console.log("未实现")
+            }
+            function _showSearhResult(){
+               searchDivUl.empty();
+               searchDivP.empty();
+               var count = Math.ceil(searchCache[term].length % opts.pageSize);
+               for(var i =(currentPage- 1)*opts.pageSize,length=currentPage*opts.pageSize;i<length;i++){
+                   searchDivUl.append("<li><h1>"+cityArray[searchCache[term][i]].name+"</h1><p>"+cityArray[searchCache[term][i]].airName+"</p></li>");
+               }
+               for(var i =0;i<count;i++){
+                    if(currentPage == i+1){
+                        searchDivP.append((i+1));
+                    }else{
+                        searchDivP.append("<a>"+(i+1)+"</a>");
+                    }
+               }
+            }
             //查询
-            function _search( value, event){
-                 term = _value();
+            function _search( event){
+                term = _value();
 
+                //已经查询的取缓存
+                if(!searchCache[term]){
+                    var mather = new RegExp("^"+term,"gi");
+                    cityArray = _getDataSource();
+                    var nameArray=new Array(),enNameArray=new Array(),codeArray=new Array(),shotArray=new Array();
+                    for(var i=0,length= cityArray.length;i<length;i++){
+                         if(mather.test(cityArray[i].name)){
+                              nameArray.push(i);
+                         }else if(mather.test(cityArray[i].enName)){
+                             enNameArray.push(i);
+                         }else if(mather.test(cityArray[i].shot)){
+                             shotArray.push(i);
+                         } else if (mather.test(cityArray[i].code)){
+                             codeArray.push(i);
+                         }
+                    }
+                    searchCache[term] = nameArray.concat(enNameArray).concat(shotArray).concat(codeArray);
+                }
+            }
+
+            function _getDataSource(){
+                if(opts.isIntl){
+                    if(!dataSource.intl){
+                        dataSource.cn = dataSource.cn || _getJSON(opts.cnSource);
+                        dataSource.intl = dataSource.cn.concat(_getJSON(opts.intlSource))
+                    }
+                    return dataSource.intl
+                }else{
+                    return dataSource.cn = dataSource.cn || _getJSON(opts.cnSource);
+                }
             }
 
             //获得所有当前值
             function _value(){
-                return $(target).val();
+                return $.trim($(target).val());
+            }
+            function _getJSON(url){
+                var temp ;
+                $.ajax({
+                        async:false,
+                        url:url,
+                        success:function (data){
+                             temp = data;
+                        },
+                        dataType:"json"
+                })
+                return temp;
             }
 
             //模版方法
@@ -243,15 +316,15 @@
                 /*fix : ie6 浮动被select遮盖*/
                 if ($.browser.msie && /msie 6\.0/i.test(navigator.userAgent)) {
                         var html = '<iframe class="bgiframe"frameborder="0"tabindex="-1"src="javascript:false;"style="display:block;position:absolute;z-index:-1;filter:Alpha(Opacity=\'0\');top:expression(((parseInt(this.parentNode.currentStyle.borderTopWidth)||0)*-1)+\'px\');left:expression(((parseInt(this.parentNode.currentStyle.borderLeftWidth)||0)*-1)+\'px\');width:expression(this.parentNode.offsetWidth+\'px\');height:expression(this.parentNode.offsetHeight+\'px\');"/>';
-                        $(".city-ui").each(function () {
+                        $("."+opts.cssScope).each(function () {
                             if ($(this).children('iframe.bgiframe').length === 0)
                                 this.insertBefore(document.createElement(html), this.firstChild);
                         })
                 }
 
                 $(document).mouseup(function  (e){
-                    if($(e.target).closest(".city-ui ,"+opts.selector).length == 0 ){
-                        $(".city-ui").hide();
+                    if($(e.target).closest(opts.tabId+" , "+opts.selector).length == 0 ){
+                        $(opts.tabId).hide();
                     }
                 });
 
@@ -280,7 +353,7 @@
                     UP: 38
                 } //65-90为a-z有效输入这个时候才会去检索
 
-                tipDivTmpl = '<div class="'+opts.selectDiv+'"></div>';//tip最外层div
+                tipDivTmpl = '<div id="'+opts.tabId.replace("#","")+'" class="'+opts.cssScope+'"></div>';//tip最外层div
 
                 tabTmpl ='<ul class="tab">' +
                         '<# for (var i in data) { #>' +
@@ -298,6 +371,8 @@
                         '<# } #>' +
                         '</div>'+
                         '<# } #>';
+
+                searchDiv = '<div class="city-ui" id="'+opts.searchId.replace("#","")+'"> <p> 可以输入拼音/简拼/三字码/汉字 </p> <ul class="result"></ul> <p></p> </div>';
             }
 
         })(jQuery);
@@ -319,7 +394,6 @@
     <option>4select控件遮盖测试</option>
 </select>
 </div>
-
 
 </body>
 </html>
