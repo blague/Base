@@ -80,18 +80,24 @@
             var opts,
                 inputs ,//选择到的输入框
                 target ,//当前选择的input
+                targetRange,//当前input中的光标
                 tipDivTmpl  ,//div外部模板
                 tabTmpl ,//tab控件模板
                 keyCode ,//keyCode集合
+                flags,//标识集合
                 term ,//输入值缓存
-                searching ,//
+                searching ,//search方法，延迟执行。
                 dataSource = {},//数据来源，这里是写死的加载js，之后替换getDataSource方法就可以更换为ajax
                 cityArray,
                 searchDiv,//提示层
-                searchDivUl,
-                searchDivP,
+                searchDivUl,//
+                searchDivP,//页号
+                searchSelectItem,//当前选中项
                 currentPage = 1,//当前页
+                count = 0,//记录总页数
                 searchCache=new Array();//所搜结果缓存，已经检索过的就不再检索了,这个集合中只是存在的在dataSource中的索引
+
+
 
             var defaults = {
                 selector: "input[name*=cityname]",//选择器
@@ -102,7 +108,10 @@
                 cnSource:"js/cnAirPort.js",//国内数据来源
                 intlSource:"js/iAirPort.js",//国际数据来源
                 isIntl :true,//是否为国际
-                pageSize:10//每页显示结果数
+                pageSize:10,//每页显示结果数
+                searchTitle:"可输入中文/全拼/简拼/三字码",
+                tabTile:"",
+                nullTip:"对不起，无匹配，请重新输入"
             };
 
             $.fn.citySelect = function (options) {
@@ -116,8 +125,9 @@
                     inputs = $(opts.selector);
                 }
                 inputs.focus(function (e){
-                    target = this;
-                    _tip();
+                    if(target && target.is($(this)) && $("."+opts.cssScope+":visible").length) return ;
+                    target = $(this);
+                    _tip(opts.tabId);
                 }).keyup(function (e){
                      _autoComplete(e);
                 })
@@ -150,7 +160,7 @@
                     $(this).toggleClass("hover");
                 }).click(function (){
                     $(opts.tabId).hide();
-                    target.value = $(this).text();
+                    target.val($(this).text());
                 });
 
                 //初始化默认显示
@@ -162,32 +172,32 @@
                 return $tabs;
             }
 
-            //tip方法,onFocus且输入框中无值
-            function _tip() {
-                _position($(target));
+            function _tip(id) {
+                _position(id);
             }
 
-            function _position($dom) {
-                $(opts.tabId).css({"top": $dom.position().top + $dom.height(), "left": $dom.position().left}).show();
+            function _position(id) {
+                $(id).css({"top": target.position().top + target.height(), "left": target.position().left}).show();
             }
-
 
             //自动完成方法，onKeyup松开按键
             function _autoComplete(event) {
                 switch( event.keyCode ) {
                     case keyCode.PAGE_UP:
                     case keyCode.LEFT:
-                        this._move( -2, event );
+                        target.focus();
+                        _doPage( -1, event );
                         break;
                     case keyCode.PAGE_DOWN:
                     case keyCode.RIGHT:
-                        this._move( 2, event );
+                        target.focus();
+                        _doPage( 1, event );
                         break;
                     case keyCode.UP:
-                        this._move( -1, event );
+                        _move( -1, event );
                         break;
                     case keyCode.DOWN:
-                        this._move( 1, event );
+                        _move( 1, event );
                         break;
                     case keyCode.ENTER:
                     case keyCode.NUMPAD_ENTER:
@@ -204,39 +214,56 @@
 
             //搜索延迟
             function _searchTimeout ( event ) {
-                if(!_value() && $(opts.tabId).is(":hidden")){
-                    _tip();
-                    return false;
-                }else{
-                    $(opts.tabId).hide();
-                   searchDiv.show();
-                }
                 clearTimeout( searching );
                 searching = setTimeout(function() {
+                    if(!_value() && $(opts.tabId).is(":hidden")){
+                        _tip(opts.tabId);
+                        searchDiv.hide();
+                        return false;
+                    }else{
+                        $(opts.tabId).hide();
+                        searchDiv.show();
+                    }
                     if ( term !== _value() ) {
                         _search( event );
+                        currentPage = 1;
                         _showSearhResult();
                     }
                 }, opts.delay );
             }
 
-            function _move(flag,event){
-                console.log("未实现")
+            function _move(num,event){
             }
+
+            function _doPage(num,evnet){
+                 if(0<currentPage+num && currentPage+num<=count){
+                     currentPage+=num;
+                     _showSearhResult();
+                 }
+            }
+
             function _showSearhResult(){
                searchDivUl.empty();
                searchDivP.empty();
-               var count = Math.ceil(searchCache[term].length % opts.pageSize);
-               for(var i =(currentPage- 1)*opts.pageSize,length=currentPage*opts.pageSize;i<length;i++){
-                   searchDivUl.append("<li><h1>"+cityArray[searchCache[term][i]].name+"</h1><p>"+cityArray[searchCache[term][i]].airName+"</p></li>");
+               if(!searchCache[term].length){
+                   searchDivUl.html(opts.nullTip);
+                   return ;
                }
-               for(var i =0;i<count;i++){
-                    if(currentPage == i+1){
-                        searchDivP.append((i+1));
-                    }else{
-                        searchDivP.append("<a>"+(i+1)+"</a>");
-                    }
+               count = Math.ceil(searchCache[term].length /opts.pageSize);
+               console.log(searchCache[term].length +"/"+ opts.pageSize + "="+count+",currentPage="+currentPage);
+               for(var i =(currentPage- 1)*opts.pageSize,length=currentPage*opts.pageSize > searchCache[term].length ? searchCache[term].length : currentPage*opts.pageSize; i < length;i++){
+                       searchDivUl.append("<li><h1>"+cityArray[searchCache[term][i]].name+"</h1><p>"+cityArray[searchCache[term][i]].airName+"</p></li>");
                }
+               if(count != 1){
+                   for(var i =1;i<=count;i++){
+                       if(currentPage == i){
+                           searchDivP.append(i);
+                       }else{
+                           searchDivP.append("<a>"+i+"</a>");
+                       }
+                   }
+               }
+               searchSelectItem = searchDivUl.children().first().addClass("hover");
             }
             //查询
             function _search( event){
@@ -276,7 +303,7 @@
 
             //获得所有当前值
             function _value(){
-                return $.trim($(target).val());
+                return $.trim(target.val());
             }
             function _getJSON(url){
                 var temp ;
@@ -323,8 +350,8 @@
                 }
 
                 $(document).mouseup(function  (e){
-                    if($(e.target).closest(opts.tabId+" , "+opts.selector).length == 0 ){
-                        $(opts.tabId).hide();
+                    if($(e.target).closest("."+opts.cssScope+" , "+opts.selector).length == 0 ){
+                        $("."+opts.cssScope).hide();
                     }
                 });
 
@@ -351,7 +378,13 @@
                     SPACE: 32,
                     TAB: 9,
                     UP: 38
-                } //65-90为a-z有效输入这个时候才会去检索
+                }
+
+               //集合中值无意义，只是做标识，KEY值才是其代表的意义。
+               flags ={
+                   PAGE :1,//翻页
+                   ITEM : 2 //移动
+               }
 
                 tipDivTmpl = '<div id="'+opts.tabId.replace("#","")+'" class="'+opts.cssScope+'"></div>';//tip最外层div
 
@@ -372,7 +405,7 @@
                         '</div>'+
                         '<# } #>';
 
-                searchDiv = '<div class="city-ui" id="'+opts.searchId.replace("#","")+'"> <p> 可以输入拼音/简拼/三字码/汉字 </p> <ul class="result"></ul> <p></p> </div>';
+                searchDiv = '<div class="city-ui" id="'+opts.searchId.replace("#","")+'"> <p> '+opts.searchTitle+' </p> <ul class="result"></ul> <p></p> </div>';
             }
 
         })(jQuery);

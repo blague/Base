@@ -1,7 +1,6 @@
 ﻿.city-ui {
     display: none;
     margin: 0 auto;
-    width: 400px;
     border: 1px solid #bbbbbb;
     z-index: 1000;
     position: absolute;
@@ -12,9 +11,9 @@
     -webkit-box-shadow: 3px 3px 4px #999;
     box-shadow: 3px 3px 4px #999;
     /* For IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999')";
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#999999')";*/
     /* For IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength = 4, Direction = 135, Color = '#999999');
+    /*filter: progid:DXImageTransform.Microsoft.Shadow(Strength = 4, Direction = 135, Color = '#999999');*/
 }
 
 .city-ui div {
@@ -34,14 +33,14 @@
     zoom: 1;
 }
 
-.city-ui li {
+.city-ui .cities li {
     float: left;
     width: 60px;
     height: 30px;
     line-height: 30px;
     text-align: center;
     cursor: pointer;
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 .city-ui .tab li {
     float: left;
@@ -64,6 +63,20 @@
     border-bottom: 1px solid #fff;
 }
 
-.city-ui .grey{
-    background-color: grey;
+.city-ui .hover{
+    border: solid 1px #87ceeb;
+    background-color: #add8e6;
+}
+
+/*索引样式*/
+.city-ui .result li{
+    cursor: pointer;
+}
+
+.city-ui .result li p{
+    color: #808080;
+    text-align: left;
+}
+.city-ui p{
+    text-align: center;
 }
