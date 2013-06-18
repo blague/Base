@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+    <title>使用controls</title>
+    <script type="text/javascript">
+        var start = Number(new Date());
+        var cjsscript = document.createElement('script');
+        cjsscript.src = "control.js";
+        var cjssib = document.getElementsByTagName('script')[0];
+        cjssib.parentNode.insertBefore(cjsscript, cjssib);
+    </script>
+    <script type="text/javascript" data-cjssrc="http://119.167.153.11/info/js/jquery-1.5.min.js"></script>
+    <script type="text/cjs" data-cjssrc="http://119.167.153.11/info/js/tmpl/jquery.tmpl.min.js"></script>
+    <script type="text/cjs" data-cjssrc="http://119.167.153.11/info/js/city/address.js"></script>
+
+</head>
+<body>
+
+<img src="success.jpg">
+<div>
+    耗时 :  <span id="result"></span> ms  渲染
+</div>
+</body>
+<script type="text/javascript" >
+    var result = Number(new Date()) - start;
+    document.getElementById("result").innerHTML = result;
+</script>
+</html>

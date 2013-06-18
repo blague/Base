@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+    <title>没有使用controls</title>
+    <script type="text/javascript">
+        var start = Number(new Date());
+    </script>
+    <script type="text/javascript" src="http://119.167.153.11/info/js/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="http://119.167.153.11/info/js/tmpl/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="http://119.167.153.11/info/js/city/address.js"></script>
+
+</head>
+<body>
+
+   <img src="success.jpg">
+   <div>
+       耗时 :  <span id="result"></span> ms 渲染
+   </div>
+</body>
+<script type="text/javascript" >
+    var result = Number(new Date()) - start;
+    document.getElementById("result").innerHTML = result;
+</script>
+</html>
